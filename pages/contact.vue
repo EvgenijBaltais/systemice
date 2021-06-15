@@ -123,6 +123,8 @@
 
 import blRight from '@/components/bl_right'
 import pageHeader from '@/components/page_header'
+import clipboardJS from 'clipboard'
+import Inputmask from 'inputmask'
 
 export default {
 
@@ -133,6 +135,124 @@ export default {
 	components: {
 		blRight, pageHeader
   	},
+	mounted(){
+
+	/* Скопировать */
+
+	if (document.getElementById('copy-text')) {
+		let clipboard = new clipboardJS('#copy-text');
+
+		clipboard.on('success', function(e) {
+			document.getElementById('copy-text').innerText = 'Скопировано';
+			setTimeout(function(){
+				document.getElementById('copy-text').innerText = 'Скопировать координаты для навигатора копия';
+			}, 1000)
+		});
+	}
+
+	/* Скопировать, конец */
+
+	// Форма на странице Контакты
+
+	let im = new Inputmask("+7 (999) 999-99-99");
+	let phones = document.getElementsByClassName("contact-phone");
+
+	for (let i = 0; i < phones.length; i++) {
+		im.mask(phones[i]);
+	}
+
+	for (let i = 0; i < document.getElementsByClassName('send-button').length; i++) {
+
+		document.getElementsByClassName('send-button')[i].addEventListener('click', function(e){
+
+			e.preventDefault();
+
+			let form = this.parentNode.parentNode,
+				name = form.querySelector('.contact-name'),
+				phone = form.querySelector('.contact-phone'),
+				agreeChecked = form.querySelector('.input-check').checked,
+				validPhone = phone.inputmask.isComplete();
+
+				if (!agreeChecked || !validPhone) {
+
+					if (!agreeChecked) {
+						form.querySelector('.i-agree').style = "color: red;"
+					}
+					if (!validPhone) {
+						phone.parentNode.classList.add('input-box-wrong');
+					}
+					return false;
+				}
+		});
+	}
+
+	for (let i = 0; i < phones.length; i++) {
+		phones[i].addEventListener('keyup', function(){
+			this.parentNode.classList.remove('input-box-wrong');
+		});
+		phones[i].addEventListener('focus', function(){
+			this.parentNode.classList.remove('input-box-wrong');
+		})
+	}
+
+
+	let label = document.getElementsByClassName('checkbox-block');
+	for (let i = 0; i < label.length; i++) {
+		label[i].addEventListener('click', function(){
+			label[i].querySelector('.i-agree').style = "color: white;"
+		});
+	}
+
+    $(document).mouseup(function (e){
+
+        var div = $('.login-block');
+
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) {
+        	div.css('display','none');
+			$('.btn-exit').removeClass('active');
+        }
+    });
+
+    $(document).mouseup(function (e){
+
+        var div = $('.other-event');
+
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) {
+        	div.css('display','none');
+			$('.more-portfolio').removeClass('active');
+        }
+    });
+
+		/* Карты */
+
+		let myMap
+
+		ymaps.ready(init);
+
+		function init () {
+			myMap = new ymaps.Map('map-block', {
+				center: [55.76, 37.64],
+				zoom: 12
+			}, {
+				searchControlProvider: 0
+			});
+
+			document.getElementById('copy-text').setAttribute("data-clipboard-text", "55.76, 37.64");
+
+			myGeoObject = new ymaps.GeoObject();
+
+			myMap.geoObjects.add(myGeoObject).add(new ymaps.Placemark([55.76, 37.64], {
+				balloonContent: ''
+			}, {
+				preset: 'islands#icon',
+				iconColor: '#0095b6'
+			}))
+		}
+
+		/* Карты, конец */
+	}
 }
 
 </script>

@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let getPrev = document.getElementsByClassName('info-left'),              // Влево
         getNext = document.getElementsByClassName('info-right'),             // Вправо
-        itemsContainer = document.querySelector('.bl-info-wrapper'),               // Контейнер с фото сотрудников в карусели
-        items = document.getElementsByClassName('info-data-item'),               // Менеджеры в превью-карусели
-        activeItemIndex = 1,                                                  // Активный подсвеченный менеджер в карусели
-        lastItem = items.length - 2,                                          // Номер последнего элемента, после которого карусель не смещается
-        itemsSlides = [];                                                     // Массив, в котором хранятся элементы и их ширина для дальнейшего смещения
+        itemsContainer = document.querySelector('.bl-info-wrapper'),         // Контейнер с фото сотрудников в карусели
+        items = document.getElementsByClassName('info-data-item'),           // Менеджеры в превью-карусели
+        activeItemIndex = 1,                                                 // Активный подсвеченный менеджер в карусели
+        lastItem = items.length - 2,                                         // Номер последнего элемента, после которого карусель не смещается
+        itemsSlides = [];                                                    // Массив, в котором хранятся элементы и их ширина для дальнейшего смещения
 
 
     // Установить ширину контейнера с фото
