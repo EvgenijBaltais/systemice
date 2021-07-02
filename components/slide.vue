@@ -1,3 +1,4 @@
+<template>
 <div class="slider content-slide hidden-screen">
     <div class="sl-card sl-box-1" style="background-image: url('../images/conf1.jpg')">
         <div class="bg-hover">
@@ -70,3 +71,18 @@
         </div>
     </div>
 </div>
+</template>
+<script>
+    
+
+export default {
+
+    name: 'slide',
+    data(){
+        return {
+        }
+    }
+}
+
+
+</script>
