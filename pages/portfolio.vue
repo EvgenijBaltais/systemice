@@ -315,9 +315,6 @@
 						</div>
 					</div>
 				</div>
-				
-				<slide/>
-
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">
@@ -343,7 +340,6 @@
 
 import blRight from '@/components/bl_right'
 import pageHeader from '@/components/page_header'
-import slide from '@/components/slide'
 
 export default {
 
@@ -352,7 +348,7 @@ export default {
 		}
 	},
 	components: {
-		blRight, pageHeader, slide
+		blRight, pageHeader
   	},
 
 	mounted(){
