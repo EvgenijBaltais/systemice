@@ -22,6 +22,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@assets/css/fontstyle.css',
+    'node_modules/@glidejs/glide/dist/css/glide.core.css',
     '@assets/css/style.css'
   ],
 	__dangerouslyDisableSanitizersByTagID: {

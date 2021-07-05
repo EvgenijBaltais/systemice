@@ -1,28 +1,4 @@
 <template>
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Systemice Service</title>
-	<meta content="systemice" name="keywords">
-	<meta content="" name="description">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/plugins/jquery.inputmask.bundle.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/fontstyle.css">
-    <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/animation.css">
-	<script type="text/javascript" src="plugins/lightcase-2.5.0/src/js/lightcase.js"></script>
-	<link rel="stylesheet" href="plugins/lightcase-2.5.0/src/css/lightcase.css">
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/team-carousel.js"></script>
-</head>
-<body>
--->
 	<div class="wrapper team">
 		<div class="bl-l fl-column">
 			<div>
@@ -41,14 +17,41 @@
 		<div class="main">
 			<pageHeader/>
 			<div class="content-box">
-				<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud1.png">
+				<!--<img class="sotrud-img main-sotrud-img" src="images/sotrud2.png">-->
+				<div class="glide-c">
+					<div data-glide-el="track" class="glide__track">
+						<ul class="glide__slides">
+							<li class="glide__slide">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud1.png" data-name = "Мирхайдарова Мария" data-position = "Руководитель компании" data-phone = "+7 (920) 765-09-78" data-email = "maria.m@corphotel.ru">
+							</li>
+							<li class="glide__slide">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud2.png" data-name = "Марина Белоцерковская" data-position ="Руководитель отдела развития" data-phone = "+7 (985) 307-43-17" data-email = "marina.bel@corphotel.ru">
+							</li>
+							<li class="glide__slide">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud3.png" data-name = "Георгиев Алексей" data-position = "Руководитель корпоративного отдела" data-phone = "+7 (906) 733-04-01" data-email = "georgiev_aleksey131@corphotel.ru">
+							</li>
+							<li class="glide__slide">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud4.png" data-name = "Сергеева Валерия" data-position = "Старший менеджер" data-phone = "+7 (906) 733-04-01" data-email = "georgiev_aleksey131@corphotel.ru">
+							</li>
+							<li class="glide__slide">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud5.png" data-name = "Евграфов Артур" data-position = "Руководитель IT отдела" data-phone = "+7 (906) 044-15-73" data-email = "a.evgrafov@systemice.ru">
+							</li>
+							<li class="glide__slide">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud6.png" data-name = "Крюкова Анастасия" data-position = "Главный маркетолог" data-phone = "+7 (977) 265-97-38" data-email = "kryukova_anastasiya@corphotel.ru">
+							</li>
+							<li class="glide__slide">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud7.png" data-name = "Ларин Станислав" data-position = "Руководитель рекламного отдела" data-phone = "+7 (903) 666-17-87" data-email = "stanislav.l@corphotel.ru">
+							</li>
+						</ul>
+					</div>
+				</div>
 				<div class="right-wth">
-					<h1 class="h1-more">МАРИНА БЕЛОЦЕРКОВСКАЯ</h1>
+					<h1 class="h1-more h1-manager-data" id = "h1-manager-data">МАРИНА БЕЛОЦЕРКОВСКАЯ</h1>
 					<div class="line"></div>
-					<h3 class="h3 h3-more">РУКОВОДИТЕЛЬ ОТДЕЛА РАЗВИТИЯ</h3>
+					<h3 class="h3 h3-more h3-manager-data" id = "h3-manager-data">РУКОВОДИТЕЛЬ ОТДЕЛА РАЗВИТИЯ</h3>
 					<div class="sotrud-contact">
-						<b>Телефон:</b> <a href="tel:79853074317">+7 (985) 307-43-17</a> (доб. 887) <br>
-						<b>Email:</b> zamkova@mailbox.ru
+						<b>Телефон:</b> <a href="tel:79853074317" id = "phone-manager-data">+7 (985) 307-43-17</a> <br>
+						<b>Email:</b> <a href = "mailto:marina.bel@corphotel.ru" id = "email-manager-data">marina.bel@corphotel.ru</a>
 					</div>
 				</div>
 			</div>
@@ -60,20 +63,40 @@
 					<div class="spy-bottom"></div>
 					<img class="link-arrow dop-arrow-left" src="@/assets/images/arrow-left.png">
 					<img class="link-arrow dop-arrow-right" src="@/assets/images/arrow-right.png">
-					<div class = "sl-wrapper-shadow">
-						<div class = "sl-wrapper">
-							<img src = "@/assets/images/mini/3.png" class="sl-teammate preview-item first" data-name = "Мирхайдарова Мария" data-position = "Руководитель компании">
-							<img src = "@/assets/images/mini/2.png" class="sl-teammate preview-item slide-user-active second" data-name = "Марина Белоцерковская" data-position ="Руководитель отдела развития">
-							<img src = "@/assets/images/mini/4.png" class="sl-teammate preview-item third" data-name = "Георгиев Алексей" data-position = "Руководитель корпоративного отдела">
-							<img src = "@/assets/images/mini/5.png" class="sl-teammate preview-item" data-name = "Сергеева Валерия" data-position = "Старший менеджер">
-							<img src = "@/assets/images/mini/6.png" class="sl-teammate preview-item" data-name = "Евграфов Артур" data-position = "Руководитель IT отдела">
-							<img src = "@/assets/images/mini/7.png" class="sl-teammate preview-item" data-name = "Крюкова Анастасия" data-position = "Главный маркетолог">
-							<img src = "@/assets/images/mini/8.png" class="sl-teammate preview-item" data-name = "Ларин Станислав" data-position = "Руководитель рекламного отдела">
+					<div class = "sl-wrapper-shadow glide">
+						<div data-glide-el="track" class="sl-wrapperglide__track">
+							<ul class="glide__slides">
+								<li class="glide__slide">
+									<img src = "@/assets/images/mini/1.png" class="sl-teammate preview-item" data-name = "Мирхайдарова Мария" data-position = "Руководитель компании">
+								</li>
+								<li>
+									<img src = "@/assets/images/mini/2.png" class="sl-teammate preview-item" data-name = "Марина Белоцерковская" data-position ="Руководитель отдела развития">
+								</li>
+								<li class="glide__slide">
+									<img src = "@/assets/images/mini/3.png" class="sl-teammate preview-item" data-name = "Георгиев Алексей" data-position = "Руководитель корпоративного отдела">
+								</li>
+								<li class="glide__slide">
+									<img src = "@/assets/images/mini/4.png" class="sl-teammate preview-item" data-name = "Сергеева Валерия" data-position = "Главный менеджер">
+								</li>
+								<li class="glide__slide">
+									<img src = "@/assets/images/mini/5.png" class="sl-teammate preview-item" data-name = "Евграфов Артур" data-position = "Руководитель IT отдела">
+								</li>
+								<li class="glide__slide">
+									<img src = "@/assets/images/mini/6.png" class="sl-teammate preview-item" data-name = "Крюкова Анастасия" data-position = "Главный маркетолог">
+								</li>
+								<li class="glide__slide">
+									<img src = "@/assets/images/mini/7.png" class="sl-teammate preview-item" data-name = "Ларин Станислав" data-position = "Руководитель рекламного отдела">
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 				<div class = "item-dots">
-					<div class = "dots-container clearfix"></div>
+					<div class="dots-container glide-b">
+						<div data-glide-el="track" class="glide__track">
+							<ul class="glide__slides"></ul>
+						</div>
+					</div>
 				</div>
 				<div class="arrow-left"></div>
 				<div class="arrow-right"></div>
@@ -101,13 +124,16 @@
 
 import blRight from '@/components/bl_right'
 import pageHeader from '@/components/page_header'
+import Glide from '@glidejs/glide'
 
 export default {
 
 	data(){
 		return {
-			activeItemIndex: 1,
-			animationAction: 0
+			glide: {},
+			glide_dots: {},
+			glide_sotrud: {},
+			sotrudSlider: 0
 		}
 	},
 	components: {
@@ -116,210 +142,192 @@ export default {
 
 	  mounted(){
 
-			// Карусель сотрудников
+		let dotsContainer = document.querySelector('.dots-container .glide__slides'),          	// Контейнер с нижними полосками
+			$this = this,
+			items = document.querySelectorAll('.glide__slides>li:not(.glide__slide--clone)')  // Менеджеры в превью-карусели
 
-			let getPrev = document.getElementsByClassName('arrow-left'),              // Влево
-				getNext = document.getElementsByClassName('arrow-right'),             // Вправо
-				mainManagerImg = document.getElementsByClassName('main-sotrud-img'),  // Большое фото менеджера
-				itemsContainer = document.querySelector('.sl-wrapper'),               // Контейнер с фото сотрудников в карусели
-				dotsContainer = document.querySelector('.dots-container'),            // Контейнер с нижними полосками
-				items = document.getElementsByClassName('sl-teammate'),               // Менеджеры в превью-карусели
-				dots = '',                                                            // Нижние полоски
-				lastItem = items.length - 2,                                          // Номер последнего элемента, после которого карусель не смещается
-				itemsSlides = [],                                                     // Массив, в котором хранятся элементы и их ширина для дальнейшего смещения
-				itemsDots = []                                                       // Массив, в котором хранятся точки и их ширина для дальнейшего смещения
+		  // Включать слайдер сотрудников или нет - в зависимости от размера экрана
+		  window.screen.width > 630 ? '' : this.sotrudSlider = 1                                                                  
 
-				for (let i = 0; i < items.length; i++) {
-					// Добавление точек
-					i == this.activeItemIndex ? dots += '<div class="tr-bottom tr-active"></div>' : dots += '<div class="tr-bottom"></div>';
+			// Карусель миниатюр
+
+			this.glide = new Glide('.glide', {
+				type: 'carousel',
+				startAt: 1,
+				gap: 0,
+				focusAt: 'center',
+				animationDuration: 500,
+				animationTimingFunc: 'cubic-bezier(0.25, 0.1, 0.25, 1)'
+			})
+
+			this.glide_dots = new Glide('.glide-b', {
+				type: 'carousel',
+				startAt: 1,
+				gap: 10,
+				perView: 1,
+				animationDuration: 500,
+				animationTimingFunc: 'cubic-bezier(0.25, 0.1, 0.25, 1)'
+			})
+
+			this.glide_sotrud = new Glide('.glide-c', {
+				type: 'carousel',
+				startAt: 1,
+				gap: 0,
+				perView: 1,
+				animationDuration: 500,
+				animationTimingFunc: 'cubic-bezier(0.25, 0.1, 0.25, 1)'
+			})
+
+			let glide = this.glide,
+				glide_dots = this.glide_dots,
+				glide_sotrud = this.glide_sotrud
+
+			glide.on('run', function() {
+
+				glide_dots.go('=' + glide.index)
+
+				if ($this.sotrudSlider) {
+					glide_sotrud.go('=' + glide.index) 
+					return false
 				}
 
-				if (dotsContainer) dotsContainer.innerHTML = dots;
+				$this.changePortrait(glide.index)
+				$this.changeManagerData(glide.index)
+			})
 
-			let itemDots = document.getElementsByClassName('tr-bottom');
+			glide.mount()
 
-				for (let i = 0; i < items.length; i++) {
-					itemsSlides[i] = items[i].offsetWidth + parseInt(getComputedStyle(items[i], true).marginRight);   // Ширина фото в карусели + Margin
-					itemsDots[i] = itemDots[i].offsetWidth + parseInt(getComputedStyle(itemDots[i], true).marginRight);     // Ширина фото в карусели + Margin
-				}
+		// Точки
 
-			// Установить ширину контейнера с фото
+		new Promise((resolve) => {
 
-			if (itemsContainer) itemsContainer.style.left = 0;  // Установка изначальной позиции    
-			if (dotsContainer) dotsContainer.style.left = 0;  // Установка изначальной позиции  
-
-			// Следующий менеджер в карусели
-
-			if (getNext[0]) {
-				getNext[0].addEventListener('click', () => {
-
-					if (this.activeItemIndex > lastItem) return false;
-
-					itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[this.activeItemIndex] + 'px';  // Сдвигаем контейнер
-					dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[this.activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
-
-					this.activeItemIndex++;                              //Прибавляем активный элемент
-
-					defineActiveItem(items, itemDots, this.activeItemIndex);
-				});
+			let dots = ''
+			for (let i = 0; i < document.querySelectorAll('.glide__slides>li:not(.glide__slide--clone)').length; i++) {
+				// Добавление точек
+				dots += '<li class="glide__slide"><div class="tr-bottom"></div></li>'
 			}
+			if (dotsContainer) dotsContainer.innerHTML = dots
 
-			// Предыдущий менеджер в карусели
+			resolve()
 
-			if (getPrev[0]) {
-				getPrev[0].addEventListener('click', () => {
+		}).then(() => {
 
-					if (this.activeItemIndex == 0) return false;
+			// Карусель точек
 
-					itemsContainer.style.left = parseInt(itemsContainer.style.left) + itemsSlides[this.activeItemIndex] + 'px';  // Сдвигаем контейнер
-					dotsContainer.style.left = parseInt(dotsContainer.style.left) + itemsDots[this.activeItemIndex] + 'px';  // Сдвигаем контейнер с точками
+			glide_dots.mount()
 
-					this.activeItemIndex--;                              //Прибавляем активный элемент
+			// Большие фото менеджеров - карусель на маленьком экране
 
-					defineActiveItem(items, itemDots, this.activeItemIndex);
-				});
-			}
+			glide_sotrud.on('run', function() {
 
-			// Нажатие на клавиатуре
+				glide_dots.go('=' + glide_sotrud.index)
+				glide.go('=' + glide_sotrud.index)
+				$this.changeManagerData(glide.index)
+			})
 
-			document.addEventListener('keydown', (event) => {
-				if (event.code == 'ArrowLeft') {
+			this.sotrudSlider ? glide_sotrud.mount() : ''
 
-					if (this.activeItemIndex == 0) return false;
-					itemsContainer.style.left = parseInt(itemsContainer.style.left) + itemsSlides[this.activeItemIndex] + 'px';  // Сдвигаем контейнер
-					dotsContainer.style.left = parseInt(dotsContainer.style.left) + itemsDots[this.activeItemIndex] + 'px';  // Сдвигаем контейнер с точками
-					this.activeItemIndex--;                              //Прибавляем активный элемент
-					defineActiveItem(items, itemDots, this.activeItemIndex);
-				}
-				if (event.code == 'ArrowRight') {
+			// Кнопки 
+			document.querySelector('.arrow-right').addEventListener('click', this.moveRight)
+			document.querySelector('.arrow-left').addEventListener('click', this.moveLeft)
 
-					if (this.activeItemIndex > lastItem) return false;
-					itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[this.activeItemIndex] + 'px';  // Сдвигаем контейнер
-					dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[this.activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
-					this.activeItemIndex++;                              //Прибавляем активный элемент
-					defineActiveItem(items, itemDots, this.activeItemIndex);
-				}
-			});
+			// Клавиатура
 
-			//прокрутка
+			document.addEventListener('keydown', this.keyArrowsAction)
 
-			if ($(window).width() > 850) {
+			// Колесико мыши
+			// Не Mozilla
+			window.addEventListener('mousewheel', this.mouseScroll)
 
-				// Не Mozilla
-				window.addEventListener('mousewheel', (e) => {
-
-					if (this.animationAction > 0) return false
-					this.animationStatus()
-
-					if (this.wheelAction(e) > 0) {
-
-						if (this.activeItemIndex == 0) return false;
-						itemsContainer.style.left = parseInt(itemsContainer.style.left) + itemsSlides[this.activeItemIndex] + 'px';  // Сдвигаем контейнер
-						dotsContainer.style.left = parseInt(dotsContainer.style.left) + itemsDots[this.activeItemIndex] + 'px';  // Сдвигаем контейнер с точками
-						this.activeItemIndex--;                              //Прибавляем активный элемент
-						defineActiveItem(items, itemDots, this.activeItemIndex);
-					}
-					else {
-						if (this.activeItemIndex > lastItem) return false;
-						itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[this.activeItemIndex] + 'px';  // Сдвигаем контейнер
-						dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[this.activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
-						this.activeItemIndex++;                              //Прибавляем активный элемент
-						defineActiveItem(items, itemDots, this.activeItemIndex);
-					}
-				})
-				// Mozilla
-				
-				window.addEventListener('DOMMouseScroll', (e) => {
-
-					if (this.animationAction > 0) return false
-					this.animationStatus()
-
-					if (this.wheelAction(e) > 0) {
-
-						if (this.activeItemIndex == 0) return false;
-						itemsContainer.style.left = parseInt(itemsContainer.style.left) + itemsSlides[this.activeItemIndex] + 'px';  // Сдвигаем контейнер
-						dotsContainer.style.left = parseInt(dotsContainer.style.left) + itemsDots[this.activeItemIndex] + 'px';  // Сдвигаем контейнер с точками
-						this.activeItemIndex--;                              //Прибавляем активный элемент
-						defineActiveItem(items, itemDots, this.activeItemIndex);
-					}
-					else {
-						if (this.activeItemIndex > lastItem) return false;
-						itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[this.activeItemIndex] + 'px';  // Сдвигаем контейнер
-						dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[this.activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
-						this.activeItemIndex++;                              //Прибавляем активный элемент
-						defineActiveItem(items, itemDots, this.activeItemIndex);
-					}
-				})
-			}
-				//конец
-
-				// Нажатие на менеджера
-
-				for (let i = 0; i < items.length; i++){
-					// Нажатие на портрет
-					items[i].addEventListener('click', (e) => {
-
-						let index = this.getArrayIndex(items, e)
-
-							this.activeItemIndex = index
-							defineActiveItem(items, itemDots, index)
-							moveOnClick(index)
-					});
-					// Нажатие на красную точку
-					itemDots[i].addEventListener('click', (e) => {
-
-						let index = this.getArrayIndex(itemDots, e)
-
-							this.activeItemIndex = index
-							defineActiveItem(items, itemDots, index)
-							moveOnClick(index)
-				});
-			}
-
-			function moveOnClick(index) {
-
-				let leftSlides = 0,
-					leftDots = 0;
-			
-				for (let i = 0; i < index - 1; i++) {
-					leftSlides += itemsSlides[i];
-					leftDots += itemsDots[i];
-				}
-				if (index == 0) {
-					leftSlides = -itemsSlides[1];   // Для первого слайда
-					leftDots = -itemsDots[1];   // Для первого слайда
-				}
-
-				itemsContainer.style.left = -leftSlides + 'px';  // Сдвигаем контейнер
-				dotsContainer.style.left = -leftDots + 'px';  // Сдвигаем контейнер
-			}
-
-			// Функция, которая делает активным элемент в массиве
-			function defineActiveItem(slides, dots, index) {
-
-				for (let i = 0; i < slides.length; i++) {
-					slides[i].classList.remove('slide-user-active');
-					dots[i].classList.remove('tr-active');
-				}
-
-				slides[index].classList.add('slide-user-active');
-				document.getElementsByClassName('main-sotrud-img')[0].src = '/images/sotrud' + slides[index].src.slice(slides[index].src.lastIndexOf('/') + 1);
-				document.querySelector('.h1-more').innerText = slides[index].getAttribute('data-name').toUpperCase()
-				document.querySelector('.h3-more').innerText = slides[index].getAttribute('data-position').toUpperCase()
-				dots[index].classList.add('tr-active');
-			}
+			// Mozilla
+			window.addEventListener('DOMMouseScroll', this.mouseScroll)
+		})
 	  },
 	  methods: {
-		getArrayIndex(arr, event){
-			for (let i = 0; i < arr.length; i++) {
-				if (arr[i] == event.target) return i;
+		keyArrowsAction(){
+
+			if (event.code == 'ArrowLeft') {
+				this.glide.go('<')
+				this.glide_dots.go('<')
+
+				if (this.sotrudSlider) {
+					this.sotrudSlider ? this.glide_sotrud.go('<') : ''
+					return false
+				}
+
+				this.changePortrait(this.glide.index)
+				this.changeManagerData(this.glide.index)
+			}
+
+			if (event.code == 'ArrowRight') {
+				this.glide.go('>')
+				this.glide_dots.go('>')
+
+				if (this.sotrudSlider) {
+					this.sotrudSlider ? this.glide_sotrud.go('>') : ''
+					return false
+				}
+
+				this.changePortrait(this.glide.index)
+				this.changeManagerData(this.glide.index)
 			}
 		},
-		animationStatus(){
-			this.animationAction++
-			setTimeout(() => {
-				this.animationAction = 0
-			}, 500)
+		moveRight(){
+
+			this.glide.go('>')
+			this.glide_dots.go('>')
+
+			if (this.sotrudSlider) {
+				this.glide_sotrud.go('>')
+				return false
+			}
+
+			this.changePortrait(this.glide.index)
+			this.changeManagerData(this.glide.index)
+		},
+		moveLeft(){
+
+			this.glide.go('<')
+			this.glide_dots.go('<')
+
+			if (this.sotrudSlider) {
+				this.glide_sotrud.go('<')
+				return false
+			}
+
+			this.changePortrait(this.glide.index)
+			this.changeManagerData(this.glide.index)
+		},
+		mouseScroll(e) {
+
+			this.wheelAction(e) > 0 ? this.glide.go('<') : this.glide.go('>')
+			this.wheelAction(e) > 0 ? this.glide_dots.go('<') : this.glide_dots.go('>')
+		},
+		changePortrait(index) {
+
+			document.querySelector('.glide-c').style.opacity = 0
+
+			new Promise(resolve => {
+				for (let i = 0; i < document.querySelectorAll('.glide-c .glide__slide').length; i++) {
+					document.querySelectorAll('.glide-c .glide__slide')[i].style.display = 'none'
+				}
+				resolve()
+			}).then(() => {
+				document.querySelectorAll('.glide-c .glide__slide')[index].style.display = "flex"
+			}).then(() => {
+				document.querySelector('.glide-c').style.opacity = 1
+			})
+		},
+		changeManagerData (index){
+
+		let pic = document.querySelectorAll('.glide__slides>li:not(.glide__slide--clone)')[index].querySelector('img')
+
+			document.getElementById('h1-manager-data').innerText = pic.getAttribute('data-name')
+			document.getElementById('h3-manager-data').innerText = pic.getAttribute('data-position')
+			document.getElementById('phone-manager-data').innerText = pic.getAttribute('data-phone')
+			document.getElementById('phone-manager-data').setAttribute('href', 'tel:+' + pic.getAttribute('data-phone').replace(/\D/g, ""))
+			document.getElementById('email-manager-data').innerText = pic.getAttribute('data-email')
+			document.getElementById('email-manager-data').setAttribute('href', 'mailto:' + pic.getAttribute('data-email'))
 		},
 		wheelAction (e) {
 				let delta;
@@ -333,7 +341,21 @@ export default {
 				}
 				return delta
 			}
-	  }
+	  },
+	beforeDestroy(){
+
+		this.glide.destroy()
+		this.glide_dots.destroy()
+		this.glide_sotrud.destroy()
+
+		window.removeEventListener('mousewheel', this.mouseScroll)
+		window.removeEventListener('DOMMouseScroll', this.mouseScroll)
+
+		document.removeEventListener('keydown', this.keyArrowsAction)
+
+		document.querySelector('.arrow-right').removeEventListener('click', this.moveRight)
+		document.querySelector('.arrow-left').removeEventListener('click', this.moveLeft)
+	}
 }
 
 </script>

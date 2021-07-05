@@ -1,27 +1,4 @@
 <template>
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Systemice News</title>
-	<meta content="systemice" name="keywords">
-	<meta content="" name="description">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/plugins/jquery.inputmask.bundle.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/fontstyle.css">
-    <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="plugins/lightcase-2.5.0/src/js/lightcase.js"></script>
-	<link rel="stylesheet" href="plugins/lightcase-2.5.0/src/css/lightcase.css">
-	<script type="text/javascript" src="js/content-carousel.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-</head>
-<body>
--->
 	<div class="wrapper news">
 		<div class="bl-l fl-column">
 			<div>
@@ -44,157 +21,29 @@
 			<div class="news-box">
 				<div class="article-box">
 					<div class="bl-article">
-						<h1>ВВП России за 2019 год вырос на 1,3%</h1>
+						<h1></h1>
 						<div class="line"></div>
-						<p class="p-subtitle">Подзаголовок: <b>Может быть тут указывать автора</b></p>
+						<p class="p-subtitle">Подзаголовок: <b class = "p-subtitle-c"></b></p>
 						<div class="news-slider">
 							<div class="container-sl">
 								<a class="arrow-left"></a>
 								<a class="arrow-right"></a>
 								<img class="sl-search" src="@/assets/images/search.png">
-								<div class="news-slides">
-									<div class="news-sldr-box content-slide">
-										<a href="@/assets/images/nws.png" class="lightcase-pic" data-rel="lightcase:myCollection"><img src="@/assets/images/nws.png"></a>
-									</div>
-									<div class="news-sldr-box content-slide">
-										<a href="@/assets/images/nws.png" class="lightcase-pic" data-rel="lightcase:myCollection"><img src="@/assets/images/nws.png"></a>
-									</div>
-									<div class="news-sldr-box content-slide">
-										<a href="@/assets/images/nws.png" class="lightcase-pic" data-rel="lightcase:myCollection"><img src="@/assets/images/nws.png"></a>
-									</div>
-									<div class="news-sldr-box content-slide">
-										<a href="@/assets/images/nws.png" class="lightcase-pic" data-rel="lightcase:myCollection"><img src="@/assets/images/nws.png"></a>
-									</div>
-								</div>
+								<div class="news-slides"></div>
 							</div>
 							<div class="bl-preview">
 							<div class="item-dots item-service-dots"></div>
 							</div>
 						</div>
-						<p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, enim a ultrices eleifend, diam eros mattis nibh, a tristique purus felis in risus. Quisque aliquet felis ante, ut gravida odio cursus vitae. Ut laoreet nulla nisi, vel malesuada dolor consequat vel. Quisque ultrices molestie nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ut dolor id nisl maximus varius. Duis consequat condimentum lectus, ornare tempus justo auctor at.
-						Phasellus sit amet odio quis neque lobortis facilisis. Curabitur pretium ac lacus at ultricies. Quisque tincidunt nibh ut nulla venenatis dignissim. Curabitur iaculis erat ac est ultricies posuere. Duis tincidunt suscipit ex pretium fermentum. Mauris urna odio, sagittis ac aliquam sed, pharetra quis ex. Donec convallis tellus nunc, vitae finibus nunc feugiat eget. Sed pharetra faucibus odio non maximus. Donec id lectus elementum, facilisis massa vitae, fermentum tellus. Nulla erat turpis, tristique non mauris et, egestas tempus orci.
-						Vivamus sodales, augue et lacinia efficitur, massa neque sollicitudin tortor, id viverra diam metus vitae sapien. Sed hendrerit ipsum odio. Nunc molestie feugiat nulla, at lobortis turpis rutrum in. Quisque elementum sapien eget lobortis iaculis. Fusce dignissim in felis sit amet laoreet. Etiam pretium felis nec elit fermentum, sit amet vulputate erat iaculis. Donec odio nulla, fringilla eu dignissim in, ultricies et arcu. Duis bibendum convallis erat, eu fermentum tellus malesuada ut. Sed scelerisque risus libero, non faucibus nulla suscipit sed.<br>
-						Morbi massa dolor, iaculis vitae mi vel, cursus placerat sapien. Nam elementum ligula eu vestibulum elementum. Mauris volutpat ultricies mauris, nec feugiat felis pretium eget. Praesent aliquet sed est vel ullamcorper. In eget quam et urna luctus faucibus id sit amet sapien. Fusce tellus orci, mollis ac ultrices id, facilisis convallis nisl. Aliquam tincidunt odio odio, et pharetra orci eleifend mollis. Donec at sodales leo. Donec maximus dolor vitae suscipit hendrerit. Nam et ultricies quam, eu viverra mauris.<br>
-						Praesent viverra est ac orci faucibus finibus. Nullam dictum justo ac diam faucibus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut mi non dui ornare pretium sed vitae eros. Nam metus tortor, lacinia quis congue sed, tempus cursus justo. Etiam eu aliquet velit. Nullam nec nisi nec dui egestas vulputate id in felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque eleifend, odio ac convallis feugiat, ligula dolor gravida risus, eu mattis mauris lectus malesuada neque. Maecenas vel dui ac turpis fringilla vehicula in eu erat. Praesent faucibus odio in massa vestibulum, in congue est iaculis. Vivamus quis nulla <br><br>
-						Nulla velit justo, dignissim quis venenatis at, bibendum quis elit. Cras in est nec purus tristique efficitur vitae eu tortor. Pellentesque est nisi, luctus eu orci et, porttitor lobortis neque. Nulla efficitur massa est, at venenatis tellus bibendum et. Curabitur vitae orci a mi condimentum malesuada. Praesent id neque at orci lacinia ultrices. Morbi molestie vehicula nisi, eget ullamcorper quam sagittis sit amet. In malesuada mauris ipsum, et tempus orci egestas id. Praesent lobortis mollis arcu, quis imperdiet quam suscipit vel. Aenean sed diam placerat, euismod tellus vitae, ultrices nulla. Pellentesque iaculis lobortis magna ut sollicitudin. Aliquam a tellus rutrum, mattis arcu sed, luctus odio.<br>
-						Duis vel pretium nunc, a pellentesque augue. Cras sapien nisl, laoreet vitae ultricies ut, faucibus laoreet orci. Nullam dictum tellus in tempus interdum. Integer sodales elit nec enim tincidunt pellentesque. Sed id ultricies orci, ut gravida ante. Cras dapibus aliquet auctor. Cras bibendum purus at magna imperdiet, eget aliquam neque hendrerit.<br>
-						Suspendisse at nulla lacus. Integer et sem neque. Aliquam vestibulum tellus ipsum, non consequat odio pulvinar a. Aenean sed erat at erat semper elementum et quis est. Sed eleifend nibh commodo nisl pharetra, et luctus leo posuere. Vivamus non velit et sem tempor tempor. Quisque at metus sodales, suscipit erat quis, pulvinar lacus. Vivamus at facilisis urna, ut vestibulum risus. Nam semper odio ac mauris malesuada venenatis. Ut non varius erat, eget ornare velit.<br>
-						Nullam consequat venenatis lorem at venenatis. Aenean augue lacus, tristique at nisl sed, gravida molestie nisl. Donec faucibus augue diam, at porttitor lectus volutpat quis. Pellentesque id eleifend arcu. Integer ultrices lectus odio, et facilisis orci tristique eget. Aenean malesuada orci sodales turpis lacinia, sed tristique nibh scelerisque. Pellentesque pulvinar mauris nisi, venenatis tempus dui tempor iaculis. Nunc accumsan nulla vel lacus suscipit, a efficitur nunc mattis. Integer ornare ipsum in diam convallis, in dictum enim finibus. Donec blandit orci nec neque fermentum, a vehicula libero rhoncus. In ex neque, bibendum sit amet enim vitae, blandit tincidunt magna.<br>
-						Aenean libero ex, imperdiet non tellus at, ultrices lacinia eros. Donec eu euismod velit. Curabitur id facilisis nibh. Nunc sem nisi, mattis eget dui id, tristique imperdiet urna. Ut venenatis ante et egestas feugiat. In hac habitasse platea dictumst. Morbi scelerisque leo vitae nisi consectetur, non eleifend massa varius. Vestibulum ornare tellus mi, ut egestas nunc porta sed. Morbi volutpat condimentum sapien, id sagittis enim lacinia vitae. Cras suscipit lorem nisi, eu accumsan sapien porttitor nec. Aenean lacinia lorem sem, quis scelerisque sapien tincidunt et. Aenean non elit ut eros tempor ullamcorper. Sed at lorem nisi. Suspendisse sed mauris magna. In ultrices lacus et vestibulum tempus. Integer volutpat interdum ligula ultrices bibendum. Curabitur luctus turpis eget posuere egestas. Pellentesque.</p>
+						<p class="p-article"></p>
 					</div>
 				</div>
 				<div class="line-mob"></div>
-				<div class="article-box">
-					<div class="bl-article">
-						<h1>ВВП России за 2019 год</h1>
-						<div class="line"></div>
-						<p class="p-subtitle">Подзаголовок: <b>Может быть тут указывать автора</b></p>
-						<div class="news-slider">
-							<img class="sl-search" src="@/assets/images/search.png">
-							<div class="news-sldr-box">
-								<img src="@/assets/images/nws.png">
-							</div>
-							<div class="bl-preview">
-								<span class="tr-bottom tr-active"></span>
-								<span class="tr-bottom"></span>
-								<span class="tr-bottom"></span>
-								<a class="arrow-left"></a>
-								<a class="arrow-right"></a>
-							</div>
-						</div>
-						<p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, enim a ultrices eleifend, diam eros mattis nibh, a tristique purus felis in risus. Quisque aliquet felis ante, ut gravida odio cursus vitae. Ut laoreet nulla nisi, vel malesuada dolor consequat vel. Quisque ultrices molestie nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ut dolor id nisl maximus varius. Duis consequat condimentum lectus, ornare tempus justo auctor at.<br><br>
-						Phasellus sit amet odio quis neque lobortis facilisis. Curabitur pretium ac lacus at ultricies. Quisque tincidunt nibh ut nulla venenatis dignissim. Curabitur iaculis erat ac est ultricies posuere. Duis tincidunt suscipit ex pretium fermentum. Mauris urna odio, sagittis ac aliquam sed, pharetra quis ex. Donec convallis tellus nunc, vitae finibus nunc feugiat eget. Sed pharetra faucibus odio non maximus. Donec id lectus elementum, facilisis massa vitae, fermentum tellus. Nulla erat turpis, tristique non mauris et, egestas tempus orci.<br>
-						Vivamus sodales, augue et lacinia efficitur, massa neque sollicitudin tortor, id viverra diam metus vitae sapien. Sed hendrerit ipsum odio. Nunc molestie feugiat nulla, at lobortis turpis rutrum in. Quisque elementum sapien eget lobortis iaculis. Fusce dignissim in felis sit amet laoreet. Etiam pretium felis nec elit fermentum, sit amet vulputate erat iaculis. Donec odio nulla, fringilla eu dignissim in, ultricies et arcu. Duis bibendum convallis erat, eu fermentum tellus malesuada ut. Sed scelerisque risus libero, non faucibus nulla suscipit sed.<br>
-						Morbi massa dolor, iaculis vitae mi vel, cursus placerat sapien. Nam elementum ligula eu vestibulum elementum. Mauris volutpat ultricies mauris, nec feugiat felis pretium eget. Praesent aliquet sed est vel ullamcorper. In eget quam et urna luctus faucibus id sit amet sapien. Fusce tellus orci, mollis ac ultrices id, facilisis convallis nisl. Aliquam tincidunt odio odio, et pharetra orci eleifend mollis. Donec at sodales leo. Donec maximus dolor vitae suscipit hendrerit. Nam et ultricies quam, eu viverra mauris.<br>
-						Praesent viverra est ac orci faucibus finibus. Nullam dictum justo ac diam faucibus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut mi non dui ornare pretium sed vitae eros. Nam metus tortor, lacinia quis congue sed, tempus cursus justo. Etiam eu aliquet velit. Nullam nec nisi nec dui egestas vulputate id in felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque eleifend, odio ac convallis feugiat, ligula dolor gravida risus, eu mattis mauris lectus malesuada neque. Maecenas vel dui ac turpis fringilla vehicula in eu erat. Praesent faucibus odio in massa vestibulum, in congue est iaculis. Vivamus quis nulla</p>
-					</div>
-				</div>
 				<div class="bl-list">
 						<a class="arrow-top"></a>
 						<a class="arrow-bottom"></a>
 					<div class="news-min">
-						<div class = "news-slider-wrapper">
-							<div class="slider-min slide-active">
-								<div class="sl-box">
-									<div class="sl-img sl-img-backgound" style="background-image: url('@/assets/images/nws.png');"></div>
-									<div class="sl-img">
-										<p class="sl-text">13.09.2019</p>
-										<div class="news-line"></div>
-									</div>
-								</div>
-								<p class="sl-text">1"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-							</div>
-							<div class="slider-min">
-								<div class="sl-box">
-									<div class="sl-img sl-img-backgound" style="background-image: url('@/assets/images/nws.png');"></div>
-									<div class="sl-img">
-										<p class="sl-text">13.09.2019</p>
-										<div class="news-line"></div>
-									</div>
-								</div>
-								<p class="sl-text">2"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-							</div>
-							<div class="slider-min">
-								<div class="sl-box">
-									<div class="sl-img sl-img-backgound" style="background-image: url('@/assets/images/nws.png');"></div>
-									<div class="sl-img">
-										<p class="sl-text">13.09.2019</p>
-										<div class="news-line"></div>
-									</div>
-								</div>
-								<p class="sl-text">3"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-							</div>
-							<div class="slider-min">
-								<div class="sl-box">
-									<div class="sl-img sl-img-backgound" style="background-image: url('@/assets/images/nws.png');"></div>
-									<div class="sl-img">
-										<p class="sl-text">13.09.2019</p>
-										<div class="news-line"></div>
-									</div>
-								</div>
-								<p class="sl-text">4"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-							</div>
-							<div class="slider-min">
-								<div class="sl-box">
-									<div class="sl-img sl-img-backgound" style="background-image: url('@/assets/images/nws.png');"></div>
-									<div class="sl-img">
-										<p class="sl-text">13.09.2019</p>
-										<div class="news-line"></div>
-									</div>
-								</div>
-								<p class="sl-text">5"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-							</div>
-							<div class="slider-min">
-								<div class="sl-box">
-									<div class="sl-img sl-img-backgound" style="background-image: url('@/assets/images/nws.png');"></div>
-									<div class="sl-img">
-										<p class="sl-text">13.09.2019</p>
-										<div class="news-line"></div>
-									</div>
-								</div>
-								<p class="sl-text">6"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-							</div>
-							<div class="slider-min">
-								<div class="sl-box">
-									<div class="sl-img sl-img-backgound" style="background-image: url('@/assets/images/nws.png');"></div>
-									<div class="sl-img">
-										<p class="sl-text">13.09.2019</p>
-										<div class="news-line"></div>
-									</div>
-								</div>
-								<p class="sl-text">7"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-							</div>
-							<div class="slider-min">
-								<div class="sl-box">
-									<div class="sl-img sl-img-backgound" style="background-image: url('@/assets/images/nws.png');"></div>
-									<div class="sl-img">
-										<p class="sl-text">13.09.2019</p>
-										<div class="news-line"></div>
-									</div>
-								</div>
-								<p class="sl-text">8"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-							</div>
-						</div>
+						<div class = "news-slider-wrapper"></div>
 					</div>
 				</div>
 			</div>
@@ -229,11 +78,507 @@ export default {
 
 	data(){
 		return {
+			news: [
+			{
+				title: `"ФОРСАЖ 9" ПОБИЛ РЕКОРД ПО СБОРАМ С БОЛЬШИМ ОТРЫВОМ`,
+				doptitle: `Может быть тут указывать автора`,
+				date: '13.09.2020',
+				text: `Девятый "Форсаж", который только теперь вышел в Северной Америке (общая задержка проката из-за пандемии составила год), поставил в свои первые выходные новый рекорд.
+				Вышел трейлер нового фильма об отношениях принца Гарри с Меган Маркл Как сообщает Variety, фильм собрал 70 миллионов долларов в домашнем прокате. И это - самый успешный (причём с большим отрывом) показатель среди сборов в эпоху коронавируса. И даже больше - со времени выхода фильма "Звёздные войны: Скайуокер. Восход" (2019). Ранее "пандемийный" рекорд принадлежал второму "Тихому месту" (48,3 млн).
+				Ещё немного интересной статистики: 60% зрителей были мужчинами, 51% - не старше 25 лет, 37% - латиноамериканцами, 35% - белыми, 16 - афроамериканцами, 8 - азиатского происхождения.
+				Девятый "Форсаж", который только теперь вышел в Северной Америке (общая задержка проката из-за пандемии составила год), поставил в свои первые выходные новый рекорд.
+				Вышел трейлер нового фильма об отношениях принца Гарри с Меган Маркл Как сообщает Variety, фильм собрал 70 миллионов долларов в домашнем прокате. И это - самый успешный (причём с большим отрывом) показатель среди сборов в эпоху коронавируса. И даже больше - со времени выхода фильма "Звёздные войны: Скайуокер. Восход" (2019). Ранее "пандемийный" рекорд принадлежал второму "Тихому месту" (48,3 млн).
+				Ещё немного интересной статистики: 60% зрителей были мужчинами, 51% - не старше 25 лет, 37% - латиноамериканцами, 35% - белыми, 16 - афроамериканцами, 8 - азиатского происхождения.`,
+				pics: [
+				'images/news/1/1.jpg',
+				'images/news/1/2.jpg',
+				'images/news/1/3.jpg',
+				'images/news/1/4.jpg'
+				]
+			},
+			{
+				title: `Джордж Мартин напишет новый финал "Игры престолов"`,
+				doptitle: `Может быть тут указывать автора`,
+				date: '28.06.2021',
+				text: `Американский писатель, продюсер и сценарист Джордж Мартин, вот уже десять лет глумящийся над читателями обещаниями дописать шестой том "Песни Льда и Пламени", дал новый зарок.
+				Как оказалось, новеллиста все-таки не устроил финал сериала "Игра престолов", в основу которого частично легли его книги, так что в романе финал будет, естественно, совершенно другим.
+				Об этом демиург ПЛиП возвестил в интервью WTTW Chicago. Поясняя, что был крайне удивлен скоростью, с которой сериал начали и закончили, успев далеко обогнать автора, пока он там копошился.`,
+				pics: [
+				'images/news/2/1.jpg',
+				'images/news/2/2.jpg',
+				'images/news/2/3.jpg',
+				'images/news/2/4.jpg'
+				]
+			},
+			{
+				title: `Выход сериала "Основание" запланирован на 24 сентября...`,
+				doptitle: `Может быть тут указывать автора`,
+				date: '28.06.2021',
+				text: `Американская компания Apple опубликовала в Сети новый тизер экранизации цикла "Основание" писателя Айзека Азимова. Премьера сериала состоится 24 сентября 2021 года.
+				Проект расскажет зрителю о группе изгоев, на долю которых выпала опасная миссия по спасению человечества и сохранению цивилизации после смерти Галактической Империи. Главные роли в сериале исполнили Джаред Харрис и Ли Пейс...<br>
+				Американская компания Apple опубликовала в Сети новый тизер экранизации цикла "Основание" писателя Айзека Азимова. Премьера сериала состоится 24 сентября 2021 года.
+				Проект расскажет зрителю о группе изгоев, на долю которых выпала опасная миссия по спасению человечества и сохранению цивилизации после смерти Галактической Империи. Главные роли в сериале исполнили Джаред Харрис и Ли Пейс...<br>
+				Американская компания Apple опубликовала в Сети новый тизер экранизации цикла "Основание" писателя Айзека Азимова. Премьера сериала состоится 24 сентября 2021 года.
+				Проект расскажет зрителю о группе изгоев, на долю которых выпала опасная миссия по спасению человечества и сохранению цивилизации после смерти Галактической Империи. Главные роли в сериале исполнили Джаред Харрис и Ли Пейс...`,
+				pics: [
+				'images/news/3/1.jpg'
+				]
+			},
+			{
+				title: `В Москве выпало до 70% от месячной нормы осадков`,
+				doptitle: `Может быть тут указывать автора`,
+				date: '28.06.2021',
+				text: `"Наибольшее количество осадков зафиксировано на юго-западе столицы (53 мм), в центральном округе (43 мм), на севере и северо-западе (Волоколамское шоссе - 43 мм, Дмитровское шоссе - 41 мм)", - перечислили в ведомстве.
+				В местах скоплений воды сейчас работают бригады "Мосводостока". Если где-то нужна их помощь, горожан просят сообщать по телефону: +7 495 657 87 03.
+				Все городские системы жизнеобеспечения работают в штатном режиме, отметили в комплексе. Аварийных отключений из-за ухудшения погоды в столице не произошло."Наибольшее количество осадков зафиксировано на юго-западе столицы (53 мм), в центральном округе (43 мм), на севере и северо-западе (Волоколамское шоссе - 43 мм, Дмитровское шоссе - 41 мм)", - перечислили в ведомстве.
+				В местах скоплений воды сейчас работают бригады "Мосводостока". Если где-то нужна их помощь, горожан просят сообщать по телефону: +7 495 657 87 03.
+				Все городские системы жизнеобеспечения работают в штатном режиме, отметили в комплексе. Аварийных отключений из-за ухудшения погоды в столице не произошло."Наибольшее количество осадков зафиксировано на юго-западе столицы (53 мм), в центральном округе (43 мм), на севере и северо-западе (Волоколамское шоссе - 43 мм, Дмитровское шоссе - 41 мм)", - перечислили в ведомстве.
+				В местах скоплений воды сейчас работают бригады "Мосводостока". Если где-то нужна их помощь, горожан просят сообщать по телефону: +7 495 657 87 03.
+				Все городские системы жизнеобеспечения работают в штатном режиме, отметили в комплексе. Аварийных отключений из-за ухудшения погоды в столице не произошло.`,
+				pics: [
+				'images/news/4/1.jpg',
+				'images/news/4/2.jpg',
+				'images/news/4/3.jpg'
+				]
+			},
+			{
+				title: `В московском метро из-за подтопления приостановлено движение`,
+				doptitle: `Может быть тут указывать автора`,
+				date: '28.06.2021',
+				text: `Сегодня, 28 июня на Москву и область обрушился сильный ливень с грозой. В результате действия стихии падают деревья, щиты с рекламой, рушатся крыши торговых центров. Об этом сообщает "Рамблер"
+				А недавно появилась информация, что движение поездов на участке «Теплый стан» — «Новоясеневская» было временно остановлено. Это произошло по причине подтопления станции и вестибюля, сообщает Департамент транспорта Москвы.
+				Также канал опубликовал видеоролики с кадрами затопления станций метрополитена.
+				Кроме этого, движение остановлено еще на одном участке "голубой" ветки столичного метро, составы не ходят между "Киевской" и "Кунцевской". Об этом сообщил Дептранс Москвы.
+				По причине ливня также приостановили движение поездов на Филевской линии метро между станциями «Багратионовская» и «Кунцевская».
+				Напомним, столичные улицы начало подтапливать из-за мощного ливня, обрушившегося на город сегодня днем, 28 июня. Ранее метеорологи прогнозировали, что в столице ожидается "суперливень". В городе должно выпасть 70% месячной нормы осадков, предполагают эксперты.
+				На кадрах, выложенных в Сеть, можно увидеть, что уровень воды на столичных дорогах уже достает кузовов автомобилей. В центре Москвы залиты веранды кафе, а мощные потоки ветра срывают с места зонты, столы и стулья. Местами порывы ветра доходят до 21-26 метров в секунду. Жители ряда московских районов сообщили, что там идет град.
+				Отмечается, что такая погода пришла в Москву на смену аномально высоким температурам, которые сохранялись в столичном регионе в течение всей прошлой недели`,
+				pics: [
+				'images/news/5/1.jpg'
+				]
+			},
+			{
+				title: `Португальцы в матче 1/8 финала турнира проиграли бельгийцам`,
+				doptitle: `Может быть тут указывать автора`,
+				date: '28.06.2021',
+				text: `В воскресенье сборная Португалии проиграла бельгийцам со счетом 0:1 в матче 1/8 финала чемпионата Европы и завершила выступление на турнире.
+					"Мы не добились желаемого результата и покинули турнир раньше, чем хотели, - написал Роналду. - Но мы гордимся тем путем, который прошли, мы сделали все, чтобы снова побиться за титул чемпионов Европы, и эта команда доказала, что по-прежнему может доставить много радости португальцам. Наши болельщики неутомимо поддерживали команду от начала и до конца, мы бежали и боролись за них, чтобы оправдать оказанное нам доверие. Не удалось добиться того, чего хотели, но мы выражаем искреннюю и глубокую благодарность болельщикам".
+						Роналду поздравил сборную Бельгии с выходом в четвертьфинал турнира и пожелал удачи другим командам.`,
+				pics: [
+				'images/news/5/1.jpg'
+				]
+			}
+			],
+			activeItemIndex: 0,
+			activeItemIndexVertical: 0
 		}
 	},
 	components: {
 		blRight, pageHeader
   	},
+	  mounted() {
+
+			// Карусель
+
+			let slides = document.getElementsByClassName('content-slide'),              // Слайды
+				itemDots = document.getElementsByClassName('tr-bottom')
+
+			// Добавить новости в правую колонку
+
+			if (window.screen.width >= 480) {
+
+				for (let i = 0; i < this.news.length; i++) {
+					document.querySelector('.news-slider-wrapper').insertAdjacentHTML('beforeend', `
+						<div class="slider-min${i == 0 ? ' slide-active' : ''}">
+						<div class="sl-box">
+						<div class="sl-img sl-img-backgound" style="background-image: url(${this.news[i].pics[0]});"></div>
+						<div class="sl-img">
+						<p class="sl-text">${this.news[i].date}</p>
+						<div class="news-line"></div>
+						</div>
+						</div>
+						<p class="sl-text">${this.news[i].title}</p>
+						</div>
+					`)
+				}
+			}
+
+			// Вставить данные в саму статью, если это десктопное разрешение и на мобильнике вставить все статьи сразу в общую ленту
+
+			if (window.screen.width >= 480) {
+				this.mainArticle(this.news)
+			}
+			else {
+				this.mobileAddArticles(this.news)
+			}
+
+			// Нажатие на увеличение
+
+			$('body').find('.sl-search').on('click', function(){
+				$(this).parent().find('.visible-screen a').trigger('click')
+			})
+
+			if (document.querySelector('.arrow-left')) {
+				document.querySelector('.arrow-left').addEventListener('click', function(e){
+					this.activeItemIndex--;
+					this.activeItemIndex < 0 ? this.activeItemIndex = slides.length - 1 : ''
+					this.defineActiveSlide(slides)
+
+					if (!itemDots.length) return false
+
+					for (let i = 0; i < itemDots.length; i++) {
+						itemDots[i].classList.remove('tr-active');
+					}
+					itemDots[this.activeItemIndex].classList.add('tr-active');
+				})
+			}
+
+			if (document.querySelector('.arrow-right')) {
+				document.querySelector('.arrow-right').addEventListener('click', function(e){
+					this.activeItemIndex++;
+					this.activeItemIndex >= slides.length ? this.activeItemIndex = 0 : ''
+					this.defineActiveSlide(slides)
+
+					if (!itemDots.length) return false
+
+					for (let i = 0; i < itemDots.length; i++) {
+						itemDots[i].classList.remove('tr-active');
+					}
+					itemDots[this.activeItemIndex].classList.add('tr-active');
+				})
+			}
+
+			if (document.querySelector('.arrow-left-m')) {
+				for (let i = 0; i < document.querySelectorAll('.arrow-left-m').length; i++) {
+					document.querySelectorAll('.arrow-left-m')[i].addEventListener('click', function(e){
+
+						let index = 0,
+							slides = this.parentNode.querySelectorAll('.content-slide')
+
+						for (let i = 0; i < slides.length; i++) {
+
+							if (!slides[i].classList.contains('visible-screen')) continue
+							index = i
+						}
+
+						slides[index].classList.add('hidden-screen-news')
+						slides[index].classList.remove('visible-screen')
+
+						index == 0 ? index = slides.length - 1 : index--
+
+						slides[index].classList.remove('hidden-screen-news')
+						slides[index].classList.add('visible-screen')
+					})
+				}
+			}
+
+			if (document.querySelector('.arrow-right-m')) {
+				for (let i = 0; i < document.querySelectorAll('.arrow-right-m').length; i++) {
+					document.querySelectorAll('.arrow-right-m')[i].addEventListener('click', function(e){
+
+						let index = 0,
+							slides = this.parentNode.querySelectorAll('.content-slide')
+
+						for (let i = 0; i < slides.length; i++) {
+
+							if (!slides[i].classList.contains('visible-screen')) continue
+							index = i
+						}
+
+						slides[index].classList.add('hidden-screen-news')
+						slides[index].classList.remove('visible-screen')
+
+						index == slides.length - 1 ? index = 0 : index++
+
+						slides[index].classList.remove('hidden-screen-news')
+						slides[index].classList.add('visible-screen')
+					})
+				}
+			}
+
+			// Нажатие на клавиатуре
+
+			document.addEventListener('keydown', function(event) {
+				if (event.code == 'ArrowLeft') {
+					this.activeItemIndex--;
+					this.activeItemIndex < 0 ? this.activeItemIndex = slides.length - 1 : ''
+					this.defineActiveSlide(slides, itemDots);
+					for (let i = 0; i < itemDots.length; i++) {
+						itemDots[i].classList.remove('tr-active');
+					}
+					itemDots[this.activeItemIndex].classList.add('tr-active')
+				}
+
+				if (event.code == 'ArrowRight') {
+					this.activeItemIndex++;
+					this.activeItemIndex >= slides.length ? this.activeItemIndex = 0 : ''
+					this.defineActiveSlide(slides, itemDots);
+					for (let i = 0; i < itemDots.length; i++) {
+						itemDots[i].classList.remove('tr-active');
+					}
+					itemDots[this.activeItemIndex].classList.add('tr-active')
+				}
+			});
+
+			//прокрутка
+			if ($(window).width() > 630) {
+				document.onwheel = function(event) {
+					if (event.deltaY > 0) {
+						var speed = event.deltaY;
+						speed = Math.abs(speed);
+						if (speed<10) {
+						 this.activeItemIndex--;
+						 this.activeItemIndex < 0 ? this.activeItemIndex = slides.length - 1 : ''
+						this.defineActiveSlide(slides, itemDots);
+						 for (let i = 0; i < itemDots.length; i++) {
+							itemDots[i].classList.remove('tr-active');
+						}
+						itemDots[this.activeItemIndex].classList.add('tr-active');
+					}
+				}
+				else {
+					var speed = event.deltaY;
+					speed = Math.abs(speed);
+					if (speed<10) {
+						this.activeItemIndex++;
+						this.activeItemIndex >= slides.length ? this.activeItemIndex = 0 : ''
+						this.defineActiveSlide(slides, itemDots);
+						for (let i = 0; i < itemDots.length; i++) {
+							itemDots[i].classList.remove('tr-active');
+						}
+						itemDots[this.activeItemIndex].classList.add('tr-active');
+					} 
+				}
+			}
+		}
+			//конец
+
+			// Нажатие на красную точку
+			for (let i = 0; i < itemDots.length; i++) {
+				itemDots[i].addEventListener('click', function(e){
+					let index = this.getArrayIndex(itemDots, e);
+					this.activeItemIndex = index;
+					this.defineActiveItem(itemDots, index);
+					this.defineActiveSlide(slides, itemDots);
+				});
+			}
+
+			// Вертикальная карусель
+
+			let verticalSlides = document.getElementsByClassName('slider-min'),         // Слайды
+				verticalSlider = document.querySelector('.news-min')                  // Слайдер
+
+				if (document.querySelector('.arrow-top')) {
+					document.querySelector('.arrow-top').addEventListener('click', function(e){
+
+						if (this.activeItemIndexVertical >= verticalSlides.length - 1) {
+							$('.arrow-top').css('border-color','#d8d8d8');
+							return false
+						}
+
+						$('.arrow-top').css('border-color','#ff0000');
+						this.activeItemIndexVertical++;
+						this.verticalSliderAction()
+					})
+				}
+
+				if (document.querySelector('.arrow-bottom')) {
+					document.querySelector('.arrow-bottom').addEventListener('click', function(e) {
+
+						if (this.activeItemIndexVertical <= 0) {
+							$('.arrow-bottom').css('border-color','#d8d8d8')
+							return false
+						}
+
+						$('.arrow-bottom').css('border-color','#ff0000')
+						this.activeItemIndexVertical--
+						this.verticalSliderAction()
+					})
+				}
+
+				// Нажатие на отдельный элемент
+
+				for (let i = 0; i < verticalSlides.length; i++) {
+					(function(index){
+
+						verticalSlides[i].addEventListener('click', function(e){
+
+							this.activeItemIndex = index;
+
+							for (let k = 0; k < verticalSlides.length; k++) {
+								document.getElementsByClassName('slider-min')[k].classList.remove('slide-active');
+							}
+							verticalSlides[this.activeItemIndex].classList.add('slide-active');
+
+							this.mainArticle(this.news, index)
+						})
+					})(i)
+				}
+	  },
+
+	methods: {
+
+		// Функция, которая получает индекс элемента
+		getArrayIndex(arr, event){
+			for (let i = 0; i < arr.length; i++) {
+				if (arr[i] == event.target) return i;
+			}
+		},
+		// Функция, которая делает активным красную точку
+		defineActiveItem(arr, index) {
+			for (let i = 0; i < arr.length; i++) {
+				arr[i].classList.remove('tr-active');
+			}
+			arr[index].classList.add('tr-active');
+		},
+		defineActiveSlide (arr1) {
+			for (let i = 0; i < arr1.length; i++) {
+				arr1[i].classList.remove('hidden-screen-news');
+				arr1[i].classList.remove('visible-screen');
+				i == this.activeItemIndex ? arr1[i].classList.add('visible-screen') :  arr1[i].classList.add('hidden-screen-news');
+			}
+		},
+		verticalSliderAction() {
+
+			for (let i = 0; i < verticalSlides.length; i++) {
+				document.getElementsByClassName('slider-min')[i].classList.remove('slide-active');
+			}
+
+		   document.getElementsByClassName('slider-min')[this.activeItemIndexVertical].classList.add('slide-active')
+		},
+		mobileAddArticles() {
+
+		   new Promise(resolve => {
+
+				document.querySelector('.news-box').innerHTML = ''
+
+				for (let i = 0; i < this.news.length; i++) {
+
+					// Картинки для новостей
+
+					let picsHtml = ''
+
+					for (let k = 0; k < this.news[i].pics.length; k++) {
+						picsHtml += `<div class="news-sldr-box content-slide ${k == 0 ? 'visible-screen' : 'hidden-screen-news'}">
+							<a href="@/assets/${this.news[i].pics[k]}" class="lightcase-news-pic" data-rel="lightcase:myCollection-${i}">
+								<img src="@/assets/${this.news[i].pics[k]}">
+							</a>
+						</div>`
+					}
+
+					document.querySelector('.news-box').insertAdjacentHTML('beforeend', `<div class="article-box">
+							<div class="bl-article">
+								<h1>${this.news[i].title}</h1>
+								<div class="line"></div>
+								<p class="p-subtitle">Подзаголовок: <b class = "p-subtitle-c">${this.news[i].doptitle}</b></p>
+								<div class="news-slider">
+									<div class="container-sl">
+										<a class="arrow-left-m"></a>
+										<a class="arrow-right-m"></a>
+										<img class="sl-search" src="../images/search.png">
+										<div class="news-slides">${picsHtml}</div>
+									</div>
+								</div>
+								<p class="p-article">${this.news[i].text}</p>
+							</div>
+						</div>
+						<div class="line-mob"></div>`)
+				}
+
+				resolve()
+
+			}).then(() => {
+
+				if (window.screen.width > 992) {
+					$('body').find('.lightcase-news-pic').lightcase({
+						maxWidth: 1000,
+						maxHeight: 1000,
+						swipe: true
+					})
+				}
+				else if (window.screen.width < 992 && window.screen.width > 480) {
+					$('body').find('.lightcase-news-pic').lightcase({
+						maxWidth: '80%',
+						maxHeight: '80%',
+						swipe: true
+					})
+				}
+
+				else {
+					$('body').find('.lightcase-news-pic').lightcase({
+						maxWidth: 300,
+						maxHeight: 300,
+						swipe: true
+					}) 
+				}
+			})
+		},
+		mainArticle(news, index = 0) {
+
+			this.activeItemIndex = 0
+
+			document.querySelector('.bl-article h1').innerText = news[index].title
+			document.querySelector('.bl-article .p-subtitle-c').innerText = news[index].doptitle
+			document.querySelector('.bl-article .p-article').innerHTML = news[index].text
+
+			new Promise(resolve => {
+
+				document.querySelector('.news-slides').innerHTML = ''
+
+				for (let i = 0; i < news[index].pics.length; i++) {
+					document.querySelector('.news-slides').insertAdjacentHTML('beforeend', `
+						<div class="news-sldr-box content-slide ${i == 0 ? 'visible-screen' : 'hidden-screen-news'}">
+							<a href="${news[index].pics[i]}" class="lightcase-news-pic" data-rel="lightcase:myCollection">
+								<img src="${news[index].pics[i]}">
+							</a>
+						</div>
+					`)
+				}
+
+				resolve()
+
+			}).then(() => {
+
+				if (window.screen.width > 992) {
+					$('body').find('.lightcase-news-pic').lightcase({
+						maxWidth: 1000,
+						maxHeight: 1000,
+						swipe: true
+					})
+				}
+				else if (window.screen.width < 992 && window.screen.width > 480) {
+					$('body').find('.lightcase-news-pic').lightcase({
+						maxWidth: '80%',
+						maxHeight: '80%',
+						swipe: true
+					})
+				}
+
+				else {
+					$('body').find('.lightcase-news-pic').lightcase({
+						maxWidth: 300,
+						maxHeight: 300,
+						swipe: true
+					}) 
+				}
+
+				// Добавление точек
+
+				let dots = '',                                                   // Точки
+					dotsContainer = document.querySelector('.item-dots');        // Контейнер с нижними полосками
+
+				dotsContainer.innerHTML = ''
+
+				if (document.querySelectorAll('.content-slide').length == 1) return false
+
+				for (let i = 0; i < document.querySelectorAll('.content-slide').length; i++) {
+					i == 0 ? dots += '<div class="tr-bottom tr-active"></div>' : dots += '<div class="tr-bottom"></div>';
+				}
+
+				dotsContainer.innerHTML = dots;
+			})
+		}
+	}
 }
 
 </script>
