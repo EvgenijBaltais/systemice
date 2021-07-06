@@ -71,7 +71,18 @@ import pageHeader from '@/components/page_header'
 
 
 export default {
-
+	head() {
+		return {
+			title: 'Systemice - новости',
+			meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content: 'News page description'
+				}
+			]
+		}
+	},
 	data(){
 		return {
 			news: [

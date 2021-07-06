@@ -31,8 +31,7 @@ export default {
 	},
   script: [
 	  {
-	  	src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
-      src: '//api-maps.yandex.ru/2.1/?lang=ru_RU'
+	  	src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'
 
 	  }
   ],

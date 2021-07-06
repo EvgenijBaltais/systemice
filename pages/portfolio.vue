@@ -314,7 +314,18 @@ import blRight from '@/components/bl_right'
 import pageHeader from '@/components/page_header'
 
 export default {
-
+	head() {
+		return {
+			title: 'Systemice - портфолио компании',
+			meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content: 'Portfolio page description'
+				}
+			]
+		}
+	},
 	data(){
 		return {
 			animationAction: 0,

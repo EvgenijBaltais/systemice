@@ -1,29 +1,4 @@
 <template>
-<!--
-
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Systemice Service</title>
-	<meta content="systemice" name="keywords">
-	<meta content="" name="description">
-	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
-	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
-	<script src="js/plugins/jquery.inputmask.bundle.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/fontstyle.css">
-	<link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<script type="text/javascript" src="plugins/lightcase-2.5.0/src/js/lightcase.js"></script>
-	<link rel="stylesheet" href="plugins/lightcase-2.5.0/src/css/lightcase.css">
-	<script type="text/javascript" src="../js/script.js"></script>
-	<script type="text/javascript" src="../js/service-scroll.js"></script>
-</head>
-<body>
--->
-
 	<div class="wrapper service">
 		<div class="bl-l fl-column">
 			<div>
@@ -349,11 +324,6 @@
 		</div>
 		<blRight/>
 	</div>
-
-<!--
-</body>
-</html>
--->
 </template>
 
 <script>
@@ -362,7 +332,18 @@ import blRight from '@/components/bl_right'
 import pageHeader from '@/components/page_header'
 
 export default {
-
+	head() {
+		return {
+			title: 'Systemice - услуги компании',
+			meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content: 'Service page description'
+				}
+			]
+		}
+	},
 	data(){
 		return {
 			animationAction: 0,

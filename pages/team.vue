@@ -17,7 +17,6 @@
 		<div class="main">
 			<pageHeader/>
 			<div class="content-box">
-				<!--<img class="sotrud-img main-sotrud-img" src="images/sotrud2.png">-->
 				<div class="glide-c">
 					<div data-glide-el="track" class="glide__track">
 						<ul class="glide__slides">
@@ -113,11 +112,6 @@
 		</div>
 		<blRight/>
 	</div>
-<!--
-</body>
-</html>
--->
-
 </template>
 
 <script>
@@ -127,7 +121,18 @@ import pageHeader from '@/components/page_header'
 import Glide from '@glidejs/glide'
 
 export default {
-
+	head() {
+		return {
+			title: 'Systemice - наша компания',
+			meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content: 'Team page description'
+				}
+			]
+		}
+	},
 	data(){
 		return {
 			glide: {},

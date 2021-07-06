@@ -64,7 +64,7 @@
 				<div class="contact-map">
 					<div id="map-block"></div>
 					<div class="copy-coordinat">
-						<img src="@/assets/images/sheet.png"><span id = "copy-text" data-clipboard-text="Скопировать координаты для навигатора копия">Скопировать координаты для навигатора копия</span>
+						<img src="@/assets/images/sheet.png"><span id = "copy-text" data-clipboard-text="55.775555, 37.674597">Скопировать координаты для навигатора копия</span>
 					</div>
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
@@ -92,9 +92,21 @@ import blRight from '@/components/bl_right'
 import pageHeader from '@/components/page_header'
 import clipboardJS from 'clipboard'
 import Inputmask from 'inputmask'
+import ymaps from 'ymaps';
 
 export default {
-
+	head() {
+		return {
+			title: 'Systemice - наши контакты',
+			meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content: 'Contact page description'
+				}
+			]
+		}
+	},
 	data(){
 		return {
 		}
@@ -156,7 +168,7 @@ export default {
 	for (let i = 0; i < phones.length; i++) {
 		phones[i].addEventListener('keyup', function(){
 			this.parentNode.classList.remove('input-box-wrong');
-		});
+		})
 		phones[i].addEventListener('focus', function(){
 			this.parentNode.classList.remove('input-box-wrong');
 		})
@@ -167,7 +179,7 @@ export default {
 	for (let i = 0; i < label.length; i++) {
 		label[i].addEventListener('click', function(){
 			label[i].querySelector('.i-agree').style = "color: white;"
-		});
+		})
 	}
 
     $(document).mouseup(function (e){
@@ -179,44 +191,31 @@ export default {
         	div.css('display','none');
 			$('.btn-exit').removeClass('active');
         }
-    });
+    })
 
     $(document).mouseup(function (e){
 
-        var div = $('.other-event');
+        var div = $('.other-event')
 
         if (!div.is(e.target) 
             && div.has(e.target).length === 0) {
-        	div.css('display','none');
-			$('.more-portfolio').removeClass('active');
+        	div.css('display','none')
+			$('.more-portfolio').removeClass('active')
         }
-    });
+    })
 
 		/* Карты */
 
-		let myMap
+		ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU')
+		  .then(maps => {
+			const map = new maps.Map('map-block', {
+			  center: [55.775555, 37.674597],
+			  zoom: 12
+			})
+		
 
-		ymaps.ready(init);
-
-		function init () {
-			myMap = new ymaps.Map('map-block', {
-				center: [55.76, 37.64],
-				zoom: 12
-			}, {
-				searchControlProvider: 0
-			});
-
-			document.getElementById('copy-text').setAttribute("data-clipboard-text", "55.76, 37.64");
-
-			let myGeoObject = new ymaps.GeoObject();
-
-			myMap.geoObjects.add(myGeoObject).add(new ymaps.Placemark([55.76, 37.64], {
-				balloonContent: ''
-			}, {
-				preset: 'islands#icon',
-				iconColor: '#0095b6'
-			}))
-		}
+		  })
+		  .catch(error => console.log('Failed to load Yandex Maps', error))
 
 		/* Карты, конец */
 	}

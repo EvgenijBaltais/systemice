@@ -16,7 +16,7 @@
     "jquery": "^3.6.0",
     "lightcase": "^2.5.0",
     "nuxt": "^2.15.3",
-    "waypoints": "^4.0.1"
+    "ymaps": "^0.2.1"
   },
   "devDependencies": {}
 }
