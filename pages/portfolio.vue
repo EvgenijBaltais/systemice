@@ -1,27 +1,4 @@
 <template>
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Systemice Portfolio</title>
-	<meta content="systemice" name="keywords">
-	<meta content="" name="description">
-	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="../css/fontstyle.css">
-    <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<script src="../js/jquery-1.10.2.min.js"></script>
-	<script src="js/plugins/jquery.inputmask.bundle.js"></script>
-	<script src="plugins/lightcase-2.5.0/src/js/lightcase.js"></script>
-	<link rel="stylesheet" href="plugins/lightcase-2.5.0/src/css/lightcase.css">
-	<script src="../js/script.js"></script>
-	<script src="../js/portfolio-carousel.js"></script>
-</head>
-<body>
--->
 	<div class="wrapper portfolio">
 		<div class="bl-l fl-column">
 			<div>
@@ -329,11 +306,6 @@
 		<blRight/>
 		<div class="bottom-bg"></div>
 	</div>
-<!--
-</body>
-</html>
--->
-
 </template>
 
 <script>
@@ -345,12 +317,16 @@ export default {
 
 	data(){
 		return {
+			animationAction: 0,
+			activePage: 0,
+			dots: '',
+			visibleSlides: 6,
+			pages: 0
 		}
 	},
 	components: {
 		blRight, pageHeader
   	},
-
 	mounted(){
 
 			if (window.screen.width < 850) return false
@@ -359,15 +335,10 @@ export default {
 
 			const animationBlock = document.querySelector('.scrolling-box')
 			const animationNavigation = document.querySelector('.item-dots')
-			let animationAction = 0
 
 			// Сколько всего блоков на странице, которые будут анимироваться и появляться
 
 			let slides = document.querySelectorAll('.sl-card'),
-				dots = '',
-				activePage = 0,
-				visibleSlides = 6,
-				pages = 0,
 				dotsContainer = document.querySelector('.item-dots')
 
 			// Показать контент первой страницы
@@ -384,152 +355,156 @@ export default {
 				document.querySelector('.bl-preview').remove()
 			}
 			else {
-				pages = Math.ceil((slides.length - 5) / visibleSlides + 1);
-				for (let i = 0; i < pages; i++) {
-					i == 0 ? dots += '<div class="tr-bottom tr-active"></div>' : dots += '<div class="tr-bottom"></div>';
+				this.pages = Math.ceil((slides.length - 5) / this.visibleSlides + 1);
+				for (let i = 0; i < this.pages; i++) {
+					i == 0 ? this.dots += '<div class="tr-bottom tr-active"></div>' : this.dots += '<div class="tr-bottom"></div>';
 				}
-				if (dotsContainer) dotsContainer.innerHTML = dots;
-			}
-
-			// Функция, которая меняет видимые слайды в зависимости от свайпов, кликов, скроллов и прочих изменений
-
-			function changePageSlides(direction) {
-
-				// Скрыть все элементы и определить где видимые
-
-				for (let i = 0; i < slides.length; i++) {
-					slides[i].classList.remove('scrolling-portfolio-item')
-				}
-
-				// Определить куда листать
-
-				// Если пролистывается вправо или влево (или вверх или вниз в случае со скроллингом)
-				// Карусель берет все элементы на экране (в данном случае 4) и показывает другие 4
-				// Индексы видимых элементов хранятся в массиве activeItems
-
-				if (direction == 'left') {
-					let show = 5
-					// На последней странице
-					if (activePage == pages - 1) {
-						activePage = 0
-						for (let i = 0; i < 5; i++) {
-							slides[i] ? slides[i].classList.add('scrolling-portfolio-item') : ''
-						}
-					}
-					// На первой странице
-					else if (activePage == 0) {
-						activePage++
-						for (let i = 5; i < 11; i++) {
-							slides[i] ? slides[i].classList.add('scrolling-portfolio-item') : ''
-						}
-					}
-					// На остальных страницах
-					else {
-						activePage++
-						show += (activePage - 1) * visibleSlides
-						for (let i = show; i < show + visibleSlides; i++) {
-							slides[i] ? slides[i].classList.add('scrolling-portfolio-item') : ''
-						}
-					}
-				}
-				else if (direction == 'right') {
-					// На первой странице
-					if (activePage == 0) {
-						activePage = pages - 1
-						let slidesToShow = slides.length - (activePage * visibleSlides - 1)
-						for (let i = slides.length - slidesToShow; i < slides.length; i++) {
-							slides[i] ? slides[i].classList.add('scrolling-portfolio-item') : ''
-						}
-					}
-					// На остальных страницах
-					else {
-						activePage--
-						let startShow = (activePage) * visibleSlides - 1
-						for (let i = startShow; i < startShow + visibleSlides; i++) {
-							slides[i] ? slides[i].classList.add('scrolling-portfolio-item') : ''
-						}
-					}
-				}
-				else {
-					return false
-				}
-			}
-
-			function changeNavigationActiveItem(a) {
-				document.querySelector('.item-dots').querySelector('.tr-active').classList.remove('tr-active')
-				document.querySelector('.item-dots').querySelectorAll('.tr-bottom')[activePage].classList.add('tr-active')
+				if (dotsContainer) dotsContainer.innerHTML = this.dots;
 			}
 
 			// Вправо
 
-			document.querySelector('.arrow-right').addEventListener('click', function(e){
-
-				if (animationAction > 0) return false
-				animationStatus()
-
-				changePageSlides('right')
-				changeNavigationActiveItem()
-			})
+			document.querySelector('.arrow-right').addEventListener('click', this.moveLeft)
 
 			// Влево
 
-			document.querySelector('.arrow-left').addEventListener('click', function(e){
-
-				if (animationAction > 0) return false
-				animationStatus()
-
-				changePageSlides('left')
-				changeNavigationActiveItem()
-			})
+			document.querySelector('.arrow-left').addEventListener('click', this.moveRight)
 
 			// Промотка секций при скроллинге мышью
 
 			// Не Mozilla
-			window.addEventListener('mousewheel', function(e){
+			window.addEventListener('mousewheel', this.mouseScroll)
 
-				if (animationAction > 0) return false
-				animationStatus()
-
-				let direction = ''
-				wheelAction(e) > 0 ? direction = 'right' : direction = 'left'
-
-				changePageSlides(direction)
-				changeNavigationActiveItem(activePage)
-			})
 			// Mozilla
-			window.addEventListener('DOMMouseScroll', function(e){
+			window.addEventListener('DOMMouseScroll', this.mouseScroll)
+	},
+	methods: {
+		moveRight() {
 
-				if (animationAction > 0) return false
-				animationStatus()
+			if (this.animationAction > 0) return false
+			this.animationStatus()
 
-				let direction = ''
-				wheelAction(e) > 0 ? direction = 'right' : direction = 'left'
+			this.changePageSlides('right')
+			this.changeNavigationActiveItem()
+		},
+		moveLeft() {
+			if (this.animationAction > 0) return false
+			this.animationStatus()
 
-				changePageSlides(direction)
-				changeNavigationActiveItem(activePage)
-			})
+			this.changePageSlides('left')
+			this.changeNavigationActiveItem()
+		},
+		changePageSlides(direction) {
 
-			// Функция для вычисления направления скролла мышью, если вверх то возвращает 1, если вниз то -1
+			let slides = document.querySelectorAll('.sl-card')
 
-			function wheelAction (e) {
-				let delta;
-				event = e || window.event;
-				if (event.wheelDelta) {
-					delta = event.wheelDelta / 120;
-					if (window.opera) delta = -delta;
-				}
-				else if (event.detail) {
-					delta = -event.detail / 3;
-				}
-				return delta
+			// Скрыть все элементы и определить где видимые
+
+			for (let i = 0; i < slides.length; i++) {
+				slides[i].classList.remove('scrolling-portfolio-item')
 			}
 
-			function animationStatus(){
-				animationAction++
-				setTimeout(() => {
-					animationAction = 0
-				}, 1300)
+			// Определить куда листать
+
+			// Если пролистывается вправо или влево (или вверх или вниз в случае со скроллингом)
+			// Карусель берет все элементы на экране (в данном случае 4) и показывает другие 4
+			// Индексы видимых элементов хранятся в массиве activeItems
+
+			if (direction == 'left') {
+				let show = 5
+				// На последней странице
+				if (this.activePage == this.pages - 1) {
+					this.activePage = 0
+					for (let i = 0; i < 5; i++) {
+						slides[i] ? slides[i].classList.add('scrolling-portfolio-item') : ''
+					}
+				}
+				// На первой странице
+				else if (this.activePage == 0) {
+					this.activePage++
+					for (let i = 5; i < 11; i++) {
+						slides[i] ? slides[i].classList.add('scrolling-portfolio-item') : ''
+					}
+				}
+				// На остальных страницах
+				else {
+					this.activePage++
+					show += (this.activePage - 1) * this.visibleSlides
+					for (let i = show; i < show + this.visibleSlides; i++) {
+						slides[i] ? slides[i].classList.add('scrolling-portfolio-item') : ''
+					}
+				}
 			}
+			else if (direction == 'right') {
+				// На первой странице
+				if (this.activePage == 0) {
+					this.activePage = this.pages - 1
+					let slidesToShow = slides.length - (this.activePage * this.visibleSlides - 1)
+					for (let i = slides.length - slidesToShow; i < slides.length; i++) {
+						slides[i] ? slides[i].classList.add('scrolling-portfolio-item') : ''
+					}
+				}
+				// На остальных страницах
+				else {
+					this.activePage--
+					let startShow = (this.activePage) * this.visibleSlides - 1
+					for (let i = startShow; i < startShow + this.visibleSlides; i++) {
+						slides[i] ? slides[i].classList.add('scrolling-portfolio-item') : ''
+					}
+				}
+			}
+			else {
+				return false
+			}
+		},
+		mouseScroll() {
+			if (this.animationAction > 0) return false
+			this.animationStatus()
+
+			let direction = ''
+			this.wheelAction > 0 ? direction = 'right' : direction = 'left'
+
+			this.changePageSlides(direction)
+			this.changeNavigationActiveItem(this.activePage)
+		},
+		changeNavigationActiveItem() {
+			document.querySelector('.item-dots').querySelector('.tr-active').classList.remove('tr-active')
+			document.querySelector('.item-dots').querySelectorAll('.tr-bottom')[this.activePage].classList.add('tr-active')
+		},
+		animationStatus(){
+			this.animationAction++
+			setTimeout(() => {
+				this.animationAction = 0
+			}, 1300)
+		},
+		wheelAction () {
+			let delta;
+			event = e || window.event;
+			if (event.wheelDelta) {
+				delta = event.wheelDelta / 120;
+				if (window.opera) delta = -delta;
+			}
+			else if (event.detail) {
+				delta = -event.detail / 3;
+			}
+			return delta
+		}
+	},
+	beforeDestroy() {
+
+		document.querySelector('.arrow-right').removeEventListener('click', this.moveLeft)
+
+		// Влево
+
+		document.querySelector('.arrow-left').removeEventListener('click', this.moveRight)
+
+		// Промотка секций при скроллинге мышью
+
+		// Не Mozilla
+		window.removeEventListener('mousewheel', this.mouseScroll)
+
+		// Mozilla
+		window.removeEventListener('DOMMouseScroll', this.mouseScroll)
 	}
 }
 

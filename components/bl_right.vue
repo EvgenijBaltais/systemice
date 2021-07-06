@@ -110,6 +110,13 @@
 <script>
 
 	export default {
-		name: 'blRight'
+		name: 'blRight',
+		mounted(){
+
+			$('.bl-search').on('click', function(){
+				$('.login-block').toggle();
+				$('.btn-exit').toggleClass('active');
+			})
+		}
 	}
 </script>

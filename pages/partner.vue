@@ -161,11 +161,6 @@
 		</div>
 		<blRight/>
 	</div>
-<!--
-</body>
-</html>
--->
-
 </template>
 
 <script>

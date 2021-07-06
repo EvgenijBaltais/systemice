@@ -1,20 +1,4 @@
 <template>
-
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Systemice</title>
-	<script src="plugins/imakewebthings-waypoints/lib/noframework.waypoints.min.js"></script>
-	<script type="text/javascript" src="plugins/lightcase-2.5.0/src/js/lightcase.js"></script>
-	<link rel="stylesheet" href="plugins/lightcase-2.5.0/src/css/lightcase.css">
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/main-carousel.js"></script>
-	<script type="text/javascript" src="js/map-carousel.js"></script>
-</head>
-
-<body>
--->
 <div id="waypoint-main" class="wrapper main-page waypoint">
 	<div class="bl-l fl-column">
 		<div>
@@ -54,43 +38,45 @@
 			<div class="agency-map">
 				<h1 class="h1">НАМ ЕСТЬ ЧЕМ ГОРДИТЬСЯ</h1>
 				<div class="line"></div>
-				<div class="bl-info">
+				<div class="bl-info glide-a">
 					<div class="info-left"></div>
 					<div class="info-right"></div>
-					<div class="bl-info-wrapper">
-						<div class="info-data-item first">
-							<span> >15</span> лет
-							<p>работаем в сфере<br>делового туризма</p>
-						</div>
-						<div class="info-data-item info-active second">
-							<span>4</span> 
-							<p>представительства<br> в городах России</p>
-						</div>
-						<div class="info-data-item third">
-							<span>18</span>
-							<p>стран<br> партнеров</p>
-						</div>
-						<div class="info-data-item">
-							<span>68</span>
-							<p>штатных<br> сотрудников</p>
-						</div>
-						<div class="info-data-item">
-							<span> >500</span>
-							<p>отелей на<br> эксклюзивных<br> условиях</p>
-						</div>
-						<div class="info-data-item">
-							<span> >827</span>
-							<p>реализованных<br> проектов</p>
-						</div>
-						<div class="info-data-item">
-							<span> >367</span>
-							<p>надежных<br> подрядчиков<br> по всему миру</p>
-						</div>
+					<div class="bl-info-wrapper glide__track" data-glide-el="track">
+						<ul class="glide__slides glide__slides-a">
+							<li class="info-data-item glide__slide">
+								<span> >15</span> лет
+								<p>работаем в сфере<br>делового туризма</p>
+							</li>
+							<li class="info-data-item glide__slide info-active">
+								<span>4</span> 
+								<p>представительства<br> в городах России</p>
+							</li>
+							<li class="info-data-item glide__slide">
+								<span>18</span>
+								<p>стран<br> партнеров</p>
+							</li>
+							<li class="info-data-item glide__slide">
+								<span>68</span>
+								<p>штатных<br> сотрудников</p>
+							</li>
+							<li class="info-data-item glide__slide">
+								<span> >500</span>
+								<p>отелей на<br> эксклюзивных<br> условиях</p>
+							</li>
+							<li class="info-data-item glide__slide">
+								<span> >827</span>
+								<p>реализованных<br> проектов</p>
+							</li>
+							<li class="info-data-item glide__slide">
+								<span> >367</span>
+								<p>надежных<br> подрядчиков<br> по всему миру</p>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="map-bg">
-				<div class="sity">
+				<div class="city">
 					<span class="spb"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Caнкт-Петербург</span>
 					<span class="sochi"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Cочи</span>
 					<span class="tula"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Тула</span>
@@ -133,18 +119,13 @@
 	</div>
 	<blRight/>
 </div>
-
-<!--
-</body>
-</html>
--->
-
 </template>
 
 <script>
 
 	import blRight from '@/components/bl_right'
 	import pageHeader from '@/components/page_header'
+	import Glide from '@glidejs/glide'
 
 	export default {
 		head() {
@@ -161,6 +142,7 @@
 		},
 		data(){
 			return {
+				animationAction: 0
 			}
 		},
 		components: {
@@ -168,7 +150,9 @@
 		},
 
 		methods: {
-			changeActiveElement() {
+			changeActiveElement(e) {
+
+			if (this.animationAction || e && e.target.classList.contains('slide-user-active')) return false
 
 			let carouselImg = document.getElementsByClassName('sl-teammate'),
 				content = document.getElementsByClassName('content-box'),
@@ -188,6 +172,8 @@
 					dot[i].classList.contains('tr-active') ? dot[i].classList.remove('tr-active') : dot[i].classList.add('tr-active');
 					carouselImg[i].classList.contains('slide-user-active') ? carouselImg[i].classList.remove('slide-user-active') : carouselImg[i].classList.add('slide-user-active'); 
 				} 
+
+				this.animationStatus()
 			},
 			// Функция для вычисления направления скролла мышью, если вверх то возвращает 1, если вниз то -1
 			wheelAction (e) {
@@ -206,30 +192,65 @@
 				if (event.code == 'ArrowLeft' || event.code == 'ArrowRight') {
 					this.changeActiveElement()
 				}
+			},
+			animationStatus(){
+				this.animationAction++
+				setTimeout(() => {
+					this.animationAction = 0
+				}, 400)
 			}
 		},
 		mounted(){
 
-				// Карусель главного экрана
+			// Карусель главного экрана
 
-				document.addEventListener('keydown', this.onKeyDown)
+			document.addEventListener('keydown', this.onKeyDown)
 
-				//прокрутка
-				if (window.screen.width > 630) {
+			document.querySelector('.next-page-show').addEventListener('click', this.changeActiveElement)
+			document.querySelector('.prev-page-show').addEventListener('click', this.changeActiveElement)
 
-					// Промотка секций при скроллинге мышью
+			//прокрутка
+			if (window.screen.width > 630) {
 
-					// Не Mozilla
-					window.addEventListener('mousewheel', this.changeActiveElement)
+				// Промотка секций при скроллинге мышью
 
-					// Mozilla
-					window.addEventListener('DOMMouseScroll', this.changeActiveElement)
+				// Не Mozilla
+				window.addEventListener('mousewheel', this.changeActiveElement)
+
+				// Mozilla
+				window.addEventListener('DOMMouseScroll', this.changeActiveElement)
+			}
+			//конец
+
+			// Карусель glide js для информации рядом с картой
+
+			let glide_a = new Glide('.glide-a', {
+				type: 'carousel',
+				startAt: 1,
+				perView: 1,
+				gap: 5,
+				breakpoints: {
+					800: {
+						perView: 1
+					},
+					480: {
+						perView: 1,
+						gap: 20
+					}
 				}
-				//конец
+			})
+    
+			if (window.screen.width < 800) {
+				glide_a.mount()
+			}
 		},
 		beforeDestroy() {
 			
 			document.removeEventListener('keydown', this.onKeyDown)
+
+			document.querySelector('.next-page-show').removeEventListener('click', this.changeActiveElement)
+			document.querySelector('.prev-page-show').removeEventListener('click', this.changeActiveElement)
+
 
 			// Не Mozilla
 			window.removeEventListener('mousewheel', this.changeActiveElement)

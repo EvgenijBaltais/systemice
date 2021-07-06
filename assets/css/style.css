@@ -468,7 +468,7 @@ position: absolute;
     margin: auto;
 }
 
-.menu-active:before {
+.nuxt-link-exact-active:before {
     position: absolute;
     bottom: -5px;
     content: " ";

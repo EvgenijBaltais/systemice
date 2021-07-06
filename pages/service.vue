@@ -486,7 +486,7 @@ export default {
 			this.animationStatus()
 
 			let direction = ''
-			this.wheelAction(e) > 0 ? direction = 'left' : direction = 'right'
+			this.wheelAction(e) > 0 ? direction = 'right' : direction = 'left'
 
 			this.changePageSlides(direction)
 			this.changeNavigationActiveItem(this.activePage)

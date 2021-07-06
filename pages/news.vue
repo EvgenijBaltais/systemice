@@ -62,17 +62,13 @@
 
 		<div class="bottom-bg"></div>
 	</div>
-<!--
-</body>
-</html>
--->
-
 </template>
 
 <script>
 
 import blRight from '@/components/bl_right'
 import pageHeader from '@/components/page_header'
+
 
 export default {
 
@@ -204,13 +200,21 @@ export default {
 			}
 
 			// Вставить данные в саму статью, если это десктопное разрешение и на мобильнике вставить все статьи сразу в общую ленту
+			// Установить обработчики на стрелки
 
-			if (window.screen.width >= 480) {
-				this.mainArticle(this.news)
-			}
-			else {
-				this.mobileAddArticles(this.news)
-			}
+			new Promise(resolve => {
+
+				if (window.screen.width >= 480) {
+					this.mainArticle(this.news)
+				}
+				else {
+					this.mobileAddArticles(this.news)
+				}
+				resolve()
+			}).then(() => {
+				document.querySelector('.arrow-left').addEventListener('click', this.moveLeft)
+				document.querySelector('.arrow-right').addEventListener('click', this.moveRight)
+			})
 
 			// Нажатие на увеличение
 
@@ -218,35 +222,7 @@ export default {
 				$(this).parent().find('.visible-screen a').trigger('click')
 			})
 
-			if (document.querySelector('.arrow-left')) {
-				document.querySelector('.arrow-left').addEventListener('click', function(e){
-					this.activeItemIndex--;
-					this.activeItemIndex < 0 ? this.activeItemIndex = slides.length - 1 : ''
-					this.defineActiveSlide(slides)
-
-					if (!itemDots.length) return false
-
-					for (let i = 0; i < itemDots.length; i++) {
-						itemDots[i].classList.remove('tr-active');
-					}
-					itemDots[this.activeItemIndex].classList.add('tr-active');
-				})
-			}
-
-			if (document.querySelector('.arrow-right')) {
-				document.querySelector('.arrow-right').addEventListener('click', function(e){
-					this.activeItemIndex++;
-					this.activeItemIndex >= slides.length ? this.activeItemIndex = 0 : ''
-					this.defineActiveSlide(slides)
-
-					if (!itemDots.length) return false
-
-					for (let i = 0; i < itemDots.length; i++) {
-						itemDots[i].classList.remove('tr-active');
-					}
-					itemDots[this.activeItemIndex].classList.add('tr-active');
-				})
-			}
+			/*
 
 			if (document.querySelector('.arrow-left-m')) {
 				for (let i = 0; i < document.querySelectorAll('.arrow-left-m').length; i++) {
@@ -296,29 +272,11 @@ export default {
 				}
 			}
 
+			*/
+
 			// Нажатие на клавиатуре
 
-			document.addEventListener('keydown', function(event) {
-				if (event.code == 'ArrowLeft') {
-					this.activeItemIndex--;
-					this.activeItemIndex < 0 ? this.activeItemIndex = slides.length - 1 : ''
-					this.defineActiveSlide(slides, itemDots);
-					for (let i = 0; i < itemDots.length; i++) {
-						itemDots[i].classList.remove('tr-active');
-					}
-					itemDots[this.activeItemIndex].classList.add('tr-active')
-				}
-
-				if (event.code == 'ArrowRight') {
-					this.activeItemIndex++;
-					this.activeItemIndex >= slides.length ? this.activeItemIndex = 0 : ''
-					this.defineActiveSlide(slides, itemDots);
-					for (let i = 0; i < itemDots.length; i++) {
-						itemDots[i].classList.remove('tr-active');
-					}
-					itemDots[this.activeItemIndex].classList.add('tr-active')
-				}
-			});
+			document.addEventListener('keydown', this.keyArrowsAction)
 
 			//прокрутка
 			if ($(window).width() > 630) {
@@ -360,7 +318,7 @@ export default {
 					this.activeItemIndex = index;
 					this.defineActiveItem(itemDots, index);
 					this.defineActiveSlide(slides, itemDots);
-				});
+				})
 			}
 
 			// Вертикальная карусель
@@ -399,25 +357,78 @@ export default {
 				// Нажатие на отдельный элемент
 
 				for (let i = 0; i < verticalSlides.length; i++) {
-					(function(index){
 
-						verticalSlides[i].addEventListener('click', function(e){
+					verticalSlides[i].addEventListener('click', () => {
 
-							this.activeItemIndex = index;
+						this.activeItemIndex = i;
 
-							for (let k = 0; k < verticalSlides.length; k++) {
-								document.getElementsByClassName('slider-min')[k].classList.remove('slide-active');
-							}
-							verticalSlides[this.activeItemIndex].classList.add('slide-active');
+						for (let k = 0; k < verticalSlides.length; k++) {
+							document.getElementsByClassName('slider-min')[k].classList.remove('slide-active');
+						}
+						verticalSlides[this.activeItemIndex].classList.add('slide-active');
 
-							this.mainArticle(this.news, index)
-						})
-					})(i)
+						this.mainArticle(this.news, i)
+					})
 				}
 	  },
-
 	methods: {
+		keyArrowsAction(){
 
+			let slides = document.getElementsByClassName('content-slide'),
+				itemDots = document.getElementsByClassName('tr-bottom')
+
+			if (event.code == 'ArrowLeft') {
+				this.activeItemIndex--;
+				this.activeItemIndex < 0 ? this.activeItemIndex = slides.length - 1 : ''
+				this.defineActiveSlide(slides, itemDots);
+				for (let i = 0; i < itemDots.length; i++) {
+					itemDots[i].classList.remove('tr-active');
+				}
+				itemDots[this.activeItemIndex].classList.add('tr-active')
+			}
+
+			if (event.code == 'ArrowRight') {
+				this.activeItemIndex++;
+				this.activeItemIndex >= slides.length ? this.activeItemIndex = 0 : ''
+				this.defineActiveSlide(slides, itemDots);
+				for (let i = 0; i < itemDots.length; i++) {
+					itemDots[i].classList.remove('tr-active');
+				}
+				itemDots[this.activeItemIndex].classList.add('tr-active')
+			}
+		},
+		moveLeft(){
+
+		let slides = document.getElementsByClassName('content-slide'),
+			itemDots = document.getElementsByClassName('tr-bottom')
+
+			this.activeItemIndex--;
+			this.activeItemIndex < 0 ? this.activeItemIndex = slides.length - 1 : ''
+			this.defineActiveSlide(slides)
+
+			if (!itemDots.length) return false
+
+			for (let i = 0; i < itemDots.length; i++) {
+				itemDots[i].classList.remove('tr-active');
+			}
+			itemDots[this.activeItemIndex].classList.add('tr-active');
+		},
+		moveRight(){
+
+		let slides = document.getElementsByClassName('content-slide'),
+			itemDots = document.getElementsByClassName('tr-bottom')
+
+			this.activeItemIndex++;
+			this.activeItemIndex >= slides.length ? this.activeItemIndex = 0 : ''
+			this.defineActiveSlide(slides)
+
+			if (!itemDots.length) return false
+
+			for (let i = 0; i < itemDots.length; i++) {
+				itemDots[i].classList.remove('tr-active');
+			}
+			itemDots[this.activeItemIndex].classList.add('tr-active');
+		},
 		// Функция, которая получает индекс элемента
 		getArrayIndex(arr, event){
 			for (let i = 0; i < arr.length; i++) {
@@ -565,7 +576,7 @@ export default {
 				// Добавление точек
 
 				let dots = '',                                                   // Точки
-					dotsContainer = document.querySelector('.item-dots');        // Контейнер с нижними полосками
+					dotsContainer = document.querySelector('.item-dots')         // Контейнер с нижними полосками
 
 				dotsContainer.innerHTML = ''
 
@@ -578,6 +589,12 @@ export default {
 				dotsContainer.innerHTML = dots;
 			})
 		}
+	},
+	beforeDestroy(){
+
+		document.querySelector('.arrow-left').removeEventListener('click', this.moveLeft)
+		document.querySelector('.arrow-right').removeEventListener('click', this.moveRight)
+		document.removeEventListener('keydown', this.keyArrowsAction)
 	}
 }
 

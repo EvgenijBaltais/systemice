@@ -1,31 +1,4 @@
 <template>
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Systemice Contact</title>
-	<meta content="systemice" name="keywords">
-	<meta content="" name="description">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" defer></script>
-	<script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="js/plugins/jquery.inputmask.bundle.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/fontstyle.css">
-    <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/map.js" defer></script>
-	<script src="js/plugins/clipboard.js-master/dist/clipboard.js"></script>
-	<script type="text/javascript" src="plugins/lightcase-2.5.0/src/js/lightcase.js"></script>
-	<link rel="stylesheet" href="plugins/lightcase-2.5.0/src/css/lightcase.css">
-	<script src="js/script.js"></script>
-	<script type="text/javascript" src="js/content-carousel.js"></script>
-</head>
-
-<body>
--->
 	<div class="wrapper contact">
 		<div class="bl-l fl-column">
 			<div>
@@ -111,12 +84,6 @@
 		</div>
 		<blRight/>
 	</div>
-	
-<!--
-</body>
-</html>
--->
-
 </template>
 
 <script>
@@ -241,7 +208,7 @@ export default {
 
 			document.getElementById('copy-text').setAttribute("data-clipboard-text", "55.76, 37.64");
 
-			myGeoObject = new ymaps.GeoObject();
+			let myGeoObject = new ymaps.GeoObject();
 
 			myMap.geoObjects.add(myGeoObject).add(new ymaps.Placemark([55.76, 37.64], {
 				balloonContent: ''
