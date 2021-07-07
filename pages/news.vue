@@ -223,8 +223,8 @@ export default {
 				}
 				resolve()
 			}).then(() => {
-				document.querySelector('.arrow-left').addEventListener('click', this.moveLeft)
-				document.querySelector('.arrow-right').addEventListener('click', this.moveRight)
+				document.querySelector('.arrow-left') ? document.querySelector('.arrow-left').addEventListener('click', this.moveLeft) : ''
+				document.querySelector('.arrow-right') ? document.querySelector('.arrow-right').addEventListener('click', this.moveRight) : ''
 			})
 
 			// Нажатие на увеличение
@@ -430,7 +430,7 @@ export default {
 
 					for (let k = 0; k < this.news[i].pics.length; k++) {
 						picsHtml += `<div class="news-sldr-box content-slide ${k == 0 ? 'visible-screen' : 'hidden-screen-news'}">
-							<a href="@/assets/${this.news[i].pics[k]}" class="lightcase-news-pic" data-rel="lightcase:myCollection-${i}">
+							<a href="/${this.news[i].pics[k]}" class="lightcase-news-pic" data-rel="lightcase:myCollection-${i}">
 								<img src="/${this.news[i].pics[k]}">
 							</a>
 						</div>`
