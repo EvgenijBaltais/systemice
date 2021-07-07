@@ -365,7 +365,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
 .dots-container {
 	width: 34px;

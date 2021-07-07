@@ -35,13 +35,13 @@
 					<div class="spy-bottom"></div>
 			</div>
 			<ul class="menu-list">
-				<li class="menu-item"><a href="/">О компании</a></li>
-				<li class="menu-item"><a href="/service">Услуги</a></li>
-				<li class="menu-item"><a href="/portfolio.php">Портфолио</a></li>
-				<li class="menu-item"><a href="/team.php">Команда</a></li>
-				<li class="menu-item"><a href="/partner.php">Партнеры</a></li>
-				<li class="menu-item"><a href="/news.php">Новости</a></li>
-				<li class="menu-item"><a href="/contact.php">Контакты</a></li>
+				<li class="menu-item"><NuxtLink to = "/">О компании</NuxtLink></li>
+				<li class="menu-item"><NuxtLink to = "/service">Услуги</NuxtLink></li>
+				<li class="menu-item"><NuxtLink to = "/portfolio">Портфолио</NuxtLink></li>
+				<li class="menu-item"><NuxtLink to = "/team">Команда</NuxtLink></li>
+				<li class="menu-item"><NuxtLink to = "/partner">Партнеры</NuxtLink></li>
+				<li class="menu-item"><NuxtLink to = "/news">Новости</NuxtLink></li>
+				<li class="menu-item"><NuxtLink to = "/contact">Контакты</NuxtLink></li>
 			</ul>
 			<div class="bl-social">
 				<a href="" class="social-link">
@@ -62,6 +62,14 @@
 
 <script>
 export default {
-	name: 'pageHeader'
+	name: 'pageHeader',
+    mounted(){
+
+        $('.mob-menu').on('click', function(){
+            $('.mob-menu').toggleClass('open');
+            $('.menu-wrapper').toggleClass('open-active');
+            $('body').toggleClass('overlay');
+        })
+    }
 }
 </script>

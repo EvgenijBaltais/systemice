@@ -198,7 +198,7 @@ export default {
 					document.querySelector('.news-slider-wrapper').insertAdjacentHTML('beforeend', `
 						<div class="slider-min${i == 0 ? ' slide-active' : ''}">
 						<div class="sl-box">
-						<div class="sl-img sl-img-backgound" style="background-image: url(${this.news[i].pics[0]});"></div>
+						<div class="sl-img sl-img-backgound" style="background-image: url(/${this.news[i].pics[0]});"></div>
 						<div class="sl-img">
 						<p class="sl-text">${this.news[i].date}</p>
 						<div class="news-line"></div>
@@ -232,58 +232,6 @@ export default {
 			$('body').find('.sl-search').on('click', function(){
 				$(this).parent().find('.visible-screen a').trigger('click')
 			})
-
-			/*
-
-			if (document.querySelector('.arrow-left-m')) {
-				for (let i = 0; i < document.querySelectorAll('.arrow-left-m').length; i++) {
-					document.querySelectorAll('.arrow-left-m')[i].addEventListener('click', function(e){
-
-						let index = 0,
-							slides = this.parentNode.querySelectorAll('.content-slide')
-
-						for (let i = 0; i < slides.length; i++) {
-
-							if (!slides[i].classList.contains('visible-screen')) continue
-							index = i
-						}
-
-						slides[index].classList.add('hidden-screen-news')
-						slides[index].classList.remove('visible-screen')
-
-						index == 0 ? index = slides.length - 1 : index--
-
-						slides[index].classList.remove('hidden-screen-news')
-						slides[index].classList.add('visible-screen')
-					})
-				}
-			}
-
-			if (document.querySelector('.arrow-right-m')) {
-				for (let i = 0; i < document.querySelectorAll('.arrow-right-m').length; i++) {
-					document.querySelectorAll('.arrow-right-m')[i].addEventListener('click', function(e){
-
-						let index = 0,
-							slides = this.parentNode.querySelectorAll('.content-slide')
-
-						for (let i = 0; i < slides.length; i++) {
-
-							if (!slides[i].classList.contains('visible-screen')) continue
-							index = i
-						}
-
-						slides[index].classList.add('hidden-screen-news')
-						slides[index].classList.remove('visible-screen')
-
-						index == slides.length - 1 ? index = 0 : index++
-
-						slides[index].classList.remove('hidden-screen-news')
-						slides[index].classList.add('visible-screen')
-					})
-				}
-			}
-
-			*/
 
 			// Нажатие на клавиатуре
 
@@ -483,7 +431,7 @@ export default {
 					for (let k = 0; k < this.news[i].pics.length; k++) {
 						picsHtml += `<div class="news-sldr-box content-slide ${k == 0 ? 'visible-screen' : 'hidden-screen-news'}">
 							<a href="@/assets/${this.news[i].pics[k]}" class="lightcase-news-pic" data-rel="lightcase:myCollection-${i}">
-								<img src="@/assets/${this.news[i].pics[k]}">
+								<img src="/${this.news[i].pics[k]}">
 							</a>
 						</div>`
 					}
@@ -551,7 +499,7 @@ export default {
 					document.querySelector('.news-slides').insertAdjacentHTML('beforeend', `
 						<div class="news-sldr-box content-slide ${i == 0 ? 'visible-screen' : 'hidden-screen-news'}">
 							<a href="${news[index].pics[i]}" class="lightcase-news-pic" data-rel="lightcase:myCollection">
-								<img src="${news[index].pics[i]}">
+								<img src="/${news[index].pics[i]}">
 							</a>
 						</div>
 					`)
