@@ -364,3 +364,11 @@ export default {
 }
 
 </script>
+
+<style>
+
+.dots-container {
+	width: 34px;
+}
+
+</style>
