@@ -25,7 +25,7 @@
 			</div>
 			<div class="content-main" id = "portfolio-box">
 				<div class="slider content-slide scrolling-box" id = "portfolio-slider">
-						<div class="sl-card sl-box-1" :style="{backgroundImage: 'url(images/conf1.jpg)'}"><a href="portfolio1.php">
+						<div class="sl-card sl-box-1" :style="{backgroundImage: 'url(/images/conf1.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 1</span>
@@ -39,7 +39,7 @@
 								</div>
 							</div></a>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 2</span>
@@ -53,7 +53,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 3</span>
@@ -67,7 +67,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 4</span>
@@ -81,7 +81,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">PECO 2019</span>
@@ -95,7 +95,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 						<div class="bg-hover">
 							<div class="event-info">
 								<span class="event-name">PECO 2019</span>
@@ -109,7 +109,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+					<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 						<div class="bg-hover">
 							<div class="event-info">
 								<span class="event-name">PECO 2019</span>
@@ -123,7 +123,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+					<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 2</span>
@@ -137,7 +137,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 3</span>
@@ -151,7 +151,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 4</span>
@@ -165,7 +165,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">PECO 2019</span>
@@ -179,7 +179,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 						<div class="bg-hover">
 							<div class="event-info">
 								<span class="event-name">PECO 2019</span>
@@ -193,7 +193,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+					<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 						<div class="bg-hover">
 							<div class="event-info">
 								<span class="event-name">PECO 2019</span>
@@ -207,7 +207,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+					<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 2</span>
@@ -221,7 +221,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 3</span>
@@ -235,7 +235,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 4</span>
@@ -249,7 +249,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">PECO 2019</span>
@@ -263,7 +263,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 						<div class="bg-hover">
 							<div class="event-info">
 								<span class="event-name">PECO 2019</span>
@@ -277,7 +277,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(images/conf.jpg)'}">
+					<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 						<div class="bg-hover">
 							<div class="event-info">
 								<span class="event-name">PECO 2019</span>
