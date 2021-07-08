@@ -65,6 +65,10 @@ export default {
 	name: 'pageHeader',
     mounted(){
 
+    	$('.mob-menu').removeClass('open');
+        $('.menu-wrapper').removeClass('open-active');
+        $('body').removeClass('overlay');
+
         $('.mob-menu').on('click', function(){
             $('.mob-menu').toggleClass('open');
             $('.menu-wrapper').toggleClass('open-active');
