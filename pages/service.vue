@@ -23,7 +23,7 @@
 							<div class="service-img" :style="{backgroundImage: 'url(images/kt.jpg)'}"></div>
 						</div>
 						<div class="service-desc">
-							<h1 class="h1">КЕЙТЕРИНГ1</h1>
+							<h1 class="h1">КЕЙТЕРИНГ</h1>
 							<div class="line"></div>
 							<div class="spy-left"></div>
 							<div class="spy-top"></div>
@@ -39,10 +39,10 @@
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/bgame.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: 'url(images/akk.jpg)'}"></div>
 						</div>
 						<div class="service-desc">
-							<h1 class="h1">БИЗНЕС-ИГРЫ</h1>
+							<h1 class="h1">АККАУНТ-МЕНЕДЖЕР</h1>
 							<div class="line"></div>
 							<div class="spy-left"></div>
 							<div class="spy-top"></div>
@@ -53,31 +53,12 @@
 							</div>
 						</div>
 						<p class="bl-desc">
-							Бизнес-игры  отличная современная альтернатива тимбилдингу.
+							работает с клиентами компании и обеспечивает их лояльность, выполнение всех необходимых клиенту задач, находит к каждому заказчику индивидуальный подход
 						</p>
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/bt.jpg)'}"></div>
-						</div>
-						<div class="service-desc">
-							<h1 class="h1">BUSINESS TRAVEL</h1>
-							<div class="line"></div>
-							<div class="spy-left"></div>
-							<div class="spy-top"></div>
-							<div class="spy-right"></div>
-							<div class="spy-bottom"></div>
-							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
-							</div>
-						</div>
-						<p class="bl-desc">
-							Сервисы бронирования Systemice Group работают с отелями и авиак
-						</p>
-					</div>
-					<div class="service-block">
-						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: 'url(images/guids.jpg)'}"></div>
 						</div>
 						<div class="service-desc">
 							<h1 class="h1">ВЕДУЩИЕ</h1>
@@ -87,7 +68,7 @@
 							<div class="spy-right"></div>
 							<div class="spy-bottom"></div>
 							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
+								<a href="https://systemice.ru/guids/" target = "_blank" class="open-btn">Открыть</a>
 							</div>
 						</div>
 						<p class="bl-desc">
@@ -96,211 +77,97 @@
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: 'url(images/cases.jpg)'}"></div>
 						</div>
 						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
+							<h1 class="h1">КОРПОРАТИВНЫЕ КЕЙСЫ</h1>
 							<div class="line"></div>
 							<div class="spy-left"></div>
 							<div class="spy-top"></div>
 							<div class="spy-right"></div>
 							<div class="spy-bottom"></div>
 							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
+								<a href="https://systemice.ru/corporate_cases/" target = "_blank" class="open-btn">Открыть</a>
 							</div>
 						</div>
 						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
+							Здесь каждый найдет выгодное предложение для себя.
 						</p>
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: 'url(images/online.jpg)'}"></div>
 						</div>
 						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
+							<h1 class="h1">ОНЛАЙН-МЕРОПРИЯТИЯ</h1>
 							<div class="line"></div>
 							<div class="spy-left"></div>
 							<div class="spy-top"></div>
 							<div class="spy-right"></div>
 							<div class="spy-bottom"></div>
 							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
+								<a href="https://systemice-stream.ru/" target = "_blank" class="open-btn">Открыть</a>
 							</div>
 						</div>
 						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
+							Онлайн-мероприятия всех форматов. Более 500 проведенных мероприятий
 						</p>
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: 'url(images/places.jpg)'}"></div>
 						</div>
 						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
+							<h1 class="h1">ПОДБОР МЕСТ ПРОВЕДЕНИЯ</h1>
 							<div class="line"></div>
 							<div class="spy-left"></div>
 							<div class="spy-top"></div>
 							<div class="spy-right"></div>
 							<div class="spy-bottom"></div>
 							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
+								<a href="https://systemice.ru/platforms/" target = "_blank" class="open-btn">Открыть</a>
 							</div>
 						</div>
 						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
+							Мы гарантируем, что все площадки прошли через строгие критерии отбора.
 						</p>
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: 'url(images/market.jpg)'}"></div>
 						</div>
 						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
+							<h1 class="h1">ПОЗАБОТЬТЕСЬ О КЛИЕНТАХ (системайс маркет)</h1>
 							<div class="line"></div>
 							<div class="spy-left"></div>
 							<div class="spy-top"></div>
 							<div class="spy-right"></div>
 							<div class="spy-bottom"></div>
 							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
+								<a href="https://system-market.ru/" target = "_blank" class="open-btn">Открыть</a>
 							</div>
 						</div>
 						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
+							Это очень просто – нужно о них позаботиться прямо сейчас! Мы предлагаем сделать это с помощью наших подарочных наборов.
 						</p>
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: 'url(images/teambuilding.jpg)'}"></div>
 						</div>
 						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
+							<h1 class="h1">ТИМБИЛДИНГ</h1>
 							<div class="line"></div>
 							<div class="spy-left"></div>
 							<div class="spy-top"></div>
 							<div class="spy-right"></div>
 							<div class="spy-bottom"></div>
 							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
+								<a href="http://www.sysevent.ru/" target = "_blank" class="open-btn">Открыть</a>
 							</div>
 						</div>
 						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
-						</p>
-					</div>
-					<div class="service-block">
-						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
-						</div>
-						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
-							<div class="line"></div>
-							<div class="spy-left"></div>
-							<div class="spy-top"></div>
-							<div class="spy-right"></div>
-							<div class="spy-bottom"></div>
-							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
-							</div>
-						</div>
-						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
-						</p>
-					</div>
-					<div class="service-block">
-						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
-						</div>
-						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
-							<div class="line"></div>
-							<div class="spy-left"></div>
-							<div class="spy-top"></div>
-							<div class="spy-right"></div>
-							<div class="spy-bottom"></div>
-							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
-							</div>
-						</div>
-						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
-						</p>
-					</div>
-					<div class="service-block">
-						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
-						</div>
-						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
-							<div class="line"></div>
-							<div class="spy-left"></div>
-							<div class="spy-top"></div>
-							<div class="spy-right"></div>
-							<div class="spy-bottom"></div>
-							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
-							</div>
-						</div>
-						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
-						</p>
-					</div>
-					<div class="service-block">
-						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
-						</div>
-						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
-							<div class="line"></div>
-							<div class="spy-left"></div>
-							<div class="spy-top"></div>
-							<div class="spy-right"></div>
-							<div class="spy-bottom"></div>
-							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
-							</div>
-						</div>
-						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
-						</p>
-					</div>
-					<div class="service-block">
-						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
-						</div>
-						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
-							<div class="line"></div>
-							<div class="spy-left"></div>
-							<div class="spy-top"></div>
-							<div class="spy-right"></div>
-							<div class="spy-bottom"></div>
-							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
-							</div>
-						</div>
-						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
-						</p>
-					</div>
-					<div class="service-block">
-						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/ved.jpg)'}"></div>
-						</div>
-						<div class="service-desc">
-							<h1 class="h1">ВЕДУЩИЕ</h1>
-							<div class="line"></div>
-							<div class="spy-left"></div>
-							<div class="spy-top"></div>
-							<div class="spy-right"></div>
-							<div class="spy-bottom"></div>
-							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
-							</div>
-						</div>
-						<p class="bl-desc">
-							Мы подобрали для Вас лучших!
+							#тимбилдинг #командообразование #квест #корпоративныйквест
 						</p>
 					</div>
 				</div>
