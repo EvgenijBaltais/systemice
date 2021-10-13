@@ -162,8 +162,16 @@ a {
 
 .menu-item {
     position: relative;
-    margin-bottom: 17px;
-    line-height: 1.6;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 14px;
+}
+
+.menu-item a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .menu-item:last-child {
@@ -2927,7 +2935,7 @@ position: absolute;
 
 .menu-item a:before {
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     content: " ";
     height: 0;
     opacity: 0;

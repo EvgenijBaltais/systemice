@@ -137,7 +137,7 @@
 							<div class="service-img" :style="{backgroundImage: 'url(images/market.jpg)'}"></div>
 						</div>
 						<div class="service-desc">
-							<h1 class="h1">ПОЗАБОТЬТЕСЬ О КЛИЕНТАХ (системайс маркет)</h1>
+							<h1 class="h1">ПОЗАБОТЬТЕСЬ О КЛИЕНТАХ</h1>
 							<div class="line"></div>
 							<div class="spy-left"></div>
 							<div class="spy-top"></div>
