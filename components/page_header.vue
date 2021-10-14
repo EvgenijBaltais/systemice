@@ -44,11 +44,8 @@
 				<li class="menu-item"><NuxtLink to = "/contact">Контакты</NuxtLink></li>
 			</ul>
 			<div class="bl-social">
-				<a href="" class="social-link">
+				<a href="https://www.instagram.com/systemice/" target = "_blank" class="social-link">
 					<img src="@/assets/images/instagram.png">
-				</a>
-				<a href="" class="social-link">
-					<img src="@/assets/images/facebook.png">
 				</a>
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>

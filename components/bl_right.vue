@@ -1,21 +1,14 @@
 <template>
 	<div class="bl-r content-container">
-		<div class="bl-search">
-			<div class="btn-exit">
-				<div class="img"></div>
-				Войти
-			</div>
-			<div class="spy-left"></div>
-			<div class="spy-top"></div>
-			<div class="spy-right"></div>
-			<div class="spy-bottom"></div>
-		</div>
 		<ul class="menu-list">
 			<li class="menu-item">
 				<NuxtLink to = "/">О компании</NuxtLink>
 			</li>
 			<li class="menu-item">
 				<NuxtLink to = "/service">Услуги</NuxtLink>
+			</li>
+			<li class="menu-item">
+				<NuxtLink to = "/tenders">Тендеры</NuxtLink>
 			</li>
 			<li class="menu-item">
 				<NuxtLink to = "/portfolio">Портфолио</NuxtLink>
@@ -42,21 +35,21 @@
 			</div>
 			Другие наши работы
 		</div>
-		<div class="bl-social">
-			<a href="" class="social-link">
-				<img src="@/assets/images/instagram.png">
-			</a>
-			<a href="" class="social-link">
-				<img src="@/assets/images/facebook.png">
-			</a>
-			<div class="spy-left"></div>
-			<div class="spy-top"></div>
-			<div class="spy-right"></div>
-			<div class="spy-bottom"></div>
+		<div>
+			<div class="bl-social">
+				<a href="https://www.instagram.com/systemice/" target = "_blank" class="social-link">
+					<img src="@/assets/images/instagram.png">
+				</a>
+				<div class="spy-left"></div>
+				<div class="spy-top"></div>
+				<div class="spy-right"></div>
+				<div class="spy-bottom"></div>
+			</div>
+			<div class="bl-copyright">
+				Ⓒ2014 - 2020
+			</div>
 		</div>
-		<div class="bl-copyright">
-			Ⓒ2014 - 2020
-		</div>
+		<!--
 		<div class="other-event">
 			<a href="/portfolio1.php">
 				<div class="bl-small-event current">
@@ -102,21 +95,6 @@
 				</div>
 				<a class="reg-btn">Зарегистрироваться</a>
 			</form>
-		</div>
+		</div>-->
 	</div>
 </template>
-
-
-<script>
-
-	export default {
-		name: 'blRight',
-		mounted(){
-
-			$('.bl-search').on('click', function(){
-				$('.login-block').toggle();
-				$('.btn-exit').toggleClass('active');
-			})
-		}
-	}
-</script>

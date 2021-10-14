@@ -20,7 +20,7 @@
 				<div class="content-block-w scrolling-box" id = "scrolling-box">
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/kt.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: `url(${require('../assets/images/kt.jpg')})`}"></div>
 						</div>
 						<div class="service-desc">
 							<h1 class="h1">КЕЙТЕРИНГ</h1>
@@ -30,7 +30,7 @@
 							<div class="spy-right"></div>
 							<div class="spy-bottom"></div>
 							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
+								<a href="https://systemice-catering.ru/" target = "_blank" class="open-btn">Открыть</a>
 							</div>
 						</div>
 						<p class="bl-desc">
@@ -39,7 +39,7 @@
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/akk.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: `url(${require('../assets/images/akk.jpg')})`}"></div>
 						</div>
 						<div class="service-desc">
 							<h1 class="h1">АККАУНТ-МЕНЕДЖЕР</h1>
@@ -49,7 +49,7 @@
 							<div class="spy-right"></div>
 							<div class="spy-bottom"></div>
 							<div class="service-hover">
-								<a href="" class="open-btn">Открыть</a>
+								<a href="https://systemice.ru/platforms/" target = "_blank" class="open-btn">Открыть</a>
 							</div>
 						</div>
 						<p class="bl-desc">
@@ -58,7 +58,26 @@
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/guids.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: `url(${require('../assets/images/business-travel.jpg')})`}"></div>
+						</div>
+						<div class="service-desc">
+							<h1 class="h1">Business Travel</h1>
+							<div class="line"></div>
+							<div class="spy-left"></div>
+							<div class="spy-top"></div>
+							<div class="spy-right"></div>
+							<div class="spy-bottom"></div>
+							<div class="service-hover">
+								<a href="https://systemice-business.ru/" target = "_blank" class="open-btn">Открыть</a>
+							</div>
+						</div>
+						<p class="bl-desc">
+							Подразделение Systemice Group, предоставляющее комплексное обслуживание корпоративным клиентам и госучреждениям.
+						</p>
+					</div>
+					<div class="service-block">
+						<div class="img-wrapper">
+							<div class="service-img" :style="{backgroundImage: `url(${require('../assets/images/guids.jpg')})`}"></div>
 						</div>
 						<div class="service-desc">
 							<h1 class="h1">ВЕДУЩИЕ</h1>
@@ -77,7 +96,7 @@
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/cases.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: `url(${require('../assets/images/cases.jpg')})`}"></div>
 						</div>
 						<div class="service-desc">
 							<h1 class="h1">КОРПОРАТИВНЫЕ КЕЙСЫ</h1>
@@ -96,7 +115,7 @@
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/online.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: `url(${require('../assets/images/online.jpg')})`}"></div>
 						</div>
 						<div class="service-desc">
 							<h1 class="h1">ОНЛАЙН-МЕРОПРИЯТИЯ</h1>
@@ -115,7 +134,7 @@
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/places.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: `url(${require('../assets/images/places.jpg')})`}"></div>
 						</div>
 						<div class="service-desc">
 							<h1 class="h1">ПОДБОР МЕСТ ПРОВЕДЕНИЯ</h1>
@@ -134,7 +153,7 @@
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/market.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: `url(${require('../assets/images/market.jpg')})`}"></div>
 						</div>
 						<div class="service-desc">
 							<h1 class="h1">ПОЗАБОТЬТЕСЬ О КЛИЕНТАХ</h1>
@@ -153,7 +172,7 @@
 					</div>
 					<div class="service-block">
 						<div class="img-wrapper">
-							<div class="service-img" :style="{backgroundImage: 'url(images/teambuilding.jpg)'}"></div>
+							<div class="service-img" :style="{backgroundImage: `url(${require('../assets/images/teambuilding.jpg')})`}"></div>
 						</div>
 						<div class="service-desc">
 							<h1 class="h1">ТИМБИЛДИНГ</h1>
@@ -168,6 +187,25 @@
 						</div>
 						<p class="bl-desc">
 							#тимбилдинг #командообразование #квест #корпоративныйквест
+						</p>
+					</div>
+					<div class="service-block">
+						<div class="img-wrapper">
+							<div class="service-img" :style="{backgroundImage: `url(${require('../assets/images/postkovid.jpg')})`}"></div>
+						</div>
+						<div class="service-desc">
+							<h1 class="h1">Пост-ковидные мероприятия</h1>
+							<div class="line"></div>
+							<div class="spy-left"></div>
+							<div class="spy-top"></div>
+							<div class="spy-right"></div>
+							<div class="spy-bottom"></div>
+							<div class="service-hover">
+								<a href="https://systemice-stream.ru/post-covidnie-meropriyatiya" target = "_blank" class="open-btn">Открыть</a>
+							</div>
+						</div>
+						<p class="bl-desc">
+							Рекомендации по проведению мероприятий в пост-ковидный период
 						</p>
 					</div>
 				</div>

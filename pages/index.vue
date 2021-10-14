@@ -22,7 +22,7 @@
 			<div class="video-box clearfix">
 				<h2 class="h2">МЕРОПРИЯТИЕ НАЧИНАЕТСЯ С НАС</h2>
 				<div class="video-container">
-					<div class="bg-btn"></div>
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" src="https://www.youtube.com/embed/iudxo0NaKNY?autoplay=1&enablejsapi=1&fs=0&rel=0" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<p class="p-title">Видеопрезентация компании Systemice</p>
 			</div>
@@ -131,6 +131,7 @@
 		head() {
 			return {
 				title: 'Systemice - главная страница',
+				script:[{ src: 'https://www.youtube.com/player_api' }],
 				meta: [
 					{
 						hid: 'description',

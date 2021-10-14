@@ -18,126 +18,56 @@
 			<pageHeader/>
 			<div class="content-box content-slide partners-slides scrolling-box" id = "partners-slider">
 				<div class="bl-partner">	
-					<img class="img-partner" src="@/assets/images/company.png">
+					<img class="img-partner" src="@/assets/images/partners/1.png">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/company.png">
+					<img class="img-partner" src="@/assets/images/partners/2.png">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/company.png">
+					<img class="img-partner" src="@/assets/images/partners/3.png">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/company.png">
+					<img class="img-partner" src="@/assets/images/partners/4.png">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/company.png">
+					<img class="img-partner" src="@/assets/images/partners/5.png">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/company.png">
+					<img class="img-partner" src="@/assets/images/partners/6.png">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/company.png">
+					<img class="img-partner" src="@/assets/images/partners/7.png">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/company.png">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-				</div>
-			<div class="bl-partner">
-				<img class="img-partner" src="@/assets/images/company2.png">
-				<div class="spy-left"></div>
-				<div class="spy-top"></div>
-				<div class="spy-right"></div>
-				<div class="spy-bottom"></div>
-			</div>
-			<div class="bl-partner">
-				<img class="img-partner" src="@/assets/images/company2.png">
-				<div class="spy-left"></div>
-				<div class="spy-top"></div>
-				<div class="spy-right"></div>
-				<div class="spy-bottom"></div>
-			</div>
-			<div class="bl-partner">
-				<img class="img-partner" src="@/assets/images/company2.png">
-				<div class="spy-left"></div>
-				<div class="spy-top"></div>
-				<div class="spy-right"></div>
-				<div class="spy-bottom"></div>
-			</div>
-			<div class="bl-partner">
-				<img class="img-partner" src="@/assets/images/company.png">
-				<div class="spy-left"></div>
-				<div class="spy-top"></div>
-				<div class="spy-right"></div>
-				<div class="spy-bottom"></div>
-			</div>
-			<div class="bl-partner">
-				<img class="img-partner" src="@/assets/images/company2.png">
-				<div class="spy-left"></div>
-				<div class="spy-top"></div>
-				<div class="spy-right"></div>
-				<div class="spy-bottom"></div>
-			</div>
-			<div class="bl-partner">
-				<img class="img-partner" src="@/assets/images/company2.png">
-				<div class="spy-left"></div>
-				<div class="spy-top"></div>
-				<div class="spy-right"></div>
-				<div class="spy-bottom"></div>
-			</div>
-			<div class="bl-partner">
-				<img class="img-partner" src="@/assets/images/company2.png">
-				<div class="spy-left"></div>
-				<div class="spy-top"></div>
-				<div class="spy-right"></div>
-				<div class="spy-bottom"></div>
-			</div>
-			<div class="bl-partner">
-				<img class="img-partner" src="@/assets/images/company2.png">
-				<div class="spy-left"></div>
-				<div class="spy-top"></div>
-				<div class="spy-right"></div>
-				<div class="spy-bottom"></div>
-			</div>
-			<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/company2.png">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-				</div>
-				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/company2.png">
+					<img class="img-partner" src="@/assets/images/partners/8.png">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
