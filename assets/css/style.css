@@ -5073,3 +5073,196 @@ position: absolute;
 .lightcase-news-pic img {
     max-width: 610px;
 }
+
+#YoutubeVideo iframe {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+
+/* Детали сборки мероприятия */
+
+.event-details {
+    width: 685px;
+    margin: 0 auto;
+}
+
+.details-progress-mini {
+    background-color: #fff;
+    height: 1px;
+}
+
+.details-header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+
+.details-half-filled {
+    background-color: #E40000;
+    height: 1px;
+    width: 50%;
+}
+
+.details-full-filled {
+    background-color: #E40000;
+    height: 1px;
+    width: 100%;
+}
+
+.details-text-span {
+    font-size: 70px;
+    font-family: "Impact", sans-serif;
+    font-weight: bold;
+}
+
+.details-step-span {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.details-date-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #fff;
+    font-family: 'RalewayRegular', sans-serif;
+    cursor: pointer;
+}
+
+.details-input-block {
+    width: 100%;
+    max-width: 330px;
+    cursor: pointer;
+}
+
+.details-input-block {
+    position: relative;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+
+.details-input {
+    width: 100%;
+    height: 100%;
+    border: 0!important;
+    outline: 0!important;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.details-input::-webkit-input-placeholder { font-size: 15px; color: #A7A7A7; }
+.details-input::-moz-placeholder          { font-size: 15px; color: #A7A7A7; }
+.details-input:-moz-placeholder           { font-size: 15px; color: #A7A7A7; }
+.details-input:-ms-input-placeholder      { font-size: 15px; color: #A7A7A7; }
+.details-input[placeholder]               { font-size: 15px; color: #A7A7A7; }
+
+.field-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    margin: auto;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/field-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+}
+
+.details-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-body-left {
+    width: 49%;
+}
+
+.details-body-right {
+    width: 49%;
+}
+
+.details-body-field {
+    margin-bottom: 15px;
+}
+
+
+/* Стилизация чекбокс */
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked)
+{
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #e145a3;
+    border-bottom: 4px solid #e145a3;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+/* Стилизация чекбокс, конец */
+
+/* Детали сборки мероприятия, конец */
