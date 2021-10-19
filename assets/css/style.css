@@ -4863,7 +4863,7 @@ position: absolute;
     }
 
     .h-page .arrow-left, .h-page .arrow-right {
-        top:15%;
+        top:20%;
     }
 
     .sl-wrapper .sl-teammate:nth-child(2) {
@@ -5124,6 +5124,7 @@ position: absolute;
 
 .details-date-label {
     font-size: 16px;
+    line-height: 20px;
     margin-bottom: 5px;
     display: block;
     color: #fff;
@@ -5133,27 +5134,31 @@ position: absolute;
 
 .details-input-block {
     width: 100%;
-    max-width: 330px;
-    cursor: pointer;
-}
-
-.details-input-block {
-    position: relative;
     height: 40px;
-    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
     box-sizing: border-box;
     border: 1px solid #fff;
+    overflow: hidden;
 }
 
 .details-input {
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 30px);
+    height: 38px;
+    margin: 0 15px;
     border: 0!important;
     outline: 0!important;
     background-color: transparent;
     box-sizing: border-box;
     cursor: pointer;
+    color: #fff;
 }
+
+.mx-input::-webkit-input-placeholder { font-size: 15px; color: #A7A7A7; }
+.mx-input::-moz-placeholder          { font-size: 15px; color: #A7A7A7; }
+.mx-input:-moz-placeholder           { font-size: 15px; color: #A7A7A7; }
+.mx-input:-ms-input-placeholder      { font-size: 15px; color: #A7A7A7; }
+.mx-input[placeholder]               { font-size: 15px; color: #A7A7A7; }
 
 .details-input::-webkit-input-placeholder { font-size: 15px; color: #A7A7A7; }
 .details-input::-moz-placeholder          { font-size: 15px; color: #A7A7A7; }
@@ -5163,10 +5168,9 @@ position: absolute;
 
 .field-arrow {
     position: absolute;
-    top: 0;
+    top: 11px;
     bottom: 0;
     right: 15px;
-    margin: auto;
     cursor: pointer;
     width: 18px;
     height: 18px;
@@ -5174,23 +5178,59 @@ position: absolute;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px;
+    transition: .2s transform;
 }
 
 .details-body {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
+    position: relative;
 }
 
 .details-body-left {
-    width: 49%;
+    width: 48.5%;
 }
 
 .details-body-right {
-    width: 49%;
+    width: 48.5%;
 }
 
 .details-body-field {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 15px;
+    min-height: 65px;
+}
+
+.details-half-width {
+    width: 48.5%;
+}
+
+.details-body-two-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.details-body-field-w {
+    width: 100%;
+    position: relative;
+}
+
+.to-next-step {
+    height: 55px;
+    margin-top: 40px;
+    background-color: #F50C0A;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.to-next-step span {
+    font-size: 17px;
+    line-height: 55px;
 }
 
 
@@ -5221,12 +5261,12 @@ input[type="checkbox"]:not(:checked) + label:before {
     width: 18px;
     height: 18px;
     border: 1px solid #dddddd;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
 input[type="checkbox"]:checked + label:before, 
 input[type="checkbox"]:not(:checked) + label:before {
-    border-radius: 2px;
+    border-radius: 0;
 }
 
 input[type="checkbox"]:checked + label:after, 
@@ -5242,8 +5282,8 @@ input[type="checkbox"]:not(:checked) + label:after {
     width: 10px;
     height: 5px;
     border-radius: 1px;
-    border-left: 4px solid #e145a3;
-    border-bottom: 4px solid #e145a3;
+    border-left: 4px solid #F50C0A;
+    border-bottom: 4px solid #F50C0A;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -5259,6 +5299,94 @@ input[type="checkbox"]:checked + label:after {
     opacity: 1;
 }
 
+.label-cb1 {
+    width: 100%;
+    user-select: none;
+}
+
+.details-body-checkboxes {
+    width: 100%;
+    height: 100%;
+    margin-top: 34px;
+}
+
 /* Стилизация чекбокс, конец */
+
+/* Календарь */
+.mx-table-date .today {
+    background-color: rgba(18,171,231, .2);
+}
+
+.details-body-field .mx-datepicker {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.mx-datepicker {
+    position: relative;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+
+.details-body-field .mx-input {
+    height: 40px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.details-body-field .mx-icon-calendar {
+    display: none;
+}
+
+.details-inside-block {
+    height: 39px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #fff;
+}
+
+.details-inside-block:hover {
+
+    background-color: rgba(255,255,255,.1);
+}
+
+.details-multiple-values {
+    position: relative;
+}
+
+.details-inputs-hidden {
+    display: none;
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: 38px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background-color: #000;
+    z-index: 2;
+}
+
+.details-multiple-values-opened .field-arrow {
+    transform: rotate(0.5turn);
+    transition: .2s transform;
+}
+
+.details-multiple-values-opened {
+    height: auto;
+    overflow: visible;
+}
+
+.details-multiple-values-opened .details-inputs-hidden {
+    display: block;
+}
+
+/* Календарь, конец */
 
 /* Детали сборки мероприятия, конец */

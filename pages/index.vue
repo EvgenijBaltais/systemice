@@ -220,6 +220,8 @@
 
 				// Mozilla
 				window.addEventListener('DOMMouseScroll', this.changeActiveElement)
+
+				window.addEventListener("touchstart", this.changeActiveElement);
 			}
 			//конец
 
