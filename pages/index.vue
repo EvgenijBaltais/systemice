@@ -22,7 +22,7 @@
 			<div class="video-box clearfix">
 				<h2 class="h2">МЕРОПРИЯТИЕ НАЧИНАЕТСЯ С НАС</h2>
 				<div class="video-container">
-					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" src="https://www.youtube.com/embed/iudxo0NaKNY?autoplay=1&mute=1&enablejsapi=1&fs=0&rel=0" frameborder="0" allowfullscreen></iframe>
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" src="https://www.youtube-nocookie.com/embed/iudxo0NaKNY?autoplay=1&mute=1&enablejsapi=1&fs=0&rel=0" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<p class="p-title">Видеопрезентация компании Systemice</p>
 			</div>
@@ -153,6 +153,8 @@
 		methods: {
 			changeActiveElement(e) {
 
+				//alert('прокрутка через тачпад ноутбука')
+
 			if (this.animationAction || e && e.target.classList.contains('slide-user-active')) return false
 
 			let carouselImg = document.getElementsByClassName('sl-teammate'),
@@ -221,7 +223,7 @@
 				// Mozilla
 				window.addEventListener('DOMMouseScroll', this.changeActiveElement)
 
-				window.addEventListener("touchstart", this.changeActiveElement);
+				//window.addEventListener("touchstart", this.changeActiveElement);
 			}
 			//конец
 

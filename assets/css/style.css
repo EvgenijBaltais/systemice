@@ -60,6 +60,9 @@ a {
 .partner {
     background-image: url('../images/bg-partner.jpg');
 }
+.events {
+    background-image: url('../images/bg.jpg');
+}
 .header {
     display: flex;
     flex-direction: row;
@@ -103,6 +106,11 @@ a {
     justify-content: space-between;
     box-sizing: border-box;
 }
+
+.content-box-arrows {
+    position: relative;
+}
+
 .content-block-w {
     width: 100%;
     display: flex;
@@ -785,6 +793,24 @@ position: absolute;
     top: 0;
 }
 
+.events .arrow-left {
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    left: -450px;
+    width: 60px;
+    height: 60px;
+}
+
+.events .arrow-right {
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    right: -450px;
+    width: 60px;
+    height: 60px;
+}
+
 .service .content-box {
     flex-wrap: wrap;
     height: 90%;
@@ -1113,6 +1139,124 @@ position: absolute;
     background-size: cover;
     background-position: top;
 }
+
+/* Тендеры */
+
+.tenders-half-width {
+    width: 48.5%;
+}
+
+.tenders-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tenders-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tenders-left {
+    width: 47.5%;
+}
+
+.tenders-right {
+    width: 47.5%;
+}
+
+.tenders-title-huge {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'ImpactRegular', sans-serif;
+    font-weight: 300;
+}
+
+.tenders-title-big {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'ImpactRegular', sans-serif;
+    font-weight: 300;
+}
+
+.tenders-date-label {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    display: block;
+    color: #fff;
+    font-family: 'RalewayRegular', sans-serif;
+    cursor: pointer;
+}
+
+.tenders-input-block {
+    width: 100%;
+    height: 42px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.tenders-input {
+    width: calc(100% - 30px);
+    height: 40px;
+    margin: 0 15px;
+    border: 0!important;
+    outline: 0!important;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #fff;
+}
+
+.tenders-input::-webkit-input-placeholder { font-size: 15px; color: #A7A7A7; }
+.tenders-input::-moz-placeholder          { font-size: 15px; color: #A7A7A7; }
+.tenders-input:-moz-placeholder           { font-size: 15px; color: #A7A7A7; }
+.tenders-input:-ms-input-placeholder      { font-size: 15px; color: #A7A7A7; }
+.tenders-input[placeholder]               { font-size: 15px; color: #A7A7A7; }
+
+.tenders-field-arrow {
+    position: absolute;
+    top: 11px;
+    bottom: 0;
+    right: 15px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/field-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    transition: .2s transform;
+}
+
+.tenders-textarea-w {
+    width: 100%;
+}
+
+.tenders-textarea {
+    width: 100%;
+    display: block;
+    min-height: 75px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #fff!important;
+    outline: 0!important;
+    background-color: transparent;
+    font-family: 'RalewayRegular', sans-serif;
+    resize: vertical;
+}
+
+.tenders-textarea::-webkit-input-placeholder { font-size: 15px; color: #A7A7A7; }
+.tenders-textarea::-moz-placeholder          { font-size: 15px; color: #A7A7A7; }
+.tenders-textarea:-moz-placeholder           { font-size: 15px; color: #A7A7A7; }
+.tenders-textarea:-ms-input-placeholder      { font-size: 15px; color: #A7A7A7; }
+.tenders-textarea[placeholder]               { font-size: 15px; color: #A7A7A7; }
+
+/* Тендеры, конец */
 
 /* Команда */
 
@@ -5111,6 +5255,12 @@ position: absolute;
     width: 100%;
 }
 
+.details-full-filled {
+    background-color: #E40000;
+    height: 1px;
+    width: 100%;
+}
+
 .details-text-span {
     font-size: 70px;
     font-family: "Impact", sans-serif;
@@ -5182,6 +5332,7 @@ position: absolute;
 }
 
 .details-body {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
@@ -5226,6 +5377,7 @@ position: absolute;
     color: #fff;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .to-next-step span {
@@ -5233,6 +5385,124 @@ position: absolute;
     line-height: 55px;
 }
 
+.details-save-status {
+    color: #01B917;
+    font-size: 13px;
+}
+
+.details-body-field-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+/* Форма по сбору мероприятий */
+
+.events-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.events-form-div {
+    width: 48.5%;
+    margin-bottom: 15px;
+}
+
+.events-form-item-w {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.events-form-item {
+    width: 100%;
+    height: 38px;
+    margin: 0 15px;
+    border: 0!important;
+    outline: 0!important;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #fff;
+}
+
+.events-textarea-w {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.events-textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    outline: 0;
+    border: 1px solid #fff!important;
+    background-color: transparent;
+    font-family: 'RalewayRegular', sans-serif;
+    resize: vertical;
+}
+
+.events-file-block {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.field__file-input {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.field__file-wrapper {
+    padding: 20px 10px 20px 50px;
+    background-image: url('../images/notes.svg');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center left;
+}
+
+.events-add-brief {
+    width: 200px;
+}
+
+.to-next-step-final {
+    width: 310px;
+    background-color: #F40000;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.to-next-step-final span {
+    font-size: 17px;
+    line-height: 55px;
+}
+
+.events-form-item::-webkit-input-placeholder { font-size: 15px; color: #A7A7A7; }
+.events-form-item::-moz-placeholder          { font-size: 15px; color: #A7A7A7; }
+.events-form-item:-moz-placeholder           { font-size: 15px; color: #A7A7A7; }
+.events-form-item:-ms-input-placeholder      { font-size: 15px; color: #A7A7A7; }
+.events-form-item[placeholder]               { font-size: 15px; color: #A7A7A7; }
+
+.events-textarea::-webkit-input-placeholder { font-size: 15px; color: #A7A7A7; }
+.events-textarea::-moz-placeholder          { font-size: 15px; color: #A7A7A7; }
+.events-textarea:-moz-placeholder           { font-size: 15px; color: #A7A7A7; }
+.events-textarea:-ms-input-placeholder      { font-size: 15px; color: #A7A7A7; }
+.events-textarea[placeholder]               { font-size: 15px; color: #A7A7A7; }
+
+/* Форма по сбору мероприятий, конец */
 
 /* Стилизация чекбокс */
 
