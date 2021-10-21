@@ -26,18 +26,20 @@
 			<div class="content-main" id = "portfolio-box">
 				<div class="slider content-slide scrolling-box" id = "portfolio-slider">
 						<div class="sl-card sl-box-1" :style="{backgroundImage: 'url(/images/conf1.jpg)'}">
-							<div class="bg-hover">
-								<div class="event-info">
-									<span class="event-name">EVENT 1</span>
-									<div class="line"></div>
-									<div class="event-desc">
-										<p>География проекта: <b>г.Ногинск, МО</b></p>
-										<p>Год проведения: <b>2018 - 2019</b></p>
-										<p>Более <b>1000</b> гостей</p>
-										<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
+							<NuxtLink to = "portfolio1/">
+								<div class="bg-hover">
+									<div class="event-info">
+										<span class="event-name">EVENT 1</span>
+										<div class="line"></div>
+										<div class="event-desc">
+											<p>География проекта: <b>г.Ногинск, МО</b></p>
+											<p>Год проведения: <b>2018 - 2019</b></p>
+											<p>Более <b>1000</b> гостей</p>
+											<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
+										</div>
 									</div>
 								</div>
-							</div></a>
+							</NuxtLink>
 						</div>
 						<div class="sl-card sl-box-2" :style="{backgroundImage: 'url(/images/conf.jpg)'}">
 							<div class="bg-hover">

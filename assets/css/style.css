@@ -439,6 +439,32 @@ position: absolute;
     cursor: pointer;
 }
 
+.arrow-left-event {
+
+    position: absolute;
+    left: -300px;
+    top: 25%;
+    width: 45px;
+    height: 60px;
+    background-image: url('../images/right.svg');
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.arrow-right-event {
+    position: absolute;
+    right: -300px;
+    top: 25%;
+    width: 45px;
+    height: 60px;
+    background-image: url('../images/right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
 .arrow-left-m {
 
     position: absolute;

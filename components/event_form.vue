@@ -111,8 +111,8 @@
             </div>
           </div>
         </div>
-        <div class="arrow-left" @click = "changeEventComponent"></div>
-        <div class="arrow-right" @click = "changeEventComponent"></div>
+        <div class="arrow-left-event" @click = "changeEventComponent"></div>
+        <div class="arrow-right-event" @click = "changeEventComponent"></div>
       </div>
     </div>
   </div>
