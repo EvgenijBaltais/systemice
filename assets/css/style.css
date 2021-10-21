@@ -78,6 +78,14 @@ a {
     padding: 2% 0;
 }
 
+.event-p{
+    overflow: auto;
+}
+
+.tenders-main {
+    overflow: auto;
+}
+
 .footer {
     min-height: 85px;
     height: 5%;
@@ -1201,6 +1209,12 @@ position: absolute;
 
 .tenders-right {
     width: 47.5%;
+}
+
+.tenders-garanties {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'RalewayRegular', sans-serif;
 }
 
 .tenders-title-huge {
@@ -5934,3 +5948,216 @@ input[type="checkbox"]:checked + label:after {
 /* Календарь, конец */
 
 /* Детали сборки мероприятия, конец */
+
+
+@media screen and (max-width: 1400px) {
+
+.tenders-title-huge {
+    margin: 0 0 30px 0;
+    min-height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+}
+
+.tenders-title-big {
+    min-height: 60px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 30px 0;
+    font-weight: 300;
+}
+
+.tenders-item {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.tenders-garanties {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.tenders-input-block {
+    margin-bottom: 30px;
+}
+
+.tenders-input::-webkit-input-placeholder { font-size: 14px; color: #fff; }
+.tenders-input::-moz-placeholder          { font-size: 14px; color: #fff; }
+.tenders-input:-moz-placeholder           { font-size: 14px; color: #fff; }
+.tenders-input:-ms-input-placeholder      { font-size: 14px; color: #fff; }
+.tenders-input[placeholder]               { font-size: 14px; color: #fff; }
+
+.tenders-send-order span {
+    font-size: 16px;
+    line-height: 45px;
+}
+
+.tenders-wrapper {
+    padding: 2.5% 2% 0;
+}
+
+}
+
+@media screen and (max-width: 1100px) {
+
+.tenders-wrapper {
+    flex-wrap: wrap;
+}
+
+.tenders-left {
+    width: 100%
+}
+
+.tenders-right {
+    width: 100%
+}
+
+.details-body {
+    flex-wrap: wrap;
+}
+
+.details-body-left {
+    width: 100%
+}
+
+.details-body-right {
+    width: 100%
+}
+
+.details-body-right {
+    margin-bottom:  50px;
+}
+.event-details {
+    width: 100%
+}
+}
+
+@media screen and (max-width: 768px) {
+
+.events-file-block {
+    flex-wrap: wrap;
+}
+
+.events-add-brief {
+    width: 100%
+}
+
+.to-next-step-final {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.details-text-span {
+    font-size: 40px;
+}
+
+.details-step-span {
+    font-size: 18px;
+    line-height: 40px;
+}
+}
+
+@media screen and (max-width: 480px) {
+
+.tenders-wrapper {
+    flex-wrap: wrap;
+    margin-top: 75px;
+}
+
+.tenders-title-huge {
+    margin: 0 0 30px 0;
+    min-height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.tenders-title-big {
+    min-height: 40px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+    font-weight: 300;
+}
+
+.tenders-important {
+    border: 1px solid #FF0000;
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+
+.tenders-important-text:before {
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: -22px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-size: 16px;
+}
+
+.tenders-important-text:after {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: -22px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+.tenders-important-text {
+
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.tenders-half-width {
+    width: 100%
+}
+
+.tenders-input::-webkit-input-placeholder { font-size: 16px; color: #fff; }
+.tenders-input::-moz-placeholder          { font-size: 16px; color: #fff; }
+.tenders-input:-moz-placeholder           { font-size: 16px; color: #fff; }
+.tenders-input:-ms-input-placeholder      { font-size: 16px; color: #fff; }
+.tenders-input[placeholder]               { font-size: 16px; color: #fff; }
+
+.send-info-btns {
+    flex-wrap: wrap;
+}
+
+.warning-info {
+    width: 100%
+}
+
+.tenders-send-order {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%
+}
+
+.send-info-btns {
+    margin-top: 30px;
+}
+
+.events-form-div {
+    width: 100%
+}
+
+.events-textarea {
+    height: 150px;
+}
+
+.event-wrapper {
+    margin: 75px auto;
+}
+
+}

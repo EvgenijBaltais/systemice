@@ -15,10 +15,10 @@
 				<span class="bl-page"> / 07</span>
 			</div>
 		</div>
-		<div class="main">
+		<div class="main event-p">
 			<pageHeader/>
 
-			<div class="content-box">
+			<div class="content-box event-wrapper">
 				<component :is="componentStatus" @updateStatus="onUpdateStatus"></component>
 			</div>
 		</div>

@@ -15,7 +15,7 @@
 				<span class="bl-page"> / 07</span>
 			</div>
 		</div>
-		<div class="main">
+		<div class="main tenders-main">
 			<pageHeader/>
 
 			<div class="content-box tenders-wrapper">
