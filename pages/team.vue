@@ -349,9 +349,9 @@ export default {
 	  },
 	beforeDestroy(){
 
-		this.glide.destroy()
-		this.glide_dots.destroy()
-		this.glide_sotrud.destroy()
+		//this.glide.destroy()
+		//this.glide_dots.destroy()
+		//this.glide_sotrud.destroy()
 
 		window.removeEventListener('mousewheel', this.mouseScroll)
 		window.removeEventListener('DOMMouseScroll', this.mouseScroll)

@@ -5520,7 +5520,6 @@ position: absolute;
     cursor: pointer;
     position: relative;
     box-sizing: border-box;
-    border: 1px solid #fff;
     overflow: hidden;
 }
 
@@ -5572,22 +5571,25 @@ position: absolute;
 }
 
 .details-body-left {
-    width: 48.5%;
+    width: 47.5%;
 }
 
 .details-body-right {
-    width: 48.5%;
+    width: 47.5%;
 }
 
 .details-body-field {
+    position: relative;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
-    min-height: 65px;
+    min-height: 40px;
+    margin-bottom: 40px;
 }
 
 .details-half-width {
+    position: relative;
     width: 48.5%;
 }
 
@@ -5603,13 +5605,18 @@ position: absolute;
 }
 
 .to-next-step {
+    position: relative;
     height: 55px;
     margin-top: 40px;
-    background-color: #F50C0A;
     color: #fff;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
+}
+
+.to-next-step:hover {
+    background-color: #FF0000;
+    transition: .2s background-color;
 }
 
 .to-next-step span {
@@ -5639,8 +5646,9 @@ position: absolute;
 }
 
 .events-form-div {
+    position: relative;
     width: 48.5%;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .events-form-item-w {
@@ -5649,7 +5657,6 @@ position: absolute;
     cursor: pointer;
     position: relative;
     box-sizing: border-box;
-    border: 1px solid #fff;
     overflow: hidden;
 }
 
@@ -5666,17 +5673,22 @@ position: absolute;
 }
 
 .events-textarea-w {
+    position: relative;
     width: 100%;
     box-sizing: border-box;
 }
 
+.events-textarea-border-w {
+    position: relative;
+}
+
 .events-textarea {
     width: 100%;
-    height: 200px;
+    height: 100px;
     padding: 15px;
     box-sizing: border-box;
     outline: 0;
-    border: 1px solid #fff!important;
+    border: 0;
     background-color: transparent;
     font-family: 'RalewayRegular', sans-serif;
     resize: vertical;
@@ -5709,12 +5721,17 @@ position: absolute;
 }
 
 .to-next-step-final {
+    position: relative;
     width: 310px;
-    background-color: #F40000;
     color: #fff;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
+}
+
+.to-next-step-final:hover {
+    background-color: #FF0000;
+    transition: .2s background-color;
 }
 
 .to-next-step-final span {
@@ -5809,7 +5826,7 @@ input[type="checkbox"]:checked + label:after {
 .details-body-checkboxes {
     width: 100%;
     height: 100%;
-    margin-top: 34px;
+    margin-top: 14px;
 }
 
 /* Стилизация чекбокс, конец */
@@ -5829,7 +5846,6 @@ input[type="checkbox"]:checked + label:after {
     height: 40px;
     padding: 0 10px;
     box-sizing: border-box;
-    border: 1px solid #fff;
 }
 
 .details-body-field .mx-input {
@@ -5865,9 +5881,9 @@ input[type="checkbox"]:checked + label:after {
 .details-inputs-hidden {
     display: none;
     position: absolute;
-    left: -1px;
-    right: -1px;
-    top: 38px;
+    left: 0;
+    right: 0;
+    top: 39px;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;

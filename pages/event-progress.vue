@@ -49,13 +49,9 @@ export default {
 	},
 
     computed: {
-      //ccc: function() {
-     //   return this.$on('cccc')
-    //  }
+
     },
 	mounted(){
-
-		//this.$on('componentStatus', this.setComponentStatus(this.componentStatus))
 
 	}
 }

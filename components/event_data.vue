@@ -11,10 +11,9 @@
       <div class="details-body">
         <div class="details-body-left">
           <div class="details-body-field">
-            <label class="details-date-label" for="">Дата мероприятия</label>
             <div class="details-body-field-w">
               <date-picker
-              placeholder="дд.мм.гг"
+              placeholder="Дата мероприятия"
               :editable="editable"
               v-model="value1"
               type="date"
@@ -24,26 +23,32 @@
               ></date-picker>
               <div class="field-arrow" @click="arrowClick"></div>
             </div>
+            <div class="spy-left-input"></div>
+            <div class="spy-bottom-input"></div>
+            <div class="spy-right-input"></div>
+            <div class="spy-top-input"></div>
           </div>
           <div class="details-body-field">
-            <label class="details-date-label" for="">Количество гостей</label>
             <div class="details-body-field-w">
               <div class="details-input-block">
                 <input
                 type="text"
                 class="details-input"
-                placeholder="Введите кол-во"
+                placeholder="Количество гостей"
                 />
               </div>
             </div>
+            <div class="spy-left-input"></div>
+            <div class="spy-bottom-input"></div>
+            <div class="spy-right-input"></div>
+            <div class="spy-top-input"></div>
           </div>
           <div class="details-body-field">
-            <label class="details-date-label" for="">Формат мероприятия</label>
             <div class="details-input-block details-multiple-values">
               <input
               type="text"
               class="details-input"
-              placeholder="Выбрать"
+              placeholder="Формат мероприятия"
               readonly="readonly"
               @click="showAllValues"
               />
@@ -78,16 +83,23 @@
               </div>
               <div class="field-arrow"></div>
             </div>
+            <div class="spy-left-input"></div>
+            <div class="spy-bottom-input"></div>
+            <div class="spy-right-input"></div>
+            <div class="spy-top-input"></div>
           </div>
           <div class="details-body-field">
-            <label class="details-date-label" for="">Бюджет</label>
             <div class="details-input-block">
               <input
               type="text"
               class="details-input"
-              placeholder="Введите бюджет в рублях"
+              placeholder="Бюджет"
               />
             </div>
+            <div class="spy-left-input"></div>
+            <div class="spy-bottom-input"></div>
+            <div class="spy-right-input"></div>
+            <div class="spy-top-input"></div>
           </div>
           <div class="details-body-field details-body-field-status">
             <span class="details-save-status">Сохранено</span>
@@ -102,59 +114,104 @@
           </div>
           <div class="details-body-field details-body-two-items">
             <div class="details-half-width">
-              <label class="details-date-label" for="">Мужчин</label>
               <div class="details-input-block">
                 <input
                 type="text"
                 class="details-input"
-                placeholder="Выбрать"
+                placeholder="Мужчин"
                 readonly="readonly"
                 />
                 <div class="field-arrow"></div>
               </div>
+              <div class="spy-left-input"></div>
+              <div class="spy-bottom-input"></div>
+              <div class="spy-right-input"></div>
+              <div class="spy-top-input"></div>
             </div>
             <div class="details-half-width">
-              <label class="details-date-label" for="">Женщин</label>
               <div class="details-input-block">
                 <input
                 type="text"
                 class="details-input"
-                placeholder="Выбрать"
+                placeholder="Женщин"
                 readonly="readonly"
                 />
                 <div class="field-arrow"></div>
               </div>
+
+              <div class="spy-left-input"></div>
+              <div class="spy-bottom-input"></div>
+              <div class="spy-right-input"></div>
+              <div class="spy-top-input"></div>
             </div>
           </div>
           <div class="details-body-field">
-            <label class="details-date-label" for="">Место проведения</label>
+            <div class="details-input-block details-multiple-values">
+              <input
+              type="text"
+              class="details-input"
+              placeholder="Место проведения"
+              readonly="readonly"
+              @click="showAllValues"
+              />
+              <div class="details-inputs-hidden">
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 1"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 2"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 3"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
+              </div>
+              <div class="field-arrow"></div>
+            </div>
+            <div class="spy-left-input"></div>
+            <div class="spy-bottom-input"></div>
+            <div class="spy-right-input"></div>
+            <div class="spy-top-input"></div>
+          </div>
+          <div class="details-body-field">
             <div class="details-input-block">
               <input
               type="text"
               class="details-input"
-              placeholder="Выбрать"
+              placeholder="Сайт компании/ссылка на соц. сети"
               readonly="readonly"
               />
               <div class="field-arrow"></div>
             </div>
-          </div>
-          <div class="details-body-field">
-            <label class="details-date-label" for=""
-            >Сайт компании/ссылка на соц. сети</label
-            >
-            <div class="details-input-block">
-              <input
-              type="text"
-              class="details-input"
-              placeholder="Вставьте ссылку"
-              readonly="readonly"
-              />
-              <div class="field-arrow"></div>
-            </div>
+            <div class="spy-left-input"></div>
+            <div class="spy-bottom-input"></div>
+            <div class="spy-right-input"></div>
+            <div class="spy-top-input"></div>
           </div>
 
           <div class="to-next-step">
             <span>К следующему шагу</span>
+              <div class="spy-left-btn"></div>
+              <div class="spy-bottom-btn"></div>
+              <div class="spy-right-btn"></div>
+              <div class="spy-top-btn"></div>
           </div>
         </div>
         <div class="arrow-left" @click = "changeEventComponent"></div>
