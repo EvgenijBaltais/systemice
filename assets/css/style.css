@@ -61,7 +61,7 @@ a {
     background-image: url('../images/bg-partner.jpg');
 }
 .events {
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/bg-event.jpg');
 }
 .header {
     display: flex;
@@ -1142,6 +1142,16 @@ position: absolute;
 
 /* Тендеры */
 
+.tenders {
+    background-image: url('../images/tenders.jpg');
+}
+
+.tenders-info-p {
+
+    font-size: 15px;
+    line-height: 22px;
+}
+
 .tenders-half-width {
     width: 48.5%;
 }
@@ -1150,11 +1160,13 @@ position: absolute;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
 .tenders-wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 2.5% 4% 0;
 }
 
 .tenders-left {
@@ -1166,57 +1178,147 @@ position: absolute;
 }
 
 .tenders-title-huge {
+    margin: 0 0 40px 0;
+    min-height: 80px;
     font-size: 80px;
+    line-height: 80px;
     text-transform: uppercase;
     font-family: 'ImpactRegular', sans-serif;
     font-weight: 300;
 }
 
 .tenders-title-big {
+    min-height: 80px;
+    padding-top: 20px;
+    box-sizing: border-box;
     font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 40px 0;
     text-transform: uppercase;
     font-family: 'ImpactRegular', sans-serif;
     font-weight: 300;
 }
 
-.tenders-date-label {
-    font-size: 18px;
-    line-height: 20px;
-    margin-bottom: 5px;
-    display: block;
-    color: #fff;
-    font-family: 'RalewayRegular', sans-serif;
-    cursor: pointer;
-}
-
 .tenders-input-block {
+    position: relative;
     width: 100%;
     height: 42px;
     cursor: pointer;
     position: relative;
     box-sizing: border-box;
-    border: 1px solid #fff;
-    overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.spy-left-input {
+
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    height: 15px;
+    width: 1px;
+    background-color: #fff;
+} 
+
+.spy-bottom-input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 80%;
+    background-color: #fff;
+}
+
+.spy-right-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 12px;
+    width: 1px;
+    background-color: #FF0000;
+}
+
+.spy-top-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 20px;
+    background-color: #FF0000;
+}
+
+.spy-left-textarea {
+
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    height: 35px;
+    width: 1px;
+    background-color: #fff;
+} 
+
+.spy-bottom-textarea {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 70%;
+    background-color: #fff;
+}
+
+.spy-right-textarea {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 1px;
+    background-color: #FF0000;
+}
+
+.spy-top-textarea {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 75px;
+    background-color: #FF0000;
+}
+
+.tenders-input-block-decorated {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    right: 42%;
+    height: 0;
+    width: auto;
+    border-bottom: 1px solid #7c7c7c;
 }
 
 .tenders-input {
-    width: calc(100% - 30px);
+    width: 100%;
     height: 40px;
-    margin: 0 15px;
+    margin: 0;
     border: 0!important;
     outline: 0!important;
     background-color: transparent;
     box-sizing: border-box;
     cursor: pointer;
     color: #fff;
+    text-indent: 15px;
 }
 
-.tenders-input::-webkit-input-placeholder { font-size: 15px; color: #A7A7A7; }
-.tenders-input::-moz-placeholder          { font-size: 15px; color: #A7A7A7; }
-.tenders-input:-moz-placeholder           { font-size: 15px; color: #A7A7A7; }
-.tenders-input:-ms-input-placeholder      { font-size: 15px; color: #A7A7A7; }
-.tenders-input[placeholder]               { font-size: 15px; color: #A7A7A7; }
+.tenders-input:hover {
+
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.tenders-input::-webkit-input-placeholder { font-size: 16px; color: #fff; }
+.tenders-input::-moz-placeholder          { font-size: 16px; color: #fff; }
+.tenders-input:-moz-placeholder           { font-size: 16px; color: #fff; }
+.tenders-input:-ms-input-placeholder      { font-size: 16px; color: #fff; }
+.tenders-input[placeholder]               { font-size: 16px; color: #fff; }
 
 .tenders-field-arrow {
     position: absolute;
@@ -1235,26 +1337,156 @@ position: absolute;
 
 .tenders-textarea-w {
     width: 100%;
+    position: relative;
 }
 
 .tenders-textarea {
     width: 100%;
     display: block;
-    min-height: 75px;
+    min-height: 50px;
     padding: 15px;
     box-sizing: border-box;
-    border: 1px solid #fff!important;
     outline: 0!important;
+    border: 0!important;
     background-color: transparent;
     font-family: 'RalewayRegular', sans-serif;
     resize: vertical;
 }
 
-.tenders-textarea::-webkit-input-placeholder { font-size: 15px; color: #A7A7A7; }
-.tenders-textarea::-moz-placeholder          { font-size: 15px; color: #A7A7A7; }
-.tenders-textarea:-moz-placeholder           { font-size: 15px; color: #A7A7A7; }
-.tenders-textarea:-ms-input-placeholder      { font-size: 15px; color: #A7A7A7; }
-.tenders-textarea[placeholder]               { font-size: 15px; color: #A7A7A7; }
+.tenders-textarea::-webkit-input-placeholder { font-size: 16px; color: #fff; }
+.tenders-textarea::-moz-placeholder          { font-size: 16px; color: #fff; }
+.tenders-textarea:-moz-placeholder           { font-size: 16px; color: #fff; }
+.tenders-textarea:-ms-input-placeholder      { font-size: 16px; color: #fff; }
+.tenders-textarea[placeholder]               { font-size: 16px; color: #fff; }
+
+
+.tenders-item {
+    padding: 5px 10px 5px 25px;
+    background-image: url(../images/list-item-right.svg);
+    background-repeat: no-repeat;
+    background-position: left 6px;
+    background-size: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'RalewayRegular', sans-serif;
+}
+
+.tenders-list {
+    margin-top: -5px;
+}
+
+.tenders-important {
+    border: 1px solid #FF0000;
+    padding: 20px 50px;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+
+.tenders-important-text {
+    position: relative;
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'RalewayRegular', sans-serif;
+    font-weight: 600;
+}
+
+.tenders-important-text:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -40px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/left-double-arrows.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.tenders-important-text:after {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: -40px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/left-double-arrows.svg);
+    transform: rotate(0.5turn);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.send-info-btns {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.warning-info {
+    width: 48.5%;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.tenders-send-order {
+    width: 48.5%;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s background-color;
+}
+
+.tenders-send-order:hover {
+    background-color: #FF0000;
+    transition: .2s background-color;
+}
+
+.tenders-send-order span {
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.spy-left-btn {
+
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    height: 35px;
+    width: 1px;
+    background-color: #FF0000;
+} 
+
+.spy-bottom-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 65%;
+    background-color: #FF0000;
+}
+
+.spy-right-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    width: 1px;
+    background-color: #FF0000;
+}
+
+.spy-top-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 65%;
+    background-color: #FF0000;
+}
 
 /* Тендеры, конец */
 
