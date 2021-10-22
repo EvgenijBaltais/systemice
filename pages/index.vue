@@ -22,7 +22,7 @@
 			<div class="video-box clearfix">
 				<h2 class="h2">МЕРОПРИЯТИЕ НАЧИНАЕТСЯ С НАС</h2>
 				<div class="video-container" @click = "startVideo($event)">
-					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" src="https://www.youtube-nocookie.com/embed/iudxo0NaKNY?mute=1&enablejsapi=1&fs=0&rel=0" frameborder="0" allowfullscreen></iframe>
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube.com/embed/iudxo0NaKNY?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<p class="p-title">Видеопрезентация компании Systemice</p>
 			</div>
@@ -154,17 +154,9 @@
 
 			startVideo(event){
 
-				console.log(event.target.querySelector('iframe'))
-
-				event.target.style.backgroundImage = 'none'
 				event.target.style.backgroundImage = 'none'
 				event.target.querySelector('iframe').style.visibility = "visible"
-
-				event.target.querySelector('#YoutubeVideo').playVideo()
-
-				function onPlayerReady(event) {
-        			event.target.playVideo();
-    			}
+				event.target.querySelector('iframe').setAttribute('src', event.target.querySelector('iframe').getAttribute('data-src'))
 			},
 
 			changeActiveElement(e) {
