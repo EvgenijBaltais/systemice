@@ -6049,6 +6049,9 @@ input[type="checkbox"]:checked + label:after {
 .event-details {
     width: 100%
 }
+.details-body-field-status {
+    display: none;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -6174,6 +6177,14 @@ input[type="checkbox"]:checked + label:after {
 
 .event-wrapper {
     margin: 75px auto;
+}
+
+.arrow-right-event {
+    display: none;
+}
+
+.arrow-left-event {
+    display: none;
 }
 
 }

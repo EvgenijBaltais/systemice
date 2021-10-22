@@ -114,30 +114,90 @@
           </div>
           <div class="details-body-field details-body-two-items">
             <div class="details-half-width">
-              <div class="details-input-block">
-                <input
-                type="text"
-                class="details-input"
-                placeholder="Мужчин"
-                readonly="readonly"
-                />
-                <div class="field-arrow"></div>
+            <div class="details-input-block details-multiple-values">
+              <input
+              type="text"
+              class="details-input"
+              placeholder="Мужчин"
+              readonly="readonly"
+              @click="showAllValues"
+              />
+              <div class="details-inputs-hidden">
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 1"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 2"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 3"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
               </div>
+              <div class="field-arrow"></div>
+            </div>
               <div class="spy-left-input"></div>
               <div class="spy-bottom-input"></div>
               <div class="spy-right-input"></div>
               <div class="spy-top-input"></div>
             </div>
             <div class="details-half-width">
-              <div class="details-input-block">
-                <input
-                type="text"
-                class="details-input"
-                placeholder="Женщин"
-                readonly="readonly"
-                />
-                <div class="field-arrow"></div>
+            <div class="details-input-block details-multiple-values">
+              <input
+              type="text"
+              class="details-input"
+              placeholder="Женщин"
+              readonly="readonly"
+              @click="showAllValues"
+              />
+              <div class="details-inputs-hidden">
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 1"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 2"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 3"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
               </div>
+              <div class="field-arrow"></div>
+            </div>
 
               <div class="spy-left-input"></div>
               <div class="spy-bottom-input"></div>
@@ -190,14 +250,46 @@
             <div class="spy-right-input"></div>
             <div class="spy-top-input"></div>
           </div>
+
+
           <div class="details-body-field">
-            <div class="details-input-block">
+            <div class="details-input-block details-multiple-values">
               <input
               type="text"
               class="details-input"
               placeholder="Сайт компании/ссылка на соц. сети"
               readonly="readonly"
+              @click="showAllValues"
               />
+              <div class="details-inputs-hidden">
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 1"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 2"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
+                <div class="details-inside-block">
+                  <input
+                  type="text"
+                  class="details-input"
+                  value="Вариант 3"
+                  readonly="readonly"
+                  @click="getThisValue"
+                  />
+                </div>
+              </div>
               <div class="field-arrow"></div>
             </div>
             <div class="spy-left-input"></div>
