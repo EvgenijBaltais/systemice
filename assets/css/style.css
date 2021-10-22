@@ -238,6 +238,7 @@ a {
     
     position: relative;
     width: 100%;
+    min-height: 70%;
     overflow: hidden;
     box-shadow: 0 0 22px 5px rgba(53,185,249,0.25);
     background-image: url('../images/video-wrapper.png');
@@ -5470,27 +5471,6 @@ position: absolute;
 
 
 
-
-
-/*
-.team .content-box {
-    height: 53vh;
-}
-
-.sl-wrapper {
-    left: -50000px;
-}
-
-.team .sl-teammate {
-    position: absolute;
-    left: 50000px;
-}
-
-.team .preview-container {
-    overflow: visible;
-}*/
-
-
 .glide__slide--active .sl-teammate {
     opacity: 1;
 }
@@ -5504,6 +5484,17 @@ position: absolute;
 }
 
 #YoutubeVideo iframe {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
     width: 100%!important;
     height: 100%!important;
 }
