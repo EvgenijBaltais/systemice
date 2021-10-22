@@ -12,8 +12,8 @@
 				<span class="company-name">ПОРТФОЛИО</span>
 			</div>
 			<div class="bl-pagination">
-				<span class="active-page">05 </span>
-				<span class="bl-page"> / 07</span>
+				<span class="active-page"></span>
+				<span class="bl-page"></span>
 			</div>
 		</div>
 

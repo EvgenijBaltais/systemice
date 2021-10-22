@@ -11,8 +11,8 @@
 				<span class="company-name">SYSTEMICE</span>
 			</div>
 			<div class="bl-pagination">
-				<span class="active-page">01 </span>
-				<span class="bl-page"> / 07</span>
+				<span class="active-page"></span>
+				<span class="bl-page"></span>
 			</div>
 		</div>
 		<div class="main event-p">

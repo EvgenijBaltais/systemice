@@ -11,14 +11,14 @@
 				<span class="company-name">SYSTEMICE</span>
 			</div>
 			<div class="bl-pagination">
-				<span class="active-page">01 </span>
-				<span class="bl-page"> / 07</span>
+				<span class="active-page">03 </span>
+				<span class="bl-page"> / 08</span>
 			</div>
 		</div>
 		<div class="main tenders-main">
 			<pageHeader/>
 
-			<div class="content-box tenders-wrapper">
+			<div class="content-box tenders-wrapper scrolling-box">
 
 				<div class = "tenders-left">
 

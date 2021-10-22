@@ -10,8 +10,8 @@
 				<span class="company-name">ПАРТНЕРЫ</span>
 			</div>
 			<div class="bl-pagination">
-				<span class="active-page">05 </span>
-				<span class="bl-page"> / 07</span>
+				<span class="active-page">06 </span>
+				<span class="bl-page"> / 08</span>
 			</div>
 		</div>
 		<div class="main" id = "partner-box">

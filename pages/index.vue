@@ -11,7 +11,7 @@
 		</div>
 		<div class="bl-pagination">
 			<span class="active-page">01 </span>
-			<span class="bl-page"> / 07</span>
+			<span class="bl-page"> / 08</span>
 		</div>
 	</div>
 	<div class="main h-page">
@@ -21,8 +21,8 @@
 		<div class="content-box video">
 			<div class="video-box clearfix">
 				<h2 class="h2">МЕРОПРИЯТИЕ НАЧИНАЕТСЯ С НАС</h2>
-				<div class="video-container">
-					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" src="https://www.youtube-nocookie.com/embed/iudxo0NaKNY?autoplay=1&mute=1&enablejsapi=1&fs=0&rel=0" frameborder="0" allowfullscreen></iframe>
+				<div class="video-container" @click = "startVideo($event)">
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" src="https://www.youtube-nocookie.com/embed/iudxo0NaKNY?mute=1&enablejsapi=1&fs=0&rel=0" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<p class="p-title">Видеопрезентация компании Systemice</p>
 			</div>
@@ -110,7 +110,7 @@
 		<div class="footer-mob">
 			<div class="bl-pagination">
 				<span class="active-page">01 </span>
-				<span class="bl-page"> / 07</span>
+				<span class="bl-page"> / 08</span>
 			</div>
 			<div class="bl-copyright">
 				<!--Ⓒ2014 - <?=date('Y');?>-->
@@ -151,6 +151,22 @@
 		},
 
 		methods: {
+
+			startVideo(event){
+
+				console.log(event.target.querySelector('iframe'))
+
+				event.target.style.backgroundImage = 'none'
+				event.target.style.backgroundImage = 'none'
+				event.target.querySelector('iframe').style.visibility = "visible"
+
+				event.target.querySelector('#YoutubeVideo').playVideo()
+
+				function onPlayerReady(event) {
+        			event.target.playVideo();
+    			}
+			},
+
 			changeActiveElement(e) {
 
 				//alert('прокрутка через тачпад ноутбука')
@@ -245,7 +261,7 @@
 				}
 			})
     
-			if (window.screen.width < 800) {
+			if (window.screen.width < 1101) {
 				glide_a.mount()
 			}
 		},

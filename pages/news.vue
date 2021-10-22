@@ -10,8 +10,8 @@
 				<span class="company-name">НОВОСТИ</span>
 			</div>
 			<div class="bl-pagination">
-				<span class="active-page">06 </span>
-				<span class="bl-page"> / 07</span>
+				<span class="active-page">07 </span>
+				<span class="bl-page"> / 08</span>
 			</div>
 		</div>
 		<div class="main bg-bg">
@@ -551,9 +551,9 @@ export default {
 	},
 	beforeDestroy(){
 
-		document.querySelector('.arrow-left').removeEventListener('click', this.moveLeft)
-		document.querySelector('.arrow-right').removeEventListener('click', this.moveRight)
-		document.removeEventListener('keydown', this.keyArrowsAction)
+		//document.querySelector('.arrow-left').removeEventListener('click', this.moveLeft)
+		//document.querySelector('.arrow-right').removeEventListener('click', this.moveRight)
+		//document.removeEventListener('keydown', this.keyArrowsAction)
 	}
 }
 

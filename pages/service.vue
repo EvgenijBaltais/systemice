@@ -11,7 +11,7 @@
 			</div>
 			<div class="bl-pagination">
 				<span class="active-page">02 </span>
-				<span class="bl-page"> / 07</span>
+				<span class="bl-page"> / 08</span>
 			</div>
 		</div>
 		<div class="main mouse-scrolling-section">

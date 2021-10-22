@@ -13,6 +13,7 @@ a {
     text-decoration: none;
     color: #fff;
 }
+
 .wrapper {
     display: flex;
     position: relative;
@@ -25,7 +26,7 @@ a {
     background-position: center;
     box-sizing: border-box;
     overflow: hidden;
-    animation: opacity 0.8s ease-in-out;
+    animation: opacity 0.4s ease-in-out;
 }
 .main-page {
     background-image: url('../images/bg.jpg');
@@ -237,9 +238,12 @@ a {
     
     position: relative;
     width: 100%;
-    height: 70%;
     overflow: hidden;
     box-shadow: 0 0 22px 5px rgba(53,185,249,0.25);
+    background-image: url('../images/video-wrapper.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .bg-btn {
@@ -1205,10 +1209,14 @@ position: absolute;
 
 .tenders-left {
     width: 47.5%;
+    animation: rights 1.3s linear;
+    position: relative;
 }
 
 .tenders-right {
     width: 47.5%;
+    animation: rights 1.6s linear;
+    position: relative;
 }
 
 .tenders-garanties {
@@ -1218,6 +1226,7 @@ position: absolute;
 }
 
 .tenders-title-huge {
+    position: relative;
     margin: 0 0 40px 0;
     min-height: 80px;
     font-size: 80px;
@@ -1225,9 +1234,11 @@ position: absolute;
     text-transform: uppercase;
     font-family: 'ImpactRegular', sans-serif;
     font-weight: 300;
+    animation: rights 1.6s linear;
 }
 
 .tenders-title-big {
+    position: relative;
     min-height: 80px;
     padding-top: 20px;
     box-sizing: border-box;
@@ -1237,6 +1248,7 @@ position: absolute;
     text-transform: uppercase;
     font-family: 'ImpactRegular', sans-serif;
     font-weight: 300;
+    animation: rights 1.6s linear;
 }
 
 .tenders-input-block {
@@ -3464,6 +3476,24 @@ position: absolute;
 
         font-size: 1.85em;
     }
+
+    .bl-desc {
+        font-size: 1.1em;
+        line-height: 1.1em;
+    }
+
+    .video .h1 {
+        font-size: 2.4em;
+    }
+
+    .info-data-item span {
+        font-size: 38px;
+        line-height: 0.9;
+    }
+    .info-data-item p {
+        font-size: 16px;
+        line-height: 1.3;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -4327,28 +4357,6 @@ position: absolute;
 
     .info-data { position:relative;margin: 0 4%; }
 
-    .info-left {
-        position: absolute;
-        display: block;
-        width: 22px;
-        height: 14px;
-        top: 40%;
-        left: 35%;
-        background-image: url(../images/arrow-left.png);
-        background-repeat: no-repeat;
-    }
-
-    .info-right {
-
-        position: absolute;
-        display: block;
-        width: 22px;
-        height: 14px;
-        top: 40%;
-        right: 15%;
-        background-image: url(../images/arrow-right.png);
-        background-repeat: no-repeat;
-    }
     .map {
         min-height: 80vh;
         overflow: visible;
@@ -4370,7 +4378,7 @@ position: absolute;
         width: 22px;
         height: 14px;
         top: 30%;
-        left: 28%;
+        left: 20px;
         background-image: url(../images/arrow-left.png);
         background-repeat: no-repeat;
     }
@@ -4380,7 +4388,7 @@ position: absolute;
         width: 22px;
         height: 14px;
         top: 30%;
-        right: 30%;
+        right: 20px;
         background-image: url(../images/arrow-right.png);
         background-repeat: no-repeat;
     }
@@ -5490,6 +5498,10 @@ position: absolute;
     max-width: 610px;
 }
 
+#YoutubeVideo {
+    visibility: hidden;
+}
+
 #YoutubeVideo iframe {
     width: 100%!important;
     height: 100%!important;
@@ -5499,8 +5511,10 @@ position: absolute;
 /* Детали сборки мероприятия */
 
 .event-details {
+    position: relative;
     width: 685px;
     margin: 0 auto;
+    animation: rights 1.3s linear;
 }
 
 .details-progress-mini {
@@ -5509,10 +5523,12 @@ position: absolute;
 }
 
 .details-header-title {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 15px;
+    animation: rights 1.6s linear;
 }
 
 .details-half-filled {
