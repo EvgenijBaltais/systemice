@@ -1786,6 +1786,7 @@ position: absolute;
 }
 
 .bl-article {
+    position: relative;
     display: block;
     width: 90%;
     height: 100%;

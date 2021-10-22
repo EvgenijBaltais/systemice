@@ -106,7 +106,7 @@
 					<span class="bl-page"> / 07</span>
 				</div>
 				<div class="bl-copyright">
-					<!--Ⓒ2014 - <?=date('Y');?>-->
+					Ⓒ2014 - 2021
 				</div>
 			</div>
 		</div>
