@@ -102,8 +102,8 @@
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">
-					<span class="active-page">04 </span>
-					<span class="bl-page"> / 07</span>
+					<span class="active-page">05 </span>
+					<span class="bl-page"> / 08</span>
 				</div>
 				<div class="bl-copyright">
 					Ⓒ2014 - 2021

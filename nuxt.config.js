@@ -5,7 +5,7 @@ export default {
   head: {
     title: 'systemice',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },

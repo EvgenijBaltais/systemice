@@ -4545,9 +4545,6 @@ position: absolute;
         height: 160%;
         width: 150%;
     }
-    .map {
-        min-height: 80vh;
-    }
     .spb, .sochi, .tula, .msk { font-size: 19px; }
 
     .spb { left: 27%; }
@@ -4886,8 +4883,13 @@ position: absolute;
     .service-block {
         width: 100%;
     }
-    .service .content-box, .video {
-        margin: 45px 0;
+
+    .map-bg {
+        top: 0;
+    }
+    .service .content-box {
+        overflow: hidden;
+        padding: 0;
     }
     .video, .map {
         overflow: visible;
@@ -4952,7 +4954,7 @@ position: absolute;
     }
     .video {
         margin-top: 75px;
-        height: auto;
+        height: 65vh;
         overflow: visible;
     }
     .bl-preview {
@@ -4981,9 +4983,16 @@ position: absolute;
         height: 160%;
         width: 150%;
     }
+    .video.hidden-screen {
+        margin: 0;
+    }
+    .map.hidden-screen {
+        margin: 0;
+    }
     .map {
         min-height: 65vh;
         overflow: visible;
+        margin-top: 75px;
     }
     .spb, .sochi, .tula, .msk { font-size: 19px; }
 
@@ -5017,7 +5026,13 @@ position: absolute;
     }
     .service-desc {
         padding-top: 10px;
-        width: 50%;
+        width: 53%;
+    }
+    .menu-item {
+        margin-bottom: 10px;
+    }
+    .menu-list {
+        margin-top: 50px;
     }
     .service {
         background-position: center;
@@ -5027,6 +5042,7 @@ position: absolute;
     }
     .service .h1 {
         margin: 0 0 12px;
+        font-size: 20px;
     }
     .service .tr-bottom {
         margin-top: 0;
@@ -5312,6 +5328,7 @@ position: absolute;
 
     .map .h1 {
         font-size: 38px;
+        line-height: 40px;
     }
 
     .service .bl-preview {

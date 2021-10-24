@@ -161,8 +161,6 @@
 
 			changeActiveElement(e) {
 
-				//alert('прокрутка через тачпад ноутбука')
-
 			if (this.animationAction || e && e.target.classList.contains('slide-user-active')) return false
 
 			let carouselImg = document.getElementsByClassName('sl-teammate'),
