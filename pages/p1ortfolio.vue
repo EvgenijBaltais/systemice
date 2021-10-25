@@ -25,50 +25,19 @@
 			</div>
 			<div class="content-main" id = "portfolio-box">
 				<div class="slider content-slide scrolling-box" id = "portfolio-slider">
-						<div class="sl-card sl-box-1" :style="{backgroundImage: `url(${require('../assets/images/portfolio/atom_skills/1.jpg')})`}">
-							<NuxtLink to = "/portfolio1/">
+
+						<div v-for = "(item, index) in portfolioData"
+						:key="item.title" :class="['sl-card', 'sl-box-' + (index === 0 ? 1 : 2)]"
+						:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1.jpg')})`}">
+							<NuxtLink :to = "{path: `/portfolio/${++index}`}">
 								<div class="bg-hover">
 									<div class="event-info">
-										<span class="event-name">Открытая пленарная дискуссия ATOM SKILLS</span>
+										<span class="event-name">item.title</span>
 									</div>
 								</div>
 							</NuxtLink>
 						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: `url(${require('../assets/images/portfolio/elektroenergeticheskiy/1.jpg')})`}">
-							<div class="bg-hover">
-								<div class="event-info">
-									<span class="event-name">Второй Молодежный Слет дивизиона «Электроэнергетический»</span>
-								</div>
-							</div>
-						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: `url(${require('../assets/images/portfolio/atom_skills_open/1.jpg')})`}">
-							<div class="bg-hover">
-								<div class="event-info">
-									<span class="event-name">Церемония открытия чемпионата ATOM SKILLS</span>
-								</div>
-							</div>
-						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: `url(${require('../assets/images/portfolio/atoms_skills_business/1.jpg')})`}">
-							<div class="bg-hover">
-								<div class="event-info">
-									<span class="event-name">Деловая программа ATOM SKILLS</span>
-								</div>
-							</div>
-						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: `url(${require('../assets/images/portfolio/atom_skills_breakfast/1.jpg')})`}">
-							<div class="bg-hover">
-								<div class="event-info">
-									<span class="event-name">Бизнес-завтрак «кухня» инноваций ATOM SKILLS</span>
-								</div>
-							</div>
-						</div>
-						<div class="sl-card sl-box-2" :style="{backgroundImage: `url(${require('../assets/images/portfolio/karakuri/1.jpg')})`}">
-						<div class="bg-hover">
-							<div class="event-info">
-								<span class="event-name">Мероприятие по развитию направления «Каракури»</span>
-							</div>
-						</div>
-					</div>
+
 				</div>
 			</div>
 			<div class="footer-mob">
@@ -110,7 +79,8 @@ export default {
 			activePage: 0,
 			dots: '',
 			visibleSlides: 6,
-			pages: 0
+			pages: 0,
+			portfolioData: this.$store.state.portfolioData
 		}
 	},
 	components: {
