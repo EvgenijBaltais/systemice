@@ -7,7 +7,7 @@
 				</NuxtLink>
 			</div>
 			<div class="bl-menu-title">
-				<span class="company-name">ПОРТФОЛИО</span>
+				<span class="company-name">Мероприятие</span>
 			</div>
 			<div class="bl-pagination">
 				<span class="active-page"></span>
@@ -41,13 +41,12 @@
 					</div>
 					<div class="inter-event-page">
 						<div class="event-info">
-							<span class="event-name">EVENT 1</span>
+							<span class="event-name">{{portfolioData[item].title}}</span>
 							<div class="line"></div>
 							<div class="event-desc">
-								<p>География проекта: <b>г.Ногинск, МО</b></p>
-								<p>Год проведения: <b>2018 - 2019</b></p>
-								<p>Более <b>1000</b> гостей</p>
-								<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
+								<p v-html="portfolioData[item].dateData"></p>
+								<p v-html="portfolioData[item].membersData"></p>
+								<p v-html="portfolioData[item].spectators"></p>
 							</div>
 						</div>
 						<form class="contact-form contact-info" id = "portfolio-form">
@@ -89,7 +88,10 @@
 						</form>
 					</div>
 				</div>
-				<p class="event-description">Phasellus sit amet odio quis neque lobortis facilisis. Curabitur pretium ac lacus at ultricies.<br><br> Quisque tincidunt nibh ut nulla venenatis dignissim. Curabitur iaculis erat ac est ultricies posuere. Duis tincidunt suscipit ex pretium fermentum. Mauris urna odio, sagittis ac aliquam sed, pharetra quis ex. Donec convallis tellus nunc, vitae finibus nunc feugiat eget.<br><br> Sed pharetra faucibus odio non maximus. Donec id lectus elementum, facilisis massa vitae, fermentum tellus. Nulla erat turpis, tristique non mauris et, egestas tempus orci.Phasellus sit amet odio quis neque lobortis facilisis. Curabitur pretium ac lacus at ultricies.<br><br> Quisque tincidunt nibh ut nulla venenatis dignissim. Curabitur iaculis erat ac est ultricies posuere. Duis tincidunt suscipit ex pretium fermentum. Mauris urna odio, sagittis ac aliquam sed, pharetra quis ex. Donec convallis tellus nunc, vitae finibus nunc feugiat eget.<br><br> Sed pharetra faucibus odio non maximus. Donec id lectus elementum, facilisis massa vitae, fermentum tellus. Nulla erat turpis, tristique non mauris et, egestas tempus orci.Phasellus sit amet odio quis neque lobortis facilisis. Curabitur pretium ac lacus at ultricies.<br><br> Quisque tincidunt nibh ut nulla venenatis dignissim. Curabitur iaculis erat ac est ultricies posuere. Duis tincidunt suscipit ex pretium fermentum. Mauris urna odio, sagittis ac aliquam sed, pharetra quis ex. Donec convallis tellus nunc, vitae finibus nunc feugiat eget.<br><br> Sed pharetra faucibus odio non maximus. Donec id lectus elementum, facilisis massa vitae, fermentum tellus. Nulla erat turpis, tristique non mauris et, egestas tempus orci.Phasellus sit amet odio quis neque lobortis facilisis. Curabitur pretium ac lacus at ultricies.<br><br> Quisque tincidunt nibh ut nulla venenatis dignissim. Curabitur iaculis erat ac est ultricies posuere. Duis tincidunt suscipit ex pretium fermentum. Mauris urna odio, sagittis ac aliquam sed, pharetra quis ex. Donec convallis tellus nunc, vitae finibus nunc feugiat eget.<br><br> Sed pharetra faucibus odio non maximus. Donec id lectus elementum, facilisis massa vitae, fermentum tellus. Nulla erat turpis, tristique non mauris et, egestas tempus orci.</p>
+
+				<ul>
+					<li v-for = "item in portfolioData[item].details" :key="item">{{item}}</li>
+				</ul>
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">
@@ -124,7 +126,8 @@ export default {
 	},
 	data(){
 		return {
-
+			item: this.$route.params.item - 1,
+			portfolioData: this.$store.state.portfolioData
 		}
 	},
 	components: {
