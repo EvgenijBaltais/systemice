@@ -224,12 +224,12 @@
 				// Промотка секций при скроллинге мышью
 
 				// Не Mozilla
-				window.addEventListener('mousewheel', this.changeActiveElement)
+				//window.addEventListener('mousewheel', this.changeActiveElement)
 
 				// Mozilla
-				window.addEventListener('DOMMouseScroll', this.changeActiveElement)
+				//window.addEventListener('DOMMouseScroll', this.changeActiveElement)
 
-				window.addEventListener("touchmove", this.changeActiveElement);
+				//window.addEventListener("touchmove", this.changeActiveElement);
 
 			}
 			//конец
