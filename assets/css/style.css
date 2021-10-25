@@ -1046,7 +1046,8 @@ position: absolute;
     display: inline-block;
     margin-bottom: 5px;
     font-family: 'Impact', sans-serif;
-    font-size: 36px;
+    font-size: 30px;
+    line-height: 32px;
 }
 
 .event-desc {
@@ -3715,6 +3716,26 @@ position: absolute;
         opacity: 1;
         transition: .3s transform;
         transform: scale(1.1);
+    }
+
+    .bg-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0; 
+        -webkit-transition: ease-in-out .8s;
+        -o-transition: ease-in-out .8s;
+        transition: ease-in-out .8s;
+        background: linear-gradient(to top, rgba(0, 0, 0, .9) 15%, rgba(36, 50, 74, 0) 40%)
+    }
+    
+    .sl-card .bg-hover {
+    
+        opacity: 1;
+        -webkit-transition: opacity ease-in-out .8s;
+        -o-transition: opacity ease-in-out .8s;
     }
 }
 
