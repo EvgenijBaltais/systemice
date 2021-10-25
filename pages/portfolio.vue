@@ -30,12 +30,6 @@
 								<div class="bg-hover">
 									<div class="event-info">
 										<span class="event-name">Открытая пленарная дискуссия ATOM SKILLS</span>
-										<div class="line"></div>
-										<div class="event-desc">
-											<p>24.07.2020 г.</p>
-											<p>На площадке – 6 в кадре, 22 за кадром</p>
-											<p>Посмотрели онлайн – 4000+</p>
-										</div>
 									</div>
 								</div>
 							</NuxtLink>
@@ -44,12 +38,6 @@
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">Второй Молодежный Слет дивизиона «Электроэнергетический»</span>
-									<div class="line"></div>
-									<div class="event-desc">
-											<p>16 - 17.07.2020 г.</p>
-											<p>На площадке – 18 в кадре, 27 за кадром</p>
-											<p>Посмотрели онлайн – 1400+ человек</p>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -57,12 +45,6 @@
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">Церемония открытия чемпионата ATOM SKILLS</span>
-									<div class="line"></div>
-									<div class="event-desc">
-											<p>24.07.2020 г.</p>
-											<p>На площадке – 26 в кадре, 32 за кадром</p>
-											<p>Посмотрели онлайн – 9000+</p>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -70,12 +52,6 @@
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">Деловая программа ATOM SKILLS</span>
-									<div class="line"></div>
-									<div class="event-desc">
-											<p>19.08.2020 г.</p>
-											<p>Было в студии - 6 в кадре, 19 за кадром</p>
-											<p>Посмотрели онлайн - 1000+</p>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -83,12 +59,6 @@
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">Бизнес-завтрак «кухня» инноваций ATOM SKILLS</span>
-									<div class="line"></div>
-									<div class="event-desc">
-											<p>28.07.2020 г.</p>
-											<p>На площадке – 14 в кадре, 38 за кадром</p>
-											<p>Посмотрели онлайн – 3500+</p>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -96,12 +66,6 @@
 						<div class="bg-hover">
 							<div class="event-info">
 								<span class="event-name">Мероприятие по развитию направления «Каракури»</span>
-								<div class="line"></div>
-								<div class="event-desc">
-										<p>18.08.2020 г</p>
-										<p>Было в студии - 7 в кадре, 22 за кадром</p>
-										<p>Посмотрели онлайн - 1000+</p>
-								</div>
 							</div>
 						</div>
 					</div>

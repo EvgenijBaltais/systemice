@@ -1002,7 +1002,11 @@ position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0; 
+    opacity: 1; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
     -webkit-transition: ease-in-out .8s;
     -o-transition: ease-in-out .8s;
     transition: ease-in-out .8s;
@@ -1018,10 +1022,8 @@ position: absolute;
 
 .event-info {
 
-    position: absolute;
     opacity: 0;
     display: block;
-    bottom: 30px;
      -webkit-transition: ease-in-out .5s;
      transition:ease-in-out .5s;
 }
@@ -1030,8 +1032,8 @@ position: absolute;
 }
 .bg-hover .event-info {
     opacity: 1;
-    transform: translate3d(5%,0,0);
-    transition: all ease-in-out .5s;
+    /*transform: translate3d(5%,0,0);
+    transition: all ease-in-out .5s;*/
 }
 
 @keyframes hover {
@@ -1046,8 +1048,8 @@ position: absolute;
     display: inline-block;
     margin-bottom: 5px;
     font-family: 'Impact', sans-serif;
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 30px;
 }
 
 .event-desc {
@@ -3474,6 +3476,14 @@ position: absolute;
     }
 }
 
+@media screen and (max-width: 1600px) {
+
+.event-name {
+    font-size: 22px;
+    line-height: 24px;
+}
+}
+
 @media screen and (max-width: 1390px) {
 
     .h2 {
@@ -3627,6 +3637,10 @@ position: absolute;
     .menu-item {
         margin-bottom: 10px;
     }
+    .event-name {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -3736,6 +3750,10 @@ position: absolute;
         opacity: 1;
         -webkit-transition: opacity ease-in-out .8s;
         -o-transition: opacity ease-in-out .8s;
+    }
+    .event-name {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 
@@ -4473,6 +4491,11 @@ position: absolute;
 
     .glide-c .glide__track {
         height: 350px;
+    }
+
+    .event-name {
+        font-size: 18px;
+        line-height: 22px;
     }
 }
 
@@ -5263,7 +5286,10 @@ position: absolute;
 
     .slider-block { min-height: auto; }
 
-    .event-name { font-size: 40px; }
+    .event-name {
+        font-size: 24px;
+        line-height: 28px;
+    }
     .event-desc p {font-size: 16px;}
     .inter-event-page .event-info {padding-bottom: 25px;}
 
