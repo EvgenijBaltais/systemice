@@ -32,7 +32,7 @@
 							<NuxtLink :to = "{path: `/portfolio/${++index}`}">
 								<div class="bg-hover">
 									<div class="event-info">
-										<span class="event-name">item.title</span>
+										<span class="event-name">{{item.title}}</span>
 									</div>
 								</div>
 							</NuxtLink>
