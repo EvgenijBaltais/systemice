@@ -26,7 +26,7 @@
 			<div class="content-main" id = "portfolio-box">
 				<div class="slider content-slide scrolling-box" id = "portfolio-slider">
 						<div class="sl-card sl-box-1" :style="{backgroundImage: `url(${require('../assets/images/portfolio/atom_skills/1.jpg')})`}">
-							<NuxtLink to = "portfolio1/">
+							<NuxtLink to = "/portfolio1/">
 								<div class="bg-hover">
 									<div class="event-info">
 										<span class="event-name">Открытая пленарная дискуссия ATOM SKILLS</span>
