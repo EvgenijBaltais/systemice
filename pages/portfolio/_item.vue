@@ -25,7 +25,6 @@
 							<img class="sl-search" src="@/assets/images/icons/search.png">
 								<div class="bl-info-wrapper glide__track" data-glide-el="track">
 									<ul class="glide__slides glide__slides-b">
-
 										<li class="content-slide glide__slide" v-for = "item in portfolioData[eventItem].pics">
 											<div class="slides-img" :style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + portfolioData[eventItem].picsFolder + '/' + item + '.jpg')})`}"></div>
 										</li>

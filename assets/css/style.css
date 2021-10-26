@@ -924,6 +924,10 @@ position: absolute;
     max-width: 2100px;
 }
 
+.content-main.event-page {
+    height: 100%;
+}
+
 .portfolio .content-main {
     margin: 25px 0 auto 0;
     padding: 0 4%;
@@ -3651,7 +3655,7 @@ position: absolute;
 
     .menu-list {
         font-size: 16px;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .menu-item {
         margin-bottom: 10px;
@@ -4440,7 +4444,7 @@ position: absolute;
 }
 
 .glide-b .glide__slides {
-    height: 300px
+    height: 100%
 }
 
 .info-data-item {
@@ -4553,10 +4557,6 @@ position: absolute;
     .event-name {
         font-size: 18px;
         line-height: 22px;
-    }
-
-    .content-main.event-page {
-        height: auto;
     }
 }
 
@@ -5315,7 +5315,7 @@ position: absolute;
 
     .event-check .checkbox-label{width: 50%;}
 
-    .menu-list { font-size: 16px; margin-top: 75px;}
+    .menu-list { font-size: 16px;}
 
     .event-page-wrapper {
 
@@ -5547,6 +5547,14 @@ position: absolute;
     }
     .info-right {
         right: -20px
+    }
+
+    .event-page-wrapper {
+        margin-top: 75px;
+    }
+
+    .event-page .bl-preview {
+        display: none
     }
 }
 
