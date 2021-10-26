@@ -1914,8 +1914,10 @@ position: absolute;
 
 .sl-search {   
     position: absolute;
-    top: 47%;
-    left: 47%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 30px;
     height: 30px;
     margin: auto;
@@ -2166,13 +2168,18 @@ position: absolute;
         
         height: 35px;
         width: 100%;
-        padding: 0 10px;
         background: transparent;
         border: none;
         outline: none;
         color: #fff;
         font-weight: 200;
         font-size: 16px;
+        text-indent: 15px;
+        padding: 0;
+    }
+
+    .contact-info .send-button {
+        text-indent: 0;
     }
 
     .contact-info input:hover {
@@ -2881,9 +2888,10 @@ position: absolute;
     }
 
     .event-page-sl .arrow-left {
-        top: 45%;
-
-        left: 3%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 2%;
 
         width: 30px;
 
@@ -2895,9 +2903,10 @@ position: absolute;
         max-height: 450px;
 }
     .event-page-sl .arrow-right {
-        top: 45%;
-
-        right: 3%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 2%;
 
         width: 30px;
 
@@ -3647,10 +3656,6 @@ position: absolute;
     }
     .news-slider .arrow-left-m, .news-slider .arrow-right-m {
         top: 40%;
-    }
-    .sl-search {
-        top: 47%;
-        left: 47%;
     }
 
     .menu-list {
@@ -5377,7 +5382,7 @@ position: absolute;
 
     .contact-info input {
         height: 40px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .sl-card {

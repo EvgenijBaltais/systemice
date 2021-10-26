@@ -20,9 +20,8 @@
 				<div class="event-page-wrapper">
 					<div class="event-page-sl">
 						<div class="slider-block glide-b">
-							<a class="arrow-left"></a>
-							<a class="arrow-right"></a>
-							<img class="sl-search" src="@/assets/images/icons/search.png">
+							<a class="arrow-left" @click = "moveLeft"></a>
+							<a class="arrow-right" @click = "moveRight"></a>
 								<div class="bl-info-wrapper glide__track" data-glide-el="track">
 									<ul class="glide__slides glide__slides-b">
 										<li class="content-slide glide__slide" v-for = "item in portfolioData[eventItem].pics">
@@ -51,17 +50,17 @@
 							<div class="form-line">
 								<div class="input-box">
 									<input type="text" name="name" class = "contact-name" placeholder="Ваше имя">
-									<div class="spy-left"></div>
-									<div class="spy-top"></div>
-									<div class="spy-right"></div>
-									<div class="spy-bottom"></div>
+									<div class="spy-left-input"></div>
+									<div class="spy-top-input"></div>
+									<div class="spy-right-input"></div>
+									<div class="spy-bottom-input"></div>
 								</div>
 								<div class="input-box">
 									<input type="text" name="phone" class = "contact-phone" placeholder="Телефон">
-									<div class="spy-left"></div>
-									<div class="spy-top"></div>
-									<div class="spy-right"></div>
-									<div class="spy-bottom"></div>
+									<div class="spy-left-input"></div>
+									<div class="spy-top-input"></div>
+									<div class="spy-right-input"></div>
+									<div class="spy-bottom-input"></div>
 								</div>
 							</div>
 							<label class="checkbox-block">
@@ -123,27 +122,34 @@ export default {
 	data(){
 		return {
 			eventItem: this.$route.params.item - 1,
-			portfolioData: this.$store.state.portfolioData
+			portfolioData: this.$store.state.portfolioData,
+			glide_b: {}
 		}
 	},
 	components: {
 		blRight, pageHeader
   	},
 	methods: {
+        moveLeft(){
+            this.glide_b.go('<')
+        },
 
+        moveRight(){
+            this.glide_b.go('>')
+        }
 	},
 	  mounted() {
 
 			// Карусель glide js для информации рядом с картой
 
-			let glide_b = new Glide('.glide-b', {
+			this.glide_b = new Glide('.glide-b', {
 				type: 'carousel',
 				startAt: 1,
 				perView: 1,
 				gap: 5
 			})
     
-			glide_b.mount()
+			this.glide_b.mount()
 
 	},
 	beforeDestroy() {
