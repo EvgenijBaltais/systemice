@@ -60,8 +60,8 @@
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
-					<img class="link-arrow dop-arrow-left" src="@/assets/images/arrow-left.png">
-					<img class="link-arrow dop-arrow-right" src="@/assets/images/arrow-right.png">
+					<img class="link-arrow dop-arrow-left" src="@/assets/images/icons/arrow-left.png">
+					<img class="link-arrow dop-arrow-right" src="@/assets/images/icons/arrow-right.png">
 					<div class = "sl-wrapper-shadow glide">
 						<div data-glide-el="track" class="sl-wrapperglide__track">
 							<ul class="glide__slides">

@@ -64,7 +64,7 @@
 				<div class="contact-map">
 					<div id="map-block"></div>
 					<div class="copy-coordinat">
-						<img src="@/assets/images/sheet.png"><span id = "copy-text" data-clipboard-text="55.775555, 37.674597">Скопировать координаты для навигатора копия</span>
+						<img src="@/assets/images/icons/sheet.png"><span id = "copy-text" data-clipboard-text="55.775555, 37.674597">Скопировать координаты для навигатора копия</span>
 					</div>
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>

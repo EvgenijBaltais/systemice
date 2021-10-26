@@ -22,7 +22,7 @@
 						<div class="slider-block">
 							<a class="arrow-left"></a>
 							<a class="arrow-right"></a>
-							<img class="sl-search" src="@/assets/images/search.png">
+							<img class="sl-search" src="@/assets/images/icons/search.png">
 							<div class="slides-block">
 								<div class="news-sldr-box content-slide">
 									<a href="../images/conf1.jpg" class="lightcase-pic"  data-rel="lightcase:myPortfolioCollection"><div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div></a>

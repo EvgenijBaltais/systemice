@@ -28,7 +28,7 @@
 							<div class="container-sl">
 								<a class="arrow-left"></a>
 								<a class="arrow-right"></a>
-								<img class="sl-search" src="@/assets/images/search.png">
+								<img class="sl-search" src="@/assets/images/icons/search.png">
 								<div class="news-slides"></div>
 							</div>
 							<div class="bl-preview">
@@ -445,7 +445,7 @@ export default {
 									<div class="container-sl">
 										<a class="arrow-left-m"></a>
 										<a class="arrow-right-m"></a>
-										<img class="sl-search" src="../images/search.png">
+										<img class="sl-search" src="../images/icons/search.png">
 										<div class="news-slides">${picsHtml}</div>
 									</div>
 								</div>

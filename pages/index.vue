@@ -90,7 +90,7 @@
 				<div class="spy-top"></div>
 				<div class="spy-right"></div>
 				<div class="spy-bottom"></div>
-				<img class="link-arrow dop-arrow-right" src="@/assets/images/arrow-right.png">
+				<img class="link-arrow dop-arrow-right" src="@/assets/images/icons/arrow-right.png">
 				<div class = "sl-wrapper-shadow">
 					<div class = "sl-wrapper">
 						<img src = "@/assets/images/m1.png" class="sl-teammate preview-item preview-item-first prev-page-show slide-user-active">

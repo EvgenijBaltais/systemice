@@ -21,7 +21,7 @@
               :clearable="false"
               :disabled-date="(date) => date < tomorrow"
               ></date-picker>
-              <div class="field-arrow" @click="arrowClick"></div>
+              <div class="field-datepicker" @click="calendarClick"></div>
             </div>
             <div class="spy-left-input"></div>
             <div class="spy-bottom-input"></div>
@@ -81,7 +81,7 @@
                   />
                 </div>
               </div>
-              <div class="field-arrow"></div>
+              <div class="field-arrow" @click="arrowClick"></div>
             </div>
             <div class="spy-left-input"></div>
             <div class="spy-bottom-input"></div>
@@ -151,7 +151,7 @@
                   />
                 </div>
               </div>
-              <div class="field-arrow"></div>
+              <div class="field-arrow" @click="arrowClick"></div>
             </div>
               <div class="spy-left-input"></div>
               <div class="spy-bottom-input"></div>
@@ -196,7 +196,7 @@
                   />
                 </div>
               </div>
-              <div class="field-arrow"></div>
+              <div class="field-arrow" @click="arrowClick"></div>
             </div>
 
               <div class="spy-left-input"></div>
@@ -243,7 +243,7 @@
                   />
                 </div>
               </div>
-              <div class="field-arrow"></div>
+              <div class="field-arrow" @click="arrowClick"></div>
             </div>
             <div class="spy-left-input"></div>
             <div class="spy-bottom-input"></div>
@@ -253,44 +253,14 @@
 
 
           <div class="details-body-field">
-            <div class="details-input-block details-multiple-values">
-              <input
-              type="text"
-              class="details-input"
-              placeholder="Сайт компании/ссылка на соц. сети"
-              readonly="readonly"
-              @click="showAllValues"
-              />
-              <div class="details-inputs-hidden">
-                <div class="details-inside-block">
-                  <input
-                  type="text"
-                  class="details-input"
-                  value="Вариант 1"
-                  readonly="readonly"
-                  @click="getThisValue"
-                  />
-                </div>
-                <div class="details-inside-block">
-                  <input
-                  type="text"
-                  class="details-input"
-                  value="Вариант 2"
-                  readonly="readonly"
-                  @click="getThisValue"
-                  />
-                </div>
-                <div class="details-inside-block">
-                  <input
-                  type="text"
-                  class="details-input"
-                  value="Вариант 3"
-                  readonly="readonly"
-                  @click="getThisValue"
-                  />
-                </div>
+            <div class="details-body-field-w">
+              <div class="details-input-block">
+                <input
+                type="text"
+                class="details-input"
+                placeholder="Сайт компании/ссылка на соц. сети"
+                />
               </div>
-              <div class="field-arrow"></div>
             </div>
             <div class="spy-left-input"></div>
             <div class="spy-bottom-input"></div>
@@ -336,8 +306,13 @@ export default {
       this.$emit('updateStatus', this.siblingComponent)
     },
 
-    arrowClick(e) {
+    calendarClick(e) {
       let ev = new Event("focus");
+      e.target.parentElement.querySelector("input").dispatchEvent(ev);
+    },
+
+    arrowClick(e) {
+      let ev = new Event("click");
       e.target.parentElement.querySelector("input").dispatchEvent(ev);
     },
 

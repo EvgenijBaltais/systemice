@@ -434,7 +434,7 @@ position: absolute;
     top: 25%;
     width: 28px;
     height: 28px;
-    background-image: url('../images/right.svg');
+    background-image: url('../images/icons/right.svg');
     transform: rotate(180deg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -447,7 +447,7 @@ position: absolute;
     top: 25%;
     width: 28px;
     height: 28px;
-    background-image: url('../images/right.svg');
+    background-image: url('../images/icons/right.svg');
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
@@ -460,7 +460,7 @@ position: absolute;
     top: 25%;
     width: 45px;
     height: 60px;
-    background-image: url('../images/right.svg');
+    background-image: url('../images/icons/right.svg');
     transform: rotate(180deg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -473,7 +473,7 @@ position: absolute;
     top: 25%;
     width: 45px;
     height: 60px;
-    background-image: url('../images/right.svg');
+    background-image: url('../images/icons/right.svg');
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
@@ -486,7 +486,7 @@ position: absolute;
     top: 25%;
     width: 28px;
     height: 28px;
-    background-image: url('../images/right.svg');
+    background-image: url('../images/icons/right.svg');
     transform: rotate(180deg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -499,7 +499,7 @@ position: absolute;
     top: 25%;
     width: 28px;
     height: 28px;
-    background-image: url('../images/right.svg');
+    background-image: url('../images/icons/right.svg');
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
@@ -1004,7 +1004,7 @@ position: absolute;
     bottom: 0;
     opacity: 0; 
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     padding: 10px;
     box-sizing: border-box;
     -webkit-transition: ease-in-out .8s;
@@ -1385,7 +1385,7 @@ position: absolute;
     cursor: pointer;
     width: 18px;
     height: 18px;
-    background-image: url('../images/field-arrow.svg');
+    background-image: url('../images/icons/field-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px;
@@ -1419,7 +1419,7 @@ position: absolute;
 
 .tenders-item {
     padding: 5px 10px 5px 25px;
-    background-image: url(../images/list-item-right.svg);
+    background-image: url(../images/icons/list-item-right.svg);
     background-repeat: no-repeat;
     background-position: left 6px;
     background-size: 18px;
@@ -1456,7 +1456,7 @@ position: absolute;
     content: '';
     width: 20px;
     height: 20px;
-    background-image: url(../images/left-double-arrows.svg);
+    background-image: url(../images/icons/left-double-arrows.svg);
     background-repeat: no-repeat;
     background-size: 20px;
 }
@@ -1469,7 +1469,7 @@ position: absolute;
     content: '';
     width: 20px;
     height: 20px;
-    background-image: url(../images/left-double-arrows.svg);
+    background-image: url(../images/icons/left-double-arrows.svg);
     transform: rotate(0.5turn);
     background-repeat: no-repeat;
     background-size: 20px;
@@ -2184,7 +2184,7 @@ position: absolute;
         height: 8px;
         top: 0px;
         left: 3px;
-        background-image: url(../images/check.png);
+        background-image: url(../images/icons/check.png);
         background-repeat: no-repeat;
     }
 
@@ -2574,7 +2574,7 @@ position: absolute;
         background-color: #fff8db;
     }
     #star-hall input:checked ~ label .star-box, #star-hall label .star-box, #star-hall label:hover .star-box, #star-hall label:hover ~ label .star-box {
-      background: url(../images/star.png) no-repeat;
+      background: url(../images/icons/star.svg) no-repeat;
         position: absolute;
         background-size: 20px;
         width: 20px;
@@ -2735,7 +2735,7 @@ position: absolute;
         width: 45px;
         height: 60px;
         background-size: cover;
-        background-image: url(../images/right.svg);
+        background-image: url(../images/icons/right.svg);
         transform: rotate(-180deg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -2749,7 +2749,7 @@ position: absolute;
         width: 45px;
         height: 60px;
         background-size: cover;
-        background-image: url(../images/right.svg);
+        background-image: url(../images/icons/right.svg);
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -4421,7 +4421,7 @@ position: absolute;
         height: 14px;
         top: 30%;
         left: 20px;
-        background-image: url(../images/arrow-left.png);
+        background-image: url(../images/icons/arrow-left.png);
         background-repeat: no-repeat;
     }
     .info-right {
@@ -4431,7 +4431,7 @@ position: absolute;
         height: 14px;
         top: 30%;
         right: 20px;
-        background-image: url(../images/arrow-right.png);
+        background-image: url(../images/icons/arrow-right.png);
         background-repeat: no-repeat;
     }
     .bl-article {
@@ -5668,7 +5668,23 @@ iframe {
     cursor: pointer;
     width: 18px;
     height: 18px;
-    background-image: url('../images/field-arrow.svg');
+    background-image: url('../images/icons/field-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    transition: .2s transform;
+}
+
+.field-datepicker {
+
+    position: absolute;
+    top: 11px;
+    bottom: 0;
+    right: 15px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/icons/calendar.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px;
@@ -5823,7 +5839,7 @@ iframe {
 
 .field__file-wrapper {
     padding: 20px 10px 20px 50px;
-    background-image: url('../images/notes.svg');
+    background-image: url('../images/icons/notes.svg');
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center left;

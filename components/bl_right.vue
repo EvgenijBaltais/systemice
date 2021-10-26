@@ -38,7 +38,7 @@
 		<div>
 			<div class="bl-social">
 				<a href="https://www.instagram.com/systemice/" target = "_blank" class="social-link">
-					<img src="@/assets/images/instagram.png">
+					<img src="@/assets/images/icons/instagram.png">
 				</a>
 				<div class="spy-left"></div>
 				<div class="spy-top"></div>
