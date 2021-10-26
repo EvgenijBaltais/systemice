@@ -2,7 +2,7 @@
 
 	<header>
 		<div class="header">
-			<a class="btn" href="event-progress.php"><span>Собрать собственное мероприятие</span></a>
+			<NuxtLink class="btn" to = "/event-progress"><span>Собрать собственное мероприятие</span></NuxtLink>
 			<a class="btn event-progress-stripe" href="">
 				<div class = "event-progress bta-hover"></div>
 				<div class = "common-progress-text">Общий прогресс сборки мероприятия</div>
@@ -10,7 +10,7 @@
 			<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
 		</div>
 		<div class="header-mob">
-			<a class="btn" href="event-progress.php"><span>Собрать мероприятие</span></a>
+			<NuxtLink class="btn" to = "/event-progress"><span>Собрать мероприятие</span></NuxtLink>
 			<div class="mob-menu">
 				<span></span>
 				<span></span>

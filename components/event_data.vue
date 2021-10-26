@@ -298,7 +298,7 @@
             <div class="spy-top-input"></div>
           </div>
 
-          <div class="to-next-step">
+          <div class="to-next-step" @click = "changeEventComponent">
             <span>К следующему шагу</span>
               <div class="spy-left-btn"></div>
               <div class="spy-bottom-btn"></div>
@@ -306,8 +306,6 @@
               <div class="spy-top-btn"></div>
           </div>
         </div>
-        <div class="arrow-left-event" @click = "changeEventComponent"></div>
-        <div class="arrow-right-event" @click = "changeEventComponent"></div>
       </div>
     </div>
   </div>
