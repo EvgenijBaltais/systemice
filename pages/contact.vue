@@ -29,17 +29,17 @@
 						<div class="form-line">
 							<div class="input-box">
 								<input type="text" name="name" class = "contact-name" placeholder="Ваше имя">
-								<div class="spy-left"></div>
-								<div class="spy-top"></div>
-								<div class="spy-right"></div>
-								<div class="spy-bottom"></div>
+								<div class="spy-left-input"></div>
+								<div class="spy-top-input"></div>
+								<div class="spy-right-input"></div>
+								<div class="spy-bottom-input"></div>
 							</div>
 							<div class="input-box">
 								<input type="text" name="phone" class = "contact-phone" placeholder="Телефон">
-								<div class="spy-left"></div>
-								<div class="spy-top"></div>
-								<div class="spy-right"></div>
-								<div class="spy-bottom"></div>
+								<div class="spy-left-input"></div>
+								<div class="spy-top-input"></div>
+								<div class="spy-right-input"></div>
+								<div class="spy-bottom-input"></div>
 							</div>
 						</div>
 						<label class="checkbox-block">
@@ -54,10 +54,10 @@
 						</label>
 						<div class="button-box">
 							<input class="send-button" type="button" value="Отправить">
-							<div class="spy-left"></div>
-							<div class="spy-top"></div>
-							<div class="spy-right"></div>
-							<div class="spy-bottom"></div>
+							<div class="spy-left-btn"></div>
+							<div class="spy-top-btn"></div>
+							<div class="spy-right-btn"></div>
+							<div class="spy-bottom-btn"></div>
 						</div>
 					</form>
 				</div>
