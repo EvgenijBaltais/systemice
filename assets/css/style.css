@@ -4562,6 +4562,10 @@ position: absolute;
     .event-page .bl-preview {
         display: none
     }
+
+    .event-page-sl {
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 480px) {
