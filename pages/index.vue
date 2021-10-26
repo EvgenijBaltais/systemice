@@ -274,7 +274,7 @@
 				// Mozilla
 				window.addEventListener('DOMMouseScroll', this.changeActiveElement)
 
-				//window.addEventListener("touchmove", this.changeActiveElement);
+				//window.addEventListener("hrenznaetchto", this.changeActiveElement);
 
 			}
 			//конец
