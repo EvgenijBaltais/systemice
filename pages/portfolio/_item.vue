@@ -26,8 +26,8 @@
 								<div class="bl-info-wrapper glide__track" data-glide-el="track">
 									<ul class="glide__slides glide__slides-b">
 
-										<li class="news-sldr-box content-slide glide__slide" v-for = "item in portfolioData[eventItem].pics">
-												<div class="slides-img" :style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + portfolioData[eventItem].picsFolder + '/' + item + '.jpg')})`}"></div>
+										<li class="content-slide glide__slide" v-for = "item in portfolioData[eventItem].pics">
+											<div class="slides-img" :style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + portfolioData[eventItem].picsFolder + '/' + item + '.jpg')})`}"></div>
 										</li>
 									</ul>
 								</div>
@@ -38,7 +38,7 @@
 					</div>
 					<div class="inter-event-page">
 						<div class="event-info">
-							<span class="event-name">{{portfolioData[eventItem].title}}</span>
+							<span class="event-name-ins">{{portfolioData[eventItem].title}}</span>
 							<div class="line"></div>
 							<div class="event-desc">
 								<p v-html="portfolioData[eventItem].dateData"></p>
@@ -91,10 +91,10 @@
 				</ul>
 			</div>
 			<div class="footer-mob">
-				<div class="bl-pagination">
-					<span class="active-page">03 </span>
-					<span class="bl-page"> / 07</span>
-				</div>
+			<div class="bl-pagination">
+				<span class="active-page"></span>
+				<span class="bl-page"></span>
+			</div>
 				<div class="bl-copyright">
 					Ⓒ2014 - 2021
 				</div>
@@ -141,16 +141,7 @@ export default {
 				type: 'carousel',
 				startAt: 1,
 				perView: 1,
-				gap: 5,
-				breakpoints: {
-					800: {
-						perView: 1
-					},
-					480: {
-						perView: 1,
-						gap: 20
-					}
-				}
+				gap: 5
 			})
     
 			glide_b.mount()
