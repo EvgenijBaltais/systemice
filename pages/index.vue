@@ -161,6 +161,51 @@
 
 			changeActiveElement(e) {
 
+				console.log('скроллинг')
+
+				let scrolling = false
+				let oldTime = 0
+				let newTime = 0
+				let isTouchPad
+				let eventCount = 0
+				let eventCountStart
+
+			    let isTouchPadDefined = this.isTouchPad || typeof this.isTouchPad !== "undefined"
+			    console.log(isTouchPadDefined)
+
+			    // Вот тут, в условии ниже, может сработать нужное событие
+
+			    if (isTouchPadDefined) {
+
+			    	console.log('то что надо')
+
+			        if (!e) e = event;
+			        var direction = (e.detail<0 || e.wheelDelta>0) ? 1 : -1;
+
+			        if (isTouchPad) {
+			            newTime = new Date().getTime();
+
+			            if (!scrolling && newTime-oldTime > 550 ) {
+			                scrolling = true;
+			                if (direction < 0) {
+			                    // swipe down
+			                } else {
+			                    // swipe up
+			                }
+			                setTimeout(function() {oldTime = new Date().getTime();scrolling = false}, 500);
+			            }
+			        } else {
+			            if (direction < 0) {
+			                // swipe down
+			            } else {
+			                // swipe up
+			            }
+			        }
+			    }
+
+			    // Конец
+
+
 			if (this.animationAction || e && e.target.classList.contains('slide-user-active')) return false
 
 			let carouselImg = document.getElementsByClassName('sl-teammate'),
