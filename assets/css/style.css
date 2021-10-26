@@ -2160,8 +2160,13 @@ position: absolute;
         outline: none;
         color: #fff;
         font-weight: 200;
-        font-size: 18px;
+        font-size: 16px;
     }
+
+    .contact-info input:hover {
+
+    background-color: rgba(255, 255, 255, .2);
+}
 
     .checkbox-style {
     
@@ -2846,6 +2851,7 @@ position: absolute;
     .event-page-wrapper {
         width: 100%;
         margin-top: 50px;
+        margin-bottom: 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -2924,9 +2930,8 @@ position: absolute;
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        float: left;
-        min-height: 300px;
         width: 100%;
+        height: 100%;
         overflow: hidden;
     }
 
@@ -3351,6 +3356,7 @@ position: absolute;
 .bl-info-wrapper {
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 .style-hover { 
@@ -5637,15 +5643,21 @@ iframe {
 }
 
 .details-input {
-    width: calc(100% - 30px);
+    width: 100%;
     height: 38px;
-    margin: 0 15px;
+    margin: 0;
     border: 0!important;
     outline: 0!important;
     background-color: transparent;
     box-sizing: border-box;
     cursor: pointer;
     color: #fff;
+    text-indent: 15px;
+}
+
+.details-input:hover {
+
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .mx-input::-webkit-input-placeholder { font-size: 15px; color: #A7A7A7; }
@@ -5792,13 +5804,19 @@ iframe {
 .events-form-item {
     width: 100%;
     height: 38px;
-    margin: 0 15px;
+    margin: 0;
     border: 0!important;
     outline: 0!important;
     background-color: transparent;
     box-sizing: border-box;
     cursor: pointer;
     color: #fff;
+    text-indent: 15px;
+}
+
+.events-form-item:hover {
+
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .events-textarea-w {
@@ -5967,24 +5985,29 @@ input[type="checkbox"]:checked + label:after {
 
 .details-body-field .mx-datepicker {
     width: 100%;
-    padding: 0 15px;
 }
 
 .mx-datepicker {
     position: relative;
     height: 40px;
-    padding: 0 10px;
     box-sizing: border-box;
+    text-indent: 15px;
 }
 
 .details-body-field .mx-input {
+    display: block;
     height: 40px;
     background-color: transparent;
+    text-indent: 15px;
     border: 0;
     outline: 0;
     padding: 0;
     color: #fff;
     cursor: pointer;
+}
+
+.details-body-field .mx-input:hover {
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .details-body-field .mx-icon-calendar {

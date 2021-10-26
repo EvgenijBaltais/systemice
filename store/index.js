@@ -6,6 +6,7 @@ export const state = () => ({
 
     	title: 'Открытая пленарная дискуссия ATOM SKILLS',
     	picsFolder: 'atom_skills',
+        pics: [1,2,3,4,5,6,7,8],
     	dateData: '<b>24.07.2020 г.</b>',
     	membersData: '<b>На площадке</b> – 18 в кадре, 27 за кадром',
     	spectators: '<b>Посмотрели онлайн</b> – 4000+',
@@ -20,6 +21,7 @@ export const state = () => ({
 		{
     	title: 'Второй Молодежный Слет дивизиона «Электроэнергетический»',
     	picsFolder: 'elektroenergeticheskiy',
+        pics: [1,2,3,4,5,6,7],
     	dateData: '16 - 17.07.2020 г.',
     	membersData: 'На площадке – 18 в кадре, 27 за кадром',
     	spectators: 'Посмотрели онлайн – 1400+ человек',
@@ -38,6 +40,7 @@ export const state = () => ({
 		{
     	title: 'Церемония открытия чемпионата ATOM SKILLS',
     	picsFolder: 'atom_skills_open',
+        pics: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
     	dateData: '24.07.2020 г.',
     	membersData: 'На площадке – 26 в кадре, 32 за кадром',
     	spectators: 'Посмотрели онлайн – 9000+',
@@ -52,6 +55,7 @@ export const state = () => ({
 		{
     	title: 'Деловая программа ATOM SKILLS',
     	picsFolder: 'atoms_skills_business',
+        pics: [1,2,3,4,5,6,7,8],
     	dateData: '19.08.2020 г.',
     	membersData: 'Было в студии - 6 в кадре, 19 за кадром',
     	spectators: 'Посмотрели онлайн - 1000+',
@@ -69,6 +73,7 @@ export const state = () => ({
    		{
     	title: 'Бизнес-завтрак «кухня» инноваций ATOM SKILLS',
     	picsFolder: 'atom_skills_breakfast',
+        pics: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
     	dateData: '28.07.2020 г.',
     	membersData: 'На площадке – 14 в кадре, 38 за кадром',
     	spectators: 'Посмотрели онлайн – 3500+',
@@ -86,6 +91,7 @@ export const state = () => ({
     	title: 'Мероприятие по развитию направления «Каракури»',
     	dateData: '18.08.2020 г',
     	picsFolder: 'karakuri',
+        pics: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
     	membersData: 'Было в студии - 7 в кадре, 22 за кадром',
     	spectators: 'Посмотрели онлайн - 1000+',
     	details: ['Одна оборудованная студия',

@@ -19,21 +19,18 @@
 			<div class="content-main event-page">
 				<div class="event-page-wrapper">
 					<div class="event-page-sl">
-						<div class="slider-block">
+						<div class="slider-block glide-b">
 							<a class="arrow-left"></a>
 							<a class="arrow-right"></a>
 							<img class="sl-search" src="@/assets/images/icons/search.png">
-							<div class="slides-block">
-								<div class="news-sldr-box content-slide">
-									<a href="../images/conf1.jpg" class="lightcase-pic"  data-rel="lightcase:myPortfolioCollection"><div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div></a>
+								<div class="bl-info-wrapper glide__track" data-glide-el="track">
+									<ul class="glide__slides glide__slides-b">
+
+										<li class="news-sldr-box content-slide glide__slide" v-for = "item in portfolioData[eventItem].pics">
+												<div class="slides-img" :style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + portfolioData[eventItem].picsFolder + '/' + item + '.jpg')})`}"></div>
+										</li>
+									</ul>
 								</div>
-								<div class="news-sldr-box content-slide">
-									<a href="../images/conf1.jpg" class="lightcase-pic"  data-rel="lightcase:myPortfolioCollection"><div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div></a>
-								</div>
-								<div class="news-sldr-box content-slide">
-									<a href="../images/conf1.jpg" class="lightcase-pic"  data-rel="lightcase:myPortfolioCollection"><div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div></a>
-								</div>
-							</div>
 							<div class="bl-preview">
 								<div class="item-dots item-service-dots"></div>
 							</div>
@@ -41,12 +38,12 @@
 					</div>
 					<div class="inter-event-page">
 						<div class="event-info">
-							<span class="event-name">{{portfolioData[item].title}}</span>
+							<span class="event-name">{{portfolioData[eventItem].title}}</span>
 							<div class="line"></div>
 							<div class="event-desc">
-								<p v-html="portfolioData[item].dateData"></p>
-								<p v-html="portfolioData[item].membersData"></p>
-								<p v-html="portfolioData[item].spectators"></p>
+								<p v-html="portfolioData[eventItem].dateData"></p>
+								<p v-html="portfolioData[eventItem].membersData"></p>
+								<p v-html="portfolioData[eventItem].spectators"></p>
 							</div>
 						</div>
 						<form class="contact-form contact-info" id = "portfolio-form">
@@ -90,7 +87,7 @@
 				</div>
 
 				<ul>
-					<li v-for = "item in portfolioData[item].details" :key="item">{{item}}</li>
+					<li v-for = "item in portfolioData[eventItem].details" :key="item">{{item}}</li>
 				</ul>
 			</div>
 			<div class="footer-mob">
@@ -126,7 +123,7 @@ export default {
 	},
 	data(){
 		return {
-			item: this.$route.params.item - 1,
+			eventItem: this.$route.params.item - 1,
 			portfolioData: this.$store.state.portfolioData
 		}
 	},
@@ -138,36 +135,26 @@ export default {
 	},
 	  mounted() {
 
-/*
-			this.glide_dots = new Glide('.glide-b', {
+			// Карусель glide js для информации рядом с картой
+
+			let glide_b = new Glide('.glide-b', {
 				type: 'carousel',
 				startAt: 1,
-				gap: 10,
 				perView: 1,
-				animationDuration: 500,
-				animationTimingFunc: 'cubic-bezier(0.25, 0.1, 0.25, 1)'
-			})
-
-
-			let glide = this.glide,
-				glide_dots = this.glide_dots,
-				glide_sotrud = this.glide_sotrud
-
-			glide.on('run', function() {
-
-				glide_dots.go('=' + glide.index)
-
-				if ($this.sotrudSlider) {
-					glide_sotrud.go('=' + glide.index) 
-					return false
+				gap: 5,
+				breakpoints: {
+					800: {
+						perView: 1
+					},
+					480: {
+						perView: 1,
+						gap: 20
+					}
 				}
-
-				$this.changePortrait(glide.index)
-				$this.changeManagerData(glide.index)
 			})
+    
+			glide_b.mount()
 
-			glide.mount()
-*/
 	},
 	beforeDestroy() {
 
