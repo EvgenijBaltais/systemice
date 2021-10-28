@@ -1,10 +1,8 @@
 <template>
 	<div class="wrapper team">
 		<div class="bl-l fl-column">
-			<div>
-				<NuxtLink to = "/">
-					<img src="@/assets/images/logo.png">
-				</NuxtLink>
+			<div class = "main-logo-left">
+				<mainLogo/>
 			</div>
 			<div class="bl-menu-title">
 				<span class="company-name">КОМАНДА</span>
@@ -105,9 +103,7 @@
 					<span class="active-page">05 </span>
 					<span class="bl-page"> / 08</span>
 				</div>
-				<div class="bl-copyright">
-					Ⓒ2014 - 2021
-				</div>
+				<copyright/>
 			</div>
 		</div>
 		<blRight/>
@@ -117,6 +113,8 @@
 <script>
 
 import blRight from '@/components/bl_right'
+import mainLogo from '@/components/main_logo'
+import copyright from '@/components/copyright'
 import pageHeader from '@/components/page_header'
 import Glide from '@glidejs/glide'
 
@@ -142,7 +140,7 @@ export default {
 		}
 	},
 	components: {
-		blRight, pageHeader
+		blRight, pageHeader, mainLogo, copyright
   	},
 
 	  mounted(){

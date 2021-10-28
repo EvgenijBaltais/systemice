@@ -1,10 +1,8 @@
 <template>
 	<div class="wrapper service">
 		<div class="bl-l fl-column">
-			<div>
-				<NuxtLink to = "/">
-					<img src="@/assets/images/logo.png">
-				</NuxtLink>
+			<div class = "main-logo-left">
+				<mainLogo/>
 			</div>
 			<div class="bl-menu-title">
 				<span class="company-name">УСЛУГИ</span>
@@ -222,9 +220,7 @@
 					<span class="active-page">02 </span>
 					<span class="bl-page"> / 08</span>
 				</div>
-				<div class="bl-copyright">
-					<!--Ⓒ2014 - <?=date('Y');?>-->
-				</div>
+				<copyright/>
 			</div>
 		</div>
 		<blRight/>
@@ -234,6 +230,8 @@
 <script>
 
 import blRight from '@/components/bl_right'
+import mainLogo from '@/components/main_logo'
+import copyright from '@/components/copyright'
 import pageHeader from '@/components/page_header'
 
 export default {
@@ -258,7 +256,7 @@ export default {
 		}
 	},
 	components: {
-		blRight, pageHeader
+		blRight, pageHeader, mainLogo, copyright
   	},
 	methods: {
 

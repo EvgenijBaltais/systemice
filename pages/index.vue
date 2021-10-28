@@ -1,10 +1,8 @@
 <template>
 <div id="waypoint-main" class="wrapper main-page waypoint">
 	<div class="bl-l fl-column">
-		<div>
-			<NuxtLink to = "/">
-				<img src="@/assets/images/logo.png">
-			</NuxtLink>
+		<div class = "main-logo-left">
+			<mainLogo/>
 		</div>
 		<div class="bl-menu-title">
 			<span class="company-name">SYSTEMICE</span>
@@ -34,7 +32,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="content-box map hidden-screen">
+		<div class="content-box map">
 			<div class="agency-map">
 				<h1 class="h1">НАМ ЕСТЬ ЧЕМ ГОРДИТЬСЯ</h1>
 				<div class="line"></div>
@@ -76,45 +74,28 @@
 				</div>
 			</div>
 			<div class="map-bg">
-				<div class="city">
-					<span class="spb"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Caнкт-Петербург</span>
-					<span class="sochi"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Cочи</span>
-					<span class="tula"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Тула</span>
-					<span class="msk"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Москва</span>
-				</div>
+				<!--<img alt="" class="city" :src="require('@/assets/images/map-bg.png')">-->
+				<span class="spb"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Caнкт-Петербург</span>
+				<span class="sochi"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Cочи</span>
+				<span class="tula"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Тула</span>
+				<span class="msk"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Москва</span>
 			</div>
 		</div>
-		<div class="bl-preview">
-			<div class="preview-container">
-				<div class="spy-left"></div>
-				<div class="spy-top"></div>
-				<div class="spy-right"></div>
-				<div class="spy-bottom"></div>
-				<img class="link-arrow dop-arrow-right" src="@/assets/images/icons/arrow-right.png">
-				<div class = "sl-wrapper-shadow">
-					<div class = "sl-wrapper">
-						<img src = "@/assets/images/m1.png" class="sl-teammate preview-item preview-item-first prev-page-show slide-user-active">
-						<img src = "@/assets/images/m2.png" class="sl-teammate preview-item preview-item-last next-page-show">
-					</div>
-				</div>
+		<div class = "to-services-w">
+			<div class = "to-services">
+				<NuxtLink to = "/service" class = "go-to-services">Перейти к услугам</NuxtLink>
+				<div class="spy-left-btn"></div>
+				<div class="spy-bottom-btn"></div>
+				<div class="spy-right-btn"></div>
+				<div class="spy-top-btn"></div>
 			</div>
-			<div class = "item-dots">
-				<div class = "dots-container clearfix">
-					<div class="tr-bottom prev-page-show tr-active"></div>
-					<div class="tr-bottom next-page-show"></div>
-				</div>
-			</div>
-			<div class="arrow-left prev-page-show" @click = "changeActiveElement"></div>
-			<div class="arrow-right next-page-show" @click = "changeActiveElement"></div>
 		</div>
 		<div class="footer-mob">
 			<div class="bl-pagination">
 				<span class="active-page">01 </span>
 				<span class="bl-page"> / 08</span>
 			</div>
-			<div class="bl-copyright">
-				<!--Ⓒ2014 - <?=date('Y');?>-->
-			</div>
+			<copyright/>
 		</div>
 	</div>
 	<blRight/>
@@ -124,6 +105,8 @@
 <script>
 
 	import blRight from '@/components/bl_right'
+	import mainLogo from '@/components/main_logo'
+	import copyright from '@/components/copyright'
 	import pageHeader from '@/components/page_header'
 	import Glide from '@glidejs/glide'
 
@@ -147,7 +130,7 @@
 			}
 		},
 		components: {
-			blRight, pageHeader
+			blRight, pageHeader, mainLogo, copyright
 		},
 
 		methods: {
@@ -160,51 +143,6 @@
 			},
 
 			changeActiveElement(e) {
-
-				console.log('скроллинг')
-
-				let scrolling = false
-				let oldTime = 0
-				let newTime = 0
-				let isTouchPad
-				let eventCount = 0
-				let eventCountStart
-
-			    let isTouchPadDefined = this.isTouchPad || typeof this.isTouchPad !== "undefined"
-			    console.log(isTouchPadDefined)
-
-			    // Вот тут, в условии ниже, может сработать нужное событие
-
-			    if (isTouchPadDefined) {
-
-			    	console.log('то что надо')
-
-			        if (!e) e = event;
-			        var direction = (e.detail<0 || e.wheelDelta>0) ? 1 : -1;
-
-			        if (isTouchPad) {
-			            newTime = new Date().getTime();
-
-			            if (!scrolling && newTime-oldTime > 550 ) {
-			                scrolling = true;
-			                if (direction < 0) {
-			                    // swipe down
-			                } else {
-			                    // swipe up
-			                }
-			                setTimeout(function() {oldTime = new Date().getTime();scrolling = false}, 500);
-			            }
-			        } else {
-			            if (direction < 0) {
-			                // swipe down
-			            } else {
-			                // swipe up
-			            }
-			        }
-			    }
-
-			    // Конец
-
 
 			if (this.animationAction || e && e.target.classList.contains('slide-user-active')) return false
 
@@ -256,28 +194,6 @@
 		},
 		mounted(){
 
-			// Карусель главного экрана
-
-			document.addEventListener('keydown', this.onKeyDown)
-
-			document.querySelector('.next-page-show').addEventListener('click', this.changeActiveElement)
-			document.querySelector('.prev-page-show').addEventListener('click', this.changeActiveElement)
-
-			//прокрутка
-			if (window.screen.width > 630) {
-
-				// Промотка секций при скроллинге мышью
-
-				// Не Mozilla
-				window.addEventListener('mousewheel', this.changeActiveElement)
-
-				// Mozilla
-				window.addEventListener('DOMMouseScroll', this.changeActiveElement)
-
-				//window.addEventListener("hrenznaetchto", this.changeActiveElement);
-
-			}
-			//конец
 
 			// Карусель glide js для информации рядом с картой
 
@@ -302,18 +218,7 @@
 			}
 		},
 		beforeDestroy() {
-			
-			document.removeEventListener('keydown', this.onKeyDown)
 
-			document.querySelector('.next-page-show').removeEventListener('click', this.changeActiveElement)
-			document.querySelector('.prev-page-show').removeEventListener('click', this.changeActiveElement)
-
-
-			// Не Mozilla
-			window.removeEventListener('mousewheel', this.changeActiveElement)
-
-			// Mozilla
-			window.removeEventListener('DOMMouseScroll', this.changeActiveElement)
 		}
 }
 </script>

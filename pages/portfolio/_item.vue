@@ -1,10 +1,8 @@
 <template>
 	<div class="wrapper portfolio_in">
 		<div class="bl-l fl-column">
-			<div>
-				<NuxtLink to = "/">
-					<img src="@/assets/images/logo.png">
-				</NuxtLink>
+			<div class = "main-logo-left">
+				<mainLogo/>
 			</div>
 			<div class="bl-menu-title">
 				<span class="company-name">Мероприятие</span>
@@ -105,6 +103,7 @@
 <script>
 
 import blRight from '@/components/bl_right'
+import mainLogo from '@/components/main_logo'
 import pageHeader from '@/components/page_header'
 import Glide from '@glidejs/glide'
 
@@ -127,7 +126,7 @@ export default {
 		}
 	},
 	components: {
-		blRight, pageHeader
+		blRight, pageHeader, mainLogo
   	},
 	methods: {
         moveLeft(){

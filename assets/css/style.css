@@ -38,17 +38,12 @@ a {
     background-image: url('../images/bg-portfolio.jpg');
 }
 .map-bg {
-    position: absolute;
-    left: 55%;
-    background-image: url(../images/map-bg.png);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    right: 0;
-    bottom: 0;
-    top: 10%;
-    animation: opacity 0.5s  ease-in-out;
+    width: 500px;
+    position: relative;
+    animation: opacity 0.5s ease-in-out;
+    background-image: url('../images/map-bg.png');
 }
+
 .contact {
     background-image: url('../images/bg-contact.jpg');
 }
@@ -79,7 +74,11 @@ a {
     padding: 2% 0;
 }
 
-.event-p{
+.main.h-page {
+    overflow: auto;
+}
+
+.event-p {
     overflow: auto;
 }
 
@@ -106,6 +105,65 @@ a {
 .bl-m {
     width: 81%;
 }
+
+.city {
+    width: 800px;
+}
+
+/* Главная страница, разметка без горизонтального скроллинга мышью */
+
+.main-page .main.h-page {
+    width: 92.5%;
+}
+.main-page .bl-r {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.main-page .video {
+    padding-right: 275px;
+    box-sizing: border-box;
+}
+.main-page .agency-map {
+    padding-top: 5%;
+    width: calc(100% - 900px)
+}
+.main-page .map-bg {
+    width: 900px;
+    height: 900px;
+}
+.main-page .map {
+    padding-right: 0;
+    padding-top: 0;
+}
+.main.h-page {
+    direction: rtl;
+}
+.main.h-page > * {
+    direction:ltr;
+}
+.main-page .video-box {
+    width: 50%;
+}
+.main-page .main-description {
+    width: 46.5%;
+}
+.to-services-w {
+    padding-right: 220px;
+    box-sizing: border-box;
+}
+.main-page .to-services {
+    margin-top: -100px;
+}
+.main-page header {
+    padding-right: 220px;
+    box-sizing: border-box;
+}
+
+/* Главная страница, разметка без горизонтального скроллинга мышью, конец */
 
 .content-box {
     display: flex;
@@ -186,10 +244,13 @@ a {
 }
 
 .menu-item a {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 7px 15px;
     font-size: 18px;
     line-height: 20px;
+}
+
+.main-logo-left {
+    z-index: 9;
 }
 
 .menu-item:last-child {
@@ -238,7 +299,7 @@ a {
     
     position: relative;
     width: 100%;
-    min-height: 70%;
+    height: 410px;
     overflow: hidden;
     box-shadow: 0 0 22px 5px rgba(53,185,249,0.25);
     background-image: url('../images/video-wrapper.png');
@@ -325,6 +386,18 @@ a {
 
 .btn {
 
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    font-size: 1em;
+    line-height: 0.9;
+    font-family: 'RalewaySemiBold', sans-serif;
+    color: #fff;
+    padding: 10px 19px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 22px 5px rgba(233,0,0,0.5);
+}
+
+.btn-no-animate {
     display: inline-block;
     background-color: rgb(255, 0, 0);
     font-size: 1em;
@@ -536,7 +609,6 @@ position: absolute;
 
 .video {
     padding: 7.5% 4% 0;
-    height: 80%;
 }
 
 .video-preview {
@@ -621,26 +693,50 @@ position: absolute;
 .map {
     padding-left: 4%;
     padding-right: 4%;
-    height: 80%;
+    overflow: visible;
 }
 
 .agency-map {
-    width: 68%;
+    width: calc(100% - 500px);
+}
+
+.to-services {
+    height: 75px;
+    width: 100%;
+    max-width: 380px;
+    margin: 75px auto;
+    display: block;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s background-color;
+}
+
+.to-services:hover {
+    background-color: #FF0000;
+    transition: .2s background-color;
+}
+
+.go-to-services {
+    font-size: 24px;
+    line-height: 75px;
 }
 
 .spb {
     display: block;
     position: absolute;
     top: 28%;
-    left: 23%;
+    left: 24%;
     font-size: 16px;
 }
 
 .sochi {
     display: block;
     position: absolute;
-    top: 38%;
-    left: 30%;    
+    top: 39.5%;
+    left: 30.5%;    
     font-size: 16px;
 }
 
@@ -648,7 +744,7 @@ position: absolute;
     display: block;
     position: absolute;
     top: 34%;
-    left: 28%;
+    left: 29%;
     font-size: 16px;
 }
 
@@ -657,7 +753,7 @@ position: absolute;
     display: block;
     position: absolute;
     top: 31%;
-    left: 28%;
+    left: 29%;
     font-size: 16px;
 }
 
@@ -675,7 +771,7 @@ position: absolute;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 3% 0 0 0;
+    margin: 9% 0 0 0;
     width: 100%;
 }
 
@@ -695,7 +791,7 @@ position: absolute;
 
 .info-data-item {
     width: auto;
-    margin-right: 7%;
+    margin-right: 75px;
     margin-bottom: 7%;
     color: #ff0000;
     text-align: center;
@@ -720,7 +816,7 @@ position: absolute;
 .info-data-item p {
 
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
     margin: 10px 0 0 0;
     padding: 0;
@@ -1685,15 +1781,6 @@ position: absolute;
     100% {
         opacity: 1;
     }
-}
-
-.hidden-screen {
-    visibility: hidden!important;
-    height: 1px!important;
-    overflow: hidden!important;
-    min-height: auto!important;
-    margin: 0;
-    padding: 0
 }
 
 .hidden-screen-news {
@@ -3401,7 +3488,7 @@ position: absolute;
     content: " ";
     height: 0;
     opacity: 0;
-    width: 100%;
+    width: calc(100% - 30px);
     box-shadow: 0 0 5px 1px rgb(255, 0, 0);
     border-bottom: 2px solid #e90000;
     border-radius: 3px;
@@ -3442,16 +3529,9 @@ position: absolute;
     .contact .contact-info {
         width: 30%;
     }
-    .map-bg {
-        background-size: cover;
-        background-position: top left;
-    }
     .contact .main {
         display: flex;
         flex-direction: column;
-    }
-    .video-container {
-        height: 80%;
     }
     .contact .content-box {
         margin: auto 0;
@@ -3475,9 +3555,6 @@ position: absolute;
     .event-page-sl {
         max-width: none;
     }
-    .bl-info {
-        margin: 9% 0 0 0;
-    }
 }
 
 @media screen and (max-width: 1480px) {
@@ -3494,10 +3571,6 @@ position: absolute;
     .img-wrapper {
         margin-right: 4%;
     }
-    .map, .video {
-        height: 77%;
-    }
-
     .h1-manager-data {
         font-size: 60px;
     }
@@ -3517,6 +3590,7 @@ position: absolute;
     font-size: 22px;
     line-height: 24px;
 }
+
 }
 
 @media screen and (max-width: 1390px) {
@@ -3621,9 +3695,7 @@ position: absolute;
         width: max-content;
         margin-bottom: 25%;
     }
-    .video, .map {
-        height: 75%;
-    }
+
     .map .h1 {
         margin: 0 0 15px 0;
     }
@@ -4393,10 +4465,6 @@ position: absolute;
         margin-top: 15px;
         font-size: 1.1em;
     }
-    .video, .map {
-        overflow: visible;
-        height: auto;
-    }
     .h-page .footer-mob {
         display: flex;
         align-items: center;
@@ -4468,11 +4536,6 @@ position: absolute;
 
     .info-data { position:relative;margin: 0 4%; }
 
-    .map {
-        min-height: 80vh;
-        overflow: visible;
-
-    }
     .map-bg {
         left: 0;
         background-position: left;
@@ -4629,7 +4692,6 @@ position: absolute;
     }
     .video {
         margin-top: 60px;
-        height: auto;
     }
     .header { display: none; }
     .header-mob {
@@ -5012,10 +5074,6 @@ position: absolute;
         overflow: hidden;
         padding: 0;
     }
-    .video, .map {
-        overflow: visible;
-        height: auto;
-    }
     .h-page .footer-mob {
         display: flex;
         align-items: center;
@@ -5075,7 +5133,6 @@ position: absolute;
     }
     .video {
         margin-top: 75px;
-        height: 65vh;
         overflow: visible;
     }
     .bl-preview {
@@ -5104,15 +5161,8 @@ position: absolute;
         height: 160%;
         width: 150%;
     }
-    .video.hidden-screen {
-        margin: 0;
-    }
-    .map.hidden-screen {
-        margin: 0;
-    }
+
     .map {
-        min-height: 65vh;
-        overflow: visible;
         margin-top: 75px;
     }
     .spb, .sochi, .tula, .msk { font-size: 19px; }
@@ -6362,4 +6412,250 @@ input[type="checkbox"]:checked + label:after {
     display: none;
 }
 
+}
+
+
+@media screen and (max-width: 1700px) {
+/* Главная страница, разметка без горизонтального скроллинга мышью */
+
+.info-data-item {
+    margin-right: 50px
+}
+
+.main-page .to-services {
+    margin-top: 0;
+}
+
+.video-container {
+    height: 350px;
+}
+
+}
+
+@media screen and (max-width: 1500px) {
+
+.main-page .bl-r {
+    width: 180px;
+}
+
+.video-container {
+    height: 300px;
+}
+
+.video .h1 {
+    font-size: 3em;
+}
+
+.video .h2 {
+    font-size: 1.5em;
+}
+
+.main-page .video {
+    padding-right: 200px;
+}
+
+.main-page .bl-desc {
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.map .h1 {
+    font-size: 3em;
+}
+
+.main-page .agency-map {
+    width: calc(100% - 700px);
+}
+
+.main-page .map-bg {
+    width: 700px;
+    height: 700px;
+    background-size: cover;
+}
+
+.spb {
+    top: 26%;
+    left: 23%;
+}
+.msk {
+    top: 29.5%;
+    left: 27.7%;
+}
+.tula {
+    top: 32.5%;
+    left: 27.7%;
+}
+.sochi {
+    top: 37.5%;
+    left: 29.3%;
+}
+
+.to-services {
+    height: 60px;
+    width: 100%;
+    max-width: 320px;
+}
+.go-to-services {
+    font-size: 20px;
+    line-height: 60px;
+}
+}
+
+@media screen and (max-width: 1300px) {
+
+.main-page .video-box {
+    width: 60%;
+}
+.main-page .main-description {
+    width: 36.5%;
+}
+.video .h1 {
+    font-size: 2em;
+    line-height: 100%;
+}
+.main-page .bl-desc {
+    font-size: 1em;
+    line-height: 1.2em;
+}
+.map .h1 {
+    font-size: 2em;
+}
+
+.main-page .bl-r {
+    width: 150px
+}
+.main-page .video {
+    padding-right: 165px;
+}
+
+.video {
+    padding-left: 2.5%;
+}
+
+.map {
+    padding-left: 2.5%;
+}
+.main-page .agency-map {
+    width: calc(100% - 600px);
+}
+.main-page .map-bg {
+    width: 600px;
+    height: 600px;
+}
+}
+
+
+@media screen and (max-width: 900px) {
+
+.main-page .main.h-page {
+    width: 100%
+}
+
+.bl-l, .bl-r {
+    display: none
+}
+
+.main-page header {
+    width: 100%;
+    padding: 0 2.5%;
+}
+
+.main-page .main-description {
+    width: 100%
+}
+
+.main-page .map {
+    flex-wrap: wrap;
+    padding: 0 2.5%;
+}
+
+.main-page .agency-map {
+    width: 100%;
+}
+.main-page .map-bg {
+    width: 100%;
+    height: 400px;
+}
+
+.main-page .header {
+    padding: 0;
+}
+
+.main-page .video {
+    padding-right: 2.5%;
+    flex-wrap: wrap;
+}
+.main-page .video-box {
+    width: 100%;
+}
+
+.main-page .map-bg {
+    background-image: url('../images/map-mob.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.spb {
+    top: 43.5%;
+    left: 44.5%;
+}
+.sochi {
+    top: 75%;
+    left: 53.5%;
+}
+.tula {
+    top: 61%;
+    left: 51.5%;
+}
+.msk {
+    top: 53%;
+    left: 51.5%;
+}
+.to-services-w {
+    padding-right: 0;
+}
+}
+
+@media screen and (max-width: 480px) {
+
+.map {
+    margin-top: 25px;
+}
+
+.main-page .map-bg {
+    width: 100%;
+    height: 250px;
+    margin-top: -50px;
+    background-size: 100%;
+}
+
+.main-page .video {
+    padding: 0;
+}
+
+.main-page .map {
+    padding: 0;
+}
+
+.spb {
+    font-size: 12px;
+    top: 38%;
+    left: 40%;
+}
+.sochi {
+    font-size: 12px;
+    top: 75%;
+    left: 55%;
+}
+.tula {
+    font-size: 12px;
+    top: 61%;
+    left: 51.5%;
+}
+.msk {
+    font-size: 12px;
+    top: 50%;
+    left: 51.5%;
+}
 }

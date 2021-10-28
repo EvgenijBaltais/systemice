@@ -2,10 +2,8 @@
 	<div class="wrapper events">
 
 		<div class="bl-l fl-column">
-			<div>
-				<NuxtLink to = "/">
-					<img src="@/assets/images/logo.png">
-				</NuxtLink>
+			<div class = "main-logo-left">
+				<mainLogo/>
 			</div>
 			<div class="bl-menu-title">
 				<span class="company-name">SYSTEMICE</span>
@@ -29,6 +27,7 @@
 <script>
 
 import blRight from '@/components/bl_right'
+import mainLogo from '@/components/main_logo'
 import pageHeader from '@/components/page_header'
 import eventData from '@/components/event_data'
 
@@ -39,7 +38,7 @@ export default {
 		}
 	},
 	components: {
-		blRight, pageHeader
+		blRight, pageHeader, mainLogo
 	},
 	methods: {
 
