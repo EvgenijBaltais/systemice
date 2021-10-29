@@ -62,16 +62,20 @@ a {
 .header {
     display: flex;
     flex-direction: row;
-    /*min-height: 75px;
-    height: 4%;*/
     padding: 0 4%;
     justify-content: space-between;
     align-items: center;
 }
 
 .main {
-    width: 81%;
+    width: 92.5%;
     padding: 2% 0;
+    overflow: auto;
+    direction: rtl;
+}
+
+.main > * {
+    direction: ltr;
 }
 
 .main.h-page {
@@ -98,7 +102,12 @@ a {
     z-index: 2;
 }
 .bl-r {
-    width: 11.5%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     border-left: 1px solid rgb(111, 111, 111);
     z-index: 2;
 }
@@ -112,17 +121,6 @@ a {
 
 /* Главная страница, разметка без горизонтального скроллинга мышью */
 
-.main-page .main.h-page {
-    width: 92.5%;
-}
-.main-page .bl-r {
-    width: 220px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
 .main-page .video {
     padding-right: 275px;
     box-sizing: border-box;
@@ -282,7 +280,6 @@ a {
     margin: 35px 0 0 0;
     font-size: 1.3em;
     line-height: 1.2em;
-    
 }
 
 .h2 {
@@ -470,7 +467,6 @@ position: absolute;
 }
  
 .btn-search {
-
     margin-right: 40px;
 }
 
@@ -701,10 +697,10 @@ position: absolute;
 }
 
 .to-services {
-    height: 75px;
+    height: 60px;
     width: 100%;
-    max-width: 380px;
-    margin: 75px auto;
+    max-width: 320px;
+    margin: 60px auto;
     display: block;
     position: relative;
     color: #fff;
@@ -720,8 +716,9 @@ position: absolute;
 }
 
 .go-to-services {
-    font-size: 24px;
-    line-height: 75px;
+    font-size: 18px;
+    line-height: 60px;
+    font-weight: 100;
 }
 
 .spb {
@@ -1026,9 +1023,7 @@ position: absolute;
 
 .portfolio .content-main {
     margin: 25px 0 auto 0;
-    padding: 0 4%;
-    height: 75vh;
-    max-width: 2100px;
+    padding: 0 275px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1048,12 +1043,10 @@ position: absolute;
 }
 .sl-box-1 {
     width: 66%;
-    /*max-width: 830px;*/
 }
 
 .sl-box-2 {
     width: 32%;
-    /*max-width: 400px;*/
 }
 
 .sl-card {
@@ -1132,8 +1125,6 @@ position: absolute;
 }
 .bg-hover .event-info {
     opacity: 1;
-    /*transform: translate3d(5%,0,0);
-    transition: all ease-in-out .5s;*/
 }
 
 @keyframes hover {
@@ -2347,6 +2338,10 @@ position: absolute;
         border-bottom: 1px solid #b31d1d;
     }
 
+    .input-box-wrong {
+        background-color: rgba(255, 0, 0, .2)!important;
+    }
+
     .contact-form {
 
         margin-top: 20px;
@@ -2789,7 +2784,7 @@ position: absolute;
         width: 35px;
         border-radius: 3px;
         margin-right: 5px;
-        background-color: #898989; /*#e70101 - active*/
+        background-color: #898989;
     }
 
     .step-active {
@@ -6494,10 +6489,6 @@ input[type="checkbox"]:checked + label:after {
     height: 60px;
     width: 100%;
     max-width: 320px;
-}
-.go-to-services {
-    font-size: 20px;
-    line-height: 60px;
 }
 }
 

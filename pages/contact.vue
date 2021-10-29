@@ -21,12 +21,12 @@
 					<p class="p-contact"><b>Наш адрес:</b><br>г. Москва, ул. Бауманская д. 6.</p>
 					<p class="p-contact"><b>Телефон:</b><br> +7 (495) 215-24-80</p>
 					<p class="p-contact"><b>Электропочта:</b><br> info@systemice.ru</p>
-					<form class="contact-form" id = "contact-form">
+					<form class="contact-form" id = "contact-form" @submit.prevent = "checkForm">
 						<p>Заявка на обратный звонок</p>
 						<div class="line"></div>
 						<div class="form-line">
 							<div class="input-box">
-								<input type="text" name="name" class = "contact-name" placeholder="Ваше имя">
+								<input type="text" name="name" class = "contact-name" placeholder="Ваше имя" v-model = "name">
 								<div class="spy-left-input"></div>
 								<div class="spy-top-input"></div>
 								<div class="spy-right-input"></div>
@@ -41,7 +41,7 @@
 							</div>
 						</div>
 						<label class="checkbox-block">
-			                <input type="checkbox" name="" class="input-check" checked>
+			                <input type="checkbox" name="" class="input-check" v-model="agreeTerms" true-value="yes" false-value="no">
 			                <span class="checkbox-style">
 			                	<div class="spy-left"></div>
 								<div class="spy-top"></div>
@@ -51,7 +51,7 @@
 							<span class = "i-agree">Я согласен на обработку персональных данных</span>
 						</label>
 						<div class="button-box">
-							<input class="send-button" type="button" value="Отправить">
+							<input class="send-button" type="submit" value="Отправить">
 							<div class="spy-left-btn"></div>
 							<div class="spy-top-btn"></div>
 							<div class="spy-right-btn"></div>
@@ -107,6 +107,10 @@ export default {
 	},
 	data(){
 		return {
+			name: '',
+			phone: '',
+			agreeTerms: 'yes',
+			im: new Inputmask("+7 (999) 999-99-99")
 		}
 	},
 	components: {
@@ -131,44 +135,18 @@ export default {
 
 	// Форма на странице Контакты
 
-	let im = new Inputmask("+7 (999) 999-99-99");
 	let phones = document.getElementsByClassName("contact-phone");
 
 	for (let i = 0; i < phones.length; i++) {
-		im.mask(phones[i]);
-	}
-
-	for (let i = 0; i < document.getElementsByClassName('send-button').length; i++) {
-
-		document.getElementsByClassName('send-button')[i].addEventListener('click', function(e){
-
-			e.preventDefault();
-
-			let form = this.parentNode.parentNode,
-				name = form.querySelector('.contact-name'),
-				phone = form.querySelector('.contact-phone'),
-				agreeChecked = form.querySelector('.input-check').checked,
-				validPhone = phone.inputmask.isComplete();
-
-				if (!agreeChecked || !validPhone) {
-
-					if (!agreeChecked) {
-						form.querySelector('.i-agree').style = "color: red;"
-					}
-					if (!validPhone) {
-						phone.parentNode.classList.add('input-box-wrong');
-					}
-					return false;
-				}
-		});
+		this.im.mask(phones[i]);
 	}
 
 	for (let i = 0; i < phones.length; i++) {
 		phones[i].addEventListener('keyup', function(){
-			this.parentNode.classList.remove('input-box-wrong');
+			this.classList.remove('input-box-wrong');
 		})
 		phones[i].addEventListener('focus', function(){
-			this.parentNode.classList.remove('input-box-wrong');
+			this.classList.remove('input-box-wrong');
 		})
 	}
 
@@ -189,15 +167,12 @@ export default {
         	div.css('display','none');
 			$('.btn-exit').removeClass('active');
         }
-    })
 
-    $(document).mouseup(function (e){
+        var div2 = $('.other-event')
 
-        var div = $('.other-event')
-
-        if (!div.is(e.target) 
-            && div.has(e.target).length === 0) {
-        	div.css('display','none')
+        if (!div2.is(e.target) 
+            && div2.has(e.target).length === 0) {
+        	div2.css('display','none')
 			$('.more-portfolio').removeClass('active')
         }
     })
@@ -216,6 +191,26 @@ export default {
 		  .catch(error => console.log('Failed to load Yandex Maps', error))
 
 		/* Карты, конец */
+	},
+
+	methods: {
+
+		checkForm(e){
+
+				e.preventDefault()
+
+				if (this.agreeTerms == 'no' || !e.target.querySelector('.contact-phone').inputmask.isComplete()) {
+
+					if (this.agreeTerms == 'no') {
+						document.querySelector('.i-agree').style = "color: red;"
+					}
+					if (!e.target.querySelector('.contact-phone').inputmask.isComplete()) {
+						document.querySelector('.contact-phone').classList.add('input-box-wrong')
+					}
+					return false
+				}
+
+		}
 	}
 }
 
