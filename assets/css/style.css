@@ -67,6 +67,10 @@ a {
     align-items: center;
 }
 
+.fixed-rightside-padding {
+    padding: 2.5% 275px 2.5% 2.5%;
+}
+
 .main {
     width: 92.5%;
     padding: 2% 0;
@@ -156,7 +160,7 @@ a {
 .main-page .to-services {
     margin-top: -100px;
 }
-.main-page header {
+header {
     padding-right: 220px;
     box-sizing: border-box;
 }
@@ -1013,7 +1017,6 @@ position: absolute;
 .content-main {
     margin: 0 auto;
     padding: 0 4%;
-    height: 90%;
     max-width: 2100px;
 }
 
@@ -1023,7 +1026,7 @@ position: absolute;
 
 .portfolio .content-main {
     margin: 25px 0 auto 0;
-    padding: 0 275px 0 0;
+    padding: 7.5% 275px 0 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1032,8 +1035,7 @@ position: absolute;
 }
 
 .slider {
-    width: 88%;
-    height: 100%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -1052,9 +1054,8 @@ position: absolute;
 .sl-card {
     display: none;
     position: relative;
-    height: 48%;
+    height: 350px;
     background-color: #f0f0f0;
-  /*  margin-right: 2%;*/
     margin-bottom: 2%;
     box-sizing: border-box; 
     cursor: pointer;
@@ -1246,8 +1247,8 @@ position: absolute;
 .team .content-box {
 
     justify-content: center;
-    padding-top: 2%;
     height: 73vh;
+    padding: 0 275px 4% 2.5%;
 }
 
 .link-svg {
@@ -1308,7 +1309,7 @@ position: absolute;
 .tenders-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 2.5% 4% 0;
+    padding: 2.5% 275px 4% 2.5%;
 }
 
 .tenders-left {
@@ -1815,6 +1816,7 @@ position: absolute;
     
     flex-wrap: wrap;
     height: 90%;
+    padding: 4% 275px 4% 2.5%;
 }
 .partner .content-box:after{
     flex-basis: 32%;
@@ -1869,6 +1871,8 @@ position: absolute;
 .news-box {
     width: 100%;
     margin-top: 3%;
+    padding: 0 275px 4% 2.5%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -3512,7 +3516,7 @@ position: absolute;
 
         height: 70%;
         margin: auto 0;
-        padding: 0 4% 0;
+        padding: 0 275px 0 4%;
     }
 
 @media screen and (min-width: 1900px) {
@@ -3530,7 +3534,7 @@ position: absolute;
     }
     .contact .content-box {
         margin: auto 0;
-        padding: 0 4% 0;
+        padding: 0 275px 4% 2.5%;
         max-height: 55vh;
     }
     .contact-info {

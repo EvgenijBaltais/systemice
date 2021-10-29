@@ -14,7 +14,7 @@
 		</div>
 		<div class="main">
 			<pageHeader/>
-			<div class="content-box">
+			<div class="content-box fixed-rightside-padding">
 				<div class="contact-info">
 					<h1 class="h1">КОНТАКТЫ</h1>
 					<div class="line"></div>
