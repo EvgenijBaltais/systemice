@@ -123,7 +123,7 @@
 								<input
 								type="text"
 								class="tenders-input"
-								placeholder="Email *"
+								placeholder="Email"
 								/>
 								<div class="spy-left-input"></div>
 								<div class="spy-bottom-input"></div>
