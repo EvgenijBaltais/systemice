@@ -324,6 +324,24 @@ header {
     z-index: 1;
 }
 
+.tenders-send-span {
+    user-select: none;
+}
+
+.tenders-send-input {
+    height: 55px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 55px;
+    text-indent: 15px;
+    padding: 0;
+    cursor: pointer;
+}
 
 .p-title {
     
@@ -1128,6 +1146,11 @@ position: absolute;
     opacity: 1;
 }
 
+.go-back-to-prev {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 @keyframes hover {
 
       0%{left: 0px; transform:translate(0);}
@@ -1579,6 +1602,7 @@ position: absolute;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .warning-info {
@@ -5896,6 +5920,7 @@ iframe {
 .details-save-status {
     color: #01B917;
     font-size: 13px;
+    display: none;
 }
 
 .details-body-field-status {
@@ -6034,7 +6059,7 @@ input[type="checkbox"]:checked,
 input[type="checkbox"]:not(:checked)
 {
     position: absolute;
-    left: -9999px;
+    visibility: hidden;
 }
 
 input[type="checkbox"]:checked + label, 

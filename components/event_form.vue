@@ -16,6 +16,7 @@
               type="text"
               placeholder="Контактное лицо"
               class="events-form-item events-form-name"
+              v-model = "name"
               id="events-form-name"
               />
             </div>
@@ -31,6 +32,7 @@
               type="text"
               placeholder="Название компании"
               class="events-form-item events-form-company"
+              v-model = "company"
               id="events-form-company"
               />
             </div>
@@ -46,6 +48,7 @@
               type="text"
               placeholder="Телефон"
               class="events-form-item events-form-name"
+              v-model = "phone"
               id="events-form-phone"
               />
             </div>
@@ -60,6 +63,7 @@
               <input
               type="text"
               placeholder="Email"
+              v-model = "email"
               class="events-form-item events-form-company"
               id="events-form-email"
               />
@@ -76,10 +80,10 @@
               <textarea
               placeholder="Напишите Ваши пожелания, идеи и дополнительную информацию по мероприятию, чтобы наш менеджер смог подготовить самое выгодное предложение!"
               name=""
-              id=""
               cols="30"
               rows="10"
               class="events-textarea"
+              v-model = "comment"
               id="events-textarea"
               ></textarea>
               <div class="spy-left-textarea"></div>
@@ -102,6 +106,9 @@
                 <a class="add-brief">Прикрепить бриф</a>
               </label>
             </div>
+            <div class = "go-back-to-prev">
+              <a class = "go-back-span" @click = "changeEventComponent">Назад</a>
+            </div>
             <div class="to-next-step-final">
               <span>Отправить</span>
               <div class="spy-left-btn"></div>
@@ -121,8 +128,18 @@ export default {
   data() {
     return {
 
-      siblingComponent: 'eventData'
+      siblingComponent: 'eventData',
+      name: '',
+      phone: '',
+      email: '',
+      company: '',
+      comment: '',
+      formData: this.$store.state.eventForm
     }
+  },
+  mounted(){
+
+    //console.log(this.formData)
   },
   components: {},
   methods: {

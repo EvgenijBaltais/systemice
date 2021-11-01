@@ -1,6 +1,5 @@
 <template>
 	<div class="wrapper events">
-
 		<div class="bl-l fl-column">
 			<div class = "main-logo-left">
 				<mainLogo/>
@@ -34,7 +33,7 @@ import eventData from '@/components/event_data'
 export default {
 	data(){
 		return {
-			componentStatus: 'eventData'
+			componentStatus: 'eventData',
 		}
 	},
 	components: {

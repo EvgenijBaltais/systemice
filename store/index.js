@@ -2,6 +2,7 @@ import axios from 'axios'
 
 export const state = () => ({
 
+    eventForm: [],
     portfolioData: [{
 
     	title: 'Открытая пленарная дискуссия ATOM SKILLS',
@@ -108,21 +109,13 @@ export const state = () => ({
 })
 
 export const mutations = {
-    setProductsToState(state, products) {
-        state.products = products
-    },
+    changeEventData(state, data) {
+        state.eventForm = data
+    }
 }
 
 export const actions = {
-    get_products({commit}) {
-        return axios('//79.174.12.75:3001/catalog_products', {
-            method: 'GET'
-        }).then(products => {
-            commit('setProductsToState', products.data)
-            return products
-        }).catch(e => {
-            console.log('403')
-            return e
-        })
-    },
+    changeEventData({state}, data) {
+        this.commit('changeEventData', data.data)
+    }
 }

@@ -52,129 +52,143 @@
 					</p>
 
 					<p class = "tenders-garanties">Мы гарантируем наличие и предоставление всех необходимых документов, разрешений, сертификатов и лицензий, а также финансовых гарантий согласно законодательству РФ о проведении торгов.</p>
-					<div class = "tenders-form">
-						<div class="tenders-half-width">
-							<div class="tenders-input-block">
-								<input
-								type="text"
-								class="tenders-input"
-								placeholder="Максимальный бюджет"
-								/>
-								<div class="spy-left-input"></div>
-								<div class="spy-bottom-input"></div>
-								<div class="spy-right-input"></div>
-								<div class="spy-top-input"></div>
+					<form action="" name = "tenders-form" @submit.prevent = "checkForm">
+						<div class = "tenders-form">
+							<div class="tenders-half-width">
+								<div class="tenders-input-block">
+									<input
+									type="text"
+									class="tenders-input"
+									placeholder="Максимальный бюджет"
+									v-model = "budget"
+									/>
+									<div class="spy-left-input"></div>
+									<div class="spy-bottom-input"></div>
+									<div class="spy-right-input"></div>
+									<div class="spy-top-input"></div>
+								</div>
+							</div>
+							<div class="tenders-half-width">
+								<div class="tenders-input-block">
+									<input
+									type="text"
+									class="tenders-input"
+									placeholder="Регион или отель (если известно)"
+									v-model = "region"
+									/>
+									<div class="spy-left-input"></div>
+									<div class="spy-bottom-input"></div>
+									<div class="spy-right-input"></div>
+									<div class="spy-top-input"></div>
+								</div>
+							</div>
+							<div class="tenders-half-width">
+								<div class="tenders-input-block">
+									<input
+									type="text"
+									class="tenders-input"
+									placeholder="Дата мероприятия"
+									v-model = "date"
+									/>
+									<div class="spy-left-input"></div>
+									<div class="spy-bottom-input"></div>
+									<div class="spy-right-input"></div>
+									<div class="spy-top-input"></div>
+								</div>
+							</div>
+							<div class="tenders-half-width">
+								<div class="tenders-input-block">
+									<input
+									type="text"
+									class="tenders-input"
+									placeholder="Количество гостей"
+									v-model = "guestsNumber"
+									/>
+									<div class="spy-left-input"></div>
+									<div class="spy-bottom-input"></div>
+									<div class="spy-right-input"></div>
+									<div class="spy-top-input"></div>
+								</div>
+							</div>
+							<div class="tenders-half-width">
+								<div class="tenders-input-block">
+									<input
+									type="text"
+									class="tenders-input"
+									placeholder="Процедура оплаты"
+									v-model = "procedurePayment"
+									/>
+									<div class="spy-left-input"></div>
+									<div class="spy-bottom-input"></div>
+									<div class="spy-right-input"></div>
+									<div class="spy-top-input"></div>
+								</div>
+							</div>
+							<div class="tenders-half-width">
+								<div class="tenders-input-block">
+									<input
+									type="text"
+									class="tenders-input"
+									placeholder="Email"
+									v-model = "email"
+									/>
+									<div class="spy-left-input"></div>
+									<div class="spy-bottom-input"></div>
+									<div class="spy-right-input"></div>
+									<div class="spy-top-input"></div>
+								</div>
+							</div>
+							<div class="tenders-half-width">
+								<div class="tenders-input-block">
+									<input
+									type="text"
+									class="tenders-input tenders-input-name"
+									placeholder="Имя *"
+									v-model = "name"
+									/>
+									<div class="spy-left-input"></div>
+									<div class="spy-bottom-input"></div>
+									<div class="spy-right-input"></div>
+									<div class="spy-top-input"></div>
+								</div>
+							</div>
+							<div class="tenders-half-width">
+								<div class="tenders-input-block">
+									<input
+									type="text"
+									class="tenders-input tenders-input-phone"
+									placeholder="Телефон *"
+									v-model = "phone"
+									/>
+									<div class="spy-left-input"></div>
+									<div class="spy-bottom-input"></div>
+									<div class="spy-right-input"></div>
+									<div class="spy-top-input"></div>
+								</div>
+							</div>
+							<div class = "tenders-textarea-w">
+								<textarea
+									placeholder = "Комментарий"
+									class = "tenders-textarea"
+									v-model = "comment"
+								></textarea>
+								<div class="spy-left-textarea"></div>
+								<div class="spy-bottom-textarea"></div>
+								<div class="spy-right-textarea"></div>
+								<div class="spy-top-textarea"></div>
 							</div>
 						</div>
-						<div class="tenders-half-width">
-							<div class="tenders-input-block">
-								<input
-								type="text"
-								class="tenders-input"
-								placeholder="Регион (или отель). если известно"
-								/>
-								<div class="spy-left-input"></div>
-								<div class="spy-bottom-input"></div>
-								<div class="spy-right-input"></div>
-								<div class="spy-top-input"></div>
+						<div class="send-info-btns">
+							<div class="warning-info">* Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
+							<div class = "tenders-send-order">
+								<input class="tenders-send-input" type="submit" value="Отправить">
+								<div class="spy-left-btn"></div>
+								<div class="spy-bottom-btn"></div>
+								<div class="spy-right-btn"></div>
+								<div class="spy-top-btn"></div>
 							</div>
 						</div>
-						<div class="tenders-half-width">
-							<div class="tenders-input-block">
-								<input
-								type="text"
-								class="tenders-input"
-								placeholder="Дата мероприятия"
-								/>
-								<div class="spy-left-input"></div>
-								<div class="spy-bottom-input"></div>
-								<div class="spy-right-input"></div>
-								<div class="spy-top-input"></div>
-							</div>
-						</div>
-						<div class="tenders-half-width">
-							<div class="tenders-input-block">
-								<input
-								type="text"
-								class="tenders-input"
-								placeholder="Количество гостей"
-								/>
-								<div class="spy-left-input"></div>
-								<div class="spy-bottom-input"></div>
-								<div class="spy-right-input"></div>
-								<div class="spy-top-input"></div>
-							</div>
-						</div>
-						<div class="tenders-half-width">
-							<div class="tenders-input-block">
-								<input
-								type="text"
-								class="tenders-input"
-								placeholder="Процедура оплаты"
-								/>
-								<div class="spy-left-input"></div>
-								<div class="spy-bottom-input"></div>
-								<div class="spy-right-input"></div>
-								<div class="spy-top-input"></div>
-							</div>
-						</div>
-						<div class="tenders-half-width">
-							<div class="tenders-input-block">
-								<input
-								type="text"
-								class="tenders-input"
-								placeholder="Email"
-								/>
-								<div class="spy-left-input"></div>
-								<div class="spy-bottom-input"></div>
-								<div class="spy-right-input"></div>
-								<div class="spy-top-input"></div>
-							</div>
-						</div>
-						<div class="tenders-half-width">
-							<div class="tenders-input-block">
-								<input
-								type="text"
-								class="tenders-input"
-								placeholder="Имя *"
-								/>
-								<div class="spy-left-input"></div>
-								<div class="spy-bottom-input"></div>
-								<div class="spy-right-input"></div>
-								<div class="spy-top-input"></div>
-							</div>
-						</div>
-						<div class="tenders-half-width">
-							<div class="tenders-input-block">
-								<input
-								type="text"
-								class="tenders-input"
-								placeholder="Телефон *"
-								/>
-								<div class="spy-left-input"></div>
-								<div class="spy-bottom-input"></div>
-								<div class="spy-right-input"></div>
-								<div class="spy-top-input"></div>
-							</div>
-						</div>
-						<div class = "tenders-textarea-w">
-							<textarea placeholder = "Комментарий" class = "tenders-textarea"></textarea>
-							<div class="spy-left-textarea"></div>
-							<div class="spy-bottom-textarea"></div>
-							<div class="spy-right-textarea"></div>
-							<div class="spy-top-textarea"></div>
-						</div>
-					</div>
-					<div class="send-info-btns">
-						<div class="warning-info">* Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
-						<div class = "tenders-send-order">
-							<span>Отправить</span>
-							<div class="spy-left-btn"></div>
-							<div class="spy-bottom-btn"></div>
-							<div class="spy-right-btn"></div>
-							<div class="spy-top-btn"></div>
-						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -187,11 +201,84 @@
 import blRight from '@/components/bl_right'
 import mainLogo from '@/components/main_logo'
 import pageHeader from '@/components/page_header'
+import Inputmask from 'inputmask'
 
 export default {
 	data(){
 		return {
+			budget: '',
+			region: '',
+			date: '',
+			guestsNumber: '',
+			procedurePayment: '',
+			email: '',
+			name: '',
+			phone: '',
+			comment: '',
+			im: new Inputmask("+7 (999) 999-99-99")
 		}
+	},
+	mounted(){
+
+		// Обнуление стилей неверно заполненных полей
+		
+		let phoneField = document.querySelector('.tenders-input-phone'),
+			nameField = document.querySelector('.tenders-input-name')
+
+			phoneField.addEventListener('keyup', function(){
+				this.classList.remove('input-box-wrong')
+			})
+
+			phoneField.addEventListener('focus', function(){
+				this.classList.remove('input-box-wrong')
+			})
+
+			nameField.addEventListener('keyup', function(){
+				this.classList.remove('input-box-wrong')
+			})
+
+			nameField.addEventListener('focus', function(){
+				this.classList.remove('input-box-wrong')
+			})
+
+		// Маска телефона 
+		
+			this.im.mask(phoneField)
+ 
+	},
+	methods: {
+
+		checkForm(){
+
+			let phoneField = document.querySelector('.tenders-input-phone')
+
+			if (this.name == '' || !phoneField.inputmask.isComplete()) {
+
+				if (this.name == '') {
+					document.querySelector('.tenders-input-name').classList.add('input-box-wrong')
+				}
+
+				if (!phoneField.inputmask.isComplete()) {
+					phoneField.classList.add('input-box-wrong')
+				}
+
+				return false
+			}
+
+
+			let data = {}
+
+				data.budget = this.budget
+				data.region = this.region
+				data.date = this.date
+				data.guestsNumber = this.guestsNumber
+				data.procedurePayment = this.procedurePayment
+				data.email = this.email
+				data.name = this.name
+				data.phone = this.phone
+				data.comment = this.comment
+		}
+
 	},
 	components: {
 		blRight, pageHeader, mainLogo
