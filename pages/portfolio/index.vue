@@ -14,8 +14,7 @@
 		</div>
 		<div class="main">
 			<pageHeader/>
-			<div class="content-main" id = "portfolio-box">
-				<div class="slider content-slide scrolling-box" id = "portfolio-slider">
+			<div class="content-box portfolio-block">
 						<div v-for = "(item, index) in portfolioData"
 						:key="item.title" :class="['sl-card', 'scrolling-portfolio-item', 'sl-box-' + (index === 0 ? 1 : 2)]"
 						:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1.jpg')})`}">
@@ -27,7 +26,6 @@
 								</div>
 							</NuxtLink>
 						</div>
-				</div>
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">

@@ -14,7 +14,7 @@
 		</div>
 		<div class="main">
 			<pageHeader/>
-			<div class="content-box fixed-rightside-padding">
+			<div class="content-box contacts-wrapper">
 				<div class="contact-info">
 					<h1 class="h1">КОНТАКТЫ</h1>
 					<div class="line"></div>
@@ -62,7 +62,7 @@
 				<div class="contact-map">
 					<div id="map-block"></div>
 					<div class="copy-coordinat">
-						<img src="@/assets/images/icons/sheet.png"><span id = "copy-text" data-clipboard-text="55.775555, 37.674597">Скопировать координаты для навигатора копия</span>
+						<img src="@/assets/images/icons/sheet.png"><span id = "copy-text" data-clipboard-text="55.775555, 37.674597">Скопировать координаты для навигатора</span>
 					</div>
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>

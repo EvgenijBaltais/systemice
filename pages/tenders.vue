@@ -16,7 +16,7 @@
 		<div class="main tenders-main">
 			<pageHeader/>
 
-			<div class="content-box tenders-wrapper scrolling-box">
+			<div class="content-box tenders-wrapper">
 
 				<div class = "tenders-left">
 
