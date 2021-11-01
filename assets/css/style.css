@@ -2257,7 +2257,7 @@ position: absolute;
     .portfolio-form .input-box {
         position: relative;
         width: 47.5%;
-        max-width: auto;
+        max-width: 100%;
         margin-right: 0;
     }
     .portfolio-form .form-line .input-box:first-child {
@@ -6623,5 +6623,9 @@ header {
 }
 .main-page header {
     padding: 0;
+}
+
+.portfolio-form .form-line .input-box:first-child {
+    margin-right: 0;
 }
 }
