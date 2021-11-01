@@ -29,11 +29,13 @@ import blRight from '@/components/bl_right'
 import mainLogo from '@/components/main_logo'
 import pageHeader from '@/components/page_header'
 import eventData from '@/components/event_data'
+import Inputmask from 'inputmask'
 
 export default {
 	data(){
 		return {
 			componentStatus: 'eventData',
+			im: new Inputmask("+7 (999) 999-99-99")
 		}
 	},
 	components: {

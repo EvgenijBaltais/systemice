@@ -6014,10 +6014,12 @@ iframe {
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center left;
+    cursor: pointer;
 }
 
 .events-add-brief {
     width: 200px;
+    cursor: pointer;
 }
 
 .to-next-step-final {

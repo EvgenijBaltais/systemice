@@ -116,6 +116,7 @@ export const mutations = {
 
 export const actions = {
     changeEventData({state}, data) {
+
         this.commit('changeEventData', data.data)
     }
 }

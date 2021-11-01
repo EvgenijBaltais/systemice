@@ -302,7 +302,8 @@ export default {
       dateAdvance: '',
       guestsNumber: '',
       budget: '',
-      link: ''
+      link: '',
+      data: this.$store.state.eventForm
     }
   },
   components: {
@@ -312,24 +313,19 @@ export default {
 
     changeEventComponent(e){
 
-      let data = {}
-
-        data.date = this.value1
-        data.dateAdvance = this.dateAdvance
-        data.guestsNumber = this.guestsNumber
-        data.men = document.querySelector('.details-men').value
-        data.women = document.querySelector('.details-women').value
-        data.format = document.querySelector('.details-format').value
-        data.location = document.querySelector('.details-location').value
-        data.budget = this.budget
-        data.link = this.link
+        this.data.date = this.value1
+        this.data.dateAdvance = this.dateAdvance
+        this.data.guestsNumber = this.guestsNumber
+        this.data.men = document.querySelector('.details-men').value
+        this.data.women = document.querySelector('.details-women').value
+        this.data.format = document.querySelector('.details-format').value
+        this.data.location = document.querySelector('.details-location').value
+        this.data.budget = this.budget
+        this.data.link = this.link
 
         this.$store.dispatch({
             type: 'changeEventData',
-            data: data
-        }).then(() => {
-
-          console.log(this.$store.state.eventForm)
+            data: this.data
         })
 
         //return false
