@@ -14,7 +14,7 @@
 		</div>
 		<div class="main">
 			<pageHeader/>
-			<div class="content-main event-page">
+			<div class="content-box">
 				<div class="event-page-wrapper">
 					<div class="event-page-sl">
 						<div class="slider-block glide-b">
@@ -42,7 +42,7 @@
 								<p v-html="portfolioData[eventItem].spectators"></p>
 							</div>
 						</div>
-						<form class="contact-form contact-info" id = "portfolio-form">
+						<form class="contact-form contact-info portfolio-form" id = "portfolio-form">
 							<p>Хотите так же?</p>
 							<div class="line"></div>
 							<div class="form-line">

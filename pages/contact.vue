@@ -126,7 +126,7 @@ export default {
 		clipboard.on('success', function(e) {
 			document.getElementById('copy-text').innerText = 'Скопировано';
 			setTimeout(function(){
-				document.getElementById('copy-text').innerText = 'Скопировать координаты для навигатора копия';
+				document.getElementById('copy-text').innerText = 'Скопировать координаты для навигатора';
 			}, 1000)
 		});
 	}

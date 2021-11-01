@@ -753,6 +753,7 @@ position: absolute;
     top: 28%;
     left: 24%;
     font-size: 16px;
+    display: none;
 }
 
 .sochi {
@@ -761,6 +762,7 @@ position: absolute;
     top: 39.5%;
     left: 30.5%;    
     font-size: 16px;
+    display: none;
 }
 
 .tula {
@@ -769,6 +771,7 @@ position: absolute;
     top: 34%;
     left: 29%;
     font-size: 16px;
+    display: none;
 }
 
 .msk {
@@ -778,6 +781,7 @@ position: absolute;
     top: 31%;
     left: 29%;
     font-size: 16px;
+    display: none;
 }
 
 .city {
@@ -2220,6 +2224,10 @@ position: absolute;
         width: 40%;
     }
 
+    .portfolio-form {
+        width: 100%;
+    }
+
     .contact-info .line {
         height: 6px;
         background-color: #ff0000;
@@ -2244,6 +2252,16 @@ position: absolute;
         float: left;
         max-width: 180px;
         margin-right: 34px;
+    }
+
+    .portfolio-form .input-box {
+        position: relative;
+        width: 47.5%;
+        max-width: auto;
+        margin-right: 0;
+    }
+    .portfolio-form .form-line .input-box:first-child {
+        margin-right: 5%;
     }
 
     .contact-info input {
@@ -3656,7 +3674,6 @@ position: absolute;
         right: 0;
         bottom: auto;
         text-align: right;
-        padding-top: 35px;
     }
     .contact-form {
         margin-top: 60px;
@@ -3812,6 +3829,11 @@ position: absolute;
     .bl-partner {
         width: 47.5%;
         height: 220px;
+    }
+
+    .portfolio-form {
+        width: 100%;
+        max-width: 500px;
     }
 }
 
@@ -5039,7 +5061,7 @@ position: absolute;
         height: auto;
     }
     .contact-info {
-        margin-top: 75px;
+        margin-top: 25px;
     }
     .copy-coordinat { display: none; }
 
@@ -6263,6 +6285,10 @@ input[type="checkbox"]:checked + label:after {
 
 .sl-card {
     height: 250px;
+}
+
+.copy-coordinat {
+    bottom: -30px;
 }
 
 }
