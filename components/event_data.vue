@@ -393,6 +393,7 @@ export default {
         this.location = readyValues.location
         document.querySelector('.details-location').value = readyValues.location
     }
-  },
-};
+    
+  }
+}
 </script>
