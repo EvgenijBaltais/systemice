@@ -228,7 +228,7 @@ export default {
             )
 
             axios
-            .post('https://yahonty-nog.ru/say_online_send.php', {
+            .post('https://systemice.ru/say_online_send_test.php', {
                 params: {
                     'name': form.querySelector('.contact-name').value,
 					'phone': form.querySelector('.contact-phone').value,
