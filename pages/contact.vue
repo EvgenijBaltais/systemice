@@ -20,7 +20,7 @@
 					<div class="line"></div>
 					<p class="p-contact"><b>Наш адрес:</b><br>г. Москва, ул. Бауманская д. 6.</p>
 					<p class="p-contact"><b>Телефон:</b><br> +7 (495) 215-24-80</p>
-					<p class="p-contact"><b>Электропочта:</b><br> info@systemice.ru</p>
+					<p class="p-contact"><b>Электронная почта:</b><br> info@systemice.ru</p>
 					<form class="contact-form" id = "contact-form" name = "contacts_form" @submit.prevent = "checkForm">
 						<p>Заявка на обратный звонок</p>
 						<div class="line"></div>

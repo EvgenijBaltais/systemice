@@ -42,7 +42,7 @@
 								<p v-html="portfolioData[eventItem].spectators"></p>
 							</div>
 						</div>
-						<form class="contact-form contact-info portfolio-form" name = "portfolio-form" id = "portfolio-form" @submit.prevent = "checkForm">
+						<form class="contact-form contact-info portfolio-form" name = "portfolio-form" @submit = "checkForm">
 							<p>Хотите так же?</p>
 							<div class="line"></div>
 							<div class="form-line">
@@ -141,8 +141,6 @@ export default {
 		checkForm(e){
 
 			e.preventDefault()
-
-			console.log(1212)
 
 			if (this.agreeTerms == 'no' || !e.target.querySelector('.contact-phone').inputmask.isComplete()) {
 
