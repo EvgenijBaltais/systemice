@@ -90,7 +90,8 @@ import copyright from '@/components/copyright'
 import pageHeader from '@/components/page_header'
 import clipboardJS from 'clipboard'
 import Inputmask from 'inputmask'
-import ymaps from 'ymaps';
+import ymaps from 'ymaps'
+import axios from 'axios'
 
 export default {
 	head() {
