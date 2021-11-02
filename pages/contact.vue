@@ -21,7 +21,7 @@
 					<p class="p-contact"><b>Наш адрес:</b><br>г. Москва, ул. Бауманская д. 6.</p>
 					<p class="p-contact"><b>Телефон:</b><br> +7 (495) 215-24-80</p>
 					<p class="p-contact"><b>Электропочта:</b><br> info@systemice.ru</p>
-					<form class="contact-form" id = "contact-form" @submit.prevent = "checkForm">
+					<form class="contact-form" id = "contact-form" name = "contacts_form" @submit.prevent = "checkForm">
 						<p>Заявка на обратный звонок</p>
 						<div class="line"></div>
 						<div class="form-line">
@@ -111,7 +111,8 @@ export default {
 			name: '',
 			phone: '',
 			agreeTerms: 'yes',
-			im: new Inputmask("+7 (999) 999-99-99")
+			im: new Inputmask("+7 (999) 999-99-99"),
+			sendingForm: 0
 		}
 	},
 	components: {
@@ -211,7 +212,37 @@ export default {
 					return false
 				}
 
-		}
+			this.sendForm(e.target)
+		},
+
+       sendForm(form){
+
+            if (this.sendingForm != 0) return false
+
+            this.sendingForm = 1
+
+            axios.interceptors.request.use((req) => {
+                    form.querySelector('.send-button').value = "Отправка..."
+                    return req
+                }
+            )
+
+            axios
+            .post('https://yahonty-nog.ru/say_online_send.php', {
+                params: {
+                    'name': form.querySelector('.contact-name').value,
+					'phone': form.querySelector('.contact-phone').value,
+					'form_name': form.getAttribute('name')
+                }
+            }).then(response => {
+
+					console.log(response)
+
+                    form.querySelector('.send-button').value = "Успешно!"
+                    this.sendingForm = 0
+            })
+        }
+
 	}
 }
 
