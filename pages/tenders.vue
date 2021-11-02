@@ -301,7 +301,7 @@ export default {
 				}
 				})
 				.then(response => {
-					console.log(response.data.success === 1)
+					console.log(response.data.success)
 
 					response.data.success === 1 ? form.querySelector('.tenders-send-input').value = "Успешно!" :
 												  form.querySelector('.tenders-send-input').value = "Ошибка!"
