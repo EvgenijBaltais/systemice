@@ -227,20 +227,22 @@ export default {
                 }
             )
 
-            axios
-            .post('https://systemice.ru/say_online_send_test.php', {
-                params: {
-                    'name': form.querySelector('.contact-name').value,
-					'phone': form.querySelector('.contact-phone').value,
-					'form_name': form.getAttribute('name')
-                }
-            }).then(response => {
+				let bodyFormData = new FormData()
+					bodyFormData.append('name', form.querySelector('.contact-name').value)
+					bodyFormData.append('phone', form.querySelector('.contact-phone').value)
+					bodyFormData.append('form_name', form.getAttribute('name'))
 
+				axios.post('https://systemice.ru/say_online_send_test.php', bodyFormData, {
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded'
+				}
+				})
+				.then(response => {
 					console.log(response)
 
                     form.querySelector('.send-button').value = "Успешно!"
                     this.sendingForm = 0
-            })
+				})
         }
 
 	}

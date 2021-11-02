@@ -4430,7 +4430,7 @@ position: absolute;
     .map-bg {
         left: 0;
         background-position: left;
-        background-image: url('../images/map-mob.png');
+        background-image: url('../images/map-mob.svg');
     }
     .city {
         height: 160%;
@@ -4613,7 +4613,7 @@ position: absolute;
     .map-bg {
         left: 0;
         background-position: left;
-        background-image: url('../images/map-mob.png');
+        background-image: url('../images/map-mob.svg');
     }
     .city {
         height: 160%;
@@ -5011,7 +5011,7 @@ position: absolute;
     .map-bg {
         left: 0;
         background-position: left;
-        background-image: url('../images/map-mob.png');
+        background-image: url('../images/map-mob.svg');
     }
     .city {
         height: 160%;
@@ -6454,7 +6454,7 @@ header {
 }
 
 .main-page .map-bg {
-    background-image: url('../images/map-mob.png');
+    background-image: url('../images/map-mob.svg');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
@@ -6710,10 +6710,20 @@ header {
 }
 
 .main-page .map-bg {
-    width: 100%;
-    height: 250px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    height: 500px;
     margin-top: -50px;
     background-size: 100%;
+}
+
+.main.h-page {
+    overflow: hidden;
+}
+
+.main-page .to-services {
+    margin-top: -50px;
 }
 
 .main-page .video {
