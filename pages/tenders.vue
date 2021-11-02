@@ -202,6 +202,7 @@ import blRight from '@/components/bl_right'
 import mainLogo from '@/components/main_logo'
 import pageHeader from '@/components/page_header'
 import Inputmask from 'inputmask'
+import axios from 'axios'
 
 export default {
 	data(){
@@ -215,7 +216,8 @@ export default {
 			name: '',
 			phone: '',
 			comment: '',
-			im: new Inputmask("+7 (999) 999-99-99")
+			im: new Inputmask("+7 (999) 999-99-99"),
+			sendingForm: 0
 		}
 	},
 	mounted(){
@@ -248,7 +250,7 @@ export default {
 	},
 	methods: {
 
-		checkForm(){
+		checkForm(e){
 
 			let phoneField = document.querySelector('.tenders-input-phone')
 
@@ -265,19 +267,46 @@ export default {
 				return false
 			}
 
+			this.sendForm(e.target)
+		},
 
-			let data = {}
+       sendForm(form){
 
-				data.budget = this.budget
-				data.region = this.region
-				data.date = this.date
-				data.guestsNumber = this.guestsNumber
-				data.procedurePayment = this.procedurePayment
-				data.email = this.email
-				data.name = this.name
-				data.phone = this.phone
-				data.comment = this.comment
-		}
+            if (this.sendingForm != 0) return false
+
+            this.sendingForm = 1
+
+            axios.interceptors.request.use((req) => {
+                    form.querySelector('.tenders-send-input').value = "Отправка..."
+                    return req
+                }
+            )
+
+				let bodyFormData = new FormData()
+				
+					bodyFormData.append('budget', this.budget)
+					bodyFormData.append('region', this.region)
+					bodyFormData.append('date', this.date)
+					bodyFormData.append('guestsNumber', this.guestsNumber)
+					bodyFormData.append('procedurePayment', this.procedurePayment)
+					bodyFormData.append('email', this.email)
+					bodyFormData.append('name', this.name)
+					bodyFormData.append('phone', this.phone)
+					bodyFormData.append('comment', this.comment)
+					bodyFormData.append('form_name', form.getAttribute('name'))
+
+				axios.post('https://systemice.ru/say_online_send_test.php', bodyFormData, {
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded'
+				}
+				})
+				.then(response => {
+					console.log(response.data.success === 1)
+
+					response.data.success === 1 ? form.querySelector('.tenders-send-input').value = "Успешно!" :
+												  form.querySelector('.tenders-send-input').value = "Ошибка!"
+				})
+        }
 
 	},
 	components: {
