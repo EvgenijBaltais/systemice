@@ -160,25 +160,6 @@ export default {
 		})
 	}
 
-    $(document).mouseup(function (e){
-
-        var div = $('.login-block');
-
-        if (!div.is(e.target) 
-            && div.has(e.target).length === 0) {
-        	div.css('display','none');
-			$('.btn-exit').removeClass('active');
-        }
-
-        var div2 = $('.other-event')
-
-        if (!div2.is(e.target) 
-            && div2.has(e.target).length === 0) {
-        	div2.css('display','none')
-			$('.more-portfolio').removeClass('active')
-        }
-    })
-
 		/* Карты */
 
 		ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU')
@@ -239,8 +220,12 @@ export default {
 				})
 				.then(response => {
 
-					response.data.success === 1 ? form.querySelector('.tenders-send-input').value = "Успешно!" :
-												  form.querySelector('.tenders-send-input').value = "Ошибка!"
+					if (!response.data || response.data == '') {
+						form.querySelector('.tenders-send-input').value = "Ошибка!"
+						return false
+					}
+
+					form.querySelector('.tenders-send-input').value = "Успешно!"
 				})
         }
 

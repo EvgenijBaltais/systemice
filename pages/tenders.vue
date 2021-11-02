@@ -286,7 +286,7 @@ export default {
 				
 					bodyFormData.append('budget', this.budget)
 					bodyFormData.append('region', this.region)
-					bodyFormData.append('date', this.date)
+					bodyFormData.append('date', this.getKnightDate(this.date))
 					bodyFormData.append('guestsNumber', this.guestsNumber)
 					bodyFormData.append('procedurePayment', this.procedurePayment)
 					bodyFormData.append('email', this.email)
@@ -301,13 +301,28 @@ export default {
 				}
 				})
 				.then(response => {
-					console.log(response.data.success)
 
-					response.data.success === 1 ? form.querySelector('.tenders-send-input').value = "Успешно!" :
-												  form.querySelector('.tenders-send-input').value = "Ошибка!"
+					if (!response.data || response.data == '') {
+						form.querySelector('.tenders-send-input').value = "Ошибка!"
+						return false
+					}
+
+					form.querySelector('.tenders-send-input').value = "Успешно!"
 				})
-        }
+        },
+		getKnightDate: function(date) {
 
+			var dd = date.getDate();
+			if (dd < 10) dd = '0' + dd;
+
+			var mm = date.getMonth() + 1;
+			if (mm < 10) mm = '0' + mm;
+
+			var yy = date.getFullYear();
+			if (yy < 10) yy = '0' + yy;
+
+			return yy + '-' + mm + '-' + dd;
+		}
 	},
 	components: {
 		blRight, pageHeader, mainLogo

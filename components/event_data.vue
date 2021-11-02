@@ -359,7 +359,16 @@ export default {
         "details-multiple-values-opened"
         )
     },
+    targetClicks: function(e){
 
+        if (!e.target.classList.contains('details-input') &&
+            !e.target.classList.contains('details-inputs-hidden')) {
+
+          for (let i = 0; i < document.querySelectorAll('.details-multiple-values').length; i++) {
+            document.querySelectorAll('.details-multiple-values')[i].classList.remove('details-multiple-values-opened')
+          }
+        }
+    },
     getParent: function (el, cls) {
       while ((el = el.parentElement) && !el.classList.contains(cls));
       return el
@@ -394,6 +403,13 @@ export default {
         document.querySelector('.details-location').value = readyValues.location
     }
     
+    // Закрытие ненужных пунктов по клику вне
+
+    document.body.addEventListener('click', this.targetClicks)
+
+  },
+  beforeDestroy(){
+      document.body.removeEventListener('click', this.targetClicks)
   }
 }
 </script>
