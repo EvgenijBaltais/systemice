@@ -171,7 +171,7 @@ export default {
 			let bodyFormData = new FormData()
 				bodyFormData.append('name', form.querySelector('.contact-name').value)
 				bodyFormData.append('phone', form.querySelector('.contact-phone').value)
-				bodyFormData.append('item', this.eventItem)
+				bodyFormData.append('item', this.portfolioData[this.eventItem].title)
 				bodyFormData.append('form_name', form.getAttribute('name'))
 
 			axios.post('https://systemice.ru/say_online_send_test.php', bodyFormData, {
@@ -182,11 +182,11 @@ export default {
 			.then(response => {
 
 				if (!response.data || response.data == '') {
-					form.querySelector('.tenders-send-input').value = "Ошибка!"
+					form.querySelector('.send-button').value = "Ошибка!"
 					return false
 				}
 
-				form.querySelector('.tenders-send-input').value = "Успешно!"
+				form.querySelector('.send-button').value = "Успешно!"
 			})
 		},
 
