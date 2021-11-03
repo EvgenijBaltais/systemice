@@ -14,7 +14,7 @@
 		</div>
 		<div class="main">
 			<pageHeader/>
-			<div class="content-box">
+			<div class="content-box" style = "padding-bottom: 0">
 				<div class="glide-c">
 					<div data-glide-el="track" class="glide__track">
 						<ul class="glide__slides">
@@ -52,51 +52,53 @@
 					</div>
 				</div>
 			</div>
-			<div class="bl-preview">
-				<div class="preview-container">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-					<img class="link-arrow dop-arrow-left" src="@/assets/images/icons/arrow-left.png">
-					<img class="link-arrow dop-arrow-right" src="@/assets/images/icons/arrow-right.png">
-					<div class = "sl-wrapper-shadow glide">
-						<div data-glide-el="track" class="sl-wrapperglide__track">
-							<ul class="glide__slides">
-								<li class="glide__slide">
-									<img src = "@/assets/images/mini/1.png" class="sl-teammate preview-item" data-name = "Мирхайдарова Мария" data-position = "Руководитель компании">
-								</li>
-								<li>
-									<img src = "@/assets/images/mini/2.png" class="sl-teammate preview-item" data-name = "Марина Белоцерковская" data-position ="Руководитель отдела развития">
-								</li>
-								<li class="glide__slide">
-									<img src = "@/assets/images/mini/3.png" class="sl-teammate preview-item" data-name = "Георгиев Алексей" data-position = "Руководитель корпоративного отдела">
-								</li>
-								<li class="glide__slide">
-									<img src = "@/assets/images/mini/4.png" class="sl-teammate preview-item" data-name = "Сергеева Валерия" data-position = "Главный менеджер">
-								</li>
-								<li class="glide__slide">
-									<img src = "@/assets/images/mini/5.png" class="sl-teammate preview-item" data-name = "Евграфов Артур" data-position = "Руководитель IT отдела">
-								</li>
-								<li class="glide__slide">
-									<img src = "@/assets/images/mini/6.png" class="sl-teammate preview-item" data-name = "Крюкова Анастасия" data-position = "Главный маркетолог">
-								</li>
-								<li class="glide__slide">
-									<img src = "@/assets/images/mini/7.png" class="sl-teammate preview-item" data-name = "Ларин Станислав" data-position = "Руководитель рекламного отдела">
-								</li>
-							</ul>
+			<div class="content-box no-vertical-padding">
+				<div class="bl-preview">
+					<div class="preview-container">
+						<div class="spy-left"></div>
+						<div class="spy-top"></div>
+						<div class="spy-right"></div>
+						<div class="spy-bottom"></div>
+						<img class="link-arrow dop-arrow-left" src="@/assets/images/icons/arrow-left.png">
+						<img class="link-arrow dop-arrow-right" src="@/assets/images/icons/arrow-right.png">
+						<div class = "sl-wrapper-shadow glide">
+							<div data-glide-el="track" class="sl-wrapperglide__track">
+								<ul class="glide__slides">
+									<li class="glide__slide">
+										<img src = "@/assets/images/mini/1.png" class="sl-teammate preview-item" data-name = "Мирхайдарова Мария" data-position = "Руководитель компании">
+									</li>
+									<li>
+										<img src = "@/assets/images/mini/2.png" class="sl-teammate preview-item" data-name = "Марина Белоцерковская" data-position ="Руководитель отдела развития">
+									</li>
+									<li class="glide__slide">
+										<img src = "@/assets/images/mini/3.png" class="sl-teammate preview-item" data-name = "Георгиев Алексей" data-position = "Руководитель корпоративного отдела">
+									</li>
+									<li class="glide__slide">
+										<img src = "@/assets/images/mini/4.png" class="sl-teammate preview-item" data-name = "Сергеева Валерия" data-position = "Главный менеджер">
+									</li>
+									<li class="glide__slide">
+										<img src = "@/assets/images/mini/5.png" class="sl-teammate preview-item" data-name = "Евграфов Артур" data-position = "Руководитель IT отдела">
+									</li>
+									<li class="glide__slide">
+										<img src = "@/assets/images/mini/6.png" class="sl-teammate preview-item" data-name = "Крюкова Анастасия" data-position = "Главный маркетолог">
+									</li>
+									<li class="glide__slide">
+										<img src = "@/assets/images/mini/7.png" class="sl-teammate preview-item" data-name = "Ларин Станислав" data-position = "Руководитель рекламного отдела">
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class = "item-dots">
-					<div class="dots-container glide-b">
-						<div data-glide-el="track" class="glide__track">
-							<ul class="glide__slides"></ul>
+					<div class = "item-dots">
+						<div class="dots-container glide-b">
+							<div data-glide-el="track" class="glide__track">
+								<ul class="glide__slides"></ul>
+							</div>
 						</div>
 					</div>
+					<div class="arrow-left"></div>
+					<div class="arrow-right"></div>
 				</div>
-				<div class="arrow-left"></div>
-				<div class="arrow-right"></div>
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">

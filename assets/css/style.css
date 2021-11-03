@@ -14,6 +14,12 @@ a {
     color: #fff;
 }
 
+.team .content-box.no-vertical-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 25vh;
+}
+
 .wrapper {
     display: flex;
     position: relative;
@@ -926,6 +932,7 @@ position: absolute;
 /* Карусель на странице Команда */
 
 .glide-c {
+    height: 100%;
     padding: 0 20px;
     box-sizing: border-box;
     display: flex;
@@ -3595,6 +3602,12 @@ position: absolute;
     }
     .service-desc-w {
         width: calc(100% - 230px)
+    }
+    .team .content-box {
+        height: 65vh;
+    }
+    .team .h1-more {
+        font-size: 60px;
     }
     }
 
@@ -6388,6 +6401,19 @@ input[type="checkbox"]:checked + label:after {
     .news-box {
         padding: 0 250px 4% 2.5%;
     }
+
+    .team .content-box {
+        height: 65vh;
+    }
+    .team .h1-more {
+        font-size: 50px;
+    } 
+    .team .content-box.no-vertical-padding {
+        height: 30vh;
+    }
+    .sotrud-img {
+        max-width: 280px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -6728,6 +6754,11 @@ header {
 .news-slides .lightcase-news-pic img {
     width: 100%;
 }
+
+.team .content-box {
+    flex-wrap: nowrap;
+    padding-right: 2.5%;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -6817,5 +6848,19 @@ header {
 
 .portfolio-form .form-line .input-box:first-child {
     margin-right: 0;
+}
+
+.team .content-box {
+    padding: 50px 0 10px;
+    height: 65vh;
+}
+.glide-c .glide__track {
+    margin: 0 auto;
+}
+.team .h1-more {
+    font-size: 38px;
+}
+.team .content-box.no-vertical-padding {
+    height: 30vh;
 }
 }
