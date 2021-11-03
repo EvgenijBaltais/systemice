@@ -162,14 +162,27 @@ export default {
 
 		/* Карты */
 
+		let myMap, myPlacemark,
+			koordinats = [55.776108388031815, 37.67544507980347],
+			companyName = 'Systemice Hotel Group',
+			balloonContent = 'ул. Бауманская д.6с2.<br>8 этаж. 804 офис'
+
 		ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU')
 		  .then(maps => {
-			const map = new maps.Map('map-block', {
-			  center: [55.775555, 37.674597],
+
+			myMap = new maps.Map('map-block', {
+			  center: koordinats,
 			  zoom: 12
 			})
 		
-
+			myPlacemark = new maps.Placemark(koordinats, {
+				hintContent: 'Systemice Hotel Group',
+				balloonContent: 'ул. Бауманская д.6с2. Бизнес-центр Виктория Плаза. 8 этаж. 804 офис'
+			})
+			
+			myMap.geoObjects.add(myPlacemark)
+			myMap.setType('yandex#map')
+			myMap.behaviors.disable('scrollZoom')
 		  })
 		  .catch(error => console.log('Failed to load Yandex Maps', error))
 
