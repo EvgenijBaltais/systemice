@@ -773,43 +773,6 @@ position: absolute;
     font-weight: 100;
 }
 
-.spb {
-    display: block;
-    position: absolute;
-    top: 28%;
-    left: 24%;
-    font-size: 16px;
-    display: none;
-}
-
-.sochi {
-    display: block;
-    position: absolute;
-    top: 39.5%;
-    left: 30.5%;    
-    font-size: 16px;
-    display: none;
-}
-
-.tula {
-    display: block;
-    position: absolute;
-    top: 34%;
-    left: 29%;
-    font-size: 16px;
-    display: none;
-}
-
-.msk {
-
-    display: block;
-    position: absolute;
-    top: 31%;
-    left: 29%;
-    font-size: 16px;
-    display: none;
-}
-
 .city {
 
     position: absolute;
@@ -3271,23 +3234,6 @@ position: absolute;
        animation: opacity 2s ease-in-out;
     }
 
-    .city .spb {
-
-       animation: right-s 1s linear;
-    }
-    .city .sochi {
-        
-       animation: right-s 1.6s linear;
-    }
-    .city .tula {
-        
-       animation: right-s 1.4s linear;
-    }
-    .city .msk {
-        
-       animation: right-s 1.2s linear;
-    }
-
     .bl-partner {
 
        animation: top-bottom 1s linear;
@@ -4632,12 +4578,6 @@ position: absolute;
         height: 160%;
         width: 150%;
     }
-    .spb, .sochi, .tula, .msk { font-size: 19px; }
-
-    .spb { left: 27%; }
-    .msk { left: 34%; }
-    .tula { left: 34%; }
-    .sochi { left: 37%; }
 
     .fa-map-marker { font-size: 26px; }
 
@@ -5034,12 +4974,6 @@ position: absolute;
     .map {
         margin-top: 75px;
     }
-    .spb, .sochi, .tula, .msk { font-size: 19px; }
-
-    .spb { left: 27%; }
-    .msk { left: 34%; }
-    .tula { left: 34%; }
-    .sochi { left: 37%; }
 
     .fa-map-marker { font-size: 26px; }
 
@@ -6319,23 +6253,6 @@ input[type="checkbox"]:checked + label:after {
     background-size: cover;
 }
 
-.spb {
-    top: 26%;
-    left: 23%;
-}
-.msk {
-    top: 29.5%;
-    left: 27.7%;
-}
-.tula {
-    top: 32.5%;
-    left: 27.7%;
-}
-.sochi {
-    top: 37.5%;
-    left: 29.3%;
-}
-
 .to-services {
     height: 60px;
     width: 100%;
@@ -6524,23 +6441,6 @@ header {
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.spb {
-    top: 43.5%;
-    left: 44.5%;
-}
-.sochi {
-    top: 75%;
-    left: 53.5%;
-}
-.tula {
-    top: 61%;
-    left: 51.5%;
-}
-.msk {
-    top: 53%;
-    left: 51.5%;
 }
 .to-services-w {
     padding-right: 0;
@@ -6820,27 +6720,6 @@ header {
 
 .main-page .map {
     padding: 0;
-}
-
-.spb {
-    font-size: 12px;
-    top: 38%;
-    left: 40%;
-}
-.sochi {
-    font-size: 12px;
-    top: 75%;
-    left: 55%;
-}
-.tula {
-    font-size: 12px;
-    top: 61%;
-    left: 51.5%;
-}
-.msk {
-    font-size: 12px;
-    top: 50%;
-    left: 51.5%;
 }
 
 .video .h1 {

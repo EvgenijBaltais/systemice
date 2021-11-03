@@ -73,12 +73,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="map-bg">
-				<span class="spb"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Caнкт-Петербург</span>
-				<span class="sochi"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Cочи</span>
-				<span class="tula"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Тула</span>
-				<span class="msk"><i class="fa fa-map-marker fa-2" aria-hidden="true"></i> Москва</span>
-			</div>
+			<div class="map-bg"></div>
 		</div>
 		<div class = "to-services-w">
 			<div class = "to-services">
