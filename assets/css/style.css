@@ -1387,10 +1387,10 @@ position: absolute;
 .tenders-title-big {
     position: relative;
     min-height: 80px;
-    padding-top: 20px;
+    padding-top: 34px;
     box-sizing: border-box;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 46px;
+    line-height: 46px;
     margin: 0 0 40px 0;
     text-transform: uppercase;
     font-family: 'ImpactRegular', sans-serif;
@@ -6373,6 +6373,20 @@ input[type="checkbox"]:checked + label:after {
 .news-sldr-box {
     max-height: 500px;
 }
+
+.tenders-title-big {
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 45px;
+}
+}
+
+@media screen and (max-width: 1400px) {
+.tenders-title-big {
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 25px;
+}
 }
 
 @media screen and (max-width: 1300px) {
@@ -6862,5 +6876,12 @@ header {
 }
 .team .content-box.no-vertical-padding {
     height: 30vh;
+}
+
+.team .arrow-left {
+    top: 20%
+}
+.team .arrow-right {
+    top: 20%
 }
 }

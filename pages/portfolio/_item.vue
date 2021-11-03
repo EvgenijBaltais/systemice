@@ -72,7 +72,7 @@
 								<span class = "i-agree">Я согласен на обработку персональных данных</span>
 							</label>
 							<div class="button-box">
-								<input class="send-button" type="button" value="Отправить">
+								<input class="send-button" type="submit" value="Отправить">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
@@ -171,6 +171,7 @@ export default {
 			let bodyFormData = new FormData()
 				bodyFormData.append('name', form.querySelector('.contact-name').value)
 				bodyFormData.append('phone', form.querySelector('.contact-phone').value)
+				bodyFormData.append('item', this.eventItem)
 				bodyFormData.append('form_name', form.getAttribute('name'))
 
 			axios.post('https://systemice.ru/say_online_send_test.php', bodyFormData, {
