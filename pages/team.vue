@@ -290,8 +290,6 @@ export default {
 		},
 		moveRight(){
 
-			console.log(1111)
-
 			this.glide.go('>')
 			this.glide_dots.go('>')
 

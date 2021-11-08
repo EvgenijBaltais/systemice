@@ -1707,6 +1707,7 @@ position: absolute;
     bottom: 0;
     margin: auto;
     z-index: 8;
+    user-select: none;
 }
 
 .sl-wrapper-leftbox {
@@ -1717,6 +1718,7 @@ position: absolute;
     height: 80px;
     z-index: 9;
     cursor: pointer;
+    user-select: none;
 }
 
 .sl-wrapper-rightbox {
@@ -1727,6 +1729,7 @@ position: absolute;
     height: 80px;
     z-index: 9;
     cursor: pointer;
+    user-select: none;
 }
 
 /* Команда, конец */
@@ -5382,15 +5385,6 @@ position: absolute;
     .team .preview-container {
         width: 260px;
     }
-    .team .dop-arrow-left {
-        width: 16px;
-        left: 90px;
-    }
-
-    .team .dop-arrow-right {
-        width: 16px;
-        right: 90px;
-    }
     .sl-wrapper .sl-teammate:nth-child(2) {
         margin-right: 10px;
     }
@@ -6420,6 +6414,14 @@ input[type="checkbox"]:checked + label:after {
     height: 600px;
 }
 
+.glide-c {
+    padding: 0 5px;
+}
+
+.team .h1-more {
+    font-size: 40px;
+}
+
 }
 
 @media screen and (max-width: 900px) {
@@ -6788,9 +6790,13 @@ header {
 }
 
 .team .arrow-left {
-    top: 20%
+    top: 35px
 }
 .team .arrow-right {
-    top: 20%
+    top: 35px
+}
+
+header {
+    padding: 0;
 }
 }
