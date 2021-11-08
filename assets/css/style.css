@@ -1699,6 +1699,36 @@ position: absolute;
     display: block;
 }
 
+.sl-wrapper-coverall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 8;
+}
+
+.sl-wrapper-leftbox {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.sl-wrapper-rightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    z-index: 9;
+    cursor: pointer;
+}
+
 /* Команда, конец */
 
 /* Главная карусель */
@@ -2179,7 +2209,7 @@ position: absolute;
         border-left: 1px solid #ff0000;
         transform: rotate(45deg);
         background-image: none;
-        top: 30%;
+        top: 50px;
         cursor: pointer;
     }
 
@@ -2193,7 +2223,7 @@ position: absolute;
         border-left: 1px solid #ff0000;
         transform: rotate(-135deg);
         background-image: none;
-        top: 30%;
+        top: 50px;
         cursor: pointer;
     }
     .arrow-bottom {

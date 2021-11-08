@@ -61,6 +61,9 @@
 						<div class="spy-bottom"></div>
 						<img class="link-arrow dop-arrow-left" src="@/assets/images/icons/arrow-left.png">
 						<img class="link-arrow dop-arrow-right" src="@/assets/images/icons/arrow-right.png">
+						<div class = "sl-wrapper-coverall" v-if = "windowWidth > 900"></div>
+						<div class = "sl-wrapper-leftbox" v-if = "windowWidth > 900" @click = "moveLeft"></div>
+						<div class = "sl-wrapper-rightbox" v-if = "windowWidth > 900" @click = "moveRight"></div>
 						<div class = "sl-wrapper-shadow glide">
 							<div data-glide-el="track" class="sl-wrapperglide__track">
 								<ul class="glide__slides">
@@ -96,8 +99,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="arrow-left"></div>
-					<div class="arrow-right"></div>
+					<div class="arrow-left" @click = "moveLeft"></div>
+					<div class="arrow-right" @click = "moveRight"></div>
 				</div>
 			</div>
 			<div class="footer-mob">
@@ -138,7 +141,8 @@ export default {
 			glide: {},
 			glide_dots: {},
 			glide_sotrud: {},
-			sotrudSlider: 0
+			sotrudSlider: 0,
+			windowWidth: 0
 		}
 	},
 	components: {
@@ -146,6 +150,10 @@ export default {
   	},
 
 	  mounted(){
+
+		  // Узнать ширину экрана
+
+		  this.windowWidth = window.screen.width
 
 		let dotsContainer = document.querySelector('.dots-container .glide__slides'),          	// Контейнер с нижними полосками
 			$this = this,
@@ -233,8 +241,11 @@ export default {
 			this.sotrudSlider ? glide_sotrud.mount() : ''
 
 			// Кнопки 
-			document.querySelector('.arrow-right').addEventListener('click', this.moveRight)
-			document.querySelector('.arrow-left').addEventListener('click', this.moveLeft)
+			//document.querySelector('.arrow-right').addEventListener('click', this.moveRight)
+			//document.querySelector('.arrow-left').addEventListener('click', this.moveLeft)
+
+			//document.querySelector('.sl-wrapper-rightbox').addEventListener('click', this.moveRight)
+			//document.querySelector('.sl-wrapper-leftbox').addEventListener('click', this.moveLeft)
 
 			// Клавиатура
 
@@ -242,10 +253,10 @@ export default {
 
 			// Колесико мыши
 			// Не Mozilla
-			window.addEventListener('mousewheel', this.mouseScroll)
+			//window.addEventListener('mousewheel', this.mouseScroll)
 
 			// Mozilla
-			window.addEventListener('DOMMouseScroll', this.mouseScroll)
+			//window.addEventListener('DOMMouseScroll', this.mouseScroll)
 		})
 	  },
 	  methods: {
@@ -279,6 +290,8 @@ export default {
 		},
 		moveRight(){
 
+			console.log(1111)
+
 			this.glide.go('>')
 			this.glide_dots.go('>')
 
@@ -303,11 +316,11 @@ export default {
 			this.changePortrait(this.glide.index)
 			this.changeManagerData(this.glide.index)
 		},
-		mouseScroll(e) {
+		//mouseScroll(e) {
 
-			this.wheelAction(e) > 0 ? this.glide.go('<') : this.glide.go('>')
-			this.wheelAction(e) > 0 ? this.glide_dots.go('<') : this.glide_dots.go('>')
-		},
+		//	this.wheelAction(e) > 0 ? this.glide.go('<') : this.glide.go('>')
+		//	this.wheelAction(e) > 0 ? this.glide_dots.go('<') : this.glide_dots.go('>')
+		//},
 		changePortrait(index) {
 
 			document.querySelector('.glide-c').style.opacity = 0
@@ -353,13 +366,13 @@ export default {
 		//this.glide_dots.destroy()
 		//this.glide_sotrud.destroy()
 
-		window.removeEventListener('mousewheel', this.mouseScroll)
-		window.removeEventListener('DOMMouseScroll', this.mouseScroll)
+		//window.removeEventListener('mousewheel', this.mouseScroll)
+		//window.removeEventListener('DOMMouseScroll', this.mouseScroll)
 
 		document.removeEventListener('keydown', this.keyArrowsAction)
 
-		document.querySelector('.arrow-right').removeEventListener('click', this.moveRight)
-		document.querySelector('.arrow-left').removeEventListener('click', this.moveLeft)
+		//document.querySelector('.arrow-right').removeEventListener('click', this.moveRight)
+		//document.querySelector('.arrow-left').removeEventListener('click', this.moveLeft)
 	}
 }
 
