@@ -3101,9 +3101,7 @@ position: absolute;
 
     }
 
-    .bl-other { display: none; }
-
-    .portfolio .bl-other, .portfolio_in .bl-other { display: none; width: 50%;cursor: pointer; }
+    .portfolio .bl-other, .portfolio_in .bl-other {width: 50%;cursor: pointer; }
 
     .more-portfolio {
         display: block;
@@ -4459,7 +4457,7 @@ position: absolute;
         margin-top: 30px;
     }
     .right-wth {
-        bottom: 20%;
+        bottom: 60%;
     }
     .sotrud-img {
         display: block;
@@ -6422,6 +6420,10 @@ input[type="checkbox"]:checked + label:after {
     font-size: 40px;
 }
 
+.team .content-box {
+    flex-wrap: nowrap;
+}
+
 }
 
 @media screen and (max-width: 900px) {
@@ -6703,13 +6705,16 @@ header {
 
 .team .content-box {
     flex-wrap: nowrap;
-    padding-right: 2.5%;
+    padding: 0 3%;
 }
 }
 
 @media screen and (max-width: 768px) {
     .main-page .map-bg {
         height: 540px;
+    }
+    .team .content-box {
+        flex-wrap: wrap;
     }
 }
 

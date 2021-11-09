@@ -1,4 +1,5 @@
 <template>
+<div>
 	<div class="bl-r content-container">
 		<ul class="menu-list">
 			<li class="menu-item">
@@ -50,4 +51,29 @@
 			</div>
 		</div>
 	</div>
+		<div class="other-event">
+
+			<a href="/">
+				<div class="bl-small-event current">
+						<img src="images/conf1.jpg">
+						<span>EVENT 1</span>
+					</div>
+				</a>
+
+			<a href="/">
+				<div class="bl-small-event">
+					<img src="images/conf1.jpg">
+					<span>EVENT 2</span>
+				</div>
+			</a>
+
+			<a href="/">
+				<div class="bl-small-event">
+					<img src="images/conf1.jpg">
+					<span>EVENT 3</span>
+				</div>
+			</a>
+
+		</div>
+</div>
 </template>
