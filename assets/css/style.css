@@ -170,6 +170,25 @@ a {
 .main-page .to-services {
     margin-top: -250px;
 }
+
+/* Главная страница, услуги */
+
+.main-s {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-s__item {
+    width: 48.5%;
+    position: relative;
+}
+
+/* Главная страница, услуги, конец */
+
+.main-services {
+    display: flex;
+}
+
 header {
     padding-right: 220px;
     box-sizing: border-box;
@@ -3101,7 +3120,14 @@ position: absolute;
 
     }
 
-    .portfolio .bl-other, .portfolio_in .bl-other {width: 50%;cursor: pointer; }
+    .bl-other { display: none; }
+
+    .portfolio .bl-other, .portfolio_in .bl-other {width: 100%;cursor: pointer; display: block; }
+
+    .portfolio .bl-other:hover .other-event,
+    .portfolio_in .bl-other:hover .other-event {
+        display: block;   
+    }
 
     .more-portfolio {
         display: block;
@@ -3127,17 +3153,24 @@ position: absolute;
     .other-event {
         display: none;
         position: absolute;
-        max-width: 248px;
+        width: 300px;
         max-height: 300px;
         height: auto;
         flex-direction: column;
-        overflow-y: scroll;
+        overflow: auto;
+        text-align: left;
         box-sizing: border-box;
         padding: 12px 14px;
-        right: 8%;bottom: 20%;
+        right: 90%;
+        top: -100%;
         background-color: rgba(0,0,0,1);
         box-shadow: 0 0 20px 5px rgba(255,0,0,0.4);
         z-index: 99;
+    }
+
+    .other-event-link {
+        display: flex;
+        align-items: center;
     }
 
     .bl-small-event {
@@ -3151,8 +3184,8 @@ position: absolute;
     }
 
     .bl-small-event img {
-        width: 35%;
-        overflow: hidden;
+        display: block;
+        width: 50px;
         margin-right: 15px;
     }
 
@@ -3164,10 +3197,6 @@ position: absolute;
     .current {
 
         background-color: transparent;
-    }
-
-    .current img {
-        width: 45%;
     }
 
     .bl-small-event:after {

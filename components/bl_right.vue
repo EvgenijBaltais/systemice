@@ -1,5 +1,4 @@
 <template>
-<div>
 	<div class="bl-r content-container">
 		<ul class="menu-list">
 			<li class="menu-item">
@@ -34,7 +33,15 @@
 				<span></span>
 				<span></span>
 			</div>
-			Другие наши работы
+			<span>Другие наши работы</span>
+			<div class="other-event">
+				<div class="bl-small-event current" v-for = "(item, index) in portfolioData" :key="item.title">
+					<NuxtLink :to="'/portfolio/' + ++index" class = "other-event-link" @click = "gogogo">
+						<img :src="require(`@/assets/images/portfolio/${item.picsFolder}/${item.pics[0]}.jpg`)" class = "">
+						<span>{{item.title}}</span>
+					</NuxtLink>
+				</div>
+			</div>
 		</div>
 		<div>
 			<div class="bl-social">
@@ -51,29 +58,34 @@
 			</div>
 		</div>
 	</div>
-		<div class="other-event">
-
-			<a href="/">
-				<div class="bl-small-event current">
-						<img src="images/conf1.jpg">
-						<span>EVENT 1</span>
-					</div>
-				</a>
-
-			<a href="/">
-				<div class="bl-small-event">
-					<img src="images/conf1.jpg">
-					<span>EVENT 2</span>
-				</div>
-			</a>
-
-			<a href="/">
-				<div class="bl-small-event">
-					<img src="images/conf1.jpg">
-					<span>EVENT 3</span>
-				</div>
-			</a>
-
-		</div>
-</div>
 </template>
+
+
+<script>
+
+
+export default {
+	head() {
+		return {
+			title: 'Проект в портфолио',
+			meta: [
+			{
+
+			}
+			]
+		}
+	},
+	data(){
+		return {
+			portfolioData: this.$store.state.portfolioData
+		}
+	},
+	methods: {
+
+		gogogo() {
+			console.log(1212)
+		}
+	}
+}
+
+</script>
