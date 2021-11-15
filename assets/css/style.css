@@ -47,7 +47,7 @@ a {
     width: 500px;
     position: relative;
     animation: opacity 0.5s ease-in-out;
-    background-image: url('../images/map-bg.svg');
+
 }
 
 .contact {
@@ -175,6 +175,7 @@ a {
 
 .main-s {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -307,7 +308,7 @@ header {
 }
 
 .h1 {
-    
+    width: 100%;
     margin: 40px 0 15px;
     font-size: 4em;
     line-height: 1;
@@ -315,6 +316,18 @@ header {
     letter-spacing: 2px;
     font-weight: 300;
 }
+
+.h1-centered {
+    display: inline-block;
+}
+
+.centered-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 .line {
 
@@ -387,6 +400,18 @@ header {
     text-indent: 15px;
     padding: 0;
     cursor: pointer;
+}
+
+.tenders-list-w {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tenders-list-first {
+    width: 49%;
+}
+.tenders-list-second {
+    width: 49%;
 }
 
 .p-title {
@@ -996,6 +1021,21 @@ position: absolute;
     cursor: pointer;
 }
 
+.service-block-btns-w {
+    width: 48%;
+    margin-top: 6%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-block-btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .scrolling-item {
     display: block;
     flex-wrap: wrap;
@@ -1003,12 +1043,12 @@ position: absolute;
     transition:  ease-in-out 0.5s;
 }
 
-.service .h1 {
+.service-block .h1 {
     font-size: 30px;
     margin-top: 0;
 }
 
-.service .bl-desc {
+.service-block .bl-desc {
     margin-top: 15px;
     font-size: 1em;
     line-height: 1;
@@ -2456,6 +2496,40 @@ position: absolute;
 
     .button-box .spy-top { border-top: 1px solid #b31d1d; }
 
+
+    .button-box-main {
+
+        position: relative;
+        margin-top: 25px;
+        width: 48%;
+        height: 60px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .button-box-main-title {
+        font-size: 16px;
+        line-height: 60px;
+    }
+
+    .button-box-main .spy-left { top: 32%; border-left: 1px solid #b31d1d; }
+
+    .button-box-main .spy-bottom {right: 37%; border-bottom: 1px solid #b31d1d; }
+
+    .button-box-main .spy-right { bottom:28%; border-right: 1px solid #b31d1d; }
+
+    .button-box-main .spy-top { border-top: 1px solid #b31d1d; }
+
+    .button-box-main-red:hover {
+        background: rgba(251, 0, 0, .3);
+        transition: .2s background;
+    }
+
+    .button-box-main-white:hover {
+        background: rgba(255, 255, 255, .3);
+        transition: .2s background;
+    }
+
     .p-contact {
 
         font-size: 20px;
@@ -3236,6 +3310,7 @@ position: absolute;
         transition:  ease-in-out 0.5s;
         justify-content: center;
         align-items: center;
+        z-index: 9;
     }
 
     .service-block:hover .service-hover {
@@ -3621,7 +3696,7 @@ position: absolute;
     .h1 {
         font-size: 3.4em;
     }
-    .service .h1 {
+    .service-block .h1 {
 
         font-size: 24px;
     }
@@ -4017,11 +4092,11 @@ position: absolute;
         width: calc(100% - 280px);
     }
 
-    .service .h1 {
+    .service-block .h1 {
         font-size: 22px;
         margin-bottom: 15px;
     }
-    .service .bl-desc {
+    .service-block .bl-desc {
         margin-top: 15px;
         font-size: 1em;
     }
@@ -4366,12 +4441,12 @@ position: absolute;
     .video {
         margin: 20px 0;
     }
-    .service .h1 {
+    .service-block .h1 {
         font-size: 30px;
         margin-bottom: 15px;
     }
     
-    .service .bl-desc {
+    .service-block .bl-desc {
         margin-top: 15px;
         font-size: 1.1em;
     }
@@ -4502,10 +4577,10 @@ position: absolute;
     .content-block-w {
         width: 100%;
     }
-    .service .bl-desc {
+    .service-block .bl-desc {
         font-size: .9em;
     }
-    .service .h1 {
+    .service-block .h1 {
         font-size: 24px;
     }
     .slider {
@@ -4658,7 +4733,7 @@ position: absolute;
     .info-right {
         right: 15%;
     }
-    .service .bl-desc {
+    .service-block .bl-desc {
         width: 100%;
     }
     .service {
@@ -4667,7 +4742,7 @@ position: absolute;
     .service .line {
         width: 56px;
     }
-    .service .h1 {
+    .service-block .h1 {
         margin: 0 0 12px;
     }
     .service .tr-bottom {
@@ -5063,7 +5138,7 @@ position: absolute;
     .service .line {
         width: 56px;
     }
-    .service .h1 {
+    .service-block .h1 {
         margin: 0 0 12px;
         font-size: 20px;
     }
@@ -5466,7 +5541,7 @@ position: absolute;
     .service-desc {
         margin-top: 0;
     }
-    .service .bl-desc {
+    .service-block .bl-desc {
         margin-top: 10px
     }
 }
