@@ -73,10 +73,6 @@
 						</div>
 					</div>
 				</div>
-				<!--<div class="map-bg"></div>-->
-
-
-
 			</div>
 			<div class="content-box">
 				<h1 class="h1">УСЛУГИ</h1>
@@ -174,9 +170,7 @@
 					<div class="service-block-btns-w">
 						<span>Наша компания предоставляет огромный спектр услуг для корпоративных клиентов. Мы уже много лет организовываем мероприятия любых форматов, масштабов и любой сложности. 
 						Вы можете ознакомиться с основными направлениями нашей компании или оставить заявку и специалист Systemice Group поможет с реализацией поставленной задачей.</span>
-
 						<div class = "service-block-btns">
-
 							<div class="button-box-main button-box-main-red">
 								<span class = "button-box-main-title">Перейти к остальным услугам</span>
 								<div class="spy-left-btn-main spy-btn-red"></div>
@@ -203,10 +197,8 @@
 						<div class="line"></div>
 					</div>
 				</div>
-
 				<div class="tenders-list-w">
 					<div class = "tenders-list-first">
-						
 						<ul class = "tenders-list">
 							<li class = "tenders-item">Более 100 выигранных тендеров;</li>
 							<li class = "tenders-item">Работаем с небольшими компаниями и крупными корпорациями;</li>
@@ -216,7 +208,6 @@
 							<li class = "tenders-item">Зачастую включаем в договор пункт о гарантии лучшей цены на рынке.</li>
 						</ul>
 					</div>
-
 					<div class = "tenders-list-second">
 						<div class = "tenders-important">
 							
@@ -224,28 +215,56 @@
 								Оперативно и качественно готовим коммерческие предложения
 							Работаем с небольшими компаниями и крупными корпорациями</p>
 						</div>
-
-						<div class="button-box-main button-box-main-white">
+						<NuxtLink to = "/tenders" class="button-box-main button-box-main-white">
 							<span class = "button-box-main-title">Перейти на страницу "Тендеры"</span>
 							<div class="spy-left-btn-main spy-btn-white"></div>
 							<div class="spy-top-btn-main spy-btn-white"></div>
 							<div class="spy-right-btn-main spy-btn-white"></div>
 							<div class="spy-bottom-btn-main spy-btn-white"></div>
-						</div>
+						</NuxtLink>
 					</div>
 				</div>
-		</div>
-
-		<div class="footer-mob">
-			<div class="bl-pagination">
-				<span class="active-page">01 </span>
-				<span class="bl-page"> / 08</span>
 			</div>
-			<copyright/>
+			<div class="content-box content-box-main-portfolio">
+
+				<div class = "main-portfolio-small">
+					<h1 class="h1">ПОРТФОЛИО</h1>
+					<div class="line"></div>
+					<div>
+						<span>На странице "Портфолио" Вы найдете отчеты о проделанной работе. И убедитесь, что наша компания способна организовать мероприятия любой сложности!</span>
+						<NuxtLink to = "/tenders" class="button-box-main button-box-main-red">
+							<span class = "button-box-main-title">Перейти на страницу "Портфолио"</span>
+							<div class="spy-left-btn-main spy-btn-red"></div>
+							<div class="spy-top-btn-main spy-btn-red"></div>
+							<div class="spy-right-btn-main spy-btn-red"></div>
+							<div class="spy-bottom-btn-main spy-btn-red"></div>
+						</NuxtLink>
+					</div>
+				</div>
+
+				<div v-for = "(item, index) in portfolioData.slice(0, 4)"
+				:key="item.title" :class="['sl-card', 'scrolling-portfolio-item', (index === 0 ? 'main-portfolio-big' : 'main-portfolio-small')]"
+				:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1.jpg')})`}">
+					<NuxtLink :to = "{path: `/portfolio/${++index}`}">
+						<div class="bg-hover">
+							<div class="event-info">
+								<span class="event-name">{{item.title}}</span>
+							</div>
+						</div>
+					</NuxtLink>
+				</div>
+			</div>
+
+			<div class="footer-mob">
+				<div class="bl-pagination">
+					<span class="active-page">01 </span>
+					<span class="bl-page"> / 08</span>
+				</div>
+				<copyright/>
+			</div>
 		</div>
+		<blRight/>
 	</div>
-	<blRight/>
-</div>
 </template>
 
 <script>
@@ -272,7 +291,7 @@ export default {
 	},
 	data(){
 		return {
-
+			portfolioData: this.$store.state.portfolioData
 		}
 	},
 	components: {

@@ -1096,6 +1096,22 @@ position: absolute;
     flex-direction: row;
 }
 
+.content-box-main-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-portfolio-small {
+    width: 32%;
+    margin-bottom: 30px;
+}
+
+.main-portfolio-big {
+    width: 66%;
+    margin-bottom: 30px;
+}
+
 .slider {
     width: 100%;
     margin: 0 auto;
@@ -2499,6 +2515,7 @@ position: absolute;
 
     .button-box-main {
 
+        display: block;
         position: relative;
         margin-top: 25px;
         width: 48%;

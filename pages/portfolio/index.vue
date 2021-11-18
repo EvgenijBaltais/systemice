@@ -15,17 +15,17 @@
 		<div class="main">
 			<pageHeader/>
 			<div class="content-box portfolio-block">
-						<div v-for = "(item, index) in portfolioData"
-						:key="item.title" :class="['sl-card', 'scrolling-portfolio-item', 'sl-box-' + (index === 0 ? 1 : 2)]"
-						:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1.jpg')})`}">
-							<NuxtLink :to = "{path: `/portfolio/${++index}`}">
-								<div class="bg-hover">
-									<div class="event-info">
-										<span class="event-name">{{item.title}}</span>
-									</div>
-								</div>
-							</NuxtLink>
+				<div v-for = "(item, index) in portfolioData"
+				:key="item.title" :class="['sl-card', 'scrolling-portfolio-item', 'sl-box-' + (index === 0 ? 1 : 2)]"
+				:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1.jpg')})`}">
+					<NuxtLink :to = "{path: `/portfolio/${++index}`}">
+						<div class="bg-hover">
+							<div class="event-info">
+								<span class="event-name">{{item.title}}</span>
+							</div>
 						</div>
+					</NuxtLink>
+				</div>
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">
@@ -35,9 +35,9 @@
 				<copyright/>
 			</div>
 		</div>
-		<blRight/>
-		<div class="bottom-bg"></div>
-	</div>
+	<blRight/>
+	<div class="bottom-bg"></div>
+</div>
 </template>
 
 <script>
@@ -52,11 +52,11 @@ export default {
 		return {
 			title: 'Systemice - портфолио компании',
 			meta: [
-				{
-					hid: 'description',
-					name: 'description',
-					content: 'Portfolio page description'
-				}
+			{
+				hid: 'description',
+				name: 'description',
+				content: 'Portfolio page description'
+			}
 			]
 		}
 	},
@@ -68,7 +68,7 @@ export default {
 	},
 	components: {
 		blRight, pageHeader, mainLogo, copyright
-  	},
+	},
 	mounted(){
 
 	},
