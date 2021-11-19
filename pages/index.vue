@@ -74,7 +74,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="content-box">
+			<div class="content-box services-main">
 				<h1 class="h1">УСЛУГИ</h1>
 				<div class="line"></div>
 				<div class = "main-s">
@@ -190,7 +190,7 @@
 				</div>
 			</div>
 
-			<div class="content-box">
+			<div class="content-box tenders-main">
 				<div class = "centered-title">
 					<div class = "h1-centered">
 						<h1 class="h1">ТЕНДЕРЫ</h1>
@@ -210,7 +210,10 @@
 					</div>
 					<div class = "tenders-list-second">
 						<div class = "tenders-important">
-							
+							<div class="spy-left-btn-main spy-btn-red"></div>
+							<div class="spy-top-btn-main spy-btn-red"></div>
+							<div class="spy-right-btn-main spy-btn-red"></div>
+							<div class="spy-bottom-btn-main spy-btn-red"></div>
 							<p class = "tenders-important-text">Более 100 выигранных тендеров
 								Оперативно и качественно готовим коммерческие предложения
 							Работаем с небольшими компаниями и крупными корпорациями</p>
@@ -230,7 +233,7 @@
 				<div class = "main-portfolio-small">
 					<h1 class="h1">ПОРТФОЛИО</h1>
 					<div class="line"></div>
-					<div>
+					<div class = "main-portfolio-s-block">
 						<span>На странице "Портфолио" Вы найдете отчеты о проделанной работе. И убедитесь, что наша компания способна организовать мероприятия любой сложности!</span>
 						<NuxtLink to = "/tenders" class="button-box-main button-box-main-red">
 							<span class = "button-box-main-title">Перейти на страницу "Портфолио"</span>
@@ -245,26 +248,160 @@
 				<div v-for = "(item, index) in portfolioData.slice(0, 4)"
 				:key="item.title" :class="['sl-card', 'scrolling-portfolio-item', (index === 0 ? 'main-portfolio-big' : 'main-portfolio-small')]"
 				:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1.jpg')})`}">
-					<NuxtLink :to = "{path: `/portfolio/${++index}`}">
-						<div class="bg-hover">
-							<div class="event-info">
-								<span class="event-name">{{item.title}}</span>
-							</div>
+				<NuxtLink :to = "{path: `/portfolio/${++index}`}">
+					<div class="bg-hover">
+						<div class="event-info">
+							<span class="event-name">{{item.title}}</span>
 						</div>
-					</NuxtLink>
+					</div>
+				</NuxtLink>
+			</div>
+		</div>
+
+		<div class="content-box partners-main">
+
+			<div class = "centered-title">
+				<div class = "h1-centered">
+					<h1 class="h1">ПАРТНЕРЫ</h1>
+					<div class="line"></div>
 				</div>
 			</div>
 
-			<div class="footer-mob">
-				<div class="bl-pagination">
-					<span class="active-page">01 </span>
-					<span class="bl-page"> / 08</span>
+			<div class = "partner-carousel">
+				<img class="partner-link-arrow partner-link-arrow-left" src="@/assets/images/icons/arr-left.svg" @click = "moveLeft">
+				<img class="partner-link-arrow partner-link-arrow-right" src="@/assets/images/icons/arr-right.svg" @click = "moveRight">
+				<div class = "partner-carousel-wrap glide">
+					<div class = "partner-carousel-w glide__track" data-glide-el="track">	
+						<div class="glide__slides">
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/1.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/2.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/3.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/4.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/5.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/6.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/7.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/8.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<copyright/>
 			</div>
 		</div>
-		<blRight/>
+
+		<div class="content-box contacts-wrapper">
+			<div class="contact-info">
+				<h1 class="h1">КОНТАКТЫ</h1>
+				<div class="line"></div>
+				<p class="p-contact"><b>Наш адрес:</b><br>г. Москва, ул. Бауманская д. 6.</p>
+				<p class="p-contact"><b>Телефон:</b><br> +7 (495) 215-24-80</p>
+				<p class="p-contact"><b>Электронная почта:</b><br> info@systemice.ru</p>
+				<form class="contact-form" id = "contact-form" name = "contacts_form" @submit.prevent = "checkForm">
+					<p>Заявка на обратный звонок</p>
+					<div class="line"></div>
+					<div class="form-line">
+						<div class="input-box">
+							<input type="text" name="name" class = "contact-name" placeholder="Ваше имя" v-model = "name">
+							<div class="spy-left-input"></div>
+							<div class="spy-top-input"></div>
+							<div class="spy-right-input"></div>
+							<div class="spy-bottom-input"></div>
+						</div>
+						<div class="input-box">
+							<input type="text" name="phone" class = "contact-phone" placeholder="Телефон">
+							<div class="spy-left-input"></div>
+							<div class="spy-top-input"></div>
+							<div class="spy-right-input"></div>
+							<div class="spy-bottom-input"></div>
+						</div>
+					</div>
+					<label class="checkbox-block">
+						<input type="checkbox" name="" class="input-check" v-model="agreeTerms" true-value="yes" false-value="no">
+						<span class="checkbox-style">
+							<div class="spy-left"></div>
+							<div class="spy-top"></div>
+							<div class="spy-right"></div>
+							<div class="spy-bottom"></div>
+						</span>
+						<span class = "i-agree">Я согласен на обработку персональных данных</span>
+					</label>
+					<div class="button-box">
+						<input class="send-button" type="submit" value="Отправить">
+						<div class="spy-left-btn"></div>
+						<div class="spy-top-btn"></div>
+						<div class="spy-right-btn"></div>
+						<div class="spy-bottom-btn"></div>
+					</div>
+				</form>
+			</div>
+			<div class="contact-map">
+				<div id="map-block"></div>
+				<div class="copy-coordinat">
+					<img src="@/assets/images/icons/sheet.png"><span id = "copy-text" data-clipboard-text="55.775555, 37.674597">Скопировать координаты для навигатора</span>
+				</div>
+				<div class="spy-left"></div>
+				<div class="spy-top"></div>
+				<div class="spy-right"></div>
+				<div class="spy-bottom"></div>
+			</div>
+		</div>
+
+		<div class="footer-mob">
+			<div class="bl-pagination">
+				<span class="active-page">01 </span>
+				<span class="bl-page"> / 08</span>
+			</div>
+			<copyright/>
+		</div>
 	</div>
+	<blRight/>
+</div>
 </template>
 
 <script>
@@ -274,6 +411,10 @@ import mainLogo from '@/components/main_logo'
 import copyright from '@/components/copyright'
 import pageHeader from '@/components/page_header'
 import Glide from '@glidejs/glide'
+import clipboardJS from 'clipboard'
+import Inputmask from 'inputmask'
+import ymaps from 'ymaps'
+import axios from 'axios'
 
 export default {
 	head() {
@@ -291,7 +432,13 @@ export default {
 	},
 	data(){
 		return {
-			portfolioData: this.$store.state.portfolioData
+			portfolioData: this.$store.state.portfolioData,
+			name: '',
+			phone: '',
+			agreeTerms: 'yes',
+			im: new Inputmask("+7 (999) 999-99-99"),
+			sendingForm: 0,
+			glide: {}
 		}
 	},
 	components: {
@@ -299,16 +446,89 @@ export default {
 	},
 
 	methods: {
+		moveRight(){
+
+			this.glide.go('>')
+		},
+		moveLeft(){
+
+			this.glide.go('<')
+		},
 
 		startVideo(event){
 
 			event.target.style.backgroundImage = 'none'
 			event.target.querySelector('iframe').style.visibility = "visible"
 			event.target.querySelector('iframe').setAttribute('src', event.target.querySelector('iframe').getAttribute('data-src'))
+		},
+		checkForm(e){
+
+			e.preventDefault()
+
+			if (this.agreeTerms == 'no' || !e.target.querySelector('.contact-phone').inputmask.isComplete()) {
+
+				if (this.agreeTerms == 'no') {
+					document.querySelector('.i-agree').style = "color: red;"
+				}
+				if (!e.target.querySelector('.contact-phone').inputmask.isComplete()) {
+					document.querySelector('.contact-phone').classList.add('input-box-wrong')
+				}
+				return false
+			}
+
+			this.sendForm(e.target)
+		},
+
+		sendForm(form){
+
+			if (this.sendingForm != 0) return false
+
+				this.sendingForm = 1
+
+			axios.interceptors.request.use((req) => {
+				form.querySelector('.send-button').value = "Отправка..."
+				return req
+			}
+			)
+
+			let bodyFormData = new FormData()
+			bodyFormData.append('name', form.querySelector('.contact-name').value)
+			bodyFormData.append('phone', form.querySelector('.contact-phone').value)
+			bodyFormData.append('form_name', form.getAttribute('name'))
+
+			axios.post('https://systemice.ru/say_online_send_test.php', bodyFormData, {
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded'
+				}
+			})
+			.then(response => {
+
+				if (!response.data || response.data == '') {
+					form.querySelector('.tenders-send-input').value = "Ошибка!"
+					return false
+				}
+
+				form.querySelector('.tenders-send-input').value = "Успешно!"
+			})
 		}
 	},
 	mounted(){
 
+
+		/* Скопировать */
+
+		if (document.getElementById('copy-text')) {
+			let clipboard = new clipboardJS('#copy-text');
+
+			clipboard.on('success', function(e) {
+				document.getElementById('copy-text').innerText = 'Скопировано';
+				setTimeout(function(){
+					document.getElementById('copy-text').innerText = 'Скопировать координаты для навигатора';
+				}, 1000)
+			});
+		}
+
+		/* Скопировать, конец */
 
 			// Карусель glide js для информации рядом с картой
 
@@ -332,69 +552,130 @@ export default {
 				glide_a.mount()
 			}
 
+			// Карусель миниатюр
 
-			// svg
-			/*window.addEventListener('DOMContentLoaded', (event) => {
-				document.querySelector('.sochi').addEventListener('click', function(){
+			this.glide = new Glide('.glide', {
+				type: 'carousel',
+				startAt: 1,
+				perView: 3,
+				gap: 0,
+				focusAt: 'center',
+				animationDuration: 500,
+				animationTimingFunc: 'cubic-bezier(0.25, 0.1, 0.25, 1)'
+			})
 
-					alert('sochi')
-				})
-			});*/
+			let glide = this.glide
+
+			glide.mount()
+
+
+		// Форма на странице Контакты
+
+		let phones = document.getElementsByClassName("contact-phone");
+
+		for (let i = 0; i < phones.length; i++) {
+			this.im.mask(phones[i]);
 		}
+
+		for (let i = 0; i < phones.length; i++) {
+			phones[i].addEventListener('keyup', function(){
+				this.classList.remove('input-box-wrong');
+			})
+			phones[i].addEventListener('focus', function(){
+				this.classList.remove('input-box-wrong');
+			})
+		}
+
+
+		let label = document.getElementsByClassName('checkbox-block');
+		for (let i = 0; i < label.length; i++) {
+			label[i].addEventListener('click', function(){
+				label[i].querySelector('.i-agree').style = "color: white;"
+			})
+		}
+
+		/* Карты */
+
+		let myMap, myPlacemark,
+		koordinats = [55.776108388031815, 37.67544507980347],
+		companyName = 'Systemice Hotel Group',
+		balloonContent = 'ул. Бауманская д.6с2.<br>8 этаж. 804 офис'
+
+		ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU')
+		.then(maps => {
+
+			myMap = new maps.Map('map-block', {
+				center: koordinats,
+				zoom: 12
+			})
+			
+			myPlacemark = new maps.Placemark(koordinats, {
+				hintContent: 'Systemice Hotel Group',
+				balloonContent: 'ул. Бауманская д.6с2. Бизнес-центр Виктория Плаза. 8 этаж. 804 офис'
+			})
+
+			myMap.geoObjects.add(myPlacemark)
+			myMap.setType('yandex#map')
+			myMap.behaviors.disable('scrollZoom')
+		})
+		.catch(error => console.log('Failed to load Yandex Maps', error))
+
+		/* Карты, конец */
 	}
-	</script>
+}
+</script>
 
-	<style>
+<style>
 
-	/* Секция Услуги на Главной */
+/* Секция Услуги на Главной */
 
 
-	.spy-left-btn-main {
+.spy-left-btn-main {
 
-		position: absolute;
-		bottom: 0;
-		top: auto;
-		left: 0;
-		height: 35px;
-		width: 1px;
-	} 
+	position: absolute;
+	bottom: 0;
+	top: auto;
+	left: 0;
+	height: 35px;
+	width: 1px;
+} 
 
-	.spy-bottom-btn-main {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		height: 1px;
-		width: 65%;
-	}
+.spy-bottom-btn-main {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	width: 65%;
+}
 
-	.spy-right-btn-main {
-		position: absolute;
-		top: 0;
-		right: 0;
-		height: 35px;
-		width: 1px;
-	}
+.spy-right-btn-main {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 35px;
+	width: 1px;
+}
 
-	.spy-top-btn-main {
-		position: absolute;
-		top: 0;
-		right: 0;
-		height: 1px;
-		width: 65%;
-	}
+.spy-top-btn-main {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 1px;
+	width: 65%;
+}
 
-	.button-box-main {
-		cursor: pointer;
-	}
+.button-box-main {
+	cursor: pointer;
+}
 
-	.spy-btn-red {
-		background-color: #FF0000;
-	}
+.spy-btn-red {
+	background-color: #FF0000;
+}
 
-	.spy-btn-white {
-		background-color: rgb(255, 255, 255);
-	}
+.spy-btn-white {
+	background-color: rgb(255, 255, 255);
+}
 
-	/* Секция Услуги на Главной, конец */
+/* Секция Услуги на Главной, конец */
 
-	</style>
+</style>

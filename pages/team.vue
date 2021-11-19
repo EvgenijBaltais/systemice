@@ -240,23 +240,9 @@ export default {
 
 			this.sotrudSlider ? glide_sotrud.mount() : ''
 
-			// Кнопки 
-			//document.querySelector('.arrow-right').addEventListener('click', this.moveRight)
-			//document.querySelector('.arrow-left').addEventListener('click', this.moveLeft)
-
-			//document.querySelector('.sl-wrapper-rightbox').addEventListener('click', this.moveRight)
-			//document.querySelector('.sl-wrapper-leftbox').addEventListener('click', this.moveLeft)
-
 			// Клавиатура
 
 			document.addEventListener('keydown', this.keyArrowsAction)
-
-			// Колесико мыши
-			// Не Mozilla
-			//window.addEventListener('mousewheel', this.mouseScroll)
-
-			// Mozilla
-			//window.addEventListener('DOMMouseScroll', this.mouseScroll)
 		})
 	  },
 	  methods: {
@@ -314,11 +300,6 @@ export default {
 			this.changePortrait(this.glide.index)
 			this.changeManagerData(this.glide.index)
 		},
-		//mouseScroll(e) {
-
-		//	this.wheelAction(e) > 0 ? this.glide.go('<') : this.glide.go('>')
-		//	this.wheelAction(e) > 0 ? this.glide_dots.go('<') : this.glide_dots.go('>')
-		//},
 		changePortrait(index) {
 
 			document.querySelector('.glide-c').style.opacity = 0
@@ -360,17 +341,7 @@ export default {
 	  },
 	beforeDestroy(){
 
-		//this.glide.destroy()
-		//this.glide_dots.destroy()
-		//this.glide_sotrud.destroy()
-
-		//window.removeEventListener('mousewheel', this.mouseScroll)
-		//window.removeEventListener('DOMMouseScroll', this.mouseScroll)
-
 		document.removeEventListener('keydown', this.keyArrowsAction)
-
-		//document.querySelector('.arrow-right').removeEventListener('click', this.moveRight)
-		//document.querySelector('.arrow-left').removeEventListener('click', this.moveLeft)
 	}
 }
 

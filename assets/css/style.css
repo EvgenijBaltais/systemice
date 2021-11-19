@@ -102,6 +102,7 @@ a {
 
 .tenders-main {
     overflow: auto;
+    margin-top: 3%;
 }
 
 .footer {
@@ -206,7 +207,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
-    padding: 0 275px 0 3%;
+    padding: 0 275px 0 4%;
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -253,6 +254,10 @@ header {
 
 .contacts-wrapper {
     margin-top: 7.5%
+}
+
+.main-page .contacts-wrapper {
+    margin-top: 3%;
 }
 
 .bl-copyright {
@@ -405,6 +410,7 @@ header {
 .tenders-list-w {
     display: flex;
     justify-content: space-between;
+    margin-top: 3%;
 }
 
 .tenders-list-first {
@@ -1021,6 +1027,10 @@ position: absolute;
     cursor: pointer;
 }
 
+.main-page .service-block {
+    margin-top: 3%;
+}
+
 .service-block-btns-w {
     width: 48%;
     margin-top: 6%;
@@ -1100,11 +1110,34 @@ position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 6%;
+}
+
+.partners-main {
+    margin-top: 2%;
+}
+
+.content-box-main-portfolio h1 {
+    margin-top: 0;
+}
+
+.main-portfolio-s-block span {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.main-portfolio-s-block a span {
+    font-size: 18px;
+    line-height: 60px;
 }
 
 .main-portfolio-small {
     width: 32%;
     margin-bottom: 30px;
+}
+
+.main-portfolio-s-block {
+    padding-top: 6%;
 }
 
 .main-portfolio-big {
@@ -1160,7 +1193,7 @@ position: absolute;
 
 .sl-card:hover {
     transition: box-shadow .2s;
-    box-shadow: 0 0 20px 5px rgba(28, 80, 14, 1) !important;
+    box-shadow: 0 0 20px 5px rgba(251, 0, 0, 1) !important;
 }
 
 .portfolio_in .bl-preview {
@@ -1655,6 +1688,11 @@ position: absolute;
     background-size: 20px;
 }
 
+.main-page .tenders-important {
+    border: 0;
+    position: relative;
+}
+
 .send-info-btns {
     margin-top: 50px;
     display: flex;
@@ -1932,6 +1970,12 @@ position: absolute;
     margin-bottom: 6%;
 }
 
+.bl-partner-carousel-item {
+    width: 295px;
+    height: 165px;
+    margin-bottom: 0;
+}
+
 .partner-wrapper {
     margin-top: 9%
 }
@@ -1968,6 +2012,51 @@ position: absolute;
 }
 .partner .item-dots {
     padding: 0;
+}
+
+.partner-carousel {
+    position: relative;
+    width: 100%;
+    height: 165px;
+    margin: 5% auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.partner-carousel-wrap {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.partner-carousel-w {
+    position: relative;
+    width: 100000px;
+    height: 165px;
+    display: flex;
+}
+
+.partner-link-arrow-left {
+    position: absolute;
+    display: block;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    cursor: pointer;
+}
+
+.partner-link-arrow-right {
+    position: absolute;
+    display: block;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    cursor: pointer;
 }
 
 .news-box {
@@ -2545,6 +2634,12 @@ position: absolute;
     .button-box-main-white:hover {
         background: rgba(255, 255, 255, .3);
         transition: .2s background;
+    }
+
+    .content-box-main-portfolio .button-box-main {
+        width: auto;
+        display: inline-block;
+        padding: 0 35px;
     }
 
     .p-contact {
