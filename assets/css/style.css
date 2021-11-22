@@ -75,7 +75,7 @@ a {
 
 .main {
     width: 92.5%;
-    padding: 2% 0;
+    padding: 2% 0 5% 0;
     overflow: auto;
     direction: rtl;
 }
@@ -315,7 +315,7 @@ header {
 .h1 {
     width: 100%;
     margin: 40px 0 15px;
-    font-size: 4em;
+    font-size: 3.5em;
     line-height: 1;
     font-family: 'ImpactRegular', sans-serif;
     letter-spacing: 2px;
@@ -1033,8 +1033,7 @@ position: absolute;
 
 .service-block-btns-w {
     width: 48%;
-    margin-top: 6%;
-    flex-wrap: wrap;
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1119,16 +1118,6 @@ position: absolute;
 
 .content-box-main-portfolio h1 {
     margin-top: 0;
-}
-
-.main-portfolio-s-block span {
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.main-portfolio-s-block a span {
-    font-size: 18px;
-    line-height: 60px;
 }
 
 .main-portfolio-small {
@@ -1641,6 +1630,10 @@ position: absolute;
     font-family: 'RalewayRegular', sans-serif;
 }
 
+.tenders-main .tenders-item {
+    margin-bottom: 5px;
+}
+
 .tenders-list {
     margin-top: -5px;
 }
@@ -1650,6 +1643,10 @@ position: absolute;
     padding: 20px 50px;
     margin: 40px auto;
     box-sizing: border-box;
+}
+
+.tenders-main .tenders-important {
+    margin: 40px auto 35px auto;
 }
 
 .tenders-important-text {
@@ -2636,10 +2633,15 @@ position: absolute;
         transition: .2s background;
     }
 
-    .content-box-main-portfolio .button-box-main {
-        width: auto;
+    .main-page .button-box-main {
+        width: 100%;
+        max-width: 370px;
         display: inline-block;
-        padding: 0 35px;
+        text-align: center;
+    }
+
+    .main-page .button-box-main:first-child {
+        margin-right: 20px;
     }
 
     .p-contact {
@@ -4062,6 +4064,33 @@ position: absolute;
         width: 100%;
         max-width: 500px;
     }
+
+    .main-page .button-box-main:first-child {
+        margin-right: 0;
+    }
+
+    .content-box {
+        padding-left: 2.5%;
+    }
+
+    .main-portfolio-small {
+        width: 31%;
+    }
+
+    .main-portfolio-big {
+        width: 65.6667%
+    }
+    .tenders-main .tenders-important {
+        margin-top: 0;
+    }
+
+    .partner-carousel {
+        padding: 0 50px;
+    }
+
+    .service-block-btns {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -4219,6 +4248,20 @@ position: absolute;
 
     .news-box {
         flex-wrap: wrap;
+    }
+
+    .main-portfolio-small {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .main-portfolio-big {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .main-page .button-box-main {
+        display: block;
+        width: 300px;
     }
 }
 
@@ -6472,9 +6515,13 @@ input[type="checkbox"]:checked + label:after {
     padding-right: 200px;
 }
 
+.content-box {
+    padding-right: 250px;
+}
+
 .main-page .bl-desc {
-    font-size: 1.2em;
-    line-height: 1.2em;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .map .h1 {
@@ -6534,6 +6581,20 @@ input[type="checkbox"]:checked + label:after {
     line-height: 30px;
     padding-top: 45px;
 }
+
+.main-s .service-block {
+    padding: 2%;
+}
+
+.button-box-main-title {
+    font-size: 14px;
+    line-height: 60px;
+}
+
+.main-portfolio-block-text {
+    font-size: 14px;
+    line-height: 18px;
+}
 }
 
 @media screen and (max-width: 1400px) {
@@ -6582,6 +6643,16 @@ input[type="checkbox"]:checked + label:after {
     }
     .sotrud-img {
         max-width: 280px;
+    }
+    .button-box-main-title {
+        font-size: 12px;
+        line-height: 50px;
+    }
+    .main-page .button-box-main {
+        max-width: 300px;
+    }
+    .button-box-main {
+        height: 50px;
     }
 }
 
@@ -6638,6 +6709,13 @@ input[type="checkbox"]:checked + label:after {
 
 .team .content-box {
     flex-wrap: nowrap;
+}
+
+.service-block-btns-w {
+    width: 100%
+}
+.content-box {
+    padding-right: 200px;
 }
 
 }
@@ -6923,6 +7001,16 @@ header {
     flex-wrap: nowrap;
     padding: 0 3%;
 }
+
+.partners-main {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.tenders-main {
+    margin-top: 0;
+    padding-top: 0;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -6931,6 +7019,19 @@ header {
     }
     .team .content-box {
         flex-wrap: wrap;
+    }
+
+    .tenders-list-w {
+        flex-wrap: wrap;
+    }
+
+    .tenders-list-first {
+        width: 100%
+    }
+
+    .tenders-list-second {
+        width: 100%;
+        margin-top: 30px;
     }
 }
 
@@ -7015,6 +7116,20 @@ header {
 }
 .team .arrow-right {
     top: 35px
+}
+
+.main-page .button-box-main {
+    width: 100%;
+    max-width: 100%
+}
+
+.button-box {
+    width: 100%;
+    max-width: 100%
+}
+
+.button-box-main-title {
+    font-size: 16px;
 }
 
 header {

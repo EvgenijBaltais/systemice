@@ -234,7 +234,7 @@
 					<h1 class="h1">ПОРТФОЛИО</h1>
 					<div class="line"></div>
 					<div class = "main-portfolio-s-block">
-						<span>На странице "Портфолио" Вы найдете отчеты о проделанной работе. И убедитесь, что наша компания способна организовать мероприятия любой сложности!</span>
+						<span class = "main-portfolio-block-text">На странице "Портфолио" Вы найдете отчеты о проделанной работе. И убедитесь, что наша компания способна организовать мероприятия любой сложности!</span>
 						<NuxtLink to = "/tenders" class="button-box-main button-box-main-red">
 							<span class = "button-box-main-title">Перейти на страницу "Портфолио"</span>
 							<div class="spy-left-btn-main spy-btn-red"></div>
@@ -246,7 +246,7 @@
 				</div>
 
 				<div v-for = "(item, index) in portfolioData.slice(0, 4)"
-				:key="item.title" :class="['sl-card', 'scrolling-portfolio-item', (index === 0 ? 'main-portfolio-big' : 'main-portfolio-small')]"
+				:key="item.id" :class="['sl-card', 'scrolling-portfolio-item', (index === 0 ? 'main-portfolio-big' : 'main-portfolio-small')]"
 				:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1.jpg')})`}">
 				<NuxtLink :to = "{path: `/portfolio/${++index}`}">
 					<div class="bg-hover">
@@ -268,8 +268,8 @@
 			</div>
 
 			<div class = "partner-carousel">
-				<img class="partner-link-arrow partner-link-arrow-left" src="@/assets/images/icons/arr-left.svg" @click = "moveLeft">
-				<img class="partner-link-arrow partner-link-arrow-right" src="@/assets/images/icons/arr-right.svg" @click = "moveRight">
+				<img class="partner-link-arrow partner-link-arrow-left" src="@/assets/images/icons/arr-left.svg" @click = "moveRight">
+				<img class="partner-link-arrow partner-link-arrow-right" src="@/assets/images/icons/arr-right.svg" @click = "moveLeft">
 				<div class = "partner-carousel-wrap glide">
 					<div class = "partner-carousel-w glide__track" data-glide-el="track">	
 						<div class="glide__slides">
@@ -557,8 +557,16 @@ export default {
 			this.glide = new Glide('.glide', {
 				type: 'carousel',
 				startAt: 1,
-				perView: 3,
+				perView: 4,
 				gap: 0,
+				breakpoints: {
+					1200: {
+						perView: 2
+					},
+					768: {
+						perView: 1
+					}
+				},
 				focusAt: 'center',
 				animationDuration: 500,
 				animationTimingFunc: 'cubic-bezier(0.25, 0.1, 0.25, 1)'

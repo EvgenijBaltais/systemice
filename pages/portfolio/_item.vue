@@ -82,9 +82,8 @@
 					</div>
 				</div>
 
-				<ul>
-					<li v-for = "item in portfolioData[eventItem].details" :key="item">{{item}}</li>
-				</ul>
+					
+				<div v-html = "portfolioData[eventItem].details"></div>
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">

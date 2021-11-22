@@ -35,7 +35,7 @@
 			</div>
 			<span>Другие наши работы</span>
 			<div class="other-event">
-				<div class="bl-small-event current" v-for = "(item, index) in portfolioData" :key="item.title">
+				<div class="bl-small-event current" v-for = "(item, index) in portfolioData" :key="item.id">
 					<NuxtLink :to="'/portfolio/' + ++index" class = "other-event-link" @click = "gogogo">
 						<img :src="require(`@/assets/images/portfolio/${item.picsFolder}/${item.pics[0]}.jpg`)" class = "">
 						<span>{{item.title}}</span>

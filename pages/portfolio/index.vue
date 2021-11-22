@@ -16,7 +16,7 @@
 			<pageHeader/>
 			<div class="content-box portfolio-block">
 				<div v-for = "(item, index) in portfolioData"
-				:key="item.title" :class="['sl-card', 'scrolling-portfolio-item', 'sl-box-' + (index === 0 ? 1 : 2)]"
+				:key="item.id" :class="['sl-card', 'scrolling-portfolio-item', 'sl-box-' + (index === 0 ? 1 : 2)]"
 				:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1.jpg')})`}">
 					<NuxtLink :to = "{path: `/portfolio/${++index}`}">
 						<div class="bg-hover">
