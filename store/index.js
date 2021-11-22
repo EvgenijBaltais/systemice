@@ -130,7 +130,7 @@ export const state = () => ({
         id: 6,
         title: 'Компания Треолан',
         dateData: '',
-        picsFolder: 'trilian',
+        picsFolder: 'treolan',
         pics: [1,2,3,4,5,6,7,8,9,10],
         membersData: '<b>Количество участников</b> – 1500',
         spectators: '',
@@ -157,7 +157,7 @@ export const state = () => ({
         title: 'Италкосметика',
         dateData: '',
         picsFolder: 'polix_beauty',
-        pics: [1,2,3,4,5,6,7,8,9,10],
+        pics: [1,2,3,4,5,6,7],
         membersData: '<b>Количество участников</b> – 250',
         spectators: '',
         details: `Помимо празднования юбилея Компания было необходимо провести презентацию нового продукта. 
