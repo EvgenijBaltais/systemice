@@ -7011,6 +7011,10 @@ header {
     margin-top: 0;
     padding-top: 0;
 }
+
+#map-desktop {
+    display: none
+}
 }
 
 @media screen and (max-width: 768px) {
