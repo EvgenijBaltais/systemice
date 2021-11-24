@@ -50,9 +50,39 @@ a {
 }
 
 .office-i-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
     width: 350px;
     height: 250px;
-    background: rgba(255, 255, 255, .5);
+    padding: 30px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 1);
+}
+
+.title-office {
+    font-size: 30px;
+    font-family: 'ImpactRegular', sans-serif;
+    margin: 0;
+}
+
+.button-box-main-callback {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-box-main-callback-title {
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.office-address-fadein {
+    margin-top: 30px;
 }
 
 .contact {
@@ -138,6 +168,37 @@ a {
 .city {
     width: 800px;
 }
+
+/* Всплывающая форма */
+
+.overlay {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    z-index: 9;
+}
+
+.fadein-form {
+    position: relative;
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 30px 35px 100px 35px;
+    max-width: 350px;
+    margin: 65px auto;
+    background: #fff;
+}
+
+/* Всплывающая форма, конец */
 
 /* Главная страница, разметка без горизонтального скроллинга мышью */
 
@@ -347,6 +408,16 @@ header {
   border-radius: 3px;
   box-shadow: 0 0 3px 1px rgba(233,0,0,1);
 }
+
+.line-no-fade {
+
+  background-color: #ff0000;
+  width: 90px;
+  height: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 1px rgba(233,0,0,1);
+}
+
 
 .bl-desc {
 
