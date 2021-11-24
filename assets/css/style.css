@@ -1283,7 +1283,12 @@ position: absolute;
 }
 
 .portfolio-block {
-    margin-top: 5%
+    margin-top: 5%;
+}
+
+.portfolio-block::after {
+  content: '';
+  width: 32%;
 }
 
 .portfolio .arrow-left {
@@ -4387,6 +4392,10 @@ position: absolute;
     .bl-partner {
         display: flex;
         width: 45%;
+    }
+    .portfolio-block::after {
+      content: '';
+      width: 0;
     }
 }
 
