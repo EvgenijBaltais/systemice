@@ -103,7 +103,7 @@ export const state = () => ({
         id: 5,
         title: 'Nexters Global',
         picsFolder: 'nexter_new_year',
-        pics: [1,2,3,4,5,6,7,8],
+        pics: [1,2,3,4,5,6,7],
         dateData: '<b>30.12.2020 г.</b>',
         membersData: 'Онлайн-мероприятие',
         spectators: '',

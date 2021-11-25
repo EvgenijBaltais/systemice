@@ -566,7 +566,7 @@ export default {
 		document.querySelector('body').insertAdjacentHTML('beforeend', form)
 */
 		// Наведение на карту
-/*
+
 		let spanAdress = document.getElementById('office-address-fadein')
 
 		document.querySelector('.map-bg').addEventListener('mouseover', e => {
@@ -602,7 +602,7 @@ export default {
 				console.log(222222)
 			})
 		}
-*/
+
 		/* Скопировать */
 
 		if (document.getElementById('copy-text')) {
