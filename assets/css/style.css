@@ -6618,6 +6618,43 @@ input[type="checkbox"]:checked + label:after {
     font-size: 18px;
     line-height: 40px;
 }
+
+/* Форма обратной связи */
+
+.fadein-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.fadein-box:nth-child(even) {
+    margin-right: 0;
+}
+
+.fadein-form {
+    width: 96%;
+    padding: 30px;
+    margin: 100px auto;
+}
+
+.border-callback-top {
+    width: 100px
+}
+
+.border-callback-bottom {
+    width: 100px
+}
+
+.fadein-close {
+    width: 30px
+}
+
+.fadein-title {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+/* Форма обратной связи, конец */
 }
 
 @media screen and (max-width: 480px) {
