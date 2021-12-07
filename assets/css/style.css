@@ -4907,11 +4907,6 @@ position: absolute;
 
     .info-data { position:relative;margin: 0 4%; }
 
-    .map-bg {
-        left: 0;
-        background-position: left;
-        background-image: url('../images/map-mob.svg');
-    }
     .city {
         height: 160%;
         width: 150%;
@@ -7029,12 +7024,6 @@ header {
     width: 100%;
 }
 
-.main-page .map-bg {
-    background-image: url('../images/map-mob.svg');
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 .to-services-w {
     padding-right: 0;
     margin-top: -50px
@@ -7270,9 +7259,6 @@ header {
     padding-top: 0;
 }
 
-#map-desktop {
-    display: none
-}
 }
 
 @media screen and (max-width: 768px) {
@@ -7311,8 +7297,18 @@ header {
 
 @media screen and (max-width: 480px) {
 
+#map-desktop {
+    display: none
+}
 .map {
     margin-top: 25px;
+}
+
+.main-page .map-bg {
+    background-image: url('../images/map-mob.svg');
+    background-size: 60%;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .main-page .map-bg {
