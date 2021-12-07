@@ -198,7 +198,7 @@
 								<div class="spy-right-btn-main spy-btn-red"></div>
 								<div class="spy-bottom-btn-main spy-btn-red"></div>
 							</div>
-							<div class="button-box-main button-box-main-white">
+							<div class="button-box-main button-box-main-white" @click = "createForm">
 								<span class = "button-box-main-title">Заявка для обратной связи</span>
 								<div class="spy-left-btn-main spy-btn-white"></div>
 								<div class="spy-top-btn-main spy-btn-white"></div>
@@ -267,7 +267,7 @@
 
 				<div v-for = "(item, index) in portfolioData.slice(0, 4)"
 				:key="item.id" :class="['sl-card', 'scrolling-portfolio-item', (index === 0 ? 'main-portfolio-big' : 'main-portfolio-small')]"
-				:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1.jpg')})`}">
+				:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1m.jpg')})`}">
 				<NuxtLink :to = "{path: `/portfolio/${++index}`}">
 					<div class="bg-hover">
 						<div class="event-info">
@@ -459,6 +459,7 @@ export default {
 			im: new Inputmask("+7 (999) 999-99-99"),
 			sendingForm: 0,
 			glide: {},
+			glide_a: {},
 			offices: {
 				'sankt-peterburg': 'г. Санкт-Петербург, Большой Сампсониевский просп., 68, корп. 1',
 				'sochi': '',
@@ -538,52 +539,147 @@ export default {
 
 				form.querySelector('.tenders-send-input').value = "Успешно!"
 			})
+		},
+		createForm() {
+			document.querySelector('body').insertAdjacentHTML('beforeend', `
+				<div class = "overlay">
+					<div class = "fadein-form">
+						<form name = "fadein_form">
+							<div class = "border-callback border-callback-left"></div>
+							<div class = "border-callback border-callback-top"></div>
+							<div class = "border-callback border-callback-right"></div>
+							<div class = "border-callback border-callback-bottom"></div>
+							<p class = "fadein-title">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</p>
+							<div class="fadein-box">
+								<input type="text" name="name" class = "fadein-input fadein-name" placeholder="Ваше имя">
+								<div class="spy-left-input"></div>
+								<div class="spy-top-input"></div>
+								<div class="spy-right-input"></div>
+								<div class="spy-bottom-input"></div>
+							</div>
+							<div class="fadein-box">
+								<input type="text" name="phone" class = "fadein-input fadein-phone" placeholder="Телефон">
+								<div class="spy-left-input"></div>
+								<div class="spy-top-input"></div>
+								<div class="spy-right-input"></div>
+								<div class="spy-bottom-input"></div>
+							</div>
+							<div class="fadein-box">
+								<input type="text" name="email" class = "fadein-input fadein-email" placeholder="Email">
+								<div class="spy-left-input"></div>
+								<div class="spy-top-input"></div>
+								<div class="spy-right-input"></div>
+								<div class="spy-bottom-input"></div>
+							</div>
+
+							<div class="fadein-box fadein-box-submit">
+								<input type="submit" name="submit" class = "fadein-input fadein-submit" placeholder="Отправить">
+								<div class="spy-left-input"></div>
+								<div class="spy-top-input"></div>
+								<div class="spy-right-input"></div>
+								<div class="spy-bottom-input"></div>
+							</div>
+							<img src = "/images/icons/close-white.svg" class = "fadein-close">
+						</form>
+					</div>
+				</div>`)
+
+			this.im.mask(document.querySelector(".fadein-phone"))
+
+			document.querySelector('.fadein-submit').addEventListener('click', e => {
+				this.checkFadeInForm(e, document.querySelector('.fadein-form'))
+			})
+
+			document.querySelector('.fadein-close').addEventListener('click', () => {
+				this.closeForm()
+			})
+
+			document.querySelector(".fadein-phone").addEventListener('keyup', function() {
+				this.classList.remove('input-box-wrong')
+			})
+
+			document.querySelector(".fadein-phone").addEventListener('keyup', function() {
+				this.classList.remove('input-box-wrong')
+			})
+
+			document.querySelector('.overlay').addEventListener('click', e => {
+
+				if (e.target.classList.contains('overlay')) this.closeForm()
+			})
+
+			this.body_lock()
+		},
+		closeForm(){
+
+			document.querySelector('.overlay').remove()
+			this.body_unlock()
+		},
+		checkFadeInForm(e, form){
+
+			e.preventDefault()
+
+			if (!form.querySelector('.fadein-phone').inputmask.isComplete()) {
+
+				form.querySelector('.fadein-phone').classList.add('input-box-wrong')
+				return false
+			}
+
+			this.sendFadeInForm(form)
+		},
+		sendFadeInForm(form){
+
+			if (this.sendingForm != 0) return false
+
+				this.sendingForm = 1
+
+			axios.interceptors.request.use((req) => {
+				form.querySelector('.fadein-submit').value = "Отправка..."
+				return req
+			}
+			)
+
+			let bodyFormData = new FormData()
+				bodyFormData.append('name', form.querySelector('.fadein-name').value)
+				bodyFormData.append('phone', form.querySelector('.fadein-phone').value)
+				bodyFormData.append('form_name', form.getAttribute('name'))
+				bodyFormData.append('email', form.querySelector('.fadein-email').value)
+
+			axios.post('https://systemice.ru/say_online_send_test11.php', bodyFormData, {
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded'
+				}
+			})
+			.then(response => {
+
+				if (!response.data || response.data == '') {
+					form.querySelector('.fadein-submit').value = "Ошибка!"
+					return false
+				}
+
+				form.querySelector('.fadein-submit').value = "Успешно!"
+			})
+		},
+		body_lock() {
+			let body = document.body;
+			if (!body.classList.contains('scroll-locked')) {
+				let bodyScrollTop = (typeof window.pageYOffset !== 'undefined') ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+				body.classList.add('scroll-locked');
+				body.style.top = "-" + bodyScrollTop + "px";
+				body.setAttribute("data-popup-scrolltop", bodyScrollTop)
+			}
+		},
+		body_unlock() {
+			let body = document.body;
+			if (body.classList.contains('scroll-locked')) {
+				let bodyScrollTop = document.body.getAttribute("data-popup-scrolltop");
+				body.classList.remove('scroll-locked');
+				body.style.top = "";
+				body.removeAttribute("data-popup-scrolltop")
+				window.scrollTo(0, bodyScrollTop)
 		}
+}
 	},
 	mounted(){
-
-		let form = `
-
-		<div class = "overlay">
-
-
-			<div class = "fadein-form">
-				<p class = "fadein-title">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</p>
-				<div class="fadein-box">
-					<input type="text" name="name" class = "fadein-input fadein-name" placeholder="Ваше имя">
-					<div class="spy-left-input"></div>
-					<div class="spy-top-input"></div>
-					<div class="spy-right-input"></div>
-					<div class="spy-bottom-input"></div>
-				</div>
-				<div class="fadein-box">
-					<input type="text" name="phone" class = "fadein-input fadein-phone" placeholder="Телефон">
-					<div class="spy-left-input"></div>
-					<div class="spy-top-input"></div>
-					<div class="spy-right-input"></div>
-					<div class="spy-bottom-input"></div>
-				</div>
-				<div class="fadein-box">
-					<input type="text" name="email" class = "fadein-input fadein-email" placeholder="Email">
-					<div class="spy-left-input"></div>
-					<div class="spy-top-input"></div>
-					<div class="spy-right-input"></div>
-					<div class="spy-bottom-input"></div>
-				</div>
-
-				<div class="fadein-box fadein-box-submit">
-					<input type="submit" name="submit" class = "fadein-input fadein-submit" placeholder="Отправить">
-					<div class="spy-left-input"></div>
-					<div class="spy-top-input"></div>
-					<div class="spy-right-input"></div>
-					<div class="spy-bottom-input"></div>
-				</div>
-				<img src = "/images/icons/close-white.svg" class = "fadein-close">
-			</div>
-
-		</div>`
-
-		document.querySelector('body').insertAdjacentHTML('beforeend', form)
 
 		// Наведение на карту
 /*
@@ -640,7 +736,7 @@ export default {
 
 			// Карусель glide js для информации рядом с картой
 
-			let glide_a = new Glide('.glide-a', {
+			this.glide_a = new Glide('.glide-a', {
 				type: 'carousel',
 				startAt: 1,
 				perView: 1,
@@ -657,14 +753,14 @@ export default {
 			})
 			
 			if (window.screen.width < 1101) {
-				glide_a.mount()
+				this.glide_a.mount()
 			}
 
 			// Карусель миниатюр
 
 			this.glide = new Glide('.glide', {
 				type: 'carousel',
-				startAt: 1,
+				startAt: 0,
 				perView: 4,
 				gap: 0,
 				breakpoints: {
@@ -674,10 +770,7 @@ export default {
 					768: {
 						perView: 1
 					}
-				},
-				focusAt: 'center',
-				animationDuration: 500,
-				animationTimingFunc: 'cubic-bezier(0.25, 0.1, 0.25, 1)'
+				}
 			})
 
 			let glide = this.glide
@@ -737,6 +830,8 @@ export default {
 		.catch(error => console.log('Failed to load Yandex Maps', error))
 
 		/* Карты, конец */
+
+		// Закрытие формы по клику вне
 	}
 }
 </script>
