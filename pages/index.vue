@@ -42,11 +42,11 @@
 						<div class="bl-info-wrapper glide__track" data-glide-el="track">
 							<ul class="glide__slides glide__slides-a">
 								<li class="info-data-item glide__slide">
-									<span> >15</span> лет
+									<span> >17</span> лет
 									<p>работаем в сфере<br>делового туризма</p>
 								</li>
 								<li class="info-data-item glide__slide info-active">
-									<span>4</span> 
+									<span>6</span> 
 									<p>представительства<br> в городах России</p>
 								</li>
 								<li class="info-data-item glide__slide">
@@ -58,15 +58,15 @@
 									<p>штатных<br> сотрудников</p>
 								</li>
 								<li class="info-data-item glide__slide">
-									<span> >500</span>
+									<span> >700</span>
 									<p>отелей на<br> эксклюзивных<br> условиях</p>
 								</li>
 								<li class="info-data-item glide__slide">
-									<span> >827</span>
+									<span> >1300</span>
 									<p>реализованных<br> проектов</p>
 								</li>
 								<li class="info-data-item glide__slide">
-									<span> >367</span>
+									<span> >400</span>
 									<p>надежных<br> подрядчиков<br> по всему миру</p>
 								</li>
 							</ul>
@@ -439,14 +439,39 @@ import axios from 'axios'
 export default {
 	head() {
 		return {
-			title: 'Systemice - главная страница',
+			title: 'Systemice Hotel Group Системайс Хотел Групп',
 			script:[],
 			meta: [
 			{
+				hid: 'name',
+				name: 'name',
+				content: 'Systemice Hotel Group'
+			},
+			{
 				hid: 'description',
 				name: 'description',
-				content: 'Home page description'
-			}
+				content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам'
+			},
+            {
+                hid: 'og:title',
+                name: 'og:title',
+                content: 'Systemice Hotel Group Системайс Хотел Групп',
+            },
+            {
+                hid: 'og:image',
+                property: 'og:image',
+                content: ``,
+            },
+            {
+                hid: 'og:description',
+                property: 'og:description',
+                content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам',
+            },
+            {
+                hid: 'og:url',
+                property: 'og:url',
+                content: ``,
+            }
 			]
 		}
 	},

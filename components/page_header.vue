@@ -9,7 +9,7 @@
 				<div class = "event-progress bta-hover"></div>
 				<div class = "common-progress-text">Общий прогресс сборки мероприятия</div>
 			</a>
-			<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
+			<a class="tel-btn" href="tel:74952152480">+7(495)215-24-80</a>
 		</div>
 		<div class="header-mob">
 			<NuxtLink class="btn-no-animate" to = "/event-progress"><span>Собрать мероприятие</span></NuxtLink>
@@ -41,9 +41,9 @@
 				<li class="menu-item"><NuxtLink to = "/service">Услуги</NuxtLink></li>
 				<li class="menu-item"><NuxtLink to = "/tenders">Тендеры</NuxtLink></li>
 				<li class="menu-item"><NuxtLink to = "/portfolio">Портфолио</NuxtLink></li>
-				<li class="menu-item"><NuxtLink to = "/team">Команда</NuxtLink></li>
+				<!--<li class="menu-item"><NuxtLink to = "/team">Команда</NuxtLink></li>-->
 				<li class="menu-item"><NuxtLink to = "/partner">Партнеры</NuxtLink></li>
-				<li class="menu-item"><NuxtLink to = "/news">Новости</NuxtLink></li>
+				<!--<li class="menu-item"><NuxtLink to = "/news">Новости</NuxtLink></li>-->
 				<li class="menu-item"><NuxtLink to = "/contact">Контакты</NuxtLink></li>
 			</ul>
 			<div class="bl-social">

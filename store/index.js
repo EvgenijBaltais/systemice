@@ -251,7 +251,7 @@ export const state = () => ({
     {
         id: 13,
         title: 'Открытая пленарная дискуссия ATOM SKILLS',
-        picsFolder: 'atom_skills',
+        picsFolder: 'atom_skills_discussion',
         pics: [1,2,3,4,5,6,7,8],
         dateData: '<b>24.07.2020 г.</b>',
         membersData: '<b>На площадке</b> – 18 в кадре, 27 за кадром',
@@ -384,24 +384,6 @@ export const state = () => ({
     {
         id: 19,
         title: 'Опен Майнд Консалтинг (Тренинг Александра Палиенко)',
-        picsFolder: 'krok',
-        pics: [1,2,3],
-        dateData: '<b>30.12.2020 г.</b>',
-        membersData: '50-60 чел.',
-        spectators: '',
-        details: `
-            <p>Место проведения: <b>Radisson Rosa Khutor, 2020 и Гранд Отель Поляна</b></p>
-            <p>Формат мероприятия: <b>Тренинг</b></p>
-            <p><b>Цели/задачи:</b></p>
-            <p>Перед нами стояла задача организовать площадку для тренинга,
-            настроить систему бронирования по промокоду для участников мероприятия,
-            так же организовать и подобрать площадку для тренинга, обеспечить индивидувльное
-            бронирование каждого гостя.</p>
-        `
-    },
-    {
-        id: 20,
-        title: 'Опен Майнд Консалтинг (Тренинг Александра Палиенко)',
         picsFolder: 'open_mind_consulting',
         pics: [1,2,3],
         dateData: '',
@@ -419,7 +401,7 @@ export const state = () => ({
         `
     },
     {
-        id: 21,
+        id: 20,
         title: 'АО Медицина (клиника академика Ройтберга) – многопрофильный медицинский центр',
         picsFolder: 'ao_medicina',
         pics: [1,2],
@@ -434,7 +416,7 @@ export const state = () => ({
         `
     },
     {
-        id: 22,
+        id: 21,
         title: 'Суши Даром',
         picsFolder: 'sushi_darom',
         pics: [1,2,3],
@@ -449,7 +431,7 @@ export const state = () => ({
         `
     },
     {
-        id: 23,
+        id: 22,
         title: 'ООО «Сканди-Финлэнд»',
         picsFolder: 'skandi_finland',
         pics: [1,2],
@@ -464,7 +446,7 @@ export const state = () => ({
         `
     },
     {
-        id: 24,
+        id: 23,
         title: 'Школа продюсера Татьяны Маричевой',
         picsFolder: 'shkola_t_marichevoy',
         pics: [1,2,3,4,5,6,7,8,9,10,11,12],
@@ -484,7 +466,7 @@ export const state = () => ({
         `
     },
     {
-        id: 25,
+        id: 24,
         title: 'S.T.I. Dent',
         picsFolder: 'sti_dent',
         pics: [1,2,3],
@@ -499,7 +481,7 @@ export const state = () => ({
         `
     },
     {
-        id: 26,
+        id: 25,
         title: 'LUSH RUSSIA',
         picsFolder: 'lush_russia',
         pics: [1,2,3,4,5,6,7,8,9],
@@ -516,7 +498,7 @@ export const state = () => ({
         `
     },
     {
-        id: 27,
+        id: 26,
         title: 'Салон на миллион',
         picsFolder: 'salon_na_million',
         pics: [1,2,3,4,5,6,7,8,9,10,11,12,13,14],
@@ -531,7 +513,7 @@ export const state = () => ({
         `
     },
     {
-        id: 28,
+        id: 27,
         title: 'АКТР',
         picsFolder: 'aktr',
         pics: [1,2,3],
@@ -546,7 +528,7 @@ export const state = () => ({
         `
     },
     {
-        id: 29,
+        id: 28,
         title: 'PHYSICAL TRANSFORMATION',
         picsFolder: 'physical_transformation',
         pics: [1,2,3],
@@ -561,7 +543,7 @@ export const state = () => ({
         `
     },
     {
-        id: 30,
+        id: 29,
         title: 'ПЛАУТ КОНСАЛТИНГ',
         picsFolder: 'plaut_consulting',
         pics: [1,2,3,4,5,6,7,8,9],

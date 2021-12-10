@@ -12,16 +12,17 @@
 			</li>
 			<li class="menu-item">
 				<NuxtLink to = "/portfolio">Портфолио</NuxtLink>
-			</li>
+			</li><!--
 			<li class="menu-item">
 				<NuxtLink to = "/team">Команда</NuxtLink>
-			</li>
+			</li>-->
 			<li class="menu-item">
 				<NuxtLink to = "/partner">Партнеры</NuxtLink>
 			</li>
+			<!--
 			<li class="menu-item">
 				<NuxtLink to = "/news">Новости</NuxtLink>
-			</li>
+			</li>-->
 			<li class="menu-item">
 				<NuxtLink to = "/contact">Контакты</NuxtLink>
 			</li>
@@ -36,7 +37,7 @@
 			<span>Другие наши работы</span>
 			<div class="other-event">
 				<div class="bl-small-event current" v-for = "(item, index) in portfolioData" :key="item.id">
-					<NuxtLink :to="'/portfolio/' + ++index" class = "other-event-link" @click = "gogogo">
+					<NuxtLink :to="'/portfolio/' + ++index" class = "other-event-link">
 						<img :src="require(`@/assets/images/portfolio/${item.picsFolder}/${item.pics[0]}.jpg`)" class = "">
 						<span>{{item.title}}</span>
 					</NuxtLink>
@@ -65,26 +66,12 @@
 
 
 export default {
-	head() {
-		return {
-			title: 'Проект в портфолио',
-			meta: [
-			{
-
-			}
-			]
-		}
-	},
 	data(){
 		return {
 			portfolioData: this.$store.state.portfolioData
 		}
 	},
 	methods: {
-
-		gogogo() {
-			console.log(1212)
-		}
 	}
 }
 
