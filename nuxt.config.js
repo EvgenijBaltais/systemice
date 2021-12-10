@@ -56,7 +56,7 @@ export default {
     linkActiveClass: 'menu-active'
   },
 
-  //target: 'static',
+  target: 'static',
   
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

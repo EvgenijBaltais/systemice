@@ -32,6 +32,44 @@ import eventData from '@/components/event_data'
 import Inputmask from 'inputmask'
 
 export default {
+	head() {
+		return {
+			title: 'Собрать мероприятие - Systemice Hotel Group',
+			script:[],
+			meta: [
+			{
+				hid: 'name',
+				name: 'name',
+				content: 'Systemice Hotel Group'
+			},
+			{
+				hid: 'description',
+				name: 'description',
+				content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам'
+			},
+            {
+                hid: 'og:title',
+                name: 'og:title',
+                content: 'Systemice Hotel Group Системайс Хотел Групп',
+            },
+            {
+                hid: 'og:image',
+                property: 'og:image',
+                content: ``,
+            },
+            {
+                hid: 'og:description',
+                property: 'og:description',
+                content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам',
+            },
+            {
+                hid: 'og:url',
+                property: 'og:url',
+                content: ``,
+            }
+			]
+		}
+	},
 	data(){
 		return {
 			componentStatus: 'eventData',
