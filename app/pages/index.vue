@@ -191,13 +191,13 @@
 						<span>Наша компания предоставляет огромный спектр услуг для корпоративных клиентов. Мы уже много лет организовываем мероприятия любых форматов, масштабов и любой сложности. 
 						Вы можете ознакомиться с основными направлениями нашей компании или оставить заявку и специалист Systemice Group поможет с реализацией поставленной задачей.</span>
 						<div class = "service-block-btns">
-							<div class="button-box-main button-box-main-red">
+							<NuxtLink to = "/service" class="button-box-main button-box-main-red">
 								<span class = "button-box-main-title">Перейти к остальным услугам</span>
 								<div class="spy-left-btn-main spy-btn-red"></div>
 								<div class="spy-top-btn-main spy-btn-red"></div>
 								<div class="spy-right-btn-main spy-btn-red"></div>
 								<div class="spy-bottom-btn-main spy-btn-red"></div>
-							</div>
+							</NuxtLink>
 							<div class="button-box-main button-box-main-white" @click = "createForm">
 								<span class = "button-box-main-title">Заявка для обратной связи</span>
 								<div class="spy-left-btn-main spy-btn-white"></div>

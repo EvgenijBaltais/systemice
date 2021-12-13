@@ -258,12 +258,14 @@ export default {
 				})
 				.then(response => {
 
+					this.sendingForm = 0
+
 					if (!response.data || response.data == '') {
-						form.querySelector('.tenders-send-input').value = "Ошибка!"
+						form.querySelector('.send-button').value = "Ошибка!"
 						return false
 					}
 
-					form.querySelector('.tenders-send-input').value = "Успешно!"
+					form.querySelector('.send-button').value = "Успешно!"
 				})
         }
 
