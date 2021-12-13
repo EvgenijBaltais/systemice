@@ -89,21 +89,3 @@ sw.*
 
 # Vim swap files
 *.swp
-
-#generated files
-_nuxt
-contact
-images
-js
-css
-logs
-news
-partner
-portfolio
-service
-team
-tenders
-video
-favicon.ico
-event-progress
-index.html
