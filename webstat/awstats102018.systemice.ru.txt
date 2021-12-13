@@ -1,0 +1,842 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201810 will be lost/reset.
+# Last config file used to build this data file was /usr/local/etc/awstats/awstats.systemice.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2002                
+POS_TIME 2681                
+POS_VISITOR 23369               
+POS_DAY 23495               
+POS_DOMAIN 3679                
+POS_LOGIN 3916                
+POS_ROBOT 4071                
+POS_WORMS 4814                
+POS_EMAILSENDER 4945                
+POS_EMAILRECEIVER 5088                
+POS_SESSION 23849               
+POS_SIDER 24036               
+POS_FILETYPES 5223                
+POS_DOWNLOADS 5675                
+POS_OS 5968                
+POS_BROWSER 6137                
+POS_SCREENSIZE 8345                
+POS_UNKNOWNREFERER 8419                
+POS_UNKNOWNREFERERBROWSER 9241                
+POS_ORIGIN 9619                
+POS_SEREFERRALS 9771                
+POS_PAGEREFS 9941                
+POS_SEARCHWORDS 12079               
+POS_KEYWORDS 12231               
+POS_MISC 2343                
+POS_ERRORS 12290               
+POS_CLUSTER 3772                
+POS_SIDER_404 12422               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20181010091606 47 8002 6966251926009
+FirstTime 20181001002500
+LastTime 20181010012253
+LastUpdate 20181011000113 47 0 47 0 0
+TotalVisits 40                  
+TotalUnique 1                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 1                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 231 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 53 453 873719250 106 239 22321428
+1 34 99 2840045 93 215 71526919
+2 41 82 99949153 107 265 31726007
+3 37 178 2108272757 88 226 12175335
+4 50 155 21018544 81 159 8482406
+5 18 18 620265 81 153 7626365
+6 65 127 5832571 80 210 6599843
+7 41 167 635765955 99 257 7606758
+8 31 33 1981623 53 151 6143890
+9 35 185 432224876 131 252 9600591
+10 83 702 959180481 72 371 12788077
+11 192 1775 3349661608 82 224 13138874
+12 289 2626 3314028402 84 279 26568437
+13 307 2771 5046970656 94 305 8854564
+14 252 2129 6120473989 119 372 13023239
+15 168 1038 4457140176 92 318 8215606
+16 271 2596 14088814712 112 345 26704321
+17 219 1987 3861984293 91 299 10374694
+18 138 788 1653590970 262 493 39536924
+19 155 1161 2022151271 74 222 8345408
+20 111 990 2599011789 87 304 13290004
+21 84 576 1093395646 94 233 7739316
+22 121 1029 1356189952 114 317 10504492
+23 95 809 2870281014 84 279 10361536
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 2890 22474 30141531714
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 16
+yandex 2968 251221255 20181010090823 0
+googlebot 927 59956942 20181010091606 0
+java\/[0-9] 88 3182611 20181003121403 0
+crawl 81 2104804 20181005161656 0
+seznambot 62 11006135 20181008233809 0
+bot[\s_+:,\.\;\/\\-] 40 1305955 20181008221226 0
+no_user_agent 34 18046792 20181008172801 0
+ia_archiver 29 1882985 20181008154146 0
+[\s_+:,\.\;\/\\-]bot 28 34072343 20181003120627 0
+spider 11 410197 20181008185117 0
+powermarks 2 74582 20181006165251 0
+core 4 2811499 20181006035950 0
+python 5 74534 20181006220957 0
+favicon 8 298156 20181009142404 0
+discovery 1 0 20181001115334 0
+msiecrawler 1 37291 20181003194527 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 19
+css 2300 111139944 0 0
+ttf 7 195512 0 0
+ico 2 1718 0 0
+woff2 375 11770448 0 0
+woff 190 5285656 0 0
+txt 1 2688880 0 0
+php 426 2370093 0 0
+mp4 11 27179817386 0 0
+html 1419 88361612 0 0
+jpg 4193 1473342294 0 0
+eot 108 2475240 0 0
+png 8177 154550396 0 0
+pdf 35 934305278 0 0
+otf 173 17504784 0 0
+cur 192 61288 0 0
+js 4491 157165078 0 0
+jpeg 1 106803 0 0
+svg 49 189235 0 0
+gif 324 200069 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 6
+/systemice_marketing_kit.pdf 35 2303 1027287898
+/personal_data.pdf 12 0 3345168
+/images/img-for-test4/45test2.mp4 8 292 27179817386
+/hotels/globallogs.txt 4 0 10767819
+/video/event-1.mp4 3 0 45691758
+/Systemice%20Hotel%20Service.pdf 2 0 7762962
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 11
+linuxandroid 1273
+winxp 423
+winlong 9
+winnt 10690
+win2000 7
+winvista 1617
+linux 617
+win7 6907
+macosx 3172
+win2003 13
+Unknown 341
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 118
+msie6.0 127
+firefox57.0 2
+firefox33.1 2
+chrome41.0.2272.96 1
+firefox44.0 4
+chrome69.0.3497.81 1
+chrome60.0.3112.50 56
+chrome31.0.1650.57 1
+firefox54.0 12
+chrome63.0.3223.8 2
+safari9.1.2 75
+curl 2
+firefox49.0 72
+firefox34.0 4
+chrome58.0.3029.110 423
+chrome69.0.3497.102 232
+msie8.0 1512
+chrome64.0.3282.167 1
+chrome34.0.1847.132 20
+firefox2.0.0.3 2
+netscape3.0 2
+msie7.0 25
+chrome62.0.3250.0 2
+firefox59.0 3
+chrome50.0.2661.102 21
+firefox40.1 5
+chrome60.0.3112.101 5
+chrome62.0.3202.89 4
+chrome67.0.3396.103 382
+chrome66.0.3359.181 100
+chrome49.0.2623.112 149
+chrome65.0.3325.181 160
+msie5.01 2
+firefox53.0 67
+chrome69.0.3464.0 368
+firefox40.0 2
+chrome35175 1
+chrome34.0.1847.131 3
+chrome68.0.3440.106 1578
+firefox21.0 11
+chrome63.0.3239.132 73
+chrome62.0.3202.94 9
+firefox47.0 1
+chrome51.0.2704.103 314
+chrome46.0.2490.80 6
+firefox3.5.5 1
+chrome68.0.3550.0 71
+mozilla 2544
+netscape5.0 4
+chrome57.0.2987.133 312
+chrome68.0.3440.84 9
+chrome44.0.2403.89 1
+firefox43.1 2
+chrome46.0.2490.86 3
+chrome64.0.3282.186 1
+chrome41.0.2228.0 1
+chrome60.0.3112.90 77
+chrome40.0.2214.93 1
+firefox35.0 4
+safari 77
+chrome21.0.1180.89 2
+chrome67.0.3396.87 194
+chrome69.0.3497.91 68
+safari7.0 1
+safari11.0 1322
+chrome68.0.3440.75 7
+chrome67.0.3396.79 23
+firefox52.0 8
+safari12.0 532
+chrome69.0.3497.86 67
+chrome56.0.2924.87 1
+chrome61.0.3163.128 107
+opera9.80 144
+firefox31.0 2
+chrome32776 1
+firefox62.0 419
+chrome63.0.3205.0 30
+chrome61.0.3163.100 20
+chrome47.0.2526.111 71
+chrome45.0.2454.93 10
+chrome34.0.1847.116 1
+chrome40.0.2214.85 3
+chrome43.0.2357.93 9
+chrome58.0.3029.96 4
+safari8.0 1
+msie5.0 2
+Unknown 45
+firefox11.0 2
+chrome47.5.2526.115 2
+firefox32.1 2
+firefox17.0 8
+safari10.0 148
+safari9.1 81
+chrome41.0.2272.118 134
+chrome69.0.3497.92 2
+chrome28.0.1500.71 3
+msie5.5 3
+chrome59.0.3071.125 67
+netscape4.79 1
+firefox61.0 356
+firefox1.0.7 1
+chrome67.0.3396.99 209
+safari9.0 200
+firefox22.0 3
+chrome65.0.3325.162 1
+msie10.0 281
+firefox51.0 2
+firefox6.0 3
+chrome43.0.2357.134 122
+chrome64.15.3282.140 70
+chrome69.0.3497.100 10702
+firefox 17
+chrome66.0.3359.170 21
+chrome65.0.3325.146 2
+chrome23.0.1271.97 14
+chrome67.0.3396.62 1
+chrome37326 1
+chrome64.0.3282.140 564
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 14
+2ip.ru_CMS_Detector_(https://2ip.ru/cms/) 20181008222830
+IDG/RU_(http://spaziodati.eu/) 20181006211432
+Opera/9.80_(Android;_Opera_Mini/7.5.31658/28.2794;_U;_ru)_Presto/2.8.119_Version/11.10 20181008170606
+curl/7.45.0-DEV 20181001174700
+Mozilla/5.0_(compatible;_WebDataStats/1.0_;__https://webdatastats.com/policy.html) 20181006073304
+LPX 20181001204506
+Validator.nu/LV 20181008222735
+Riddler_(http://riddler.io/about) 20181008202608
+e.ventures_Investment_Crawler_(eventures.vc) 20181005161652
+Mozilla/5.0_zgrab/0.x 20181005195953
+Mozilla/5.0_(compatible;_tracemyfile/1.0) 20181006153359
+Mozilla/5.0_(compatible;_PR-CY.RU;___https://a.pr-cy.ru) 20181008222736
+Go-http-client/1.1 20181002061636
+Mozilla/4.0_(compatible;) 20181001172809
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 7
+e.ventures_Investment_Crawler_(eventures.vc) 20181005161652
+2ip.ru_CMS_Detector_(https://2ip.ru/cms/) 20181008222830
+IDG/RU_(http://spaziodati.eu/) 20181006211432
+Go-http-client/1.1 20181002061636
+LPX 20181001204506
+Validator.nu/LV 20181008222735
+Riddler_(http://riddler.io/about) 20181008202608
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 578 3278
+From1 17 17
+From2 110 123
+From3 183 238
+From4 2002 21413
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+google 55 66
+yandex 55 57
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 55
+http://systemice-hotel.ru 44 70
+http://systemice-hotel-group.ru 23 49
+http://maot-online.ru 8 8
+http://sysevent.ru 7 7
+https://mega-polis.biz.ua 7 7
+http://kinoprinc.ru 6 6
+https://bitmaein.com/shop 6 6
+http://sta-grand.ru 4 4
+http://www.sysevent.ru 4 4
+http://maot.ru/index 3 3
+http://adguard.com/referrer.html 1 1
+https://l.instagram.com 1 1
+http://www.sysevent.ru/tvorcheskie-timbildingi/formula-vmeste.html 1 1
+http://maot-online.ru/routes 1 1
+http://www.maot.ru 1 1
+http://zameskino.ru 1 1
+http://vector.peskostryi.ru 1 1
+http://www.sysevent.ru/intellektualnye-igry/igry-teleformatov.html 3 3
+https://go.mail.ru 0 2
+http://1nop.ru/www.systemice.ru 1 1
+http://sysevent.ru/contacts.html 3 3
+https://a.pr-cy.ru/systemice.ru/ 0 1
+https://proartrit.com 1 1
+https://komp-pomosch.ru 2 2
+http://frontend/routes 1 1
+http://maot.ru 2 2
+http://www.maot.ru/index 1 1
+http://maot.ru/hoteldetail 1 1
+http://www.sysevent.ru/contacts.html 3 3
+http://www.sysevent.ru/tvorcheskie-timbildingi/barabannyy-timbilding.html 1 1
+https://detskiezabolevaniya.com 1 1
+https://xn--80aaafbn2bc2ahdfrfkln6l.xn--p1ai 3 3
+http://www.sysevent.ru/aktivnye-timbildingi/bolshie-gonki.html 1 1
+https://undergroundcityphoto.com 2 2
+http://komputers-best.ru 2 2
+http://maot.ru/contact 2 2
+https://nakozhe.com 1 1
+https://www.baikaleminer.com 2 2
+https://dverirespekt.ru 1 1
+http://www.sysevent.ru/aktivnye-timbildingi/lednikovyy-period.html 1 1
+http://maot.ru/payment 1 1
+http://xn--d1abj0abs9d.in.ua 2 2
+http://www.sysevent.ru/prog.html 2 2
+http://railwayforum.ru/uchastniku/prozhivanie/ 3 3
+https://xn----7sbbahaq9bb5afgiqfliv4m.xn--p1ai 2 2
+https://pp-budpostach.com.ua/g835191-stoimost-gazobloka-gazobetona 3 3
+http://skinali.photo-clip.ru 2 2
+http://1nop.ru/www.systemice-hotel.ru 2 2
+https://elonm.ru 1 1
+http://maot.ru/vacancies 1 1
+https://yginekologa.com 2 2
+http://xn-----flcbcivcbezvgmds1ajjp7bb6bya.xn--p1ai 1 1
+https://www.artdeko.info 2 2
+http://maot-online.ru/payment 3 3
+https://a.pr-cy.ru/systemice.ru 2 2
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+403 266 57952
+206 14 6105576
+301 18 4306
+404 1644 356321
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 242
+/blog/wp-includes/wlwmanifest.xml 1 -
+/phpMyAdmin/index.php 1 -
+/guids/ilya_anisimov 4 -
+/atilektcms/ 1 -
+/system/cms/ 1 -
+/podmsk/bootstrap/js/bootstrap.min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/mother.php 10 -
+/admin.php 2 -
+/podmsk/hotel97.html 1 -
+/css/ie.css 3 http://systemice.ru/organizatsiya_i_provedenie_timbildingov.html
+/contact 1 -
+/podmskpic/vid85m-3.jpg 1 -
+/css/fonts/pfdindisplaypro-light/pfdindisplaypro-light.svg 4 -
+/forums/ 3 -
+/guids/aleksey_shelest 7 -
+/site/wp-includes/wlwmanifest.xml 1 -
+/modules/columnadverts/uploadimage.php 1 http://www.systemice.ru/modules/columnadverts/uploadimage.php
+/podmsk/sanatoriy.html 1 -
+/wp-admin/yt.php 2 -
+/podmsk/article/28.jpg 1 -
+/css_.php 1 -
+/podmsk/article35.html 1 -
+/css/tmp3/s.ie8.css 5 -
+/platforms/page806343.html 5 -
+/xmlrpc.php 5 -
+/etm/indy.css 3 http://systemice-hotel-group.ru/etm/indy.css
+/fckeditor/editor/filemanager/connectors/php/upload.php 1 -
+/typo3/index.php 1 -
+/podmsk/article/3.jpg 1 -
+/wp-content/themes/qualifire/style.css 1 http://www.systemice.ru/wp-content/themes/qualifire/style.css
+/mscms/ 3 http://systemice-hotel-group.ru/mscms/
+/guids/page829114.html 4 -
+/podmsk/bootstrap/js/all.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/platforms/fonts/OpenSans/opensans-light-webfont.woff 1 http://systemice.ru/platforms/
+/js/jquery.autocomplete-min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/0aa6bb65324d7832cc716dc949006bbf 1 https://a.pr-cy.ru/systemice.ru
+/presentation/fonts/OpenSans/opensans-semibold-webfont.woff 1 http://systemice.ru/presentation/
+/person/managerm-13.jpg 1 -
+/podmsk/print101.html 2 -
+/podmsk/article/36.jpg 1 -
+/user/register 3 -
+/podmsk/print153.html 1 -
+/common_js/common.js 2 -
+/podmsk/article/24.jpg 1 -
+/podmsk/bootstrap/js/datepicker/bootstrap-datepicker.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/phpmyAdmin/index.php 1 -
+/static/common.css 3 http://systemice-hotel-group.ru/static/common.css
+/podmsk/bootstrap/js/jquery.validate.min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/sertificats/sertif1m.jpg 1 -
+/podmsk/bootstrap/js/respond.min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/css/tmp3/s.ie.css 26 http://systemice.ru/
+/cpanel 3 -
+/podmsk/article/12.jpg 1 -
+/podmsk/ 1 -
+/payload.php 3 -
+/js/autocomplete.styles.css 2 http://www.systemice.ru/podmsk/hotel94.html
+/guids/roman_klyachkin 6 -
+/podmsk/bootstrap/css/bootstrap-theme.min.css 2 http://www.systemice.ru/podmsk/hotel94.html
+/phpMyAdmin/scripts/setup.php 60 -
+/wp-login.php 19 -
+/dbadmin/index.php 1 -
+/admin/login/ 1 -
+/wp-updats.php 37 -
+/podmsk/bootstrap/js/hotel.js 1 http://www.systemice.ru/podmsk/hotel94.html
+/engine/print.php 1 -
+/presentation/fonts/gothic/CenturyGothic.woff 1 http://systemice.ru/presentation/
+/sertificats/sertif5m.jpg 1 http://systemice.ru/hotels/areal-hotel.html
+/podmsk/article/31.jpg 1 -
+/podmsk/bootstrap/js/jquery.tablesorter.min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/images/festival.jpg 1 -
+/).html( 3 -
+/modules 3 http://systemice-hotel-group.ru/modules
+/presentation/fonts/OpenSans/opensans-semibold-webfont.eot 1 http://systemice.ru/presentation/
+/platforms/fonts/OpenSans/opensans-semibold-webfont.woff 1 http://systemice.ru/platforms/
+/podmsk/article/33.jpg 1 -
+/guids/yuri_bezzubov 6 -
+/wp-includes/wlwmanifest.xml 1 -
+/blog/xmlrpc.php 2 -
+/podmsk/article23.html 1 -
+/podmsk/bootstrap/js/jquery.countdown.min.js 1 http://www.systemice.ru/podmsk/hotel94.html
+/images/country.jpg 1 -
+/community/forum/ 3 -
+/podmsk/article/17.jpg 1 -
+/platforms/fonts/OpenSans/opensans-light-webfont.woff2 1 http://systemice.ru/platforms/
+/podmsk/article2.html 1 -
+/presentation/fonts/OpenSans/opensans-light-webfont.eot 1 http://systemice.ru/presentation/
+/podmsk/article/16.jpg 1 -
+/css/fonts/pfdindisplaypro-thin/pfdindisplaypro-thin-webfont.svg 4 -
+/license.php 18 -
+/podmsk/hotel9.html 1 https://www.google.ru/
+/media/media.php 3 -
+/www.zip 1 -
+/guids/viktor_butusov 6 -
+/sertificats/sertif10m.jpg 1 -
+/admin/scripts/setup.php 55 -
+/ads.txt 9 -
+/podmsk/article/20.jpg 1 -
+/sertificats/sertif7m.jpg 6 http://systemice.ru/hotels/areal-hotel.html
+/podmsk/bootstrap/css/style.css 2 http://www.systemice.ru/podmsk/hotel94.html
+/podmsk/bootstrap/js/html5shiv.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/podmsk/article/14.jpg 1 -
+/css/fonts/pfdindisplaypro-reg/pfdindisplaypro-reg-webfont.svg 4 -
+/administrator/index.php 2 -
+/wordpress/wp-includes/wlwmanifest.xml 1 -
+/guids/aleksey_shelest/ 7 -
+/css/fonts/bebas_neue/BebasNeueBold.otf')%20format('opentype'),%20%20%20%20%20%20%20%20url('/css/fonts/bebas_neue/ttf/BebasNeueBold.ttf')%20format('truetype 8 http://systemice.ru/
+/phpMyAdmin-4.8.0-all-languages/index.php 1 -
+/forum.php 3 -
+/podmsk/bootstrap/js/ucode.js 1 http://www.systemice.ru/podmsk/article5.html
+/component/users/ 6 -
+/indy/indy.css 3 http://systemice-hotel-group.ru/indy/indy.css
+/bitrix/admin/ 1 -
+/sertificats/sertif12m.jpg 3 http://systemice.ru/hotels/areal-hotel.html
+/podmskpic/vid5b-1.jpg 1 -
+/js/ulib/common.js 2 -
+/podmsk/bootstrap/js/jquery.jcarousel.min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/podmskpic/vid91m-1.jpg 1 -
+/platforms/fonts/OpenSans/opensans-light-webfont.eot 1 http://systemice.ru/platforms/
+/podmsk/hotel37.html 1 -
+/systemice_marketing_kit.pdf) 3 -
+/modx/manager/ 1 -
+/phpMyAdmin-4.8.0/index.php 1 -
+/sitemap.xml 1 https://a.pr-cy.ru/systemice.ru
+/robots.txt 366 -
+/podmsk/vihodnie.html 1 -
+/modules/simpleslideshow/uploadimage.php 1 http://www.systemice.ru/modules/simpleslideshow/uploadimage.php
+/css/roboto-light-webfont.eot 36 http://systemice.ru/hotels/index.php
+/sertificats/sertif11m.jpg 3 http://systemice.ru/hotels/areal-hotel.html
+/podmsk/article/38.jpg 1 -
+/static/cartreminder.js 3 http://systemice-hotel-group.ru/static/cartreminder.js
+/platforms/fonts/OpenSans/opensans-semibold-webfont.woff2 1 http://systemice.ru/platforms/
+/person/managerm-1100.jpg 1 -
+/forum/ 3 -
+/podmsk/bootstrap/css/font-awesome.min.css 2 http://www.systemice.ru/podmsk/hotel94.html
+/admin/login.php 1 -
+/guids/ilya_anisimov/ 4 -
+/accesson.php 3 -
+/vb/ 3 -
+/wordpress/wp-login.php 1 -
+/admin/index.php 1 -
+/wp-admin/ 1 -
+/boatilekt/ 1 -
+/podmsk/article39.html 1 -
+/js/after.js 46 http://systemice.ru/hotels/index.php
+/community/ 3 -
+/CONTACT.HTML 2 -
+/podmsk/hotel42.html 2 https://www.google.ru/
+/corporate_cases/page1067736.html 1 -
+/guids/viktor_butusov/ 6 -
+/podmsk/bootstrap/js/hs/highslide-full.min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/scripts/setup.php 56 -
+/podmsk/hotel91.html 1 -
+/presentation/fonts/gothic/CenturyGothic.eot 1 http://systemice.ru/presentation/
+/cgi-bin/mt/mt-check.cgi 1 -
+/guids/yuri_bezzubov/ 6 -
+/podmsk/bootstrap/js/article.js 1 http://www.systemice.ru/podmsk/article5.html
+/sertificats/sertif2m.jpg 7 http://systemice.ru/hotels/areal-hotel.html
+/presentation/+74952152480 2 -
+/login_form 1 -
+/podmsk/bootstrap/js/jquery.tablesorter.widgets.min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/css/fonts/bebas_neue/BebasNeueRegular.otf')%20format('opentype'),%20%20%20%20%20%20%20%20url('/css/fonts/bebas_neue/ttf/BebasNeueRegular.ttf')%20format('truetype 8 http://systemice.ru/
+/podmsk/article/18.jpg 1 -
+/css/css/fonts/pfdindisplaypro-reg/pfdindisplaypro-reg-webfont.eot 15 http://systemice.ru/hotels/index.php
+/podmsk/bootstrap/css/bootstrap.min.css 2 http://www.systemice.ru/podmsk/hotel94.html
+/systemice_marketing_kit.pdf). 1 -
+/podmsk/article/30.jpg 1 -
+/sertificats/sertif2.jpg 1 -
+/podmsk/bootstrap/js/datepicker/datepicker.css 2 http://www.systemice.ru/podmsk/hotel94.html
+/podmsk/bootstrap/js/u.js 1 http://www.systemice.ru/podmsk/article5.html
+/pma/index.php 1 -
+/engine/classes/js/dle_js.js 3 http://systemice-hotel-group.ru/engine/classes/js/dle_js.js
+/bridge_resort/brrs 4 -
+/platforms/fonts/gothic/CenturyGothic.eot 1 http://systemice.ru/platforms/
+/sertificats/sertif4m.jpg 1 -
+/blog/wp-login.php 1 -
+/admin/images/cal_date_over.gif 1 -
+/podmsk/bootstrap/js/hs/highslide.css 2 http://www.systemice.ru/podmsk/hotel94.html
+/presentation/fonts/OpenSans/opensans-light-webfont.woff 1 http://systemice.ru/presentation/
+/guids/roman_klyachkin/ 5 -
+/podmsk/article/25.jpg 1 -
+/podmsk/article/39.jpg 1 -
+/cms/lang/ru_utf8/css/sbIndex.css 3 http://systemice-hotel-group.ru/cms/lang/ru_utf8/css/sbIndex.css
+/forum/forum.php 3 -
+/podmsk/hotel94.html 1 -
+/admin/ 2 -
+/person/managerm-1005.jpg 1 -
+/platforms/fonts/OpenSans/opensans-regular-webfont.eot 1 http://systemice.ru/platforms/
+/podmsk/bootstrap/js/jquery-1.9.1.min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/cms/kernel/admin.php 1 -
+/).empty().html($( 3 -
+/podmsk/article/23.jpg 1 -
+/_phpMyAdmin/scripts/setup.php 56 -
+/podmskpic/vid73b-4.jpg 1 -
+/podmsk/article/11.jpg 1 -
+/podmsk/article/1.jpg 1 -
+/skins/simpla_blue/style.css 3 http://systemice-hotel-group.ru/skins/simpla_blue/style.css
+/tel:+74952152480 2 -
+/podmsk/article11.html 1 -
+/templates/system/css/system.css 1 -
+/assets/images/accesson.php 2 -
+/netcat/ 4 http://systemice-hotel-group.ru/netcat/
+/podmsk/bootstrap/js/jquery.form.min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/css/fonts/pfdindisplaypro-med/pfdindisplaypro-med-webfont.svg 4 -
+/sertificats/sertif9m.jpg 1 -
+/login.php 1 -
+/phpmyadmin/scripts/setup.php 57 -
+/blog/ 1 http://systemice-hotel-group.ru/blog/
+/.git/index 2 -
+/cms/wp-includes/wlwmanifest.xml 1 -
+/wp-load.php 1 -
+/podmskpic/vid4b-1.jpg 1 -
+/podmsk/bootstrap/js/jquery.maskedinput-1.3.1.min.js 2 http://www.systemice.ru/podmsk/hotel94.html
+/wp/wp-login.php 1 -
+/images/header-page.png 198 http://systemice.ru/
+/podmsk/article/7.jpg 1 -
+/sertificats/sertif3m.jpg 1 -
+/wp/wp-includes/wlwmanifest.xml 1 -
+/modules/mod_stats.xml 3 http://systemice-hotel-group.ru/modules/mod_stats.xml
+/person/managerm-1067.jpg 1 -
+/platforms/fonts/OpenSans/opensans-semibold-webfont.eot 1 http://systemice.ru/platforms/
+/status 62 -
+/phpMyAdmin-4.8.1-all-languages/index.php 1 -
+/member/login/ 1 -
+/podmskpic/vid26m-2.jpg 1 -
+/admin 3 http://systemice.ru/admin
+/podmsk/article/45 1 -
+/podmsk/hotel26.html 1 -
+/css/tmp3/s.ie7.css 26 http://systemice.ru/
+/pma/scripts/setup.php 56 -
+/podmsk/hotel131.html 1 -
+/textpattern/ 1 -
+/wp-content/plugins/wp-dreamworkgallery/readme.txt 1 http://www.systemice.ru/wp-content/plugins/wp-dreamworkgallery/readme.txt
+/cms/ 3 http://systemice-hotel-group.ru/cms/
+/wp-admin/setup-config.php 3 -
+/sertificats/sertif6m.jpg 2 http://systemice.ru/hotels/areal-hotel.html
+/index.php 3 -
+/person/managerm-1070.jpg 1 -
+/podmsk/bootstrap/css/style-cgr.css 2 http://www.systemice.ru/podmsk/hotel94.html
+/presentation/page560706.html 3 -
+/podmsk/article/35.jpg 1 -
+/phpmyadmin/index.php 1 -
+/podmsk/article/37.jpg 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 1
+188.120.245.111 2890 25069 30141531714 20181010012253
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 10
+20181001 393 3827 9595039525 5
+20181002 498 3702 5390687902 6
+20181003 475 3625 7863172928 5
+20181004 253 1895 3362138919 4
+20181005 250 1595 10857838241 4
+20181006 161 884 5919776768 6
+20181007 29 216 231673291 3
+20181008 469 3987 7059947825 3
+20181009 359 2740 6694731222 3
+20181010 3 3 93377 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 5
+1h+ 23
+5mn-15mn 1
+15mn-30mn 2
+0s-30s 4
+30mn-1h 10
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 114
+/ 908 33225719 37 25
+/u.php 392 0 0 5
+/js/hs2/graphics/zoomout.cur 190 60636 0 5
+/css/fonts/bebas_neue/BebasNeueBold.otf 173 17504784 0 0
+/fonts/roboto/roboto-regular-webfont.woff2 167 5270520 0 0
+/fonts/roboto/roboto-light-webfont.woff2 167 5207728 0 0
+/css/fonts/pfdindisplaypro-reg/pfdindisplaypro-reg-webfont.woff 74 1970768 0 0
+/sotryd/ 62 2608603 0 0
+/contact.html 58 1827713 0 0
+/css/fonts/pfdindisplaypro-light/pfdindisplaypro-light.woff 57 1633848 0 0
+/css/fonts/ 3 2304 0 0
+/manager/ 4 324 0 0
+/corporate_cases/maxi/ 2 448654 0 0
+/hotels/yahonty-prirodniy-kurort.html 7 779609 0 0
+/fonts/glyphicons-halflings-regulard41d.html 6 124044 0 0
+/css/fonts/helvetica/ 12 6216 0 0
+/sotryd/about.html 11 426468 0 1
+/css/fonts/helvetica/Helvetica.woff 3 44280 0 0
+/services/ 25 813220 0 0
+/bridge_resort/ 4 375576 0 0
+/services/conference.html 1 36818 0 0
+/spec.html 8 255457 0 0
+/hotels/imperialpark-hotel.html 2 221080 0 0
+/guids/konstantin_a/ 1 58665 0 0
+/fonts/roboto/roboto-italic-webfont.eot 6 136077 0 0
+/sotryd/parnters.html 2 74488 0 0
+/hotels/pokrovckoe.html 2 217656 0 0
+/corporate_cases/midi/ 2 348940 0 0
+/organizatsiya_i_provedenie_viezdnih_treningov.html 1 50229 0 0
+/fonts/roboto/roboto-regular-webfont.woff 5 214780 0 0
+/services/develop.html 2 73547 0 0
+/guids/viktor/ 1 58448 0 0
+/corporate_cases/just_for_you/ 1 82062 0 0
+/corporate_cases/midi_plus/ 2 437016 0 0
+/fonts/roboto/roboto-thin-webfont.eot 6 104622 0 0
+/hotels/krim/ 3 1707 0 0
+/fonts/roboto/roboto-regular-webfont.eot 21 617474 0 0
+/mice_agency/ 7 184989 0 0
+/index_test4.php 5 440680 0 0
+/organizatsiya_i_provedenie_viezdnih_seminarov.html 1 48538 0 0
+/corporate_cases/mini/ 5 519725 0 0
+/mice_agency/fonts/bebas/bebasneue-bold.woff2 5 65300 0 0
+/fonts/h-light/Helvetica.woff2 1 9832 0 0
+/foto_video.html 1 48246 1 0
+/bootstrap/fonts/glyphicons-halflings-regular.woff2 1 18028 0 0
+/fonts/roboto/roboto-lightitalic-webfont.eot 6 141723 0 0
+/mice_agency/fonts/bebas/bebasneue-book.woff2 5 75980 0 0
+/sotryd/agentstvam.html 2 67536 0 1
+/hotels/novy-bereg.html 2 220510 0 0
+/mice_agency/fonts/bebas/bebasneue-light.woff2 5 76920 0 0
+/fonts/roboto/roboto-light-webfont.eot 6 107919 0 0
+/calculation.html 31 2601667 0 0
+/hotels/les-art-resort.html 1 112888 0 0
+/hotels/konakovo.html 3 337214 0 0
+/services/business.html 1 34189 0 0
+/fonts/roboto/roboto-mediumitalic-webfont.eot 6 141300 0 0
+/css/fonts/pfdindisplaypro-med/ 1 538 0 0
+/hotels/sochi/polyana.html 1 57194 0 0
+/hotels/avantel-klab-istra.html 2 221850 0 0
+/sotryd/forclients.html 5 183409 0 0
+/css/fonts/pfdindisplaypro-med/pfdindisplaypro-med-webfont.eot 11 196200 0 0
+/hotels/form2.html 1 2196 0 0
+/guids/ 13 1345396 0 0
+/hotels/istra-holiday.html 7 787352 0 0
+/css/fonts/helvetica/Helvetica.ttf 6 141960 0 0
+/sotryd/vakansy.html 8 300476 0 0
+/images/pages/5/ 1 569 0 0
+/js/hs2/graphics/zoomin.cur 2 652 0 0
+/css/fonts/pfdindisplaypro-reg/ 2 1076 0 0
+/hotels/ 7 17066 0 0
+/project.html 17 630952 0 0
+/hotels/mistral-hotel.html 2 222052 0 0
+/hotels/solnechny-hotel.html 9 1002871 0 1
+/about.html 4 155460 0 0
+/css/fonts/pfdindisplaypro-med/pfdindisplaypro-med-webfont.woff 45 1207620 0 0
+/css/fonts/pfdindisplaypro-reg/pfdindisplaypro-reg-webfont.ttf 1 53552 0 0
+/events.html 3 133427 0 0
+/hotels/index.php 29 1929413 0 0
+/fonts/roboto/roboto-light-webfont.woff 5 212980 0 0
+/css/fonts/helvetica/Helvetica.woff2 2 19664 0 0
+/events_test.html 1 46536 0 0
+/hotels/best_western_country.html 2 219986 0 0
+/services/manager.html 2 74476 0 0
+/hotels/areal-hotel.html 1 112474 0 0
+/presentation/fonts/gothic/CenturyGothic.woff2 12 812880 0 0
+/hotels/aniva-hotel.html 3 329635 0 0
+/hotels/tropikana.html 7 780482 0 0
+/fonts/roboto/roboto-medium-webfont.eot 21 625175 0 0
+/css/fonts/pfdindisplaypro-light/pfdindisplaypro-light.eot 11 207384 0 0
+/fonts/roboto/roboto-medium-webfont.woff2 4 127728 0 0
+/presentation/ 23 11403308 1 0
+/hotels/atlas-park-hotel.html 4 447632 0 0
+/platforms/ 34 17944350 0 1
+/organizatsiya_i_provedenie_timbildingov.html 1 51595 0 0
+/fonts/h-thin/HelveticaNeueCyr-Thin.woff2 1 11448 0 0
+/organizatsiya_i_provedenie_korporativnih_meropriyatiy.html 19 709322 0 0
+/css/fonts/pfdindisplaypro-reg/pfdindisplaypro-reg-webfont.eot 7 97504 0 0
+/portfolio.html 1 36625 1 0
+/hotels/gold-ring/ 3 1941 0 0
+/css/fonts/helvetica/Helvetica.eot 1 23824 0 0
+/services/programm.html 1 35459 0 0
+/mice_agency/fonts/bebas/bebasneue-regular.woff2 5 74420 0 0
+/css/fonts/pfdindisplaypro-thin/pfdindisplaypro-thin-webfont.eot 6 76038 0 0
+/css/ 1 1890 0 0
+/corporate_cases/ 21 1546188 0 0
+/hotels/drakino.html 2 221618 0 0
+/corporate_cases/maxi_plus/ 6 1668798 0 0
+/services/control.html 5 183350 0 0
+/hotels/klyazma-hotel.html 3 330461 0 0
+/hotels/heliopark-thalasso.html 3 332514 0 0
+/sotryd/forhotels.html 1 35619 0 0
+/organizatsiya_i_provedenie_viezdnih_konferentsiy.html 1 48999 0 0
+/css/fonts/slick.woff 1 1380 0 0
+/hotels/sochi/ 7 6405 0 1
+END_SIDER

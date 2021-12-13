@@ -558,11 +558,11 @@ export default {
 			.then(response => {
 
 				if (!response.data || response.data == '') {
-					form.querySelector('.tenders-send-input').value = "Ошибка!"
+					form.querySelector('.send-button').value = "Ошибка!"
 					return false
 				}
 
-				form.querySelector('.tenders-send-input').value = "Успешно!"
+				form.querySelector('.send-button').value = "Успешно!"
 			})
 		},
 		createForm() {
@@ -666,15 +666,19 @@ export default {
 			let bodyFormData = new FormData()
 				bodyFormData.append('name', form.querySelector('.fadein-name').value)
 				bodyFormData.append('phone', form.querySelector('.fadein-phone').value)
-				bodyFormData.append('form_name', form.getAttribute('name'))
+				bodyFormData.append('form_name', form.querySelector('form').getAttribute('name'))
 				bodyFormData.append('email', form.querySelector('.fadein-email').value)
 
-			axios.post('https://systemice.ru/say_online_send_test11.php', bodyFormData, {
+				console.log(bodyFormData)
+
+			axios.post('https://systemice.ru/say_online_send_test.php', bodyFormData, {
 				headers: {
 					'Content-Type': 'application/x-www-form-urlencoded'
 				}
 			})
 			.then(response => {
+
+				this.sendingForm = 0
 
 				if (!response.data || response.data == '') {
 					form.querySelector('.fadein-submit').value = "Ошибка!"

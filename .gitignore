@@ -2,6 +2,7 @@
 ### Node template
 # Logs
 /logs
+/video
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -66,10 +67,10 @@ typings/
 .next
 
 # nuxt.js build output
-.nuxt
+app/.nuxt
 
 # Nuxt generate
-dist
+app/dist
 
 # vuepress build output
 .vuepress/dist

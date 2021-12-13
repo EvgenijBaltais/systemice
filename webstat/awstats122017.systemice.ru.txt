@@ -1,0 +1,590 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201712 will be lost/reset.
+# Last config file used to build this data file was /usr/local/etc/awstats/awstats.systemice.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2002                
+POS_TIME 2686                
+POS_VISITOR 11492               
+POS_DAY 16207               
+POS_DOMAIN 3521                
+POS_LOGIN 3755                
+POS_ROBOT 3910                
+POS_WORMS 4353                
+POS_EMAILSENDER 4484                
+POS_EMAILRECEIVER 4627                
+POS_SESSION 16459               
+POS_SIDER 16665               
+POS_FILETYPES 4762                
+POS_DOWNLOADS 5075                
+POS_OS 5295                
+POS_BROWSER 5474                
+POS_SCREENSIZE 6370                
+POS_UNKNOWNREFERER 6444                
+POS_UNKNOWNREFERERBROWSER 6889                
+POS_ORIGIN 7132                
+POS_SEREFERRALS 7276                
+POS_PAGEREFS 7445                
+POS_SEARCHWORDS 9129                
+POS_KEYWORDS 9281                
+POS_MISC 2349                
+POS_ERRORS 9340                
+POS_CLUSTER 3611                
+POS_SIDER_404 9452                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20180101000016 923 224110 10028076724892
+FirstTime 20171225204734
+LastTime 20171231230501
+LastUpdate 20180101000121 923 0 922 0 0
+TotalVisits 114                 
+TotalUnique 80                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 136                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 26 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 11 51 313938022 7 16 964511
+1 3 5 271087 19 50 1671561
+2 22 147 488046553 8 22 1104237
+3 5 5 130063 9 17 426447
+4 3 23 627171 2 12 1153831
+5 6 34 1336648 3 18 637656
+6 7 7 227519 2 8 531685
+7 13 138 3483161 8 29 2374800
+8 1 1 32623 18 52 1757223
+9 17 137 214698315 13 41 1943750
+10 6 36 1427489 4 19 881196
+11 11 49 249749925 22 36 771643
+12 32 410 7647115 12 27 1207518
+13 8 71 194026 13 44 5418064
+14 11 74 211497364 6 32 1494210
+15 27 156 5698320 3 20 541013
+16 13 14 310299 5 26 1052401
+17 7 29 962241 6 33 1524513
+18 97 440 770409530 8 24 340757
+19 8 27 779046 3 17 901738
+20 50 413 502146462 16 60 1693007
+21 13 95 858805 13 24 2709252
+22 20 201 217645046 15 38 1628984
+23 7 37 8028534 15 34 1502669
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 398 2600 1696155998
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 8
+yandex 238 15485554 20171231233146 0
+googlebot 147 4474282 20171231195316 0
+bot[\s_+:,\.\;\/\\-] 58 4589553 20171231235912 0
+robot 58 7072240 20171231230336 0
+crawl 25 816190 20171231014002 0
+ia_archiver 9 1429441 20171231094912 0
+[\s_+:,\.\;\/\\-]bot 1 32148 20171225221811 0
+mail\.ru 1 32148 20171230060216 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 13
+eot 9 228387 0 0
+css 271 10384861 0 0
+png 808 17917828 0 0
+ttf 3 269896 0 0
+woff 32 464128 0 0
+otf 9 712404 0 0
+php 110 575829 0 0
+cur 17 4238 0 0
+mp4 6 1394390758 0 0
+html 218 8629578 0 0
+jpg 547 127220732 0 0
+js 524 14481893 0 0
+gif 46 12902 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 4
+/images/img-for-test4/45test2.mp4 2 22 1484792150
+/Systemice%20Hotel%20Service.pdf 1 0 3881481
+/presentation/soglasie-na-opd.pdf 1 0 220851
+/video/event-1.mp4 0 2 30461172
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 13
+linuxandroid 146
+winxp 67
+winnt 1705
+linuxubuntu 1
+linux 11
+winvista 150
+win7 267
+winme 2
+win16 2
+macosx 159
+win2003 2
+wince 3
+Unknown 109
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 49
+safari7.0 30
+msie6.0 21
+firefox57.0 97
+chrome52.0.2743.116 88
+firefox3.8 1
+safari11.0 25
+chrome58.0.3029.81 4
+firefox52.0 2
+chrome56.0.2924.87 4
+firefox54.0 1
+msie3.02 3
+chrome58.0.3029.110 1
+chrome57.0.2987.98 1
+opera9.80 93
+iphone 3
+msie8.0 80
+chrome63.0.3239.84 216
+chrome61.0.3163.100 58
+chrome34.0.1847.132 7
+firefox40.1 1
+chrome50.0.2661.102 2
+firefox41.0 1
+msie2.0 2
+chrome10.0.648.204 1
+chrome58.0.3029.96 1
+chrome62.0.3202.89 1
+msie5.0 2
+chrome49.0.2623.112 43
+netscape13.3 1
+Unknown 14
+firefox53.0 1
+firefox17.0 4
+chrome63.0.3239.111 81
+safari10.0 40
+chrome60.0.3112.107 64
+chrome62.0.3202.94 1270
+chrome51.0.2704.79 1
+firefox45.0 2
+chrome60.0.3112.113 159
+chrome51.0.2704.103 25
+chrome62.0.3202.84 1
+firefox3.5.5 2
+safari9.0 55
+mozilla 9
+chrome57.0.2987.133 2
+msie10.0 97
+chrome64.0.3278.0 1
+chrome60.0.3112.90 2
+chrome23.0.1271.97 4
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 6
+com.google.GoogleMobile/41.0.0_iPhone/11.2.1_hw/iPhone7_2 20171230182635
+IDG/RU_(http://spaziodati.eu/) 20171230211519
+com.google.GoogleMobile/41.0.0_iPhone/11.2.1_hw/iPhone9_3 20171231211743
+Magic_Browser 20171231194754
+Opera/9.80_(Android;_Opera_Mini/7.0.29530/28.2647;_U;_ru)_Presto/2.8.119_Version/11.10 20171231123009
+Go_1.1_package_http 20171230192644
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 4
+IDG/RU_(http://spaziodati.eu/) 20171230211519
+Mobile/5.0_(Windows_NT_2.4;_ca_ES;) 20171230163012
+Magic_Browser 20171231194754
+Go_1.1_package_http 20171230192644
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 86 134
+From1 1 1
+From2 16 37
+From3 212 1303
+From4 83 1149
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+google 1 20
+yandex 15 17
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 38
+http://bloknotic.ru 41 372
+http://bloknotic.ru/css/style.css 32 228
+http://bloknotic.ru/hotels/index.php 25 195
+http://bloknotic.ru/organizatsiya_i_provedenie_korporativnih_meropriyatiy.html 19 150
+http://bloknotic.ru/portfolio.html 18 117
+http://bloknotic.ru/project.html 15 23
+http://bloknotic.ru/services/index.html 9 17
+http://bloknotic.ru/calculation.html 8 22
+http://bloknotic.ru/contact.html 6 8
+http://continent-e.tv 3 3
+http://bloknotic.ru/guids/ 0 50
+http://titangel-vietnam.com 2 2
+http://lovi-moment.com.ua 1 1
+http://bloknotic.ru/services/control.html 2 4
+https://remont-mercedesov.ru 3 3
+http://bloknotic.ru/slider/calendar/src/css/jscal2.css 0 12
+http://bloknotic.ru/index.html 2 4
+http://bloknotic.ru/sotryd/index.html 2 28
+http://xtremeeagles.net 2 2
+http://bloknotic.ru/guids/css/styles_footer.css 0 2
+http://perl.dp.ua 2 2
+http://bloknotic.ru/css/fotorama.css 0 1
+http://metallurg.donetsk.ua 3 3
+http://nosecret.com.ua 2 2
+https://rocketchange.ru 2 2
+http://bloknotic.ru/guids/css/styles_callback.css 0 1
+http://bloknotic.ru/slider/style_slider.css 0 9
+http://bloknotic.ru/css/fh_style.css 0 4
+http://bloknotic.ru/slider/calendar/src/css/steel/steel.css 0 4
+http://porno-chaman.info 3 3
+http://selfshotamateur.adultnet.in 1 1
+http://bloknotic.ru/css/jquery-ui-1.10.2.custom-full.min.css 0 5
+http://bloknotic.ru/guids/css/styles_nav.css 0 1
+http://nalogovyykodeks.ru 2 2
+http://bloknotic.ru/hotels/les-art-resort.html 3 8
+https://vdesnah.com 2 2
+http://ege-russian.ru 2 2
+http://bloknotic.ru/js/hs2/highslide.css 0 8
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+206 8 244302
+301 1 249
+404 127 27450
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 37
+/sertificats/sertif5m.jpg 2 http://bloknotic.ru/hotels/index.php
+/slider/js/sliIE.js 1 http://systemice.ru/hotels/areal-hotel.html
+/robots.txt 52 -
+/admin.php 1 -
+/css/ie.css 1 http://systemice.ru/organizatsiya_i_provedenie_viezdnih_konferentsiy.html
+/sertificats/sertif11m.jpg 1 http://bloknotic.ru/hotels/index.php
+/css/fonts/pfdindisplaypro-light/pfdindisplaypro-light.svg 1 -
+/css/bootstrap.css.map 14 -
+/redirect.php 3 -
+/js/after.js 8 http://bloknotic.ru/
+/sertificats/sertif1.jpg 1 -
+/netcat/admin/ 1 http://bloknotic.ru/netcat/admin/
+/services/manager.html%4010 3 http://systemice.ru/services/manager.html%4010
+/guids/viktor_butusov/ 1 -
+/guids/viktor_butusov 1 -
+/css/fonts/bebas_neue/BebasNeueRegular.otf')%20format('opentype'),%20%20%20%20%20%20%20%20url('/css/fonts/bebas_neue/ttf/BebasNeueRegular.ttf')%20format('truetype 1 http://systemice.ru/contact.html
+/ads.txt 1 -
+/redirect 2 -
+/redirect.aspx 1 -
+/sertificats/sertif2.jpg 1 -
+/administrator/index.php 2 -
+/presentation/files/page806343.html 1 -
+/css/fonts/bebas_neue/BebasNeueBold.otf')%20format('opentype'),%20%20%20%20%20%20%20%20url('/css/fonts/bebas_neue/ttf/BebasNeueBold.ttf')%20format('truetype 1 http://systemice.ru/contact.html
+/wp-content/plugins/wpstorecart/readme.txt 1 http://www.systemice.ru/wp-content/plugins/wpstorecart/readme.txt
+/css//css/fonts/pfdindisplaypro-reg/pfdindisplaypro-reg-webfont.eot 5 http://bloknotic.ru/
+/css/tmp3/s.ie7.css 1 http://bloknotic.ru/
+/css/tmp3/s.ie.css 1 http://bloknotic.ru/
+/images/hotels/fe9jpg 1 -
+/bitrix/admin/ 1 http://bloknotic.ru/bitrix/admin/
+/redirect.cfm 5 -
+/guids/roman_klyachkin 1 -
+/redirect/ 1 -
+/index.php 3 -
+/redirect/http://ya.ru 1 -
+/guids/roman_klyachkin/ 1 -
+/wp-login.php 2 -
+/go.php 2 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 136
+77.247.186.242 198 1269 783443898 20171229185837
+94.25.170.36 18 151 459451786 20171230022941
+178.137.94.65 8 8 261198 20171231230501
+46.118.121.38 7 7 228515 20171230114202
+134.249.52.116 6 6 195864 20171231032936
+95.220.86.71 6 26 888524 20171231152149
+176.195.70.143 6 55 106604835 20171231093508
+212.59.109.4 6 79 2298309 20171230093437
+188.163.78.30 6 6 195896 20171231181305
+193.169.52.154 6 6 193838 20171231155038
+195.211.23.223 0 1 28929 
+199.30.24.221 0 1 19019 
+91.200.12.188 1 1 32643 20171231000012
+195.211.23.212 1 2 35475 20171230154323
+195.211.23.211 0 1 2496 
+35.162.70.167 3 3 96444 20171231194754
+95.12.49.132 0 1 19019 
+128.72.208.125 2 22 799132 20171231225700
+66.70.191.5 1 1 32623 20171231080428
+93.72.51.208 2 2 65286 20171230023320
+78.190.150.151 0 1 19019 
+52.208.134.138 2 2 79087 20171230211519
+195.211.23.207 0 2 194975 
+77.189.205.18 0 1 207223 
+90.115.226.230 1 1 32623 20171230163012
+65.55.210.62 0 1 7823 
+146.185.223.163 1 1 32643 20171229214441
+85.96.254.58 0 1 19019 
+131.253.27.47 0 9 387300 
+208.102.168.89 0 1 5998 
+199.30.25.67 0 2 4166 
+94.41.90.252 1 1 108185 20171231200427
+95.220.196.239 1 1 2438 20171230193858
+216.218.222.14 1 1 32657 20171231180745
+195.211.23.215 0 1 160926 
+37.46.128.186 1 1 32148 20171230000629
+82.146.57.90 1 1 32148 20171230192644
+65.55.210.16 0 1 5432 
+65.55.210.141 0 1 21035 
+195.211.23.214 0 1 4082 
+195.211.23.217 0 1 19019 
+176.193.82.227 4 95 2830052 20171229224930
+176.33.240.59 1 1 1559 20171229221005
+199.30.25.105 0 1 123192 
+92.242.89.123 0 1 83771 
+128.72.219.123 2 22 795116 20171230173058
+199.30.25.146 0 2 110594 
+199.30.25.252 0 1 91058 
+188.32.225.20 3 88 2182546 20171230075104
+5.188.211.24 2 2 139412 20171230153341
+199.30.25.236 0 1 6670 
+199.30.25.93 0 3 20002 
+46.161.9.39 3 3 97929 20171230212944
+176.193.137.141 1 55 17650386 20171231204650
+185.135.83.192 1 1 32643 20171229211958
+195.211.23.221 0 1 4082 
+128.70.144.89 1 1 32643 20171229235651
+95.24.93.85 3 90 2443563 20171231125430
+128.68.138.65 0 3 158270 
+195.211.214.162 1 1 32643 20171231091305
+5.254.65.183 0 1 19019 
+185.16.58.137 0 1 154153 
+176.193.137.60 2 22 798809 20171231225656
+195.211.23.208 0 2 189689 
+78.167.93.243 0 1 19019 
+199.30.25.183 1 1 32623 20171230040817
+146.185.223.71 1 1 32643 20171231142613
+91.121.70.58 1 1 32148 20171230171321
+199.30.24.111 0 1 2496 
+185.43.229.118 0 1 19019 
+34.210.237.67 1 1 32148 20171231000852
+88.229.131.231 0 1 19019 
+195.211.23.219 0 1 2496 
+37.19.76.6 0 1 66624 
+80.252.154.233 2 2 64336 20171226073844
+195.211.23.222 0 1 33878 
+195.211.23.210 0 1 31865 
+213.24.126.113 1 1 32623 20171230090745
+91.228.239.202 1 1 32623 20171231140219
+91.200.12.185 1 1 32643 20171231180802
+128.70.157.149 1 1 32643 20171231051000
+52.41.211.72 2 2 64296 20171231173315
+199.30.25.153 0 2 18635 
+195.211.23.206 0 1 53359 
+83.220.237.85 2 28 1001772 20171229224046
+94.25.169.155 5 41 7416687 20171231002330
+31.130.157.244 2 19 105863003 20171229221338
+89.179.106.164 0 1 83771 
+88.200.214.95 1 1 32148 20171230025931
+46.29.17.208 1 1 32643 20171230100436
+134.249.64.243 2 2 65302 20171231022856
+188.255.81.204 1 1 0 20171231134559
+78.165.11.1 0 1 19019 
+91.76.234.8 1 24 6910617 20171230231306
+87.196.209.27 0 1 19019 
+95.220.193.59 3 69 1732844 20171231125429
+95.79.90.99 0 1 207223 
+88.230.22.238 0 1 19019 
+195.211.23.224 1 2 684283 20171230223335
+51.254.121.158 1 1 32148 20171231000230
+78.179.249.137 0 1 19019 
+138.201.255.45 2 2 64296 20171231222959
+146.185.223.172 1 1 32643 20171229221539
+195.211.23.216 0 1 160926 
+37.143.15.220 4 4 129542 20171231071409
+185.203.243.93 2 2 64771 20171230044541
+209.99.139.32 1 1 32148 20171231065627
+83.220.236.212 0 2 249865 
+165.227.105.146 4 4 129067 20171231122225
+46.242.114.174 3 93 2174027 20171231123009
+83.220.237.40 5 36 1329309 20171230102508
+195.211.23.220 1 2 76480 20171229232659
+136.169.193.130 1 1 32643 20171231054044
+46.101.72.70 0 1 19019 
+52.34.24.33 4 4 128592 20171230190958
+178.140.114.174 2 30 1238739 20171231052635
+195.211.23.209 0 2 69935 
+89.178.91.242 3 49 1782232 20171231124300
+46.56.199.67 0 1 207223 
+65.55.210.74 0 1 1058 
+94.122.188.44 0 1 19019 
+199.30.25.41 0 1 31865 
+195.211.23.218 1 2 58292 20171231180845
+95.24.200.204 4 7 177066667 20171230115101
+109.195.189.57 2 3 123681 20171230073734
+213.153.197.118 0 1 19019 
+37.230.221.40 4 4 65246 20171231053312
+5.23.96.115 1 19 376497 20171231194611
+88.243.172.148 0 1 19019 
+212.252.70.194 0 1 19019 
+199.30.24.239 0 1 66732 
+46.191.168.186 1 1 32643 20171231064707
+37.113.27.102 3 3 97929 20171231173716
+82.146.40.100 1 1 32148 20171226134551
+176.14.227.205 3 42 1015659 20171230075103
+13.56.229.65 3 3 96919 20171231162606
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 7
+20171225 44 308 264904297 2
+20171226 24 204 507768 3
+20171227 44 258 223702965 5
+20171228 6 67 211296104 1
+20171229 103 584 986475653 12
+20171230 95 585 1062375417 45
+20171231 82 594 250883160 46
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 1
+5mn-15mn 2
+30s-2mn 2
+15mn-30mn 2
+2mn-5mn 5
+0s-30s 98
+30mn-1h 4
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 45
+/ 142 4541014 87 76
+/u.php 99 0 2 8
+/js/hs2/graphics/zoomout.cur 16 3912 0 10
+/css/fonts/pfdindisplaypro-med/pfdindisplaypro-med-webfont.woff 11 161016 2 0
+/css/fonts/pfdindisplaypro-reg/pfdindisplaypro-reg-webfont.woff 11 159792 0 0
+/organizatsiya_i_provedenie_korporativnih_meropriyatiy.html 11 398937 1 1
+/hotels/index.php 10 575828 0 0
+/css/fonts/pfdindisplaypro-light/pfdindisplaypro-light.woff 10 143320 0 0
+/css/fonts/bebas_neue/BebasNeueBold.otf 9 712404 0 0
+/services/ 7 211723 0 0
+/css/fonts/pfdindisplaypro-med/pfdindisplaypro-med-webfont.eot 2 49050 0 1
+/guids/ 3 310482 1 3
+/sotryd/vakansy.html 1 35560 1 0
+/fonts/glyphicons-halflings-regulard41d.html 1 20674 0 1
+/js/hs2/graphics/zoomin.cur 1 326 0 0
+/hotels/arthurs-spa-hotels.html 1 110006 0 0
+/hotels/ 1 2438 1 1
+/project.html 7 253198 0 0
+/hotels/mistral-hotel.html 2 217222 2 1
+/hotels/solnechny-hotel.html 2 217719 2 0
+/css/fonts/pfdindisplaypro-med/pfdindisplaypro-med-webfont.ttf 1 53164 0 0
+/guids/yuri/ 1 58623 1 1
+/css/fonts/pfdindisplaypro-reg/pfdindisplaypro-reg-webfont.ttf 1 53552 0 0
+/images/img-for-test4/ 1 1559 1 1
+/back_zvon.php 1 1 0 0
+/hotels/sochi/rosa_hutor.html 1 53564 1 0
+/mice_agency/ 1 26427 1 1
+/services/manager.html 1 35237 1 0
+/hotels/areal-hotel.html 3 330154 2 1
+/hotels/aniva-hotel.html 1 106789 1 0
+/sotryd/ 2 79513 0 1
+/css/fonts/pfdindisplaypro-light/pfdindisplaypro-light.eot 5 129615 0 4
+/css/fonts/pfdindisplaypro-reg/pfdindisplaypro-reg-webfont.eot 1 24376 0 0
+/portfolio.html 7 233543 0 0
+/contact.html 5 146406 2 0
+/hotels/les-art-resort.html 1 108798 0 0
+/calculation.html 6 501240 0 0
+/css/fonts/pfdindisplaypro-thin/pfdindisplaypro-thin-webfont.eot 1 25346 0 0
+/hotels/drakino.html 1 107529 0 0
+/css/fonts/bebas_neue/ttf/BebasNeueBold.ttf 1 163180 0 1
+/corporate_cases/ 3 220884 2 2
+/services/business.html 1 30907 0 0
+/services/control.html 2 66827 0 0
+/hotels/klyazma-hotel.html 1 107891 1 0
+/organizatsiya_i_provedenie_viezdnih_konferentsiy.html 2 94714 2 0
+END_SIDER
