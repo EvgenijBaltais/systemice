@@ -18,7 +18,7 @@
 				<div class="contact-info">
 					<h1 class="h1">КОНТАКТЫ</h1>
 					<div class="line"></div>
-					<p class="p-contact"><b>Наш адрес:</b><br>г. Москва, ул. Бауманская д. 6.</p>
+					<p class="p-contact"><b>Наш адрес:</b><br>г. Москва, ул. Бауманская д. 6, строение 2</p>
 					<p class="p-contact"><b>Телефон:</b><br> +7 (495) 215-24-80</p>
 					<p class="p-contact"><b>Электронная почта:</b><br> info@systemice.ru</p>
 					<form class="contact-form" id = "contact-form" name = "contacts_form" @submit.prevent = "checkForm">
@@ -250,8 +250,12 @@ export default {
 					bodyFormData.append('name', form.querySelector('.contact-name').value)
 					bodyFormData.append('phone', form.querySelector('.contact-phone').value)
 					bodyFormData.append('form_name', form.getAttribute('name'))
+					bodyFormData.append('u', document.body.getAttribute('data-u'))
+					bodyFormData.append('dopinfo', 'Со страницы Контакты (systemice.ru/contact)')
+					bodyFormData.append('hotel', 13632)
+					bodyFormData.append('form_name_text', 'Со страницы Контакты (systemice.ru/contact)')
 
-				axios.post('https://systemice.ru/say_online_send_test.php', bodyFormData, {
+				axios.post('https://systemice.ru/knight_bron.php', bodyFormData, {
 				headers: {
 					'Content-Type': 'application/x-www-form-urlencoded'
 				}
@@ -260,12 +264,16 @@ export default {
 
 					this.sendingForm = 0
 
+					console.log(response.data)
+
 					if (!response.data || response.data == '') {
 						form.querySelector('.send-button').value = "Ошибка!"
 						return false
 					}
 
 					form.querySelector('.send-button').value = "Успешно!"
+
+					this.$metrika.reachGoal('contacts_send')
 				})
         }
 

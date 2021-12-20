@@ -13,7 +13,7 @@
 		</div>
 		<div class="header-mob">
 			<NuxtLink class="btn-no-animate" to = "/event-progress"><span>Собрать мероприятие</span></NuxtLink>
-			<div class="mob-menu">
+			<div class="mob-menu" @click = "menuShowHide">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -26,16 +26,6 @@
 			</div>
 		</div>
 		<div class="menu-wrapper">
-			<div class="bl-search">
-				<div class="btn-exit">
-					<div class="img"></div>
-					Войти
-				</div>
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-			</div>
 			<ul class="menu-list">
 				<li class="menu-item"><NuxtLink to = "/">О компании</NuxtLink></li>
 				<li class="menu-item"><NuxtLink to = "/service">Услуги</NuxtLink></li>
@@ -65,15 +55,34 @@ export default {
 	name: 'pageHeader',
     mounted(){
 
-    	$('.mob-menu').removeClass('open');
-        $('.menu-wrapper').removeClass('open-active');
-        $('body').removeClass('overlay');
+    	let mobMenu = document.querySelector('.mob-menu'),
+    		menuWrapper = document.querySelector('.menu-wrapper')
 
-        $('.mob-menu').on('click', function(){
-            $('.mob-menu').toggleClass('open');
-            $('.menu-wrapper').toggleClass('open-active');
-            $('body').toggleClass('overlay');
-        })
+    		mobMenu.classList.remove('open')
+    		menuWrapper.classList.remove('open-active')
+    		document.body.classList.remove('overlay')
+
+    },
+    methods: {
+
+    	menuShowHide() {
+
+	    	let mobMenu = document.querySelector('.mob-menu'),
+	    		menuWrapper = document.querySelector('.menu-wrapper')
+
+
+	    		mobMenu.classList.contains('open') ? 
+	    		mobMenu.classList.remove('open') :
+	    		mobMenu.classList.add('open')
+
+	       		menuWrapper.classList.contains('open-active') ? 
+	    		menuWrapper.classList.remove('open-active') :
+	    		menuWrapper.classList.add('open-active')
+
+	       		document.body.classList.contains('overlay') ? 
+	    		document.body.classList.remove('overlay') :
+	    		document.body.classList.add('overlay')
+    	}
     }
 }
 </script>

@@ -14,11 +14,11 @@
             <div class="events-form-div">
               <div class="events-form-item-w">
                 <input
-                  type="text"
-                  placeholder="Контактное лицо"
-                  class="events-form-item events-form-name"
-                  v-model="name"
-                  id="events-form-name"
+                type="text"
+                placeholder="Контактное лицо"
+                class="events-form-item events-form-name"
+                v-model="name"
+                id="events-form-name"
                 />
               </div>
               <div class="spy-left-input"></div>
@@ -30,11 +30,11 @@
             <div class="events-form-div">
               <div class="events-form-item-w">
                 <input
-                  type="text"
-                  placeholder="Название компании"
-                  class="events-form-item events-form-company"
-                  v-model="company"
-                  id="events-form-company"
+                type="text"
+                placeholder="Название компании"
+                class="events-form-item events-form-company"
+                v-model="company"
+                id="events-form-company"
                 />
               </div>
               <div class="spy-left-input"></div>
@@ -46,11 +46,11 @@
             <div class="events-form-div">
               <div class="events-form-item-w">
                 <input
-                  type="text"
-                  placeholder="Телефон *"
-                  class="events-form-item events-form-phone"
-                  v-model="phone"
-                  id="events-form-phone"
+                type="text"
+                placeholder="Телефон *"
+                class="events-form-item events-form-phone"
+                v-model="phone"
+                id="events-form-phone"
                 />
               </div>
               <div class="spy-left-input"></div>
@@ -62,11 +62,11 @@
             <div class="events-form-div">
               <div class="events-form-item-w">
                 <input
-                  type="text"
-                  placeholder="Email"
-                  v-model="email"
-                  class="events-form-item events-form-company"
-                  id="events-form-email"
+                type="text"
+                placeholder="Email"
+                v-model="email"
+                class="events-form-item events-form-company"
+                id="events-form-email"
                 />
               </div>
               <div class="spy-left-input"></div>
@@ -79,13 +79,13 @@
               <label for="events-textarea" class="details-date-label">Комментарий</label>
               <div class="events-textarea-border-w">
                 <textarea
-                  placeholder="Напишите Ваши пожелания, идеи и дополнительную информацию по мероприятию, чтобы наш менеджер смог подготовить самое выгодное предложение!"
-                  name=""
-                  cols="30"
-                  rows="10"
-                  class="events-textarea"
-                  v-model="comment"
-                  id="events-textarea"
+                placeholder="Напишите Ваши пожелания, идеи и дополнительную информацию по мероприятию, чтобы наш менеджер смог подготовить самое выгодное предложение!"
+                name=""
+                cols="30"
+                rows="10"
+                class="events-textarea"
+                v-model="comment"
+                id="events-textarea"
                 ></textarea>
                 <div class="spy-left-textarea"></div>
                 <div class="spy-bottom-textarea"></div>
@@ -97,11 +97,11 @@
             <div class="events-file-block">
               <div class="events-add-brief">
                 <input
-                  type="file"
-                  name="file"
-                  id="field__file"
-                  class="field__file-input"
-                  multiple
+                type="file"
+                name="file"
+                id="field__file"
+                class="field__file-input"
+                multiple
                 />
                 <label class="field__file-wrapper" for="field__file">
                   <a class="add-brief">Прикрепить бриф</a>
@@ -169,12 +169,32 @@ export default {
       let bodyFormData = new FormData(),
           data = this.$store.state.eventForm
 
-          console.log(data)
+        let dateKnight = ''
+          if (data.date) {
+              dateKnight = this.getKnightDate(data.date)
+          }
+
+      let dopinfo = 'С формы: Собрать собственное мероприятие (systemice.ru/event-progress)'
+
+
+      data.budget ? dopinfo += '; Бюджет: ' + data.budget : ''
+      data.location ? dopinfo += '; место проведения: ' + data.location : ''
+      dateKnight ? dopinfo += '; на дату: ' + dateKnight : ''
+      data.guestsNumber ? dopinfo += '; гостей: ' + data.guestsNumber : ''
+      data.men ? dopinfo += '; мужчин: ' + data.men : ''
+      data.women ? dopinfo += '; женщин: ' + data.women : ''
+      this.company ? dopinfo += '; компания: ' + this.company : ''
+      data.link ? dopinfo += '; ссылка: ' + data.link : ''
+      document.getElementById('#cb1') ? dopinfo += '; дата предварительная? ' + [data.dateAdvance === true ? 'Да' : 'Нет'] : ''
+      data.format ? dopinfo += '; формат мероприятия: ' + data.format : ''
+      this.comment ? dopinfo += "; комментарий: " + this.comment : ''
+
+      document.querySelector('#field__file').files[0] ? dopinfo += '; Файл: ' + document.querySelector('#field__file').files[0].name : ''
 
       bodyFormData.append("name", this.name)
       bodyFormData.append("phone", this.phone)
       bodyFormData.append("email", this.email)
-      bodyFormData.append("date", this.getKnightDate(data.date))
+      bodyFormData.append("date", dateKnight)
       bodyFormData.append("company", this.company)
       bodyFormData.append("comment", this.comment)
       bodyFormData.append("guestsNumber", data.guestsNumber)
@@ -186,20 +206,26 @@ export default {
       bodyFormData.append("link", data.link)
       bodyFormData.append("dateAdvance", [data.dateAdvance === true ? 'Да' : 'Нет'])
       bodyFormData.append("form_name", form.getAttribute("name"))
+      bodyFormData.append('hotel', 13632)
+      bodyFormData.append('dopinfo', dopinfo)
+      bodyFormData.append('form_name_text', 'Собрать собственное мероприятие (systemice.ru/event-progress)')
+      bodyFormData.append('file', document.querySelector('#field__file').files[0])
 
       axios
-        .post("https://systemice.ru/say_online_send_test.php", bodyFormData, {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-        })
-        .then((response) => {
-          if (!response.data || response.data == "") {
-            form.querySelector(".send-button").value = "Ошибка!"
-            return false;
-          }
-          form.querySelector(".send-button").value = "Успешно!"
-        })
+      .post("https://systemice.ru/knight_bron.php", bodyFormData, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
+      .then((response) => {
+        if (!response.data || response.data == "") {
+          form.querySelector(".send-button").value = "Ошибка!"
+          return false;
+        }
+        form.querySelector(".send-button").value = "Успешно!"
+
+        this.$metrika.reachGoal('create_event_order')
+      })
     },
 
     changeEventComponent(e) {
@@ -248,7 +274,7 @@ export default {
     // Обнуление стилей неверно заполненных полей
 
     let phoneField = document.querySelector(".events-form-phone"),
-      nameField = document.querySelector(".events-form-name");
+    nameField = document.querySelector(".events-form-name");
 
     phoneField.addEventListener("keyup", function () {
       this.classList.remove("input-box-wrong");

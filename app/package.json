@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
+    "@gtarr/nuxtjs-yandex-metrika": "^1.1.0",
     "axios": "^0.21.1",
     "clipboard": "^2.0.8",
     "core-js": "^3.9.1",

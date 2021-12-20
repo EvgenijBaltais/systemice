@@ -18,6 +18,20 @@ img {
     user-select: none;
 }
 
+.fadein-submit {
+    -webkit-appearance: none!important;
+    -webkit-border-radius: 0!important;
+    border-radius:0!important;
+    outline: 0!important;
+}
+
+.send-button {
+    -webkit-appearance: none!important;
+    -webkit-border-radius: 0!important;
+    border-radius:0!important;
+    outline: 0!important;
+}
+
 .team .content-box.no-vertical-padding {
     padding-top: 0;
     padding-bottom: 0;
@@ -141,7 +155,6 @@ img {
 
 .tenders-main {
     overflow: auto;
-    margin-top: 3%;
 }
 
 .footer {
@@ -485,6 +498,8 @@ header {
     text-align: center;
     cursor: pointer;
     margin-top: 120px;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .bl-social {
@@ -505,12 +520,14 @@ header {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 14px;
+    user-select: none;
 }
 
 .menu-item a {
     padding: 7px 15px;
     font-size: 18px;
     line-height: 20px;
+    user-select: none;
 }
 
 .main-logo-left {
@@ -3590,6 +3607,7 @@ position: absolute;
     .other-event-link {
         display: flex;
         align-items: center;
+        z-index: 5;
     }
 
     .bl-small-event {
@@ -3626,6 +3644,17 @@ position: absolute;
         right: 0;
         bottom: 0;
         background-color: rgba(0,0,0,0.5);
+    }
+
+    .bl-small-event .nuxt-link-exact-active:before {
+
+        box-shadow: none;
+        border-bottom: 0;
+    }
+
+    .nuxt-link-exact-active span {
+
+        border-bottom: 1px solid #e90000;
     }
 
     .current:after {
@@ -4208,7 +4237,6 @@ position: absolute;
 
     .menu-list {
         font-size: 16px;
-        margin-top: 50px;
     }
     .menu-item {
         margin-bottom: 10px;
@@ -5286,7 +5314,7 @@ position: absolute;
         -moz-transform: translateY(0);
         -o-transform: translateY(0);
         transform: translateY(0);
-        z-index: 9;
+        z-index: 10;
         background-color: rgba(0,0,0,0.9);
         box-sizing: border-box;
         overflow-y: scroll;
@@ -5315,6 +5343,7 @@ position: absolute;
     }
     .menu-wrapper {
         box-shadow: 0 0 25px 5px rgba(255,0,0,0.35);
+        user-select: none;
     }
     .portfolio, .service, .partner, .contact {
         min-height: 100vh;
@@ -5507,9 +5536,6 @@ position: absolute;
     .menu-item {
         margin-bottom: 10px;
     }
-    .menu-list {
-        margin-top: 50px;
-    }
     .service {
         background-position: center;
     }
@@ -5683,7 +5709,10 @@ position: absolute;
 
     .event-check .checkbox-label{width: 50%;}
 
-    .menu-list { font-size: 16px;}
+    .menu-list {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
 
     .event-page-wrapper {
 
@@ -6994,6 +7023,11 @@ input[type="checkbox"]:checked + label:after {
     display: none
 }
 
+.menu-list {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
 header {
     width: 100%;
     padding: 0 2.5%;
@@ -7046,7 +7080,6 @@ header {
 .header-mob {
 
     display: flex;
-    margin-top: 3%;
     justify-content: space-between;
 }
 
@@ -7184,7 +7217,7 @@ header {
     -moz-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
-    z-index: 9;
+    z-index: 10;
     background-color: rgba(0,0,0,0.9);
     box-sizing: border-box;
     overflow-y: scroll;

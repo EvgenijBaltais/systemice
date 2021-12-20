@@ -320,11 +320,20 @@ export default {
                 }
             )
 
+            let dopinfo = 'С формы: Приглашение к тендеру (systemice.ru/tenders) '
+
+		      this.budget ? dopinfo += '; Бюджет: ' + this.budget : ''
+		      this.region ? dopinfo += '; регион: ' + this.region : ''
+		      this.date ? dopinfo += '; на дату: ' + this.date : ''
+		      this.guestsNumber ? dopinfo += '; гостей: ' + this.guestsNumber : ''
+		      this.procedurePayment ? dopinfo += '; процедура оплаты: ' + this.procedurePayment : ''
+		      this.comment ? dopinfo += "; комментарий: " + this.comment : ''
+
 				let bodyFormData = new FormData()
 				
 					bodyFormData.append('budget', this.budget)
 					bodyFormData.append('region', this.region)
-					bodyFormData.append('date', this.getKnightDate(this.date))
+					bodyFormData.append('date', this.date)
 					bodyFormData.append('guestsNumber', this.guestsNumber)
 					bodyFormData.append('procedurePayment', this.procedurePayment)
 					bodyFormData.append('email', this.email)
@@ -332,8 +341,12 @@ export default {
 					bodyFormData.append('phone', this.phone)
 					bodyFormData.append('comment', this.comment)
 					bodyFormData.append('form_name', form.getAttribute('name'))
+					bodyFormData.append('dopinfo', dopinfo)
+					bodyFormData.append('u', document.body.getAttribute('data-u'))
+					bodyFormData.append('hotel', 13632)
+					bodyFormData.append('form_name_text', 'Приглашение к тендеру (systemice.ru/tenders)')
 
-				axios.post('https://systemice.ru/say_online_send_test.php', bodyFormData, {
+				axios.post('https://systemice.ru/knight_bron.php', bodyFormData, {
 				headers: {
 					'Content-Type': 'application/x-www-form-urlencoded'
 				}
@@ -346,6 +359,8 @@ export default {
 					}
 
 					form.querySelector('.tenders-send-input').value = "Успешно!"
+					
+					this.$metrika.reachGoal('tenders_send_order')
 				})
         },
 		getKnightDate: function(date) {

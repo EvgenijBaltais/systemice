@@ -200,8 +200,12 @@ export default {
 				bodyFormData.append('phone', form.querySelector('.contact-phone').value)
 				bodyFormData.append('item', this.portfolioData[this.eventItem].title)
 				bodyFormData.append('form_name', form.getAttribute('name'))
+				bodyFormData.append('u', document.body.getAttribute('data-u'))
+				bodyFormData.append('dopinfo', `Со страницы Портфолио (systemice.ru/portfolio/), (${this.portfolioData[this.eventItem].title})`)
+				bodyFormData.append('hotel', 13632)
+				bodyFormData.append('form_name_text', 'Со страницы Портфолио (systemice.ru/portfolio/)')
 
-			axios.post('https://systemice.ru/say_online_send_test.php', bodyFormData, {
+			axios.post('https://systemice.ru/knight_bron.php', bodyFormData, {
 				headers: {
 					'Content-Type': 'application/x-www-form-urlencoded'
 				}
@@ -214,6 +218,8 @@ export default {
 				}
 
 				form.querySelector('.send-button').value = "Успешно!"
+
+				this.$metrika.reachGoal('portfolio_order_send')
 			})
 		},
 

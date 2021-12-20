@@ -48,10 +48,21 @@ export default {
   buildModules: [
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  generate: {
+    fallback:'404.html'
+  },
 
+  // Modules: https://go.nuxtjs.dev/config-modules
+  // 
+  modules: [
+    ['@gtarr/nuxtjs-yandex-metrika', {
+        id: '24221908',
+        webvisor: true,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    }]
+  ],
   router: {
     linkActiveClass: 'menu-active'
   },
