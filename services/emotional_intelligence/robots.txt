@@ -1,4 +1,0 @@
-User-Agent: *
-Disallow:
-Sitemap: http://maot.ru/sitemap.xml
-Host: maot.ru

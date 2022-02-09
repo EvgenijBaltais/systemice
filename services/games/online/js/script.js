@@ -81,7 +81,7 @@ $('.send-order').on('click', function(e){
 
     $.ajax({
         type: "POST",
-        url: 'https://les-art-resort.ru/scripts/bron_systemice.php',
+        url: 'https://la-melia.ru/scripts/bron_systemice.php',
         data: formData,
         beforeSend : function(){
             $this.addClass('form-send');
@@ -156,7 +156,7 @@ $('.send-email').on('click', function(e){
 
     $.ajax({
         type: "POST",
-        url: 'https://les-art-resort.ru/scripts/bron_systemice.php',
+        url: 'https://la-melia.ru/scripts/bron_systemice.php',
         data: formData,
         beforeSend : function(){
             $this.addClass('form-send');
