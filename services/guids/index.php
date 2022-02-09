@@ -1776,8 +1776,9 @@
 																									</div>
 																									<form id="form21512300" name='form21512300' role="form" action='http://maot.ru/podmsk/tilda/les_landing.php' method='POST' data-formactiontype="0" data-inputbox=".t556__blockinput"   class="js-form-proccess"">
 
-																										<input type="hidden" name="hotel" tabindex="-1" value="Лендинг Системайз (Tilda) Ведущие - Ведущие мероприятий, главная страница">
+																										<input type="hidden" name="hotel" tabindex="-1" value="Лендинг Системайз Ведущие - Ведущие мероприятий, главная страница">
 																										<input type="hidden" name="knight_id" value="11440">
+																										<input type="hidden" name="corp" value="1">
 																										<div>
 																											<div>
 																												<div class="js-errorbox-all t556__blockinput-errorbox" style="display:none;">
@@ -1938,10 +1939,14 @@
 	          <h2 class="popup-calllback__content__title popup-calllback__content__title__min">Оставьте заявку</h2>
 	          <form id="popup-form-callback" class="popup-form" action='http://maot.ru/podmsk/tilda/les_landing.php' method='POST'>
 	          	<input type="hidden" name="hotel" tabindex="-1" value="Форма Заказать обратный звонок - Ведущие мероприятий, главная страница">
+	          	<input type="hidden" name="corp" value="1">
 	            <div class="popup-calllback__content__fields"> 
 	            <div class="popup-calllback__content__fields__top"> 
 	              <input id="input-name-callback" class="popup-form__inp popup-form__inp_name" name="name" placeholder="Имя" required="" type="text">
 	              <input id="input-phone-callback" class="popup-form__inp popup-form__inp_phone" name="phone" placeholder="Тел." required="" type="text">
+	              <input type="hidden" name="knight_id" value="11440">
+	              <input type="hidden" name="corp" value="1">
+	              <input type="hidden" name="hotel_comment" value="Форма Заказать обратный звонок - Ведущие мероприятий, главная страница">
 	            </div>
 	              <a class="checkbox-text" href="soglasie-na-opd.pdf" target="_blank"><input class="popup-calllback__checkbox" name="consent" value="Я согласен на обработку персональных данных" type="checkbox" checked>Я согласен на обработку персональных данных</a> 
 	            </div>

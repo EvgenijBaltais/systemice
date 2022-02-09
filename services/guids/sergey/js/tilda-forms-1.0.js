@@ -27,7 +27,7 @@ $(function() {
                 $.ajax({
 
                     type: "POST",
-                    url: "https://maot.ru/podmsk/tilda/les_landing.php",
+                    url: "https://sysevent.ru/bron.php",
                     data: formData,
                     dataType: 'html',
                     beforeSend: function(){

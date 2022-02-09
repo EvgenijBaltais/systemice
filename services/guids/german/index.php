@@ -29,7 +29,7 @@
 	
 	<script src="js/tilda-zoom-1.0.min.js"></script>
 	<script src="js/tilda-forms-1.0.js"></script>
-	 <script src="/js/jquery.maskedinput.1.4.1.js"></script>
+	 <script src="../js/jquery.maskedinput.1.4.1.js"></script>
 	
 	
 </head>
@@ -1205,7 +1205,8 @@ $(window).resize(function() {
     	</div>
 
       <form id="form21512300" name='form21512300' role="form" action='http://maot.ru/podmsk/tilda/les_landing.php' method='POST' data-formactiontype="0" data-inputbox=".t556__blockinput"   class="js-form-proccess">
-
+      	<input type="hidden" name="corp" value="1">
+<input type="hidden" name="hotel_id" value="11406">
       <input type="hidden" name="hotel" tabindex="-1" value="Лендинг Системайз (Tilda) Ведущие - Герман">         
                                   			              <div>
                 <div>

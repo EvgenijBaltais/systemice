@@ -21,7 +21,7 @@ $(function() {
                 $.ajax({
 
                     type: "POST",
-                    url: "https://maot.ru/podmsk/tilda/les_landing.php",
+                    url: "https://sysevent.ru/bron.php",
                     data: formData,
                     dataType: 'html',
                     success: function () {
@@ -39,8 +39,6 @@ $(function() {
                     /* Добавление цели на отправку формы счетчика яндекс метрики */
                     },
                     error: function () {
-
-                        console.log(formData);
 
                         form.fadeOut();
 
@@ -98,7 +96,7 @@ $(document).ready(function(){
                 $.ajax({
 
                     type: "POST",
-                    url: "https://maot.ru/podmsk/tilda/les_landing.php",
+                    url: "https://sysevent.ru/bron.php",
                     data: formData,
                     dataType: 'html',
                     success: function () {
@@ -110,7 +108,7 @@ $(document).ready(function(){
                     /* Добавление цели на отправку формы счетчика яндекс метрики */
                     },
                     error: function () {
-                        echo("alert('Ошибка!')");
+                        
                         
                     }
                 });

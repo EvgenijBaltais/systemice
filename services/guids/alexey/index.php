@@ -29,7 +29,7 @@
 	
 	<script src="js/tilda-zoom-1.0.min.js"></script>
 	<script src="js/tilda-forms-1.0.js"></script>
-	 <script src="/js/jquery.maskedinput.1.4.1.js"></script>
+	 <script src="../js/jquery.maskedinput.1.4.1.js"></script>
 	
 	
 </head>
@@ -1248,7 +1248,10 @@ $(window).resize(function() {
 
       <form id="form21512300" name='form21512300' role="form" action='http://maot.ru/podmsk/tilda/les_landing.php' method='POST' data-formactiontype="0" data-inputbox=".t556__blockinput"   class="js-form-proccess">
 
-      <input type="hidden" name="hotel" tabindex="-1" value="Лендинг Системайз (Tilda) Ведущие - Алексей">         
+      <input type="hidden" name="hotel" tabindex="-1" value="Лендинг Системайз (Tilda) Ведущие - Алексей"> 
+      <input type="hidden" name="hotel_comment" value="Лендинг Системайз (Tilda) Ведущие - Алексей">
+      <input type="hidden" name="hotel_id" value="11398"> 
+      <input type="hidden" name="corp" value="1">       
                                   			              <div>
                 <div>
                   <div class="js-errorbox-all t556__blockinput-errorbox" style="display:none;">
@@ -1273,7 +1276,7 @@ $(window).resize(function() {
                       <input type="text" name="phone" class="t556__input t-input js-tilda-rule" id = "input-phone" value="" placeholder="Телефон"  data-tilda-rule="none" style="color:#757575;  background-color:#e6e6e6; ">
                   </div>
                                                                                           <div class="t556__blockinput">
-                      <textarea name="comment" class="t556__input t-input js-tilda-rule" id = "input-textarea" placeholder="Комментарий"  style="color:#757575;  background-color:#e6e6e6; height:102px" rows="3"></textarea>
+                      <textarea name="ucomment" class="t556__input t-input js-tilda-rule" id = "input-textarea" placeholder="Комментарий"  style="color:#757575;  background-color:#e6e6e6; height:102px" rows="3"></textarea>
                   </div>
                                     <div class="t556__blockbutton">
                       <button type="submit" class="t556__submit t-submit" id = "main-form_submit" style="color:#ffffff;background-color:#901f8c;border-radius:1px; -moz-border-radius:1px; -webkit-border-radius:1px;">Отправить</button>                  </div>

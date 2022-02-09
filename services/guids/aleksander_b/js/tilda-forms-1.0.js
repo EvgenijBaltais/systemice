@@ -20,11 +20,11 @@ $(function() {
 
                 let hotelname = $('input[name="hotel"]').val().split(' -')[0];
 
-                var formData = form.serialize() + '&knight_id=11392&hotelname=' + hotelname;
+                var formData = form.serialize() + '&corp=1&knight_id=11392&hotelname=' + hotelname;
 
                 $.ajax({
                     type: "POST",
-                    url: "https://maot.ru/podmsk/tilda/les_landing.php",
+                    url: "https://sysevent.ru/bron.php",
                     data: formData,
                     dataType: 'html',
                     beforeSend: function(){
