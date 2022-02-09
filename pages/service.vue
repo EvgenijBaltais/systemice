@@ -86,7 +86,7 @@
               <div class="spy-right"></div>
               <div class="spy-bottom"></div>
               <div class="service-hover">
-                <a href="https://systemice.ru/platforms/" target="_blank" class="open-btn"
+                <a href="/services/platforms/" target="_blank" class="open-btn"
                 >Открыть</a
                 >
               </div>
@@ -144,7 +144,7 @@
               <div class="spy-right"></div>
               <div class="spy-bottom"></div>
               <div class="service-hover">
-                <a href="https://systemice.ru/guids/" target="_blank" class="open-btn"
+                <a href="/services/guids/" target="_blank" class="open-btn"
                 >Открыть</a
                 >
               </div>
@@ -171,7 +171,7 @@
               <div class="spy-bottom"></div>
               <div class="service-hover">
                 <a
-                href="https://systemice.ru/corporate_cases/"
+                href="https://systemice.ru/services/corporate_cases/"
                 target="_blank"
                 class="open-btn"
                 >Открыть</a
@@ -199,7 +199,7 @@
               <div class="spy-right"></div>
               <div class="spy-bottom"></div>
               <div class="service-hover">
-                <a href="https://systemice.ru/platforms/" target="_blank" class="open-btn"
+                <a href="/services/platforms/" target="_blank" class="open-btn"
                 >Открыть</a
                 >
               </div>
@@ -294,6 +294,68 @@
             </div>
             <p class="bl-desc">
               Рекомендации по проведению мероприятий в пост-ковидный период
+            </p>
+          </div>
+        </div>
+        <div class="service-block">
+          <div class="img-wrapper">
+            <div
+            class="service-img"
+            :style="{
+              backgroundImage: `url(${require('../assets/images/games-pic.jpg')})`,
+            }"
+            ></div>
+          </div>
+          <div class = "service-desc-w">
+            <div class="service-desc">
+              <h1 class="h1">Бизнес-игры</h1>
+              <div class="line"></div>
+              <div class="spy-left"></div>
+              <div class="spy-top"></div>
+              <div class="spy-right"></div>
+              <div class="spy-bottom"></div>
+              <div class="service-hover">
+                <a
+                href="/services/games/"
+                target="_blank"
+                class="open-btn"
+                >Открыть</a
+                >
+              </div>
+            </div>
+            <p class="bl-desc">
+              Бизнес-игры ― отличная современная альтернатива тимбилдингу
+            </p>
+          </div>
+        </div>
+        <div class="service-block">
+          <div class="img-wrapper">
+            <div
+            class="service-img"
+            :style="{
+              backgroundImage: `url(${require('../assets/images/event-expert-pic.jpg')})`,
+            }"
+            ></div>
+          </div>
+          <div class = "service-desc-w">
+            <div class="service-desc">
+              <h1 class="h1">Аудит сметы</h1>
+              <div class="line"></div>
+              <div class="spy-left"></div>
+              <div class="spy-top"></div>
+              <div class="spy-right"></div>
+              <div class="spy-bottom"></div>
+              <div class="service-hover">
+                <a
+                href="/services/event_expert/"
+                target="_blank"
+                class="open-btn"
+                >Открыть</a
+                >
+              </div>
+            </div>
+            <p class="bl-desc">
+              Предлагаем Вам профессиональный аудит сметы
             </p>
           </div>
         </div>
