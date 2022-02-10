@@ -27,7 +27,7 @@ $mail->setFrom('newyear-03@yandex.ru', 'Конгресс-отель «Ареал
 
 
 $mail->addAddress('delivery-test@r777.ru');
-//$mail->addAddress('daria.t@corphotel.ru');
+$mail->addAddress('daria.t@corphotel.ru');
 
 	$comment .= "<p style = 'color: #000; font-size: 22px; line-height: 30px;'><b>Заявка на бронирование</b></p>";
 
