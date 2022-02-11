@@ -765,44 +765,6 @@ export default {
 	},
 	mounted(){
 
-		// Наведение на карту
-/*
-		let spanAdress = document.getElementById('office-address-fadein')
-
-		document.querySelector('.map-bg').addEventListener('mouseover', e => {
-
-			let target = e.target
-
-				if (!e.target.classList.length) return false
-				
-				let city = 0
-
-				for (let key in this.offices) {
-
-					for (let i  = 0; i < e.target.classList.length; i++) {
-						if (e.target.classList[i] == key) {
-							city = key
-							spanAdress.innerText = this.offices[key]
-							break
-						}
-					}
-				}
-
-				if (city) {
-					document.querySelector('.office-i-block').style.display = 'block'
-				}
-
-				console.log(city)
-		})
-
-		for (let i = 0; i < document.querySelectorAll('.city-hover').length; i++) {
-
-			document.querySelectorAll('.city-hover')[i].addEventListener('mouseout', e => {
-
-				console.log(222222)
-			})
-		}
-*/
 		/* Скопировать */
 
 		if (document.getElementById('copy-text')) {

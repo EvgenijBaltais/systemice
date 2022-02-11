@@ -78,11 +78,11 @@ $('#send_order').on('click', function(e){
               return false;
           }
 
-          var dataObject = 'name=' + nameVal + '&email=' + emailVal + '&landing=mice_agency' + '&hotelid=10641&hotel=КАК ВЫБРАТЬ MICE АГЕНТСТВО?';
+          var dataObject = 'name=' + nameVal + '&email=' + emailVal + '&landing=mice_agency' + '&hotel_id=10641&knight_id=10641&corp=1&hotel=КАК ВЫБРАТЬ MICE АГЕНТСТВО?';
 
       $.ajax({
 
-        url: "/say_online_send.php",
+        url: "https://la-melia.ru/php/knight_bron_systemice.php",
         data: dataObject,
         type: "POST",
         beforeSend: function (){

@@ -584,11 +584,7 @@ else {
 
 		}, 200);
 
-
-
 			if (nameVal != '') nameVal = nameVal + ', ';
-
-			//isWritting();
 
 			var lastSpeech = 'Хорошо, ' + nameVal + 'сейчас менеджер обработает Ваш запрос, проверит наличие номеров на Ваши даты и сразу же перезвонит. Наш телефон для связи: ',
 			newStr = '',
@@ -612,11 +608,11 @@ else {
 
 				else {var name = $.cookie('name');}
 
-				var formData = 'name=' + $('#dialog-name').val() + '&phone=' + $('#dialog-phone').val() + '&dopinfo=' + comment + '&hotel=' + domain_hotel_name + '&hotel_id=10640&corp=1&u=' + $('body').attr('data-u');
+				var formData = 'name=' + $('#dialog-name').val() + '&phone=' + $('#dialog-phone').val() + '&dopinfo=' + comment + '&hotel=' + domain_hotel_name + '&hotel_id=10640&knight_id=10640&corp=1&u=' + $('body').attr('data-u');
 
 			$.ajax({
 				type: "POST",
-				url: 'http://marins-parkhotel.ru/scripts/bron_systemice.php',
+				url: 'https://la-melia.ru/php/knight_bron_systemice.php',
                 data: formData,
 				beforeSend: function(){
 

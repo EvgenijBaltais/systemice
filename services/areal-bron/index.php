@@ -74,8 +74,21 @@
 							<img src="images/tild3735-3636-4031-b333-653863336135__tild3730-6463-4335-b.png" class="t228__imglogo t228__imglogomobile" imgfield="img" style="max-width: 190px; width: 190px; min-width: 190px; height: auto; display: block;" alt=""> 
 						</div> 
 					</div> 
-				<div class="t228__centerside "> <div class="t228__centercontainer"> 
-					<ul class="t228__list t228__list_hidden"> <li class="t228__list_item" style="padding:0 15px 0 0;"><a class="t-menu__link-item" href="#hotel" data-menu-submenu-hook="" style="color:#ffffff;" data-menu-item-number="1">Об отелях</a> </li> <li class="t228__list_item" style="padding:0 15px;"><a class="t-menu__link-item" href="#price" data-menu-submenu-hook="" style="color:#ffffff;" data-menu-item-number="2">Цены</a> </li> <li class="t228__list_item" style="padding:0 15px;"><a class="t-menu__link-item" href="#room" data-menu-submenu-hook="" style="color:#ffffff;" data-menu-item-number="3">Номера</a> </li> <li class="t228__list_item" style="padding:0 0 0 15px;"><a class="t-menu__link-item" href="#contact" data-menu-submenu-hook="" style="color:#ffffff;" data-menu-item-number="4">Контакты</a> </li> </ul> </div> </div> <div class="t228__rightside"> <div class="t228__rightcontainer"> <div class="t228__right_descr" style="color:#000000;"><div style="font-size:16px;line-height:20px;color:#ffffff;" data-customstyle="yes"><span style="font-size: 1.4rem;"><a href="tel:+79266410580" style="text-decoration: none; border-bottom: 0px solid; box-shadow: 0px 0px 0px 0px inset; color: rgb(255, 255, 255);">+7 926 641 05 80<br /></a></span>daria.t@corphotel.ru<br /></div></div> </div> </div> <div class="t228__padding40px"></div> 
+					<div class="t228__centerside "> 
+						<div class="t228__centercontainer"> 
+							<ul class="t228__list t228__list_hidden"> <li class="t228__list_item" style="padding:0 15px 0 0;"><a class="t-menu__link-item" href="#hotel" data-menu-submenu-hook="" style="color:#ffffff;" data-menu-item-number="1">Об отелях</a> </li> <li class="t228__list_item" style="padding:0 15px;"><a class="t-menu__link-item" href="#price" data-menu-submenu-hook="" style="color:#ffffff;" data-menu-item-number="2">Цены</a> </li> <li class="t228__list_item" style="padding:0 15px;"><a class="t-menu__link-item" href="#room" data-menu-submenu-hook="" style="color:#ffffff;" data-menu-item-number="3">Номера</a> </li> <li class="t228__list_item" style="padding:0 0 0 15px;"><a class="t-menu__link-item" href="#contact" data-menu-submenu-hook="" style="color:#ffffff;" data-menu-item-number="4">Контакты</a> </li> </ul> 
+						</div> 
+					</div> 
+					<div class="t228__rightside"> 
+						<div class="t228__rightcontainer"> 
+							<div class="t228__right_descr" style="color:#000000;">
+								<div style="font-size:16px;line-height:20px;color:#ffffff;" data-customstyle="yes">
+									<span style="font-size: 1.4rem;"><a href="tel:+79266410580" style="text-decoration: none; border-bottom: 0px solid; box-shadow: 0px 0px 0px 0px inset; color: rgb(255, 255, 255);">+7 926 641 05 80<br /></a></span>daria.t@corphotel.ru<br />
+								</div>
+							</div> 
+						</div> 
+					</div> 
+					<div class="t228__padding40px"></div> 
 				</div>
 			</div>
 
@@ -239,7 +252,7 @@
 									<div class="t612__middle_item" style="border-color: #e0e0e0;" data-auto-correct-mobile-width="false"> 
 										
 										<div class=" t-valign_middle"> 
-											<div class="t612__title t612__middle_title t-descr t-descr_xs" style="" field="li_title__1485805746242">Стандарт Двуместный</div> 
+											<div class="t612__title t612__middle_title t-descr t-descr_xs" style="" field="li_title__1485805746242">Стандарт Двухместный</div> 
 										</div> 
 
 										<div class="t612__col t612__width_50 t-align_center t-valign_middle" style="border-color: #e0e0e0;"> 
@@ -275,7 +288,9 @@
 			</div>
 		</div>
 
-		<div id="bron" style="opacity: 0;"></div>
+		<div id="bron" style="opacity: 0;">
+			
+		</div>
 
 		<div id="rec325294831" class="r t-rec t-rec_pt_0 t-rec_pb_0" data-animationappear="off" data-record-type="698" >
 
@@ -332,7 +347,7 @@
 																<select id="room-category" name="selectbox_room" class="t-select js-tilda-rule " data-tilda-req="1" style="color:#454545; background-color:#ffffff; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;"> 
 																	<option value="0">Выберите категорию номера</option> 
 																	<option value="1" >Стандарт Одноместный</option> 
-																	<option value="2" >Стандарт Двуместный</option>
+																	<option value="2" >Стандарт Двухместный</option>
 																</select> 
 															</div> 
 														</div> 
@@ -739,7 +754,7 @@
 								</div> 
 								<div class="t776__col_right t776__wrapper t-col t-col_6 t-align_left"> 
 									<div class="t776__title-wrapper"> 
-										<h2 class="t776__title t-name t-name_xl js-product-name">Стандарт Двуместный</h2>
+										<h2 class="t776__title t-name t-name_xl js-product-name">Стандарт Двухместный</h2>
 										<br />
 										<h3 class="t-name" style="color:#464646;">13 350 р.</h3>
 									</div> 
@@ -849,13 +864,13 @@
 										<span style="font-size: 24px;">
 											<span style="font-weight: 400;" data-redactor-style="font-weight: 400">Место проведения:</span>
 										</span><br>
-										<span style="font-size: 20px;">
+										<span style="font-size: 18px;">
 											Конгресс-отель «Ареал»<br>
-											Московская область, Богородский городской округ, дер. Новая Купавна, местечко Родинки, ул.Сиреневая, д.21, стр.1
+											Московская область, Богородский городской округ, дер.&nbsp;Новая Купавна, местечко&nbsp;Родинки, ул.&nbsp;Сиреневая, д.21, стр.1
 										</span><br /><br />
 										<span style="font-weight: 400;">Почта для заявок и контактный телефон: </span>
 										<br>
-										<span style="font-size: 20px;">Дарья Танасова<br /> 
+										<span style="font-size: 18px;">Дарья Танасова<br /> 
 											<a href="mailto:daria.t@corphotel.ru" style="color: rgb(255, 255, 255) !important; border-bottom: 0px solid; box-shadow: 0px 0px 0px 0px inset;">daria.t@corphotel.ru</a> <br /> 
 											Раб.: 8 (495) 215-24-80 доб.133 <br /> 
 											Моб.: <a href="tel:79266410580" style="color: rgb(255, 255, 255) !important; border-bottom: 0px solid; box-shadow: 0px 0px 0px 0px inset;">8(926) 641-05-80</a></span>

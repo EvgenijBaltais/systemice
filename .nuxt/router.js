@@ -9,6 +9,7 @@ const _31d98575 = () => interopDefault(import('..\\pages\\event-progress.vue' /*
 const _2cfccf08 = () => interopDefault(import('..\\pages\\news.vue' /* webpackChunkName: "pages/news" */))
 const _371a0723 = () => interopDefault(import('..\\pages\\partner.vue' /* webpackChunkName: "pages/partner" */))
 const _69a3d43f = () => interopDefault(import('..\\pages\\portfolio\\index.vue' /* webpackChunkName: "pages/portfolio/index" */))
+const _ebdf9ae0 = () => interopDefault(import('..\\pages\\service.vue' /* webpackChunkName: "pages/service" */))
 const _7664b192 = () => interopDefault(import('..\\pages\\team.vue' /* webpackChunkName: "pages/team" */))
 const _7259e20c = () => interopDefault(import('..\\pages\\tenders.vue' /* webpackChunkName: "pages/tenders" */))
 const _354b6142 = () => interopDefault(import('..\\pages\\portfolio\\_item.vue' /* webpackChunkName: "pages/portfolio/_item" */))
@@ -45,6 +46,10 @@ export const routerOptions = {
     path: "/portfolio",
     component: _69a3d43f,
     name: "portfolio"
+  }, {
+    path: "/service",
+    component: _ebdf9ae0,
+    name: "service"
   }, {
     path: "/team",
     component: _7664b192,
