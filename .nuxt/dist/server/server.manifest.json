@@ -1,0 +1,41 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/bl-right.js": "components/bl-right.js",
+    "components/copyright.js": "components/copyright.js",
+    "components/event-data.js": "components/event-data.js",
+    "components/event-form.js": "components/event-form.js",
+    "components/main-logo.js": "components/main-logo.js",
+    "components/page-header.js": "components/page-header.js",
+    "pages/contact.js": "pages/contact.js",
+    "pages/event-progress.js": "pages/event-progress.js",
+    "pages/index.js": "pages/index.js",
+    "pages/news.js": "pages/news.js",
+    "pages/partner.js": "pages/partner.js",
+    "pages/portfolio/_item.js": "pages/portfolio/_item.js",
+    "pages/portfolio/index.js": "pages/portfolio/index.js",
+    "pages/service.js": "pages/service.js",
+    "pages/team.js": "pages/team.js",
+    "pages/tenders.js": "pages/tenders.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/bl-right.js": "components/bl-right.js.map",
+    "components/copyright.js": "components/copyright.js.map",
+    "components/event-data.js": "components/event-data.js.map",
+    "components/event-form.js": "components/event-form.js.map",
+    "components/main-logo.js": "components/main-logo.js.map",
+    "components/page-header.js": "components/page-header.js.map",
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/event-progress.js": "pages/event-progress.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/news.js": "pages/news.js.map",
+    "pages/partner.js": "pages/partner.js.map",
+    "pages/portfolio/_item.js": "pages/portfolio/_item.js.map",
+    "pages/portfolio/index.js": "pages/portfolio/index.js.map",
+    "pages/service.js": "pages/service.js.map",
+    "pages/team.js": "pages/team.js.map",
+    "pages/tenders.js": "pages/tenders.js.map",
+    "server.js": "server.js.map"
+  }
+}
