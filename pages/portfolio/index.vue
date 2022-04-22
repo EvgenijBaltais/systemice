@@ -14,6 +14,29 @@
 		</div>
 		<div class="main">
 			<pageHeader/>
+
+			<div class = "content-box portfolio-block">
+				<div class = "videos-example">
+					<h1 class = "videos-title">Видео с примерами нашей работы</h1>
+					<p class = "videos-info">Команда Systemice подготовила и осуществила съемки различных проектов 2021 году. Была проделана огромная работа, чтобы мероприятие состоялось в лучшем виде!</p>
+				</div>
+				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/1.jpg')})`}">
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/CGessuZCMgs?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/2.jpg')})`}">
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/cM9RQB-Z6bg?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/3.jpg')})`}">
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/cGky8oRRo20?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/4.jpg')})`}">
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/8hPYH6cHXsI?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/5.jpg')})`}">
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/6iKz1cxNYqE?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			
 			<div class="content-box portfolio-block">
 				<div v-for = "(item, index) in portfolioData"
 				:key="item.id" :class="['sl-card', 'scrolling-portfolio-item', 'sl-box-' + (index === 0 ? 1 : 2)]"
@@ -99,7 +122,12 @@ export default {
 
 	},
 	methods: {
+		startVideo(event){
 
+			event.target.style.backgroundImage = 'none'
+			event.target.querySelector('iframe').style.visibility = "visible"
+			event.target.querySelector('iframe').setAttribute('src', event.target.querySelector('iframe').getAttribute('data-src'))
+		},
 	}
 }
 

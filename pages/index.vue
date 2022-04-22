@@ -93,38 +93,31 @@
 			</div>
 
 			<div class = "content-box videos-examples">
-
 				<div class = "videos-example">
 					<h1 class = "videos-title">Видео с примерами нашей работы</h1>
 					<p class = "videos-info">Команда Systemice подготовила и осуществила съемки различных проектов 2021 году. Была проделана огромная работа, чтобы мероприятие состоялось в лучшем виде!</p>
 				</div>
-
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/1.jpg')})`}">
 					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/CGessuZCMgs?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
-
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/2.jpg')})`}">
 					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/cM9RQB-Z6bg?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
-
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/3.jpg')})`}">
 					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/cGky8oRRo20?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
-
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/4.jpg')})`}">
 					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/8hPYH6cHXsI?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
-
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/5.jpg')})`}">
 					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/6iKz1cxNYqE?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
-
+			
 			<div class="content-box services-main">
 				<h1 class="h1">УСЛУГИ</h1>
 				<div class="line"></div>
 				<div class = "main-s">
-
 					<div class="service-block">
 						<div class="img-wrapper">
 							<div

@@ -508,6 +508,7 @@ header {
     margin-bottom: 30px;
     max-width: 94px;
     box-sizing: border-box;
+    display: none;
 }
 
 .social-link:first-child {
@@ -4050,6 +4051,9 @@ position: absolute;
     cursor: pointer;
 }
 
+.videos-example:first-child {
+    background-color: transparent;
+}
 
 @media screen and (min-width: 1900px) {
 
