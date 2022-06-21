@@ -508,12 +508,15 @@ header {
     margin-bottom: 30px;
     max-width: 94px;
     box-sizing: border-box;
-    display: none;
 }
 
 .social-link:first-child {
-    
-    display: inline-block;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-link img {
+    width: 28px;
 }
 
 .menu-item {
