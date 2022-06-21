@@ -229,12 +229,18 @@ form[name="fadein_form"] {
 }
 
 .fadein-close {
+    display: block;
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 20px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     user-select: none;
+    background-image: url('../images/icons/close-white.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .fadein-title {
@@ -6774,6 +6780,8 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .fadein-close {
+    display: block;
+    height: 30px;
     width: 30px
 }
 

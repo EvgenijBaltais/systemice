@@ -681,7 +681,7 @@ export default {
 								<div class="spy-right-input"></div>
 								<div class="spy-bottom-input"></div>
 							</div>
-							<img src = "/images/icons/close-white.svg" class = "fadein-close">
+							<div class = "fadein-close"></div>
 						</form>
 					</div>
 				</div>`)
