@@ -3,70 +3,60 @@
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\OpenServer\\\\domains\\\\systemice\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_011e3b0a"
+    "chunkName": "pages/contact"
   },
   {
     "name": "event-progress",
     "path": "/event-progress",
     "component": "C:\\\\OpenServer\\\\domains\\\\systemice\\\\pages\\\\event-progress.vue",
-    "chunkName": "pages/event-progress",
-    "_name": "_31d98575"
+    "chunkName": "pages/event-progress"
   },
   {
     "name": "news",
     "path": "/news",
     "component": "C:\\\\OpenServer\\\\domains\\\\systemice\\\\pages\\\\news.vue",
-    "chunkName": "pages/news",
-    "_name": "_2cfccf08"
+    "chunkName": "pages/news"
   },
   {
     "name": "partner",
     "path": "/partner",
     "component": "C:\\\\OpenServer\\\\domains\\\\systemice\\\\pages\\\\partner.vue",
-    "chunkName": "pages/partner",
-    "_name": "_371a0723"
+    "chunkName": "pages/partner"
   },
   {
     "name": "portfolio",
     "path": "/portfolio",
     "component": "C:\\\\OpenServer\\\\domains\\\\systemice\\\\pages\\\\portfolio\\\\index.vue",
-    "chunkName": "pages/portfolio/index",
-    "_name": "_69a3d43f"
+    "chunkName": "pages/portfolio/index"
   },
   {
     "name": "service",
     "path": "/service",
     "component": "C:\\\\OpenServer\\\\domains\\\\systemice\\\\pages\\\\service.vue",
-    "chunkName": "pages/service",
-    "_name": "_ebdf9ae0"
+    "chunkName": "pages/service"
   },
   {
     "name": "team",
     "path": "/team",
     "component": "C:\\\\OpenServer\\\\domains\\\\systemice\\\\pages\\\\team.vue",
-    "chunkName": "pages/team",
-    "_name": "_7664b192"
+    "chunkName": "pages/team"
   },
   {
     "name": "tenders",
     "path": "/tenders",
     "component": "C:\\\\OpenServer\\\\domains\\\\systemice\\\\pages\\\\tenders.vue",
-    "chunkName": "pages/tenders",
-    "_name": "_7259e20c"
+    "chunkName": "pages/tenders"
   },
   {
     "name": "portfolio-item",
     "path": "/portfolio/:item",
     "component": "C:\\\\OpenServer\\\\domains\\\\systemice\\\\pages\\\\portfolio\\\\_item.vue",
-    "chunkName": "pages/portfolio/_item",
-    "_name": "_354b6142"
+    "chunkName": "pages/portfolio/_item"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\OpenServer\\\\domains\\\\systemice\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_332952ed"
+    "chunkName": "pages/index"
   }
 ]
