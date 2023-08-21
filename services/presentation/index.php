@@ -131,7 +131,7 @@
             </ul>
           </nav>
           <div class="phone phone_header">
-            <a class="phone__link-header t-corp" data-where="corp" href="tel:+74991106417">+7 (499) 110-64-17</a>
+            <a class="phone__link-header t-corp" data-where="corp" href="tel:+74952152480">+7 (495) 215-24-80</a>
             <a id="callback-popup" class="callback-link popup-calllback-show" href="javascript:PopUpShow()" data-reach-goal="get_form_header" data-department="corp" data-form-name="Заказать обратный звонок (шапка)">Заказать обратный звонок</a>
           </div>
           <a class="touch-menu touch-menu_main">
@@ -12701,16 +12701,16 @@ $( document ).ready(function() {
         <a href="/" style="width: 100%; margin-bottom: 13px;" target="_blank"><img src="images/g5017wt.png" class="t420__logo" imgfield="img"  alt=""></a>
       </div>  
       <div class="phone phone_footer">
-          <a class="phone__link-footer" href="tel:+74957399736">+7 (499) 110-64-17</a>
+          <a class="phone__link-footer" href="tel:+74952152480">+7 (495) 215-24-80</a>
           <a class="callback-link popup-calllback-show" href="javascript:PopUpShow()" data-reach-goal="get_form_footer" data-department="corp" data-form-name="Заказать обратный звонок (подвал)">Заказать обратный звонок</a>
         </div>
       <div class="t420__col__contacts">
         <div class="t420__col__contacts__colm">
           <div class="t420__col__contacts__colm__item t420__col-email">info@systemice.ru</div>
-          <div class="t420__col__contacts__colm__item t420__col-copyright">2017, «systemice»</div>
+          <div class="t420__col__contacts__colm__item t420__col-copyright"><?echo date("Y");?>, «systemice»</div>
         </div>
         <div class="t420__col__contacts__colm">
-          <div class="t420__col__contacts__colm__item t420__col-address">г. Москва, ул. Бауманская, дом 6, офис 309, 3-й этаж</div>
+          <div class="t420__col__contacts__colm__item t420__col-address">г. Москва, ул. Бауманская, дом 6</div>
         </div>
       </div>
     </div>

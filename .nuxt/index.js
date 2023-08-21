@@ -13,8 +13,8 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_4942b414 from 'nuxt_plugin_plugin_4942b414' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_nuxtjsyandexmetrikaplugin5e2565d3_30efc453 from 'nuxt_plugin_nuxtjsyandexmetrikaplugin5e2565d3_30efc453' // Source: .\\nuxtjs-yandex-metrika.plugin.5e2565d3.js (mode: 'client')
+import nuxt_plugin_plugin_3865db3e from 'nuxt_plugin_plugin_3865db3e' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_nuxtjsyandexmetrikapluginfb439070_113e2cf4 from 'nuxt_plugin_nuxtjsyandexmetrikapluginfb439070_113e2cf4' // Source: .\\nuxtjs-yandex-metrika.plugin.fb439070.js (mode: 'client')
 import nuxt_plugin_inputmask_6c1106f7 from 'nuxt_plugin_inputmask_6c1106f7' // Source: ..\\plugins\\inputmask.js (mode: 'client')
 import nuxt_plugin_lightcase_6b9ed167 from 'nuxt_plugin_lightcase_6b9ed167' // Source: ..\\plugins\\lightcase.js (mode: 'client')
 
@@ -213,12 +213,12 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_4942b414 === 'function') {
-    await nuxt_plugin_plugin_4942b414(app.context, inject)
+  if (typeof nuxt_plugin_plugin_3865db3e === 'function') {
+    await nuxt_plugin_plugin_3865db3e(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_nuxtjsyandexmetrikaplugin5e2565d3_30efc453 === 'function') {
-    await nuxt_plugin_nuxtjsyandexmetrikaplugin5e2565d3_30efc453(app.context, inject)
+  if (process.client && typeof nuxt_plugin_nuxtjsyandexmetrikapluginfb439070_113e2cf4 === 'function') {
+    await nuxt_plugin_nuxtjsyandexmetrikapluginfb439070_113e2cf4(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_inputmask_6c1106f7 === 'function') {

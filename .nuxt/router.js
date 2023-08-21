@@ -4,16 +4,16 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _011e3b0a = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
-const _31d98575 = () => interopDefault(import('..\\pages\\event-progress.vue' /* webpackChunkName: "pages/event-progress" */))
-const _2cfccf08 = () => interopDefault(import('..\\pages\\news.vue' /* webpackChunkName: "pages/news" */))
-const _371a0723 = () => interopDefault(import('..\\pages\\partner.vue' /* webpackChunkName: "pages/partner" */))
-const _69a3d43f = () => interopDefault(import('..\\pages\\portfolio\\index.vue' /* webpackChunkName: "pages/portfolio/index" */))
-const _ebdf9ae0 = () => interopDefault(import('..\\pages\\service.vue' /* webpackChunkName: "pages/service" */))
-const _7664b192 = () => interopDefault(import('..\\pages\\team.vue' /* webpackChunkName: "pages/team" */))
-const _7259e20c = () => interopDefault(import('..\\pages\\tenders.vue' /* webpackChunkName: "pages/tenders" */))
-const _354b6142 = () => interopDefault(import('..\\pages\\portfolio\\_item.vue' /* webpackChunkName: "pages/portfolio/_item" */))
-const _332952ed = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _4b531998 = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
+const _13693ac8 = () => interopDefault(import('..\\pages\\event-progress.vue' /* webpackChunkName: "pages/event-progress" */))
+const _493abe22 = () => interopDefault(import('..\\pages\\news.vue' /* webpackChunkName: "pages/news" */))
+const _11ff97dc = () => interopDefault(import('..\\pages\\partner.vue' /* webpackChunkName: "pages/partner" */))
+const _4dd9f8b4 = () => interopDefault(import('..\\pages\\portfolio\\index.vue' /* webpackChunkName: "pages/portfolio/index" */))
+const _64f5c349 = () => interopDefault(import('..\\pages\\service.vue' /* webpackChunkName: "pages/service" */))
+const _24ca8379 = () => interopDefault(import('..\\pages\\team.vue' /* webpackChunkName: "pages/team" */))
+const _bc8ec09a = () => interopDefault(import('..\\pages\\tenders.vue' /* webpackChunkName: "pages/tenders" */))
+const _54c97ec6 = () => interopDefault(import('..\\pages\\portfolio\\_item.vue' /* webpackChunkName: "pages/portfolio/_item" */))
+const _517dbde6 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -28,43 +28,43 @@ export const routerOptions = {
 
   routes: [{
     path: "/contact",
-    component: _011e3b0a,
+    component: _4b531998,
     name: "contact"
   }, {
     path: "/event-progress",
-    component: _31d98575,
+    component: _13693ac8,
     name: "event-progress"
   }, {
     path: "/news",
-    component: _2cfccf08,
+    component: _493abe22,
     name: "news"
   }, {
     path: "/partner",
-    component: _371a0723,
+    component: _11ff97dc,
     name: "partner"
   }, {
     path: "/portfolio",
-    component: _69a3d43f,
+    component: _4dd9f8b4,
     name: "portfolio"
   }, {
     path: "/service",
-    component: _ebdf9ae0,
+    component: _64f5c349,
     name: "service"
   }, {
     path: "/team",
-    component: _7664b192,
+    component: _24ca8379,
     name: "team"
   }, {
     path: "/tenders",
-    component: _7259e20c,
+    component: _bc8ec09a,
     name: "tenders"
   }, {
     path: "/portfolio/:item",
-    component: _354b6142,
+    component: _54c97ec6,
     name: "portfolio-item"
   }, {
     path: "/",
-    component: _332952ed,
+    component: _517dbde6,
     name: "index"
   }],
 

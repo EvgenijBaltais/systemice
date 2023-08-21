@@ -96,7 +96,7 @@
 		            </ul>
 		          </nav>
 		          <div class="phone phone_header">
-		            <a class="phone__link-header t-corp" data-where="corp" href="tel:+74991106417">+7 (499) 110-64-17</a>
+		            <a class="phone__link-header t-corp" data-where="corp" href="tel:+74952152480">+7 (495) 215-24-80</a>
 		            <a class="callback-link popup-calllback-show" href="javascript:PopUpShow()" data-reach-goal="get_form_header" data-department="corp" data-form-name="Заказать обратный звонок (шапка)">Заказать обратный звонок</a>
 		          </div>
 		          <a class="touch-menu touch-menu_main">
@@ -1755,7 +1755,7 @@
 																								<div class="t-col t-col_6 ">
 																									<div class="t556__contentbox" style="height:;">
 																										<div class="t556__contentwrapper">			
-																											<div class="t556__contacts t-text t-descr_xxxl" style="color:#ffffff;" field="text"><div style="font-size:28px;" data-customstyle="yes">Заполните форму и наши менеджеры свяжутся с Вами чтобы помочь разъяснить любые вопросы.<br /><br /><a href="tel:+74991107435">+7 (499) 110-74-35<br /></a>info@systemice.ru</div></div>                        
+																											<div class="t556__contacts t-text t-descr_xxxl" style="color:#ffffff;" field="text"><div style="font-size:28px;" data-customstyle="yes">Заполните форму и наши менеджеры свяжутся с Вами чтобы помочь разъяснить любые вопросы.<br /><br /><a href="tel:+74952152480">+7 (495) 215-24-80<br /></a>info@systemice.ru</div></div>                        
 
 
 																										</div>
@@ -1842,16 +1842,16 @@
 																							        <a href="/" style="width: 100%; margin-bottom: 13px;" target="_blank"><img src="images/tild6338-3531-4434-a137-646331663963__noroot.png" class="t420__logo" imgfield="img"  alt=""></a>
 																							      </div>  
 																							      <div class="phone phone_footer">
-																							          <a class="phone__link-footer" href="tel:+74957399736">+7 (499) 110-64-17</a>
+																							          <a class="phone__link-footer" href="tel:+74952152480">+7 (495) 215-24-80</a>
 																							          <a class="callback-link popup-calllback-show" href="javascript:PopUpShow()" data-reach-goal="get_form_footer" data-department="corp" data-form-name="Заказать обратный звонок (подвал)">Заказать обратный звонок</a>
 																							        </div>
 																							      <div class="t420__col__contacts">
 																							        <div class="t420__col__contacts__colm">
 																							          <div class="t420__col__contacts__colm__item t420__col-email">info@systemice.ru</div>
-																							          <div class="t420__col__contacts__colm__item t420__col-copyright">2017, «systemice»</div>
+																							          <div class="t420__col__contacts__colm__item t420__col-copyright"><?echo date("Y");?>, «systemice»</div>
 																							        </div>
 																							        <div class="t420__col__contacts__colm">
-																							          <div class="t420__col__contacts__colm__item t420__col-address">г. Москва, ул. Бауманская, дом 6, офис 309, 3-й этаж</div>
+																							          <div class="t420__col__contacts__colm__item t420__col-address">г. Москва, ул. Бауманская, дом 6</div>
 																							        </div>
 																							      </div>
 																							    </div>

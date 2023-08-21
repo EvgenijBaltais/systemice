@@ -1189,7 +1189,7 @@ $(window).resize(function() {
     <div class="t-col t-col_6 ">
       <div class="t556__contentbox" style="height:;">
         <div class="t556__contentwrapper">			
-            <div class="t556__contacts t-text t-descr_xxxl" style="color:#ffffff;" field="text"><div style="font-size:28px;" data-customstyle="yes">Заполните форму и наши менеджеры свяжутся с Вами чтобы помочь разъяснить любые вопросы.<br /><br />8<a href="tel:+74991107435"> (499) 110-74-35<br /></a>info@systemice.ru</div></div>                        
+            <div class="t556__contacts t-text t-descr_xxxl" style="color:#ffffff;" field="text"><div style="font-size:28px;" data-customstyle="yes">Заполните форму и наши менеджеры свяжутся с Вами чтобы помочь разъяснить любые вопросы.<br /><br />8<a href="tel:+74952152480"> (495) 215-24-80<br /></a>info@systemice.ru</div></div>                        
               
             		
         </div>
