@@ -46,11 +46,8 @@
 		</div>
 		<div>
 			<div class="bl-social">
-				<a href="https://www.instagram.com/systemice/" target = "_blank" class="social-link social-link-instagram">
+				<a href="https://instagram.com/systemice_stream?igshid=MzRlODBiNWFlZA==" target = "_blank" class="social-link social-link-instagram">
 					<img src="@/assets/images/icons/instagram.png">
-				</a>
-				<a href="https://t.me/systemice_group" target = "_blank" class="social-link social-link-telegram">
-					<img src="@/assets/images/icons/telegram.png">
 				</a>
 				<div class="spy-left"></div>
 				<div class="spy-top"></div>
