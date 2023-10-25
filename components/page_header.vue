@@ -9,10 +9,39 @@
 				<div class = "event-progress bta-hover"></div>
 				<div class = "common-progress-text">Общий прогресс сборки мероприятия</div>
 			</a>
-			<a class="tel-btn" href="tel:74952152480">+7(495)215-24-80</a>
+			<div class="tel-continer">
+				<div class="tel-wrap">
+					<a class="tel-btn tel-whtsp" href="https://api.whatsapp.com/send?phone=79266410573">+7(926)641-05-73</a>
+					<span>Для связи по Whatsapp</span> 
+				</div>
+
+				<div class="tel-wrap">
+					<a class="tel-btn" href="tel:74952152480">+7(495)215-24-80</a>
+					<span>Для звонков</span>
+				</div>
+
+			</div>
 		</div>
 		<div class="header-mob">
-			<NuxtLink class="btn-no-animate" to = "/event-progress"><span>Собрать мероприятие</span></NuxtLink>
+
+			<div class="bl-tel bl-phone">
+				<a class="mob-tel" href="tel:74952152480">+7(495)215-24-80</a>
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+			</div>
+
+			<div class="bl-phone mob-whtsp">
+				<a href="https://api.whatsapp.com/send?phone=79266410573" target = "_blank" class="wtsp-link">
+					<img src="@/assets/images/icons/whatsapp.png">
+				</a>
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+			</div>
+
 			<div class="mob-menu" @click = "menuShowHide">
 				<span></span>
 				<span></span>
@@ -26,6 +55,9 @@
 			</div>
 		</div>
 		<div class="menu-wrapper">
+
+			<NuxtLink class="btn-no-animate" to = "/event-progress"><span>Собрать мероприятие</span></NuxtLink>
+
 			<ul class="menu-list">
 				<li class="menu-item"><NuxtLink to = "/">О компании</NuxtLink></li>
 				<li class="menu-item"><NuxtLink to = "/service">Услуги</NuxtLink></li>
@@ -36,6 +68,7 @@
 				<!--<li class="menu-item"><NuxtLink to = "/news">Новости</NuxtLink></li>-->
 				<li class="menu-item"><NuxtLink to = "/contact">Контакты</NuxtLink></li>
 			</ul>
+			<!--
 			<div class="bl-social">
 				<a href="https://instagram.com/systemice_stream?igshid=MzRlODBiNWFlZA==" target = "_blank" class="social-link social-link-instagram">
 					<img src="@/assets/images/icons/instagram.png">
@@ -45,6 +78,7 @@
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 			</div>
+			-->
 		</div>
 	</header>
 

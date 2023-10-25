@@ -516,6 +516,12 @@ header {
     box-sizing: border-box;
 }
 
+.bl-phone {
+    position: relative;
+    padding: 7px 10px;
+    box-sizing: border-box;
+}
+
 .social-link:first-child {
     display: block;
     /*margin-bottom: 10px;*/
@@ -757,6 +763,8 @@ header {
     line-height: 0.9;
     font-family: 'RalewaySemiBold', sans-serif;
     color: #fff;
+    width: auto;
+    text-align: center;
     padding: 10px 19px;
     letter-spacing: 0.5px;
     box-shadow: 0 0 22px 5px rgba(233,0,0,0.5);
@@ -769,7 +777,35 @@ header {
 .tel-btn {
 
     font-size: 28px;
-    font-family: 'RalewayLight', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.tel-continer {
+    display: flex;
+    flex-direction: row;
+}
+
+.tel-wrap {
+    margin-left: 3rem;
+}
+
+.tel-whtsp {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/icons/whatsapp.png) no-repeat;
+    background-size: 32px 32px;
+    padding-left: 37px;
+}
+
+.logo-main {
+    width: 80px;
+}
+
+.tel-wrap span {
+    display: block;
+    font-size: 13px;
+    text-align: right;
 }
 
 .bl-search {
@@ -1043,6 +1079,31 @@ position: absolute;
 .bl-social .spy-bottom {
     left: 58%;
     right: -1px;
+}
+
+.bl-phone .spy-left {
+    bottom: 30%;
+    top: 0;
+}
+
+.bl-phone .spy-top {
+    right: 30%;
+    left: 0;
+}
+
+.bl-phone .spy-right {
+    top: 16%;
+    bottom: 0;
+}
+
+.bl-phone .spy-bottom {
+    left: 30%;
+    right: 0;
+}
+
+.mob-whtsp {
+    margin-left: 20px;
+    margin-right: auto;
 }
 
 .map {
@@ -3740,7 +3801,7 @@ position: absolute;
        animation: rights 1.8s ease-in-out;
     }
 
-    .tel-btn {
+    .tel-wrap {
        animation: mig 2.2s ease-in-out;
     }
 
@@ -4141,6 +4202,11 @@ position: absolute;
     }
 
 @media screen and (max-width: 1480px) {
+
+    .header {
+        padding: 0 2% 0 4%;
+    }
+
     .h1 {
         font-size: 3.4em;
     }
@@ -4212,6 +4278,9 @@ position: absolute;
     .info-data-item p {
         font-size: 16px;
         line-height: 1.3;
+    }
+    .logo-main {
+        width: 60px;
     }
 }
 
@@ -4434,6 +4503,24 @@ position: absolute;
     .service-block-btns {
         flex-wrap: wrap;
     }
+    .tel-btn { font-size: 24px; }
+
+    .tel-wrap {
+        margin-left: 2rem;
+    }
+    .tel-whtsp:before {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .tel-btn { font-size: 22px; }
+
+    .tel-wrap {
+        margin-left: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -4606,6 +4693,17 @@ position: absolute;
         display: block;
         width: 300px;
     }
+
+    .tel-btn { font-size: 20px; }
+
+    .tel-whtsp:before {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header {
+        padding: 0 0 0 4%;
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -4686,7 +4784,20 @@ position: absolute;
 .videos-example:first-child {
     height: auto;
 }
-
+.btn-no-animate {
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    font-size: 1em;
+    line-height: 1;
+    font-family: 'RalewaySemiBold', sans-serif;
+    color: #fff;
+    width: auto;
+    text-align: center;
+    padding: 12px 30px;
+    margin: 0 auto 120px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 22px 5px rgba(233,0,0,0.5);
+}
 }
 
 @media only screen and (max-width: 850px) {
@@ -5203,11 +5314,6 @@ position: absolute;
         margin-top: 3%;
         justify-content: space-between;
     }
-    .mob-menu {
-        height: 35px;
-        width: 35px;
-        cursor: pointer;
-    }
     .bl-preview {
         width: 80%;
         margin-top: 25px;
@@ -5408,10 +5514,9 @@ position: absolute;
         top: 65px;
         left: 3%;
         right: 3%;
-        padding: 75px 0 40px;
+        padding: 30px 0 40px;
         bottom: 3%;        
         flex-direction: column;
-        justify-content: center;
         -webkit-transition: .5s cubic-bezier(0,1,.5,1);
         -moz-transition: .5s cubic-bezier(0,1,.5,1);
         -o-transition: .5s cubic-bezier(0,1,.5,1);
@@ -7232,8 +7337,8 @@ header {
 .mob-menu {
 
     position: relative;
-    height: 35px;
-    width: 35px;
+    height: 44px;
+    width: 44px;
     cursor: pointer;
 }
 
@@ -7248,8 +7353,8 @@ header {
 .mob-menu span {
     
     position: absolute;
-    width: 9px;
-    height: 9px;
+    width: 12px;
+    height: 12px;
     background-color: #fff;
       -webkit-animation-delay: 0.5s;
       animation-delay: 0.5s;
@@ -7259,20 +7364,20 @@ header {
     left: 0;
 }
 .mob-menu span:nth-child(2) {
-    left: 13px;
+    left: 16px;
 }
 .mob-menu span:nth-child(3) {
     right: 0;
 }
 .mob-menu span:nth-child(4) {
-    top: 13px;
+    top: 16px;
 }
 .mob-menu span:nth-child(5) {
-    top: 13px;
-    left: 13px;
+    top: 16px;
+    left: 16px;
 }
 .mob-menu span:nth-child(6) {
-    top: 13px;
+    top: 16px;
     right: 0;
 }
 .mob-menu span:nth-child(7) {
@@ -7280,7 +7385,7 @@ header {
 }
 .mob-menu span:nth-child(8) {
     bottom: 0;
-    left: 13px;
+    left: 16px;
 }
 .mob-menu span:nth-child(9) {
     bottom: 0;
@@ -7367,10 +7472,9 @@ header {
     top: 65px;
     left: 3%;
     right: 3%;
-    padding: 75px 0 40px;
+    padding: 30px 0 40px;
     bottom: 3%;        
     flex-direction: column;
-    justify-content: center;
     -webkit-transition: .5s cubic-bezier(0,1,.5,1);
     -moz-transition: .5s cubic-bezier(0,1,.5,1);
     -o-transition: .5s cubic-bezier(0,1,.5,1);
@@ -7461,6 +7565,22 @@ header {
 .videos-examples {
     margin-top: 100px;
 }
+
+.mob-tel {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    background-image: url(../images/icons/Vector.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 22px 22px;
+    padding-left: 26px;
+}
+
+.wtsp-link img {
+    width: 25px;
+}
+
 
 }
 
@@ -7616,5 +7736,74 @@ header {
 
     .videos-example {
         height: 200px;
+    }
+    .mob-whtsp {
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+
+    .mob-tel {
+        font-size: 20px;
+    }
+
+    .mob-menu {
+        height: 35px;
+        width: 35px;
+        cursor: pointer;
+    }
+
+    .mob-whtsp {
+        margin: 0;
+    }
+
+    .mob-menu span {
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        background-color: #fff;
+          -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+        z-index: 10;
+    }
+    .mob-menu span:nth-child(1), .mob-menu span:nth-child(4), .mob-menu span:nth-child(7) {
+        left: 0;
+    }
+    .mob-menu span:nth-child(2) {
+        left: 13px;
+    }
+    .mob-menu span:nth-child(3) {
+        right: 0;
+    }
+    .mob-menu span:nth-child(4) {
+        top: 13px;
+    }
+    .mob-menu span:nth-child(5) {
+        top: 13px;
+        left: 13px;
+    }
+    .mob-menu span:nth-child(6) {
+        top: 13px;
+        right: 0;
+    }
+    .mob-menu span:nth-child(7) {
+        bottom: 0;
+    }
+    .mob-menu span:nth-child(8) {
+        bottom: 0;
+        left: 13px;
+    }
+    .mob-menu span:nth-child(9) {
+        bottom: 0;
+        right: 0;
+    }
+
+    .wtsp-link img {
+        width: 20px;
+    }
+    .bl-phone {
+        padding: 6px 8px;
     }
 }
