@@ -17,13 +17,7 @@
 			<pageHeader/>
 
 			<div class="content-box video">
-				<div class="video-box clearfix">
-					<h2 class="h2">МЕРОПРИЯТИЕ НАЧИНАЕТСЯ С НАС</h2>
-					<div class="video-container" @click = "startVideo($event)">
-						<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/GxmyTcSiqjs?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<p class="p-title">Видеопрезентация компании Systemice</p>
-				</div>
+				
 				<div class="main-description clearfix">
 					<h1 class="h1">КОРПОРАТИВНЫЕ МЕРОПРИЯТИЯ</h1>
 					<div class="line"></div>
