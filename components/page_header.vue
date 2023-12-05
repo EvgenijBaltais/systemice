@@ -11,7 +11,7 @@
 			</a>
 			<div class="tel-continer">
 				<div class="tel-wrap">
-					<a class="tel-btn tel-whtsp" href="https://api.whatsapp.com/send?phone=79266410573">+7(926)641-05-73</a>
+					<a class="tel-btn tel-whtsp" href="https://api.whatsapp.com/send?phone=79266410573&text=Здравствуйте, у меня  вопрос с вашего корпоративного сайта Systemice">+7(926)641-05-73</a>
 					<span>Для связи по Whatsapp</span> 
 				</div>
 
@@ -33,7 +33,7 @@
 			</div>
 
 			<div class="bl-phone mob-whtsp">
-				<a href="https://api.whatsapp.com/send?phone=79266410573" target = "_blank" class="wtsp-link">
+				<a href="https://api.whatsapp.com/send?phone=79266410573&text=Здравствуйте, у меня  вопрос с вашего корпоративного сайта Systemice" target = "_blank" class="wtsp-link">
 					<img src="@/assets/images/icons/whatsapp.png">
 				</a>
 					<div class="spy-left"></div>

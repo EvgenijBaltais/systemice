@@ -94,4 +94,5 @@ sw.*
 # Vim swap files
 *.swp
 
-.nuxt
+nuxt-dist
+app/nuxt-dist

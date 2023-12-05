@@ -78,5 +78,6 @@ export default {
         'window.jQuery': 'jquery'
       })
     ]
-  }
+  },
+  buildDir: 'nuxt-dist'
 }
