@@ -3,3 +3,72 @@ ErrorDocument 404 /404.html
 
 DirectoryIndex page354796.html
 
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^121212$ page1370680.html [NC]
+RewriteRule ^121212/$ page1370680.html [NC]
+
+RewriteRule ^nng$ page1775581.html [NC]
+RewriteRule ^nng/$ page1775581.html [NC]
+
+RewriteRule ^loft1$ page1794512.html [NC]
+RewriteRule ^loft1/$ page1794512.html [NC]
+
+RewriteRule ^loft2$ page1804260.html [NC]
+RewriteRule ^loft2/$ page1804260.html [NC]
+
+RewriteRule ^rooms$ page1808771.html [NC]
+RewriteRule ^rooms/$ page1808771.html [NC]
+
+RewriteRule ^mcc$ page1817645.html [NC]
+RewriteRule ^mcc/$ page1817645.html [NC]
+
+RewriteRule ^admit$ page1851078.html [NC]
+RewriteRule ^admit/$ page1851078.html [NC]
+
+RewriteRule ^ruveta$ page1897668.html [NC]
+RewriteRule ^ruveta/$ page1897668.html [NC]
+
+RewriteRule ^suggest$ page1910212.html [NC]
+RewriteRule ^suggest/$ page1910212.html [NC]
+
+RewriteRule ^probba$ page1915908.html [NC]
+RewriteRule ^probba/$ page1915908.html [NC]
+
+RewriteRule ^123$ page1916149.html [NC]
+RewriteRule ^123/$ page1916149.html [NC]
+
+RewriteRule ^proto$ page1925198.html [NC]
+RewriteRule ^proto/$ page1925198.html [NC]
+
+RewriteRule ^123123123$ page2231130.html [NC]
+RewriteRule ^123123123/$ page2231130.html [NC]
+
+RewriteRule ^testpdf$ page2370869.html [NC]
+RewriteRule ^testpdf/$ page2370869.html [NC]
+
+RewriteRule ^brrs$ page3205402.html [NC]
+RewriteRule ^brrs/$ page3205402.html [NC]
+
+RewriteRule ^008$ page25957270.html [NC]
+RewriteRule ^008/$ page25957270.html [NC]
+
+RewriteRule ^acttt$ page26003054.html [NC]
+RewriteRule ^acttt/$ page26003054.html [NC]
+
+RewriteRule ^avtkr$ page38248756.html [NC]
+RewriteRule ^avtkr/$ page38248756.html [NC]
+
+RewriteRule ^prgl$ page40047849.html [NC]
+RewriteRule ^prgl/$ page40047849.html [NC]
+
+RewriteRule ^prgl2$ page40494517.html [NC]
+RewriteRule ^prgl2/$ page40494517.html [NC]
+
+RewriteRule ^systemice-contacts$ page40537628.html [NC]
+RewriteRule ^systemice-contacts/$ page40537628.html [NC]
+
+
