@@ -94,17 +94,17 @@
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/1.jpg')})`}">
 					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/CGessuZCMgs?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
-				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/2.jpg')})`}">
-					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/cM9RQB-Z6bg?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/3.jpg')})`}">
-					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/cGky8oRRo20?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
-				</div>
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/12.jpg')})`}">
 					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/vmVpw6MbRx0?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/13.jpg')})`}">
 					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/lqtCcB2EJC0?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/2.jpg')})`}">
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/cM9RQB-Z6bg?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/3.jpg')})`}">
+					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/cGky8oRRo20?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../assets/images/videos/10.jpg')})`}">
 					<iframe id="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://www.youtube-nocookie.com/embed/we0jH4TeB10?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
