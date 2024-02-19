@@ -2625,7 +2625,7 @@ position: absolute;
         z-index: 2;
     }
 
-    * {
+    html {
       scrollbar-width: thin;
       scrollbar-color: transparent;
     }
@@ -7806,4 +7806,25 @@ header {
     .bl-phone {
         padding: 6px 8px;
     }
+}
+
+.dop-phones {
+    max-width: 500px;
+    width: 100%;
+    padding-top: 100px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.dop-logos {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.dop-logos-item {
+    display: block;
+    max-width: 110px;
+    max-height: 50px;
+    margin-right: 30px;
 }

@@ -69,6 +69,15 @@
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
+				<div class = "dop-phones">
+					<br><br>
+					<b>Наши телефоны:</b> +74952152480, +74956460067, +74956461111, +74956486612, +74956486711, +74956498782, +74959297086, +74991105418, +74991105783, +74994509722, +74994550329, +79315210868
+					<br>
+					<div class = "dop-logos">
+						<img src="@/assets/images/icons/logo-maot.svg" class = "dop-logos-item">
+						<img src="@/assets/images/logo.png" class = "dop-logos-item">
+					</div>
+				</div>
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">
