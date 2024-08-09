@@ -717,6 +717,12 @@ export default {
 			document.querySelector(".fadein-phone").addEventListener('keyup', function() {
 				this.classList.remove('input-box-wrong')
 			})
+			document.querySelector(".fadein-name").addEventListener('keyup', function() {
+				this.classList.remove('input-box-wrong')
+			})
+			document.querySelector(".fadein-email").addEventListener('keyup', function() {
+				this.classList.remove('input-box-wrong')
+			})
 
 			document.querySelector('.overlay').addEventListener('click', e => {
 
@@ -734,11 +740,29 @@ export default {
 
 			e.preventDefault()
 
+			var a = false
+
 			if (!form.querySelector('.fadein-phone').inputmask.isComplete()) {
 
 				form.querySelector('.fadein-phone').classList.add('input-box-wrong')
-				return false
+				a = true
 			}
+
+			if (form.querySelector('.fadein-name').value.length < 3) {
+
+				form.querySelector('.fadein-name').classList.add('input-box-wrong')
+				a = true
+			}
+
+			if (form.querySelector('.fadein-email').value.length < 3) {
+
+				form.querySelector('.fadein-email').classList.add('input-box-wrong')
+				a = true
+			}
+
+			console.log(form.querySelector('.fadein-name').value, form.querySelector('.fadein-email').value)
+
+			if (a) return false
 
 			this.sendFadeInForm(form)
 		},
@@ -764,7 +788,7 @@ export default {
 				bodyFormData.append('hotel', 13632)
 				bodyFormData.append('form_name_text', 'Заказать обратный звонок')
 
-			axios.post('https://systemice.ru/knight_bron.php', bodyFormData, {
+			/*axios.post('https://systemice.ru/knight_bron.php', bodyFormData, {
 				headers: {
 					'Content-Type': 'application/x-www-form-urlencoded'
 				}
@@ -781,7 +805,7 @@ export default {
 				form.querySelector('.fadein-submit').value = "Успешно!"
 
 				this.$metrika.reachGoal('callback_1')
-			})
+			})*/
 		},
 		body_lock() {
 			let body = document.body;
