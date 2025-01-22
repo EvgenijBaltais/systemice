@@ -6218,11 +6218,11 @@ position: absolute;
     max-width: 610px;
 }
 
-#YoutubeVideo {
+.YoutubeVideo {
     visibility: hidden;
 }
 
-#YoutubeVideo iframe {
+.YoutubeVideo iframe {
     width: 100%!important;
     height: 100%!important;
 }
