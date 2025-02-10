@@ -21,7 +21,7 @@
 					<p class = "videos-info">Команда Systemice подготовила и осуществила съемки различных проектов 2021 году. Была проделана огромная работа, чтобы мероприятие состоялось в лучшем виде!</p>
 				</div>
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/1.jpg')})`}">
-					<iframe class="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://rutube.ru/play/embed/94585286cd58edb4875ee79972538c6f/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					<iframe class="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://rutube.ru/play/embed/94585286cd58edb4875ee79972538c6f/" frameBorder="0" allow="clipboard-write; autoplay=1" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				</div>
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/12.jpg')})`}">
 					<iframe class="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://rutube.ru/play/embed/e92bdd079990a831c30e6220145c0f33/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
