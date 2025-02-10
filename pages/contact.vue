@@ -77,6 +77,8 @@
 						<img src="@/assets/images/icons/logo-maot.svg" class = "dop-logos-item">
 						<img src="@/assets/images/logo.png" class = "dop-logos-item">
 					</div>
+					<br>
+					<a href = "/privacy" class="white-link">Политика конфиденциальности</a>
 				</div>
 			</div>
 			<div class="footer-mob">
