@@ -60,6 +60,9 @@ img {
 .portfolio {
     background-image: url('../images/bg-portfolio.jpg');
 }
+.portfolio_in {
+    background-image: url('../images/bg-portfolio.jpg');
+}
 .map-bg {
     width: 500px;
     position: relative;
