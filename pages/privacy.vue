@@ -17,7 +17,7 @@
                         Закон о&nbsp;персональных данных) и&nbsp;определяет порядок обработки
                         персональных данных и&nbsp;меры по&nbsp;обеспечению безопасности персональных
                         данных, предпринимаемые <span class="link mark owner-name-field"
-                            id="owner-name-value" data-scroll-to="#owner-name-field">«Системайс Хотел Групп»</span> (далее&nbsp;&mdash; Оператор).
+                            id="owner-name-value" data-scroll-to="#owner-name-field">«Системайс Отель Груп»</span> (далее&nbsp;&mdash; Оператор).
                     </div>
                     <div class="ol">
                         <div class="li">
@@ -432,7 +432,7 @@
                             Пользователь может актуализировать их&nbsp;самостоятельно, путем направления
                             Оператору уведомление на&nbsp;адрес электронной почты Оператора <span
                                 class="link mark owner-email-field"
-                                data-scroll-to="#owner-email-field">mail@{{host}}</span>
+                                data-scroll-to="#owner-email-field">info@{{host}}</span>
                             с&nbsp;пометкой &laquo;Актуализация персональных данных&raquo;.
                         </div>
                         <div class="li">
@@ -445,7 +445,7 @@
                             на&nbsp;обработку персональных данных, направив Оператору уведомление
                             посредством электронной почты на&nbsp;электронный адрес Оператора <span
                                 class="link mark owner-email-field"
-                                data-scroll-to="#owner-email-field">mail@{{host}}</span>
+                                data-scroll-to="#owner-email-field">info@{{host}}</span>
                             с&nbsp;пометкой &laquo;Отзыв согласия на&nbsp;обработку персональных
                             данных&raquo;.
                         </div>
@@ -551,7 +551,7 @@
                             вопросам, касающимся обработки его персональных данных, обратившись
                             к&nbsp;Оператору с&nbsp;помощью электронной почты <span
                                 class="link mark owner-email-field"
-                                data-scroll-to="#owner-email-field">mail@{{host}}</span>.
+                                data-scroll-to="#owner-email-field">info@{{host}}</span>.
                         </div>
                         <div class="li">
                             12.2. В&nbsp;данном документе будут отражены любые изменения политики
@@ -565,7 +565,7 @@
                                 data-scroll-to="#owner-privacy-url-field">https://{{host}}/privacy</span>.
                         </div>
                         <div class="li">
-                        12.4. Оператор имеет право отправлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь может отказаться от получения сообщений, направив Компании письмо на адрес электронной почты mail@{{host}} с пометкой «Отказ от уведомлений».
+                        12.4. Оператор имеет право отправлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь может отказаться от получения сообщений, направив Компании письмо на адрес электронной почты info@{{host}} с пометкой «Отказ от уведомлений».
                         </div>
                     </div>
                 </div>
