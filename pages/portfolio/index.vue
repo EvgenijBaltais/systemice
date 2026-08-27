@@ -20,9 +20,6 @@
 					<h1 class = "videos-title">Видео с примерами нашей работы</h1>
 					<p class = "videos-info">Команда Systemice подготовила и осуществила съемки различных проектов 2021 году. Была проделана огромная работа, чтобы мероприятие состоялось в лучшем виде!</p>
 				</div>
-				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/1.jpg')})`}">
-					<iframe class="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://rutube.ru/play/embed/94585286cd58edb4875ee79972538c6f/" frameBorder="0" allow="clipboard-write; autoplay=1" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-				</div>
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/12.jpg')})`}">
 					<iframe class="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://rutube.ru/play/embed/e92bdd079990a831c30e6220145c0f33/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				</div>
@@ -31,9 +28,6 @@
 				</div>
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/2.jpg')})`}">
 					<iframe class="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://rutube.ru/play/embed/005ac4a654e9032f4c7c50e65d4bac7f/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-				</div>
-				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/3.jpg')})`}">
-					<iframe class="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://rutube.ru/play/embed/3d776b420feb251319552be2d1908e0b/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				</div>
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/10.jpg')})`}">
 					<iframe class="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://rutube.ru/play/embed/b2d9c51c5c3a2aab74dfa0dd4c3e0029/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
