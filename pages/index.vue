@@ -22,7 +22,7 @@
 					<h1 class="h1">КОРПОРАТИВНЫЕ МЕРОПРИЯТИЯ</h1>
 					<div class="line"></div>
 					<p class="bl-desc">
-						Компания <strong>Systemice</strong> помогает провести презентации, переговоры, конференции, конгрессы, форумы и выставки. Наш конёк — конференции и семинары в Москве и Подмосковье. Назначаем вам куратора мероприятия. Он показывает отель или площадку, помогает с документами, встречает гостей из-за рубежа и сопровождает к месту события.
+						Компания <strong>Systemice</strong> помогает провести презентации, переговоры, конференции, конгрессы, форумы и выставки. Назначаем вам куратора мероприятия. Он показывает отель или площадку, помогает с документами, встречает гостей из-за рубежа и сопровождает к месту события.
 					</p>
 				</div>
 			</div>
@@ -130,65 +130,7 @@
 				<h1 class="h1">УСЛУГИ</h1>
 				<div class="line"></div>
 				<div class = "main-s">
-					<div class="service-block">
-						<div class="img-wrapper">
-							<div
-							class="service-img"
-							:style="{
-								backgroundImage: `url(${require('../assets/images/business-travel.jpg')})`,
-							}"
-							></div>
-						</div>
-						<div class = "service-desc-w">
-							<div class="service-desc">
-								<h1 class="h1">Business Travel</h1>
-								<div class="line"></div>
-								<div class="spy-left"></div>
-								<div class="spy-top"></div>
-								<div class="spy-right"></div>
-								<div class="spy-bottom"></div>
-								<div class="service-hover">
-									<a href="https://systemice-business.ru/" target="_blank" class="open-btn"
-									>Открыть</a
-									>
-								</div>
-							</div>
-							<p class="bl-desc">
-								Подразделение Systemice Group, предоставляющее комплексное обслуживание
-								корпоративным клиентам и госучреждениям.
-							</p>
-						</div>
-					</div>
 
-					<div class="service-block">
-						<div class="img-wrapper">
-							<div
-							class="service-img"
-							:style="{
-								backgroundImage: `url(${require('../assets/images/cases.jpg')})`,
-							}"
-							></div>
-						</div>
-						<div class = "service-desc-w">
-							<div class="service-desc">
-								<h1 class="h1">КОРПОРАТИВНЫЕ КЕЙСЫ</h1>
-								<div class="line"></div>
-								<div class="spy-left"></div>
-								<div class="spy-top"></div>
-								<div class="spy-right"></div>
-								<div class="spy-bottom"></div>
-								<div class="service-hover">
-									<a
-									href="https://systemice.ru/services/corporate_cases/"
-									target="_blank"
-									class="open-btn"
-									>Открыть</a
-									>
-								</div>
-							</div>
-							<p class="bl-desc">Здесь каждый найдет выгодное предложение для себя.</p>
-						</div>
-					</div>
 
 					<div class="service-block">
 						<div class="img-wrapper">

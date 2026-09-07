@@ -1,5 +1,5 @@
 <template>
 	<div class="bl-copyright">
-		Ⓒ2014 - 2025
+		Ⓒ2014 - 2026
 	</div>
 </template>

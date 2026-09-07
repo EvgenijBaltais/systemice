@@ -55,7 +55,7 @@
 				<div class="spy-bottom"></div>
 			</div>
 			<div class="bl-copyright">
-				Ⓒ2014 - 2025
+				Ⓒ2014 - 2026
 			</div>
 		</div>
 	</div>
