@@ -107,7 +107,7 @@ import axios from 'axios'
 export default {
 	head() {
 		return {
-			title: 'Контакты - Systemice Group Системайс Хотел Групп',
+			title: 'Контакты - Systemice Group Системайс Групп',
 			meta: [
 				{
 					hid: 'name',

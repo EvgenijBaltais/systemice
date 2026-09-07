@@ -128,7 +128,7 @@ export default {
             {
                 hid: 'og:title',
                 name: 'og:title',
-                content: 'Systemice Group Системайс Хотел Групп',
+                content: 'Systemice Group Системайс Групп',
             },
             {
                 hid: 'og:image',

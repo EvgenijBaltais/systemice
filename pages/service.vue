@@ -149,7 +149,7 @@ import pageHeader from "@/components/page_header";
 export default {
   head() {
     return {
-      title: "Услуги - Systemice Group Системайс Хотел Групп",
+      title: "Услуги - Systemice Group Системайс Групп",
       meta: [
       {
         hid: 'name',
@@ -164,7 +164,7 @@ export default {
       {
           hid: 'og:title',
           name: 'og:title',
-          content: 'Systemice Group Системайс Хотел Групп',
+          content: 'Systemice Group Системайс Групп',
       },
       {
           hid: 'og:image',

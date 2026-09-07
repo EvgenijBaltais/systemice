@@ -411,7 +411,7 @@ import axios from 'axios'
 export default {
 	head() {
 		return {
-			title: 'Systemice Group / Системайс Хотел Групп',
+			title: 'Systemice Group / Системайс Групп',
 			script:[],
 			meta: [
 			{
@@ -427,7 +427,7 @@ export default {
             {
                 hid: 'og:title',
                 name: 'og:title',
-                content: 'Systemice Group / Системайс Хотел Групп',
+                content: 'Systemice Group / Системайс Групп',
             },
             {
                 hid: 'og:image',
@@ -447,7 +447,7 @@ export default {
             {
             	hid: 'og:image:alt',
                 property: 'og:image:alt',
-                content: 'Systemice.ru - Systemice Group / Системайс Хотел Групп',
+                content: 'Systemice.ru - Systemice Group / Системайс Групп',
             },
             {
                 hid: 'og:description',
@@ -462,7 +462,7 @@ export default {
 			{
 				hid: 'itemprop:name',
 				itemprop: "name",
-				content: "Systemice Group / Системайс Хотел Групп"
+				content: "Systemice Group / Системайс Групп"
 			},
 			{
 				hid: 'itemprop:description',
@@ -482,7 +482,7 @@ export default {
 			{
 				hid: 'twitter:title',
 				name: "twitter:title",
-				content: "Systemice Group / Системайс Хотел Групп"
+				content: "Systemice Group / Системайс Групп"
 			},
 			{
 				hid: 'twitter:description',

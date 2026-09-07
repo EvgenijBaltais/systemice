@@ -94,7 +94,7 @@ import pageHeader from '@/components/page_header'
 export default {
 	head() {
 		return {
-			title: 'Партнеры - Systemice Group Системайс Хотел Групп',
+			title: 'Партнеры - Systemice Group Системайс Групп',
 			script:[],
 			meta: [
 			{
@@ -110,7 +110,7 @@ export default {
             {
                 hid: 'og:title',
                 name: 'og:title',
-                content: 'Systemice Group Системайс Хотел Групп',
+                content: 'Systemice Group Системайс Групп',
             },
             {
                 hid: 'og:image',
