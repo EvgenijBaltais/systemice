@@ -411,13 +411,13 @@ import axios from 'axios'
 export default {
 	head() {
 		return {
-			title: 'Systemice Hotel Group / Системайс Хотел Групп',
+			title: 'Systemice Group / Системайс Хотел Групп',
 			script:[],
 			meta: [
 			{
 				hid: 'name',
 				name: 'name',
-				content: 'Systemice Hotel Group'
+				content: 'Systemice Group'
 			},
 			{
 				hid: 'description',
@@ -427,7 +427,7 @@ export default {
             {
                 hid: 'og:title',
                 name: 'og:title',
-                content: 'Systemice Hotel Group / Системайс Хотел Групп',
+                content: 'Systemice Group / Системайс Хотел Групп',
             },
             {
                 hid: 'og:image',
@@ -447,7 +447,7 @@ export default {
             {
             	hid: 'og:image:alt',
                 property: 'og:image:alt',
-                content: 'Systemice.ru - Systemice Hotel Group / Системайс Хотел Групп',
+                content: 'Systemice.ru - Systemice Group / Системайс Хотел Групп',
             },
             {
                 hid: 'og:description',
@@ -462,7 +462,7 @@ export default {
 			{
 				hid: 'itemprop:name',
 				itemprop: "name",
-				content: "Systemice Hotel Group / Системайс Хотел Групп"
+				content: "Systemice Group / Системайс Хотел Групп"
 			},
 			{
 				hid: 'itemprop:description',
@@ -482,7 +482,7 @@ export default {
 			{
 				hid: 'twitter:title',
 				name: "twitter:title",
-				content: "Systemice Hotel Group / Системайс Хотел Групп"
+				content: "Systemice Group / Системайс Хотел Групп"
 			},
 			{
 				hid: 'twitter:description',
@@ -851,7 +851,7 @@ export default {
 
 		let myMap, myPlacemark,
 		koordinats = [55.776108388031815, 37.67544507980347],
-		companyName = 'Systemice Hotel Group',
+		companyName = 'Systemice Group',
 		balloonContent = 'ул. Бауманская д.6с2.<br>8 этаж. 804 офис'
 
 		ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU')
@@ -863,7 +863,7 @@ export default {
 			})
 			
 			myPlacemark = new maps.Placemark(koordinats, {
-				hintContent: 'Systemice Hotel Group',
+				hintContent: 'Systemice Group',
 				balloonContent: 'ул. Бауманская д.6с2. Бизнес-центр Виктория Плаза. 8 этаж. 804 офис'
 			})
 

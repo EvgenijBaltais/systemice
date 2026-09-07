@@ -689,7 +689,7 @@ export default {
 				{
 					hid: 'description',
 					name: 'description',
-					content: 'Systemice Hotel Group'
+					content: 'Systemice Group'
 				},
 			]
 		}

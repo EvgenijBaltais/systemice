@@ -91,13 +91,13 @@ import pageHeader from '@/components/page_header'
 export default {
 	head() {
 		return {
-			title: 'Портфолио - Systemice Hotel Group Системайс Хотел Групп',
+			title: 'Портфолио - Systemice Group Системайс Хотел Групп',
 			script:[],
 			meta: [
 			{
 				hid: 'name',
 				name: 'name',
-				content: 'Systemice Hotel Group'
+				content: 'Systemice Group'
 			},
 			{
 				hid: 'description',
@@ -107,7 +107,7 @@ export default {
             {
                 hid: 'og:title',
                 name: 'og:title',
-                content: 'Systemice Hotel Group Системайс Хотел Групп',
+                content: 'Systemice Group Системайс Хотел Групп',
             },
             {
                 hid: 'og:image',

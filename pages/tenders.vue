@@ -206,13 +206,13 @@ import axios from 'axios'
 export default {
 	head() {
 		return {
-			title: 'Тендеры - Systemice Hotel Group Системайс Хотел Групп',
+			title: 'Тендеры - Systemice Group Системайс Хотел Групп',
 			script:[],
 			meta: [
 			{
 				hid: 'name',
 				name: 'name',
-				content: 'Systemice Hotel Group'
+				content: 'Systemice Group'
 			},
 			{
 				hid: 'description',
@@ -222,7 +222,7 @@ export default {
             {
                 hid: 'og:title',
                 name: 'og:title',
-                content: 'Systemice Hotel Group Системайс Хотел Групп',
+                content: 'Systemice Group Системайс Хотел Групп',
             },
             {
                 hid: 'og:image',
@@ -244,11 +244,7 @@ export default {
 	},
 	data(){
 		return {
-			budget: '',
-			region: '',
 			date: '',
-			guestsNumber: '',
-			procedurePayment: '',
 			email: '',
 			name: '',
 			phone: '',
@@ -321,20 +317,23 @@ export default {
 
             let dopinfo = 'С формы: Приглашение к тендеру (systemice.ru/tenders) '
 
-		      this.budget ? dopinfo += '; Бюджет: ' + this.budget : ''
-		      this.region ? dopinfo += '; регион: ' + this.region : ''
 		      this.date ? dopinfo += '; на дату: ' + this.date : ''
-		      this.guestsNumber ? dopinfo += '; гостей: ' + this.guestsNumber : ''
-		      this.procedurePayment ? dopinfo += '; процедура оплаты: ' + this.procedurePayment : ''
 		      this.comment ? dopinfo += "; комментарий: " + this.comment : ''
+
+
+				const today = new Date();
+
+				const day = today.getDate().toString().padStart(2, '0'); // День с ведущим нулём
+				const month = (today.getMonth() + 1).toString().padStart(2, '0'); // Месяц (учтём, что отсчёт от 0)
+				const year = today.getFullYear();
+
+				const tomorrow = new Date(today.setDate(today.getDate() + 1));
 
 				let bodyFormData = new FormData()
 				
-					bodyFormData.append('budget', this.budget)
-					bodyFormData.append('region', this.region)
 					bodyFormData.append('date', this.date)
-					bodyFormData.append('guestsNumber', this.guestsNumber)
-					bodyFormData.append('procedurePayment', this.procedurePayment)
+					bodyFormData.append('date_st', `${day}.${month}.${year}`)
+					bodyFormData.append('date_end', `${tomorrow.getDate().toString().padStart(2, '0')}.${(tomorrow.getMonth() + 1).toString().padStart(2, '0')}.${tomorrow.getFullYear()}`)
 					bodyFormData.append('email', this.email)
 					bodyFormData.append('name', this.name)
 					bodyFormData.append('phone', this.phone)

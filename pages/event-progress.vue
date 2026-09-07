@@ -34,13 +34,13 @@ import Inputmask from 'inputmask'
 export default {
 	head() {
 		return {
-			title: 'Собрать мероприятие - Systemice Hotel Group',
+			title: 'Собрать мероприятие - Systemice Group',
 			script:[],
 			meta: [
 			{
 				hid: 'name',
 				name: 'name',
-				content: 'Systemice Hotel Group'
+				content: 'Systemice Group'
 			},
 			{
 				hid: 'description',
@@ -50,7 +50,7 @@ export default {
             {
                 hid: 'og:title',
                 name: 'og:title',
-                content: 'Systemice Hotel Group Системайс Хотел Групп',
+                content: 'Systemice Group Системайс Хотел Групп',
             },
             {
                 hid: 'og:image',

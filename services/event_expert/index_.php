@@ -358,7 +358,7 @@
 										<div class="t814__line t-animate" data-animate-delay="0.3" data-animate-group="yes" data-animate-order="2" data-animate-style="fadein" style="opacity:0.60;"></div>
 										<div class="t814__descr t-descr t-descr_md t-animate t-animate" data-animate-delay="0.3" data-animate-group="yes" data-animate-order="2" data-animate-style="fadeinright" style="color:#000000;">
 											<div data-customstyle="yes" style="font-size:18px;line-height:30px;">
-												Речь идет, конечно же, об экспертной оценке сметы мероприятия и выдаче заключения SYSTEMICE HOTEL GROUP. Да, Вы действительно можете без проблем получить этот документ.<br>
+												Речь идет, конечно же, об экспертной оценке сметы мероприятия и выдаче заключения Systemice Group. Да, Вы действительно можете без проблем получить этот документ.<br>
 												Заключение независимого эксперта будет аргументом, который поможет согласовать расходы или добиться скидок у подрядчика.
 											</div>
 										</div>

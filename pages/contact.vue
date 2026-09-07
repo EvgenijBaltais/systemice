@@ -107,12 +107,12 @@ import axios from 'axios'
 export default {
 	head() {
 		return {
-			title: 'Контакты - Systemice Hotel Group Системайс Хотел Групп',
+			title: 'Контакты - Systemice Group Системайс Хотел Групп',
 			meta: [
 				{
 					hid: 'name',
 					name: 'name',
-					content: 'Systemice Hotel Group'
+					content: 'Systemice Group'
 				},
 				{
 					hid: 'description',
@@ -200,7 +200,7 @@ export default {
 
 		let myMap, myPlacemark,
 			koordinats = [55.776108388031815, 37.67544507980347],
-			companyName = 'Systemice Hotel Group',
+			companyName = 'Systemice Group',
 			balloonContent = 'ул. Бауманская д.6с2.<br>8 этаж. 804 офис'
 
 		ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU')
@@ -212,7 +212,7 @@ export default {
 			})
 		
 			myPlacemark = new maps.Placemark(koordinats, {
-				hintContent: 'Systemice Hotel Group',
+				hintContent: 'Systemice Group',
 				balloonContent: 'ул. Бауманская д.6с2. Бизнес-центр Виктория Плаза. 8 этаж. 804 офис'
 			})
 			

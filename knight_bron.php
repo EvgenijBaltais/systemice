@@ -1,11 +1,14 @@
 <?php
-
 header("Access-Control-Allow-Origin: *");
 header('Content-Type: text/html; charset=utf-8');
 
 if (empty($_POST)) {
 	die('Empty response');
 }
+
+//if ($_POST['dopinfo'] == "Заказать обратный звонок") {
+//   die();
+//}
 
 if ($_POST['u'] == "70840598" || $_POST['email'] == "01215@gmail.com") {
    die();
@@ -30,7 +33,9 @@ function sendCurl($data,$ded_login,$ded_password ){
 	    curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 	    $out = curl_exec($curl);
 	    curl_close($curl);
+	    return $out;
 	}
+	return false;
 }
 
 
@@ -40,17 +45,17 @@ function sendCorpMail($arr){
 //	$mail->SMTPDebug = 1;
 	$mail->isSMTP(); 
 
-	$mail->Host = 'smtp.yandex.ru';
+	$mail->Host = 'smtp.mail.ru';
 
 	$mail->SMTPAuth = true;
 
-	$mail->Username = 'order@systemice.ru';
-	$mail->Password = '87v3948j3-';
-	$mail->SMTPSecure = 'ssl';
-	$mail->Port = 465;
-	$mail->CharSet = "utf-8";
+$mail->Username = 'content-job@mail.ru';
+$mail->Password = 'TtdvJBjxWubvL1pSMPLT';
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;  
+$mail->CharSet = "utf-8";
 
-	$mail->setFrom('order@systemice.ru', 'Заявка с systemice.ru');
+	$mail->setFrom('content-job@mail.ru', 'Заявка с systemice.ru');
 	$mail->addAddress('maot-bron@mail.ru');
 	$mail->isHTML(true);
 
@@ -124,10 +129,13 @@ function sendCorpMail($arr){
 	
 	$dataCorp['u'] = $_POST['u'];
 
-	sendCurl($dataCorp,$ded_login,$ded_password );
+	$result = sendCurl($dataCorp,$ded_login,$ded_password );
 
+	echo $result;
+/*
 if(sendCorpMail($_POST)) {
 	echo 'Успешная отправка на почту';die;
 }
 
 echo 'Ошибка отправки на почту';die;
+*/

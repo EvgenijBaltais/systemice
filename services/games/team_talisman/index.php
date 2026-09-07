@@ -1943,7 +1943,7 @@
 							<div class="t677__content t-valign_middle">
 								<div class="t677__title t-title t-title_xs t-animate" data-animate-delay="0.3" data-animate-group="yes" data-animate-order="4" data-animate-style="fadeinright" style="color:#000000;line-height:1.6;">
 									<div data-customstyle="yes" style="font-size:24px;">
-										Компания SYSTEMICE HOTEL GROUP
+										Компания Systemice Group
 									</div>
 								</div>
 
