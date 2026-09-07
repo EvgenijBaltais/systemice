@@ -53,7 +53,7 @@
 					<p class = "tenders-garanties">Мы гарантируем наличие и предоставление всех необходимых документов, разрешений, сертификатов и лицензий, а также финансовых гарантий согласно законодательству РФ о проведении торгов.</p>
 					<form action="" name = "tenders-form" @submit.prevent = "checkForm">
 						<div class = "tenders-form">
-							<div class="tenders-half-width">
+							<!--<div class="tenders-half-width">
 								<div class="tenders-input-block">
 									<input
 									type="text"
@@ -80,7 +80,7 @@
 									<div class="spy-right-input"></div>
 									<div class="spy-top-input"></div>
 								</div>
-							</div>
+							</div>-->
 							<div class="tenders-half-width">
 								<div class="tenders-input-block">
 									<input
@@ -94,7 +94,7 @@
 									<div class="spy-right-input"></div>
 									<div class="spy-top-input"></div>
 								</div>
-							</div>
+							</div><!--
 							<div class="tenders-half-width">
 								<div class="tenders-input-block">
 									<input
@@ -108,7 +108,7 @@
 									<div class="spy-right-input"></div>
 									<div class="spy-top-input"></div>
 								</div>
-							</div>
+							</div>--><!--
 							<div class="tenders-half-width">
 								<div class="tenders-input-block">
 									<input
@@ -122,7 +122,7 @@
 									<div class="spy-right-input"></div>
 									<div class="spy-top-input"></div>
 								</div>
-							</div>
+							</div>-->
 							<div class="tenders-half-width">
 								<div class="tenders-input-block">
 									<input

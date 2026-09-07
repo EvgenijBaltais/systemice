@@ -3,7 +3,7 @@
 	<header>
 		<div class="header">
 			<NuxtLink class="btn-no-animate" to = "/event-progress">
-				<span>Собрать собственное мероприятие</span>
+				<span>Обсудить проект</span>
 			</NuxtLink>
 			<a class="btn event-progress-stripe" href="">
 				<div class = "event-progress bta-hover"></div>

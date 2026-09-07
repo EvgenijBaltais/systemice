@@ -174,7 +174,7 @@ export default {
               dateKnight = this.getKnightDate(data.date)
           }
 
-      let dopinfo = 'С формы: Собрать собственное мероприятие (systemice.ru/event-progress)'
+      let dopinfo = 'С формы: Обсудить проект (systemice.ru/event-progress)'
 
 
       data.budget ? dopinfo += '; Бюджет: ' + data.budget : ''
@@ -208,7 +208,7 @@ export default {
       bodyFormData.append("form_name", form.getAttribute("name"))
       bodyFormData.append('hotel', 13632)
       bodyFormData.append('dopinfo', dopinfo)
-      bodyFormData.append('form_name_text', 'Собрать собственное мероприятие (systemice.ru/event-progress)')
+      bodyFormData.append('form_name_text', 'Обсудить проект (systemice.ru/event-progress)')
       bodyFormData.append('file', document.querySelector('#field__file').files[0])
 
       axios

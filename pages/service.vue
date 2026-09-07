@@ -58,11 +58,6 @@
               <div class="spy-top"></div>
               <div class="spy-right"></div>
               <div class="spy-bottom"></div>
-              <div class="service-hover">
-                <a href="/services/platforms/" target="_blank" class="open-btn"
-                >Открыть</a
-                >
-              </div>
             </div>
             <p class="bl-desc">
               работает с клиентами компании и обеспечивает их лояльность, выполнение всех
