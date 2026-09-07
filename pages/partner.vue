@@ -99,6 +99,13 @@
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="@/assets/images/partners/13.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">

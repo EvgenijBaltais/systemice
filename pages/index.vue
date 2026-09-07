@@ -321,6 +321,41 @@
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/9.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/10.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/11.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/12.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+							<div class="bl-partner bl-partner-carousel-item">	
+								<img class="img-partner" src="@/assets/images/partners/13.png">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
 						</div>
 					</div>
 				</div>
