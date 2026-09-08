@@ -689,7 +689,7 @@ export default {
 				{
 					hid: 'description',
 					name: 'description',
-					content: 'Systemice Group'
+					content: 'Политика Systemice Group в отношении обработки и защиты персональных данных пользователей сайта systemice.ru.'
 				},
 			]
 		}

@@ -227,7 +227,7 @@
 					<div class="line"></div>
 					<div class = "main-portfolio-s-block">
 						<span class = "main-portfolio-block-text">На странице "Портфолио" Вы найдете отчеты о проделанной работе. И убедитесь, что наша компания способна организовать мероприятия любой сложности!</span>
-						<NuxtLink to = "/tenders" class="button-box-main button-box-main-red">
+						<NuxtLink to = "/portfolio" class="button-box-main button-box-main-red">
 							<span class = "button-box-main-title">Перейти на страницу "Портфолио"</span>
 							<div class="spy-left-btn-main spy-btn-red"></div>
 							<div class="spy-top-btn-main spy-btn-red"></div>
@@ -260,97 +260,97 @@
 			</div>
 
 			<div class = "partner-carousel">
-				<img class="partner-link-arrow partner-link-arrow-left" src="@/assets/images/icons/arr-left.svg" @click = "moveRight">
-				<img class="partner-link-arrow partner-link-arrow-right" src="@/assets/images/icons/arr-right.svg" @click = "moveLeft">
+				<img class="partner-link-arrow partner-link-arrow-left" src="@/assets/images/icons/arr-left.svg" alt="Предыдущие партнёры" @click = "moveRight">
+				<img class="partner-link-arrow partner-link-arrow-right" src="@/assets/images/icons/arr-right.svg" alt="Следующие партнёры" @click = "moveLeft">
 				<div class = "partner-carousel-wrap glide">
 					<div class = "partner-carousel-w glide__track" data-glide-el="track">	
 						<div class="glide__slides">
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/1.png">
+								<img class="img-partner" src="@/assets/images/partners/1.png" alt="Партнёр Systemice — Сбер А">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/2.png">
+								<img class="img-partner" src="@/assets/images/partners/2.png" alt="Партнёр Systemice — HAOM">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/3.png">
+								<img class="img-partner" src="@/assets/images/partners/3.png" alt="Партнёр Systemice — курорт Красная Поляна">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/4.png">
+								<img class="img-partner" src="@/assets/images/partners/4.png" alt="Партнёр Systemice — Azimut Hotels">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/5.png">
+								<img class="img-partner" src="@/assets/images/partners/5.png" alt="Партнёр Systemice — DataForum">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/6.png">
+								<img class="img-partner" src="@/assets/images/partners/6.png" alt="Партнёр Systemice — 1С">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/7.png">
+								<img class="img-partner" src="@/assets/images/partners/7.png" alt="Партнёр Systemice — Mantera Resort &amp; Congress">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/8.png">
+								<img class="img-partner" src="@/assets/images/partners/8.png" alt="Партнёр Systemice — RUSSPASS Business">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/9.png">
+								<img class="img-partner" src="@/assets/images/partners/9.png" alt="Партнёр Systemice — национальная премия «Событие года»">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/10.png">
+								<img class="img-partner" src="@/assets/images/partners/10.png" alt="Партнёр Systemice — MC">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/11.png">
+								<img class="img-partner" src="@/assets/images/partners/11.png" alt="Партнёр Systemice — Росэлторг">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/12.png">
+								<img class="img-partner" src="@/assets/images/partners/12.png" alt="Партнёр Systemice — сеть отелей Cosmos">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 							</div>
 							<div class="bl-partner bl-partner-carousel-item">	
-								<img class="img-partner" src="@/assets/images/partners/13.png">
+								<img class="img-partner" src="@/assets/images/partners/13.png" alt="Партнёр Systemice — АльфаСтрахование">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
@@ -410,7 +410,7 @@
 			<div class="contact-map">
 				<div id="map-block"></div>
 				<div class="copy-coordinat">
-					<img src="@/assets/images/icons/sheet.png"><span id = "copy-text" data-clipboard-text="55.775555, 37.674597">Скопировать координаты для навигатора</span>
+					<img src="@/assets/images/icons/sheet.png" alt="Скопировать координаты офиса"><span id = "copy-text" data-clipboard-text="55.775555, 37.674597">Скопировать координаты для навигатора</span>
 				</div>
 				<div class="spy-left"></div>
 				<div class="spy-top"></div>

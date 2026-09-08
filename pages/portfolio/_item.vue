@@ -111,8 +111,12 @@ import axios from 'axios'
 
 export default {
 	head() {
+		const portfolioItem = this.portfolioData[this.eventItem]
+		const eventDate = portfolioItem.dateData.replace(/<[^>]*>/g, '').trim().replace(/[.\s]+$/, '')
+		const description = `Кейс Systemice «${portfolioItem.title}»: организация и проведение корпоративного мероприятия${eventDate ? `, ${eventDate}` : ''}. Фото и детали проекта.`
+
 		return {
-			title: this.portfolioData[this.eventItem].title + ' - Проекты Systemice Group',
+			title: portfolioItem.title + ' - Проекты Systemice Group',
 			script:[],
 			meta: [
 			{
@@ -123,7 +127,7 @@ export default {
 			{
 				hid: 'description',
 				name: 'description',
-				content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам'
+				content: description
 			},
             {
                 hid: 'og:title',
@@ -138,7 +142,7 @@ export default {
             {
                 hid: 'og:description',
                 property: 'og:description',
-                content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам',
+				content: description,
             },
             {
                 hid: 'og:url',

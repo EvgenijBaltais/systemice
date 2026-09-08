@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /actions/
+Disallow: /php/
+Disallow: /phpmailer/
+Disallow: /nuxt-dist/
+
+Sitemap: https://systemice.ru/sitemap.xml

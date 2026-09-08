@@ -62,7 +62,7 @@
 				<div class="contact-map">
 					<div id="map-block"></div>
 					<div class="copy-coordinat">
-						<img src="@/assets/images/icons/sheet.png"><span id = "copy-text" data-clipboard-text="55.775555, 37.674597">Скопировать координаты для навигатора</span>
+						<img src="@/assets/images/icons/sheet.png" alt="Скопировать координаты офиса"><span id = "copy-text" data-clipboard-text="55.775555, 37.674597">Скопировать координаты для навигатора</span>
 					</div>
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
@@ -74,8 +74,8 @@
 					<b>Наши телефоны:</b> +74952152480, +74956460067, +74956461111, +74956486612, +74956486711, +74956498782, +74959297086, +74991105418, +74991105783, +74994509722, +74994550329, +79315210868
 					<br>
 					<div class = "dop-logos">
-						<img src="@/assets/images/icons/logo-maot.svg" class = "dop-logos-item">
-						<img src="@/assets/images/logo.png" class = "dop-logos-item">
+						<img src="@/assets/images/icons/logo-maot.svg" class = "dop-logos-item" alt="Логотип MAOT">
+						<img src="@/assets/images/logo.png" class = "dop-logos-item" alt="Логотип Systemice Group">
 					</div>
 					<br>
 					<a href = "/privacy" class="white-link">Политика конфиденциальности</a>
@@ -117,7 +117,7 @@ export default {
 				{
 					hid: 'description',
 					name: 'description',
-					content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам'
+					content: 'Контакты Systemice Group: офис в Москве, телефон, электронная почта и форма обратной связи по организации корпоративных мероприятий.'
 				},
 	            {
 	                hid: 'og:title',
@@ -132,7 +132,7 @@ export default {
 	            {
 	                hid: 'og:description',
 	                property: 'og:description',
-	                content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам',
+				content: 'Контакты Systemice Group: офис в Москве, телефон, электронная почта и форма обратной связи по организации корпоративных мероприятий.',
 	            },
 	            {
 	                hid: 'og:url',

@@ -34,7 +34,7 @@
 
 			<div class="bl-phone mob-whtsp">
 				<a href="https://api.whatsapp.com/send?phone=79266410573&text=Здравствуйте, у меня  вопрос с вашего корпоративного сайта Systemice" target = "_blank" class="wtsp-link">
-					<img src="@/assets/images/icons/whatsapp.png">
+					<img src="@/assets/images/icons/whatsapp.png" alt="Написать Systemice в WhatsApp">
 				</a>
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
@@ -71,7 +71,7 @@
 			<!--
 			<div class="bl-social">
 				<a href="https://instagram.com/systemice_stream?igshid=MzRlODBiNWFlZA==" target = "_blank" class="social-link social-link-instagram">
-					<img src="@/assets/images/icons/instagram.png">
+					<img src="@/assets/images/icons/instagram.png" alt="Systemice в Instagram">
 				</a>
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>

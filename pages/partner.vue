@@ -16,91 +16,91 @@
 			<pageHeader/>
 			<div class="content-box partner-wrapper">
 				<div class="bl-partner">	
-					<img class="img-partner" src="@/assets/images/partners/1.png">
+					<img class="img-partner" src="@/assets/images/partners/1.png" alt="Партнёр Systemice — Сбер А">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/2.png">
+					<img class="img-partner" src="@/assets/images/partners/2.png" alt="Партнёр Systemice — HAOM">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/3.png">
+					<img class="img-partner" src="@/assets/images/partners/3.png" alt="Партнёр Systemice — курорт Красная Поляна">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/4.png">
+					<img class="img-partner" src="@/assets/images/partners/4.png" alt="Партнёр Systemice — Azimut Hotels">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/5.png">
+					<img class="img-partner" src="@/assets/images/partners/5.png" alt="Партнёр Systemice — DataForum">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/6.png">
+					<img class="img-partner" src="@/assets/images/partners/6.png" alt="Партнёр Systemice — 1С">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/7.png">
+					<img class="img-partner" src="@/assets/images/partners/7.png" alt="Партнёр Systemice — Mantera Resort &amp; Congress">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/8.png">
+					<img class="img-partner" src="@/assets/images/partners/8.png" alt="Партнёр Systemice — RUSSPASS Business">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/9.png">
+					<img class="img-partner" src="@/assets/images/partners/9.png" alt="Партнёр Systemice — национальная премия «Событие года»">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/10.png">
+					<img class="img-partner" src="@/assets/images/partners/10.png" alt="Партнёр Systemice — MC">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/11.png">
+					<img class="img-partner" src="@/assets/images/partners/11.png" alt="Партнёр Systemice — Росэлторг">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/12.png">
+					<img class="img-partner" src="@/assets/images/partners/12.png" alt="Партнёр Systemice — сеть отелей Cosmos">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
 				<div class="bl-partner">
-					<img class="img-partner" src="@/assets/images/partners/13.png">
+					<img class="img-partner" src="@/assets/images/partners/13.png" alt="Партнёр Systemice — АльфаСтрахование">
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
@@ -140,7 +140,7 @@ export default {
 			{
 				hid: 'description',
 				name: 'description',
-				content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам'
+				content: 'Партнёры Systemice Group: отели, площадки, сервисы и отраслевые компании, с которыми мы организуем корпоративные мероприятия.'
 			},
             {
                 hid: 'og:title',
@@ -155,7 +155,7 @@ export default {
             {
                 hid: 'og:description',
                 property: 'og:description',
-                content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам',
+				content: 'Партнёры Systemice Group: отели, площадки, сервисы и отраслевые компании, с которыми мы организуем корпоративные мероприятия.',
             },
             {
                 hid: 'og:url',

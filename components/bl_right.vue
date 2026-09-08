@@ -38,7 +38,7 @@
 			<div class="other-event">
 				<div class="bl-small-event current" v-for = "(item, index) in portfolioData" :key="item.id">
 					<NuxtLink :to="'/portfolio/' + ++index" class = "other-event-link">
-						<img :src="require(`@/assets/images/portfolio/${item.picsFolder}/${item.pics[0]}.jpg`)" class = "">
+						<img :src="require(`@/assets/images/portfolio/${item.picsFolder}/${item.pics[0]}.jpg`)" :alt="`Кейс Systemice: ${item.title}`" class = "">
 						<span>{{item.title}}</span>
 					</NuxtLink>
 				</div>
@@ -47,7 +47,7 @@
 		<div>
 			<div class="bl-social">
 				<a href="https://instagram.com/systemice_stream?igshid=MzRlODBiNWFlZA==" target = "_blank" class="social-link social-link-instagram">
-					<img src="@/assets/images/icons/instagram.png">
+					<img src="@/assets/images/icons/instagram.png" alt="Systemice в Instagram">
 				</a>
 				<div class="spy-left"></div>
 				<div class="spy-top"></div>

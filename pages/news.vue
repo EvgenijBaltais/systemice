@@ -26,7 +26,7 @@
 							<div class="container-sl">
 								<a class="arrow-left"></a>
 								<a class="arrow-right"></a>
-								<img class="sl-search" src="@/assets/images/icons/search.png">
+								<img class="sl-search" src="@/assets/images/icons/search.png" alt="Увеличить изображение">
 								<div class="news-slides"></div>
 							</div>
 							<div class="bl-preview">
@@ -76,7 +76,7 @@ export default {
 				{
 					hid: 'description',
 					name: 'description',
-					content: 'News page description'
+					content: 'Новости и материалы Systemice Group о корпоративных мероприятиях, деловом туризме, площадках, технологиях и событиях индустрии.'
 				}
 			]
 		}
@@ -429,7 +429,7 @@ export default {
 					for (let k = 0; k < this.news[i].pics.length; k++) {
 						picsHtml += `<div class="news-sldr-box content-slide ${k == 0 ? 'visible-screen' : 'hidden-screen-news'}">
 							<a href="/${this.news[i].pics[k]}" class="lightcase-news-pic" data-rel="lightcase:myCollection-${i}">
-								<img src="/${this.news[i].pics[k]}">
+								<img src="/${this.news[i].pics[k]}" alt="Иллюстрация к новости Systemice">
 							</a>
 						</div>`
 					}
@@ -443,7 +443,7 @@ export default {
 									<div class="container-sl">
 										<a class="arrow-left-m"></a>
 										<a class="arrow-right-m"></a>
-										<img class="sl-search" src="../images/icons/search.png">
+										<img class="sl-search" src="../images/icons/search.png" alt="Увеличить изображение">
 										<div class="news-slides">${picsHtml}</div>
 									</div>
 								</div>
@@ -497,7 +497,7 @@ export default {
 					document.querySelector('.news-slides').insertAdjacentHTML('beforeend', `
 						<div class="news-sldr-box content-slide ${i == 0 ? 'visible-screen' : 'hidden-screen-news'}">
 							<a href="${news[index].pics[i]}" class="lightcase-news-pic" data-rel="lightcase:myCollection">
-								<img src="/${news[index].pics[i]}">
+								<img src="/${news[index].pics[i]}" alt="Иллюстрация к новости Systemice">
 							</a>
 						</div>
 					`)

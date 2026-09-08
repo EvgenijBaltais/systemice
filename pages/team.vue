@@ -19,25 +19,25 @@
 					<div data-glide-el="track" class="glide__track">
 						<ul class="glide__slides">
 							<li class="glide__slide">
-								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud1.png" data-name = "Мирхайдарова Мария" data-position = "Руководитель компании" data-phone = "+7 (920) 765-09-78" data-email = "maria.m@corphotel.ru">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud1.png" alt="Мирхайдарова Мария — руководитель компании" data-name = "Мирхайдарова Мария" data-position = "Руководитель компании" data-phone = "+7 (920) 765-09-78" data-email = "maria.m@corphotel.ru">
 							</li>
 							<li class="glide__slide">
-								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud2.png" data-name = "Марина Белоцерковская" data-position ="Руководитель отдела развития" data-phone = "+7 (985) 307-43-17" data-email = "marina.bel@corphotel.ru">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud2.png" alt="Марина Белоцерковская — руководитель отдела развития" data-name = "Марина Белоцерковская" data-position ="Руководитель отдела развития" data-phone = "+7 (985) 307-43-17" data-email = "marina.bel@corphotel.ru">
 							</li>
 							<li class="glide__slide">
-								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud3.png" data-name = "Георгиев Алексей" data-position = "Руководитель корпоративного отдела" data-phone = "+7 (906) 733-04-01" data-email = "georgiev_aleksey131@corphotel.ru">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud3.png" alt="Георгиев Алексей — руководитель корпоративного отдела" data-name = "Георгиев Алексей" data-position = "Руководитель корпоративного отдела" data-phone = "+7 (906) 733-04-01" data-email = "georgiev_aleksey131@corphotel.ru">
 							</li>
 							<li class="glide__slide">
-								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud4.png" data-name = "Сергеева Валерия" data-position = "Старший менеджер" data-phone = "+7 (906) 733-04-01" data-email = "georgiev_aleksey131@corphotel.ru">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud4.png" alt="Сергеева Валерия — старший менеджер" data-name = "Сергеева Валерия" data-position = "Старший менеджер" data-phone = "+7 (906) 733-04-01" data-email = "georgiev_aleksey131@corphotel.ru">
 							</li>
 							<li class="glide__slide">
-								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud5.png" data-name = "Евграфов Артур" data-position = "Руководитель IT отдела" data-phone = "+7 (906) 044-15-73" data-email = "a.evgrafov@systemice.ru">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud5.png" alt="Евграфов Артур — руководитель IT-отдела" data-name = "Евграфов Артур" data-position = "Руководитель IT отдела" data-phone = "+7 (906) 044-15-73" data-email = "a.evgrafov@systemice.ru">
 							</li>
 							<li class="glide__slide">
-								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud6.png" data-name = "Крюкова Анастасия" data-position = "Главный маркетолог" data-phone = "+7 (977) 265-97-38" data-email = "kryukova_anastasiya@corphotel.ru">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud6.png" alt="Крюкова Анастасия — главный маркетолог" data-name = "Крюкова Анастасия" data-position = "Главный маркетолог" data-phone = "+7 (977) 265-97-38" data-email = "kryukova_anastasiya@corphotel.ru">
 							</li>
 							<li class="glide__slide">
-								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud7.png" data-name = "Ларин Станислав" data-position = "Руководитель рекламного отдела" data-phone = "+7 (903) 666-17-87" data-email = "stanislav.l@corphotel.ru">
+								<img class="sotrud-img main-sotrud-img" src="@/assets/images/sotrud7.png" alt="Ларин Станислав — руководитель рекламного отдела" data-name = "Ларин Станислав" data-position = "Руководитель рекламного отдела" data-phone = "+7 (903) 666-17-87" data-email = "stanislav.l@corphotel.ru">
 							</li>
 						</ul>
 					</div>
@@ -59,8 +59,8 @@
 						<div class="spy-top"></div>
 						<div class="spy-right"></div>
 						<div class="spy-bottom"></div>
-						<img class="link-arrow dop-arrow-left" src="@/assets/images/icons/arrow-left.png">
-						<img class="link-arrow dop-arrow-right" src="@/assets/images/icons/arrow-right.png">
+						<img class="link-arrow dop-arrow-left" src="@/assets/images/icons/arrow-left.png" alt="Предыдущий сотрудник">
+						<img class="link-arrow dop-arrow-right" src="@/assets/images/icons/arrow-right.png" alt="Следующий сотрудник">
 						<div class = "sl-wrapper-coverall" v-if = "windowWidth > 900"></div>
 						<div class = "sl-wrapper-leftbox" v-if = "windowWidth > 900" @click = "moveLeft"></div>
 						<div class = "sl-wrapper-rightbox" v-if = "windowWidth > 900" @click = "moveRight"></div>
@@ -68,25 +68,25 @@
 							<div data-glide-el="track" class="sl-wrapperglide__track">
 								<ul class="glide__slides">
 									<li class="glide__slide">
-										<img src = "@/assets/images/mini/1.png" class="sl-teammate preview-item" data-name = "Мирхайдарова Мария" data-position = "Руководитель компании">
+										<img src = "@/assets/images/mini/1.png" class="sl-teammate preview-item" alt="Мирхайдарова Мария — руководитель компании" data-name = "Мирхайдарова Мария" data-position = "Руководитель компании">
 									</li>
 									<li>
-										<img src = "@/assets/images/mini/2.png" class="sl-teammate preview-item" data-name = "Марина Белоцерковская" data-position ="Руководитель отдела развития">
+										<img src = "@/assets/images/mini/2.png" class="sl-teammate preview-item" alt="Марина Белоцерковская — руководитель отдела развития" data-name = "Марина Белоцерковская" data-position ="Руководитель отдела развития">
 									</li>
 									<li class="glide__slide">
-										<img src = "@/assets/images/mini/3.png" class="sl-teammate preview-item" data-name = "Георгиев Алексей" data-position = "Руководитель корпоративного отдела">
+										<img src = "@/assets/images/mini/3.png" class="sl-teammate preview-item" alt="Георгиев Алексей — руководитель корпоративного отдела" data-name = "Георгиев Алексей" data-position = "Руководитель корпоративного отдела">
 									</li>
 									<li class="glide__slide">
-										<img src = "@/assets/images/mini/4.png" class="sl-teammate preview-item" data-name = "Сергеева Валерия" data-position = "Главный менеджер">
+										<img src = "@/assets/images/mini/4.png" class="sl-teammate preview-item" alt="Сергеева Валерия — главный менеджер" data-name = "Сергеева Валерия" data-position = "Главный менеджер">
 									</li>
 									<li class="glide__slide">
-										<img src = "@/assets/images/mini/5.png" class="sl-teammate preview-item" data-name = "Евграфов Артур" data-position = "Руководитель IT отдела">
+										<img src = "@/assets/images/mini/5.png" class="sl-teammate preview-item" alt="Евграфов Артур — руководитель IT-отдела" data-name = "Евграфов Артур" data-position = "Руководитель IT отдела">
 									</li>
 									<li class="glide__slide">
-										<img src = "@/assets/images/mini/6.png" class="sl-teammate preview-item" data-name = "Крюкова Анастасия" data-position = "Главный маркетолог">
+										<img src = "@/assets/images/mini/6.png" class="sl-teammate preview-item" alt="Крюкова Анастасия — главный маркетолог" data-name = "Крюкова Анастасия" data-position = "Главный маркетолог">
 									</li>
 									<li class="glide__slide">
-										<img src = "@/assets/images/mini/7.png" class="sl-teammate preview-item" data-name = "Ларин Станислав" data-position = "Руководитель рекламного отдела">
+										<img src = "@/assets/images/mini/7.png" class="sl-teammate preview-item" alt="Ларин Станислав — руководитель рекламного отдела" data-name = "Ларин Станислав" data-position = "Руководитель рекламного отдела">
 									</li>
 								</ul>
 							</div>
@@ -131,7 +131,7 @@ export default {
 				{
 					hid: 'description',
 					name: 'description',
-					content: 'Team page description'
+					content: 'Команда Systemice Group: специалисты по организации корпоративных мероприятий, деловых поездок, конференций и событий любого формата.'
 				}
 			]
 		}
