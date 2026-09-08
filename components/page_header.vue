@@ -10,9 +10,22 @@
 				<div class = "common-progress-text">Общий прогресс сборки мероприятия</div>
 			</a>
 			<div class="tel-continer">
-				<div class="tel-wrap">
-					<a class="tel-btn tel-whtsp" href="https://api.whatsapp.com/send?phone=79266410573&text=Здравствуйте, у меня  вопрос с вашего корпоративного сайта Systemice">+7(926)641-05-73</a>
-					<span>Для связи по Whatsapp</span> 
+				<div class="tel-wrap tel-messenger-wrap">
+					<div class="tel-messenger-line">
+						<div class="messenger-links" aria-label="Мессенджеры Systemice">
+							<a class="messenger-link" href="https://api.whatsapp.com/send?phone=79266410573&amp;text=Здравствуйте, у меня вопрос с вашего корпоративного сайта Systemice" target="_blank" rel="noopener noreferrer" aria-label="Написать Systemice в WhatsApp" title="WhatsApp">
+								<img src="@/assets/images/icons/whatsapp.png" alt="WhatsApp Systemice">
+							</a>
+							<a class="messenger-link" href="https://t.me/systemice" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram Systemice" title="Telegram">
+								<img src="@/Telegram_logo.svg.webp" alt="Telegram Systemice">
+							</a>
+							<span class="messenger-link messenger-link-disabled" aria-label="Systemice в MAX — ссылка пока не указана" title="MAX — ссылка пока не указана">
+								<img src="@/assets/images/icons/max.svg" alt="MAX Systemice">
+							</span>
+						</div>
+						<a class="tel-btn" href="https://api.whatsapp.com/send?phone=79266410573&amp;text=Здравствуйте, у меня вопрос с вашего корпоративного сайта Systemice">+7(926)641-05-73</a>
+					</div>
+					<span>Для связи в мессенджерах</span>
 				</div>
 
 				<div class="tel-wrap">
@@ -32,10 +45,18 @@
 					<div class="spy-bottom"></div>
 			</div>
 
-			<div class="bl-phone mob-whtsp">
-				<a href="https://api.whatsapp.com/send?phone=79266410573&text=Здравствуйте, у меня  вопрос с вашего корпоративного сайта Systemice" target = "_blank" class="wtsp-link">
-					<img src="@/assets/images/icons/whatsapp.png" alt="Написать Systemice в WhatsApp">
-				</a>
+			<div class="bl-phone mob-messengers">
+				<div class="messenger-links" aria-label="Мессенджеры Systemice">
+					<a href="https://api.whatsapp.com/send?phone=79266410573&amp;text=Здравствуйте, у меня вопрос с вашего корпоративного сайта Systemice" target="_blank" rel="noopener noreferrer" class="messenger-link" aria-label="Написать Systemice в WhatsApp" title="WhatsApp">
+						<img src="@/assets/images/icons/whatsapp.png" alt="WhatsApp Systemice">
+					</a>
+					<a href="https://t.me/systemice" target="_blank" rel="noopener noreferrer" class="messenger-link" aria-label="Открыть Telegram Systemice" title="Telegram">
+						<img src="@/Telegram_logo.svg.webp" alt="Telegram Systemice">
+					</a>
+					<span class="messenger-link messenger-link-disabled" aria-label="Systemice в MAX — ссылка пока не указана" title="MAX — ссылка пока не указана">
+						<img src="@/assets/images/icons/max.svg" alt="MAX Systemice">
+					</span>
+				</div>
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
