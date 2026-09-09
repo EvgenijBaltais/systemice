@@ -106,6 +106,27 @@
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="@/assets/images/partners/14.png" alt="Партнёр Systemice — Инсайт Люди">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="@/assets/images/partners/15.png" alt="Партнёр Systemice — Яндекс">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="@/assets/images/partners/16.png" alt="Партнёр Systemice — Росатом">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">

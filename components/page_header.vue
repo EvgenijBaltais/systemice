@@ -17,7 +17,7 @@
 								<img src="@/assets/images/icons/whatsapp.png" alt="WhatsApp Systemice">
 							</a>
 							<a class="messenger-link" href="https://t.me/systemice" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram Systemice" title="Telegram">
-								<img src="@/Telegram_logo.svg.webp" alt="Telegram Systemice">
+								<img src="@/assets/images/icons/telegram-logo.webp" alt="Telegram Systemice">
 							</a>
 							<span class="messenger-link messenger-link-disabled" aria-label="Systemice в MAX — ссылка пока не указана" title="MAX — ссылка пока не указана">
 								<img src="@/assets/images/icons/max.svg" alt="MAX Systemice">
@@ -51,7 +51,7 @@
 						<img src="@/assets/images/icons/whatsapp.png" alt="WhatsApp Systemice">
 					</a>
 					<a href="https://t.me/systemice" target="_blank" rel="noopener noreferrer" class="messenger-link" aria-label="Открыть Telegram Systemice" title="Telegram">
-						<img src="@/Telegram_logo.svg.webp" alt="Telegram Systemice">
+						<img src="@/assets/images/icons/telegram-logo.webp" alt="Telegram Systemice">
 					</a>
 					<span class="messenger-link messenger-link-disabled" aria-label="Systemice в MAX — ссылка пока не указана" title="MAX — ссылка пока не указана">
 						<img src="@/assets/images/icons/max.svg" alt="MAX Systemice">
