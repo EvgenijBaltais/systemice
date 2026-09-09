@@ -45,15 +45,6 @@
 			</div>
 		</div>
 		<div>
-			<div class="bl-social">
-				<a href="https://instagram.com/systemice_stream?igshid=MzRlODBiNWFlZA==" target = "_blank" class="social-link social-link-instagram">
-					<img src="@/assets/images/icons/instagram.png" alt="Systemice в Instagram">
-				</a>
-				<div class="spy-left"></div>
-				<div class="spy-top"></div>
-				<div class="spy-right"></div>
-				<div class="spy-bottom"></div>
-			</div>
 			<div class="bl-copyright">
 				Ⓒ2014 - 2026
 			</div>
