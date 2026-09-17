@@ -16,7 +16,7 @@
 							<a class="messenger-link" href="https://api.whatsapp.com/send?phone=79266410573&amp;text=Здравствуйте, у меня вопрос с вашего корпоративного сайта Systemice" target="_blank" rel="noopener noreferrer" aria-label="Написать Systemice в WhatsApp" title="WhatsApp">
 								<img src="@/assets/images/icons/whatsapp.png" alt="WhatsApp Systemice">
 							</a>
-							<a class="messenger-link" href="https://t.me/systemice" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram Systemice" title="Telegram">
+							<a class="messenger-link" href="https://t.me/+79266410573" target="_blank" rel="noopener noreferrer" aria-label="Написать Systemice в Telegram по номеру +7 926 641-05-73" title="Telegram">
 								<img src="@/assets/images/icons/telegram-logo.webp" alt="Telegram Systemice">
 							</a>
 							<span class="messenger-link messenger-link-disabled" aria-label="Systemice в MAX — ссылка пока не указана" title="MAX — ссылка пока не указана">
@@ -50,7 +50,7 @@
 					<a href="https://api.whatsapp.com/send?phone=79266410573&amp;text=Здравствуйте, у меня вопрос с вашего корпоративного сайта Systemice" target="_blank" rel="noopener noreferrer" class="messenger-link" aria-label="Написать Systemice в WhatsApp" title="WhatsApp">
 						<img src="@/assets/images/icons/whatsapp.png" alt="WhatsApp Systemice">
 					</a>
-					<a href="https://t.me/systemice" target="_blank" rel="noopener noreferrer" class="messenger-link" aria-label="Открыть Telegram Systemice" title="Telegram">
+					<a href="https://t.me/+79266410573" target="_blank" rel="noopener noreferrer" class="messenger-link" aria-label="Написать Systemice в Telegram по номеру +7 926 641-05-73" title="Telegram">
 						<img src="@/assets/images/icons/telegram-logo.webp" alt="Telegram Systemice">
 					</a>
 					<span class="messenger-link messenger-link-disabled" aria-label="Systemice в MAX — ссылка пока не указана" title="MAX — ссылка пока не указана">
