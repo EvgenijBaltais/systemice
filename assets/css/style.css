@@ -7948,6 +7948,11 @@ header {
     padding: 22px 26px;
     background: rgba(0, 0, 0, 0.68);
     box-sizing: border-box;
+    animation: rights 1.6s ease-in-out both;
+}
+
+.hero-achievement:nth-child(2) {
+    animation-duration: 1.9s;
 }
 
 .hero-achievement::before {
