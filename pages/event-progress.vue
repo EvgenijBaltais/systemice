@@ -46,27 +46,7 @@ export default {
 				hid: 'description',
 				name: 'description',
 				content: 'Соберите корпоративное мероприятие вместе с Systemice: укажите формат, город, даты и число участников, чтобы получить индивидуальное предложение.'
-			},
-            {
-                hid: 'og:title',
-                name: 'og:title',
-                content: 'Systemice Group Системайс Групп',
-            },
-            {
-                hid: 'og:image',
-                property: 'og:image',
-                content: ``,
-            },
-            {
-                hid: 'og:description',
-                property: 'og:description',
-				content: 'Соберите корпоративное мероприятие вместе с Systemice: укажите формат, город, даты и число участников, чтобы получить индивидуальное предложение.',
-            },
-            {
-                hid: 'og:url',
-                property: 'og:url',
-                content: ``,
-            }
+			}
 			]
 		}
 	},

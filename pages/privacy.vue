@@ -684,7 +684,7 @@ export default {
 	},
 	head() {
 		return {
-			title: 'Политика в отношении обработки персональных данных',
+			title: 'Политика обработки персональных данных — Systemice',
 			meta: [
 				{
 					hid: 'description',

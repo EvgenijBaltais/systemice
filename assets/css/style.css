@@ -1567,11 +1567,9 @@ position: absolute;
     background: linear-gradient(to top, rgba(0, 0, 0, .9) 15%, rgba(36, 50, 74, 0) 40%)
 }
 
-.sl-card:hover .bg-hover {
+.sl-card .bg-hover {
 
     opacity: 1;
-    -webkit-transition: opacity ease-in-out .8s;
-    -o-transition: opacity ease-in-out .8s;
 }
 
 .event-info {
@@ -7893,4 +7891,199 @@ header {
 
 .white-link {
     text-decoration: underline;
+}
+
+/* Достижения в первом экране главной страницы */
+.main-page .hero-achievements {
+    order: 2;
+    align-self: center;
+    display: flex;
+    width: 46.5%;
+    flex-direction: column;
+    gap: 18px;
+    box-sizing: border-box;
+}
+
+.main-page .main-description {
+    order: 1;
+}
+
+.hero-intro-copy .bl-desc {
+    margin-bottom: 16px;
+}
+
+.hero-intro-copy .bl-desc:last-child {
+    margin-bottom: 0;
+}
+
+.main-page .hero-budget {
+    order: 3;
+    width: 100%;
+    margin-top: 70px;
+    box-sizing: border-box;
+}
+
+.hero-budget .h1 {
+    max-width: 850px;
+}
+
+.hero-budget-lead {
+    max-width: 980px;
+}
+
+.hero-budget-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 980px;
+    margin-top: 26px;
+}
+
+.hero-budget-grid .bl-desc {
+    margin: 0;
+}
+
+.hero-achievement {
+    position: relative;
+    padding: 22px 26px;
+    background: rgba(0, 0, 0, 0.68);
+    box-sizing: border-box;
+}
+
+.hero-achievement::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    border-radius: 3px;
+    background: #ff0000;
+    box-shadow: 0 0 3px 1px rgba(233, 0, 0, 1);
+    content: '';
+}
+
+.hero-achievement p {
+    margin: 0;
+    color: #fff;
+}
+
+.hero-achievement-title {
+    max-width: 560px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.hero-achievement-accent {
+    margin-top: 12px !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.hero-achievement-note {
+    margin-top: 3px !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.35;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1300px) {
+    .main-page .hero-achievements {
+        width: 48.5%;
+        gap: 12px;
+    }
+
+    .main-page .main-description {
+        width: 48.5%;
+    }
+
+    .hero-achievement {
+        padding: 16px 20px;
+    }
+
+    .hero-achievement-title {
+        font-size: 17px;
+    }
+
+    .hero-achievement-accent {
+        margin-top: 8px !important;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-page .hero-achievements {
+        order: 1;
+        width: 100%;
+        margin: 0 0 36px;
+    }
+
+    .main-page .main-description {
+        order: 2;
+        width: 100%;
+    }
+
+    .main-page .hero-budget {
+        margin-top: 50px;
+    }
+
+    .hero-budget-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .hero-achievement-title {
+        font-size: 20px;
+    }
+
+    .hero-achievement-accent {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-page .hero-achievements {
+        width: 95%;
+        margin: 0 2.5% 30px;
+        gap: 10px;
+    }
+
+    .main-page .main-description {
+        width: 95%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    .hero-achievement {
+        padding: 15px 16px;
+    }
+
+    .hero-achievement-title {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .hero-achievement-accent {
+        margin-top: 7px !important;
+        font-size: 16px;
+    }
+
+    .hero-achievement-note {
+        font-size: 12px;
+    }
+
+    .main-page .hero-budget {
+        width: 95%;
+        margin: 42px 2.5% 0;
+    }
+
+    .hero-intro-copy .bl-desc {
+        margin-bottom: 14px;
+    }
+
+    .hero-budget-grid {
+        margin-top: 22px;
+    }
 }

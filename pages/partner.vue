@@ -162,27 +162,7 @@ export default {
 				hid: 'description',
 				name: 'description',
 				content: 'Партнёры Systemice Group: отели, площадки, сервисы и отраслевые компании, с которыми мы организуем корпоративные мероприятия.'
-			},
-            {
-                hid: 'og:title',
-                name: 'og:title',
-                content: 'Systemice Group Системайс Групп',
-            },
-            {
-                hid: 'og:image',
-                property: 'og:image',
-                content: ``,
-            },
-            {
-                hid: 'og:description',
-                property: 'og:description',
-				content: 'Партнёры Systemice Group: отели, площадки, сервисы и отраслевые компании, с которыми мы организуем корпоративные мероприятия.',
-            },
-            {
-                hid: 'og:url',
-                property: 'og:url',
-                content: ``,
-            }
+			}
 			]
 		}
 	},

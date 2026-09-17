@@ -46,7 +46,7 @@
 		</div>
 		<div>
 			<div class="bl-copyright">
-				Ⓒ2014 - 2026
+				Ⓒ 2014 - 2026
 			</div>
 		</div>
 	</div>

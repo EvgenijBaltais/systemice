@@ -17,14 +17,40 @@
 			<pageHeader/>
 
 			<div class="content-box video">
-				
+				<section class="hero-achievements" aria-label="Достижения Systemice">
+					<div class="hero-achievement">
+						<p class="hero-achievement-title">19-е место в рейтинге MICErating по итогам 2025 года</p>
+						<p class="hero-achievement-accent">Рост +105% за год</p>
+						<p class="hero-achievement-note">при среднем росте рынка 2,7%</p>
+					</div>
+					<div class="hero-achievement hero-achievement-association">
+						<p class="hero-achievement-title">Член Национальной ассоциации организаторов мероприятий</p>
+					</div>
+				</section>
+
 				<div class="main-description clearfix">
-					<h1 class="h1">КОРПОРАТИВНЫЕ МЕРОПРИЯТИЯ</h1>
+					<h1 class="h1">СОБЫТИЯ, КОТОРЫЕ РАБОТАЮТ НА БИЗНЕС</h1>
 					<div class="line"></div>
-					<p class="bl-desc">
-						Компания <strong>Systemice</strong> помогает провести презентации, переговоры, конференции, конгрессы, форумы и выставки. Назначаем вам куратора мероприятия. Он показывает отель или площадку, помогает с документами, встречает гостей из-за рубежа и сопровождает к месту события.
-					</p>
+					<div class="hero-intro-copy">
+						<p class="bl-desc">Systemice — партнёр по организации корпоративных событий и MICE-проектов полного цикла. Организуем конференции, форумы, incentive-поездки и деловые мероприятия. Берём на себя стратегию, логистику, продакшен, подрядчиков и результат — в России и за рубежом. За 19 лет — более 1400 проектов.</p>
+						<p class="bl-desc">Масштаб работает на ваш бюджет. Более 700 отелей и площадок на прямых договорах, 400 проверенных подрядчиков, 6 представительств в регионах.</p>
+						<p class="bl-desc">Ваш проект ведёт персональный куратор. Это не координатор, а менеджер проекта: он держит бюджет в согласованных рамках, отвечает за сроки и за работу всех подрядчиков от первой встречи до закрывающих документов.</p>
+					</div>
 				</div>
+
+				<section class="hero-budget" aria-labelledby="hero-budget-title">
+					<h2 id="hero-budget-title" class="h1">ЧТО ЭТО ЗНАЧИТ ДЛЯ ВАШЕГО БЮДЖЕТА</h2>
+					<div class="line"></div>
+					<p class="bl-desc hero-budget-lead">Бюджеты под давлением, требования к обоснованию расходов растут, а разрыв между сметой и фактом стал главным риском заказчика.</p>
+					<p class="bl-desc hero-budget-lead">Мы работаем так, чтобы этого риска не было.</p>
+					<div class="hero-budget-grid">
+						<p class="bl-desc"><strong>Прозрачная смета.</strong> Вы видите структуру стоимости по каждой позиции, а не итоговую сумму «под ключ». Понимаете, за что платите, и управляете расходами осознанно.</p>
+						<p class="bl-desc"><strong>Без «сюрпризов».</strong> Бюджет согласован и утверждён на старте проекта. Мы гарантируем отсутствие непредвиденных расходов.</p>
+						<p class="bl-desc"><strong>Финансовая устойчивость.</strong> Мы финансируем проект на своей стороне и не зависим от скорости ваших платежей. Бронирования не срываются из-за сроков согласования в вашей бухгалтерии.</p>
+						<p class="bl-desc"><strong>Проверка контрагента.</strong> Мы проходим комплаенс любого уровня: полный пакет документов, прозрачная структура собственности, отсутствие налоговых и судебных рисков, работа по вашему договору и вашим регламентам. Более 100 выигранных тендеров, включая государственные закупки.</p>
+						<p class="bl-desc"><strong>Отчётная документация.</strong> Закрывающие документы будут готовы не позднее 5 дней. Вы получаете полный отчёт о проделанной работе и фото- и видеоконтент для вашего внутреннего использования.</p>
+					</div>
+				</section>
 			</div>
 			<div class="content-box map">
 				<div class="agency-map">
@@ -36,7 +62,7 @@
 						<div class="bl-info-wrapper glide__track" data-glide-el="track">
 							<ul class="glide__slides glide__slides-a">
 								<li class="info-data-item glide__slide">
-									<span> >17</span> лет
+									<span> >19</span> лет
 									<p>работаем в сфере<br>делового туризма</p>
 								</li>
 								<li class="info-data-item glide__slide info-active">
@@ -467,7 +493,7 @@ import axios from 'axios'
 export default {
 	head() {
 		return {
-			title: 'Systemice Group / Системайс Групп',
+			title: 'Организация корпоративных мероприятий и MICE-проектов — Systemice',
 			script:[],
 			meta: [
 			{
@@ -478,12 +504,12 @@ export default {
 			{
 				hid: 'description',
 				name: 'description',
-				content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам'
+				content: 'Systemice организует корпоративные события и MICE-проекты полного цикла в России и за рубежом. Более 1400 проектов за 19 лет.'
 			},
             {
                 hid: 'og:title',
-                name: 'og:title',
-                content: 'Systemice Group / Системайс Групп',
+                property: 'og:title',
+                content: 'Организация корпоративных мероприятий и MICE-проектов — Systemice',
             },
             {
                 hid: 'og:image',
@@ -508,7 +534,7 @@ export default {
             {
                 hid: 'og:description',
                 property: 'og:description',
-                content: 'Организуем корпоративные мероприятия любого формата по лучшим ценам',
+				content: 'Systemice организует корпоративные события и MICE-проекты полного цикла в России и за рубежом. Более 1400 проектов за 19 лет.',
             },
             {
                 hid: 'og:url',
@@ -518,12 +544,12 @@ export default {
 			{
 				hid: 'itemprop:name',
 				itemprop: "name",
-				content: "Systemice Group / Системайс Групп"
+				content: "Организация корпоративных мероприятий и MICE-проектов — Systemice"
 			},
 			{
 				hid: 'itemprop:description',
 				itemprop: "description",
-				content: "Организуем корпоративные мероприятия любого формата по лучшим ценам"
+				content: "Systemice организует корпоративные события и MICE-проекты полного цикла в России и за рубежом. Более 1400 проектов за 19 лет."
 			},
 			{
 				hid: 'itemprop:image',
@@ -538,12 +564,12 @@ export default {
 			{
 				hid: 'twitter:title',
 				name: "twitter:title",
-				content: "Systemice Group / Системайс Групп"
+				content: "Организация корпоративных мероприятий и MICE-проектов — Systemice"
 			},
 			{
 				hid: 'twitter:description',
 				name: "twitter:description",
-				content: "Организуем корпоративные мероприятия любого формата по лучшим ценам"
+				content: "Systemice организует корпоративные события и MICE-проекты полного цикла в России и за рубежом. Более 1400 проектов за 19 лет."
 			},
 			{
 				hid: 'twitter:image',

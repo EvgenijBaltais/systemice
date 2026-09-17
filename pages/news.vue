@@ -71,7 +71,7 @@ import pageHeader from '@/components/page_header'
 export default {
 	head() {
 		return {
-			title: 'Systemice - новости',
+			title: 'Новости MICE и корпоративных мероприятий — Systemice',
 			meta: [
 				{
 					hid: 'description',

@@ -103,27 +103,7 @@ export default {
 				hid: 'description',
 				name: 'description',
 				content: 'Портфолио Systemice Group: реализованные корпоративные мероприятия, конференции, деловые события и онлайн-проекты для компаний.'
-			},
-            {
-                hid: 'og:title',
-                name: 'og:title',
-                content: 'Systemice Group Системайс Групп',
-            },
-            {
-                hid: 'og:image',
-                property: 'og:image',
-                content: ``,
-            },
-            {
-                hid: 'og:description',
-                property: 'og:description',
-				content: 'Портфолио Systemice Group: реализованные корпоративные мероприятия, конференции, деловые события и онлайн-проекты для компаний.',
-            },
-            {
-                hid: 'og:url',
-                property: 'og:url',
-                content: ``,
-            }
+			}
 			]
 		}
 	},

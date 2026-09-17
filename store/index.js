@@ -9,7 +9,7 @@ export const state = () => ({
         title: 'КРОК',
         picsFolder: 'krok',
         pics: [1,2,3],
-        dateData: '<b>30.12.2020 г.</b>',
+        dateData: '<b>30.12.2024 г.</b>',
         membersData: '40 чел.',
         spectators: '',
         details: `
@@ -25,7 +25,7 @@ export const state = () => ({
         title: 'Борк/Технопарк',
         picsFolder: 'bork_tehnopark',
         pics: [1,2],
-        dateData: '<b>29.04 - 30.04.21 г.</b>',
+        dateData: '<b>29.04 - 30.04.25 г.</b>',
         membersData: '65 чел.',
         spectators: '',
         details: `
@@ -40,7 +40,7 @@ export const state = () => ({
         title: 'GEA',
         picsFolder: 'gea',
         pics: [1,2],
-        dateData: '<b>07.10-10.10.21 г.</b>',
+        dateData: '<b>07.10-10.10.25 г.</b>',
         membersData: '100 чел.',
         spectators: '',
         details: `
@@ -60,7 +60,7 @@ export const state = () => ({
         title: 'AT Consulting',
         picsFolder: 'at_consulting',
         pics: [1,2],
-        dateData: '<b>12.11-14.11.21 г.</b>',
+        dateData: '<b>12.11-14.11.24 г.</b>',
         membersData: '210 чел.',
         spectators: '',
         details: `
@@ -80,7 +80,7 @@ export const state = () => ({
         title: 'Nexters Global',
         picsFolder: 'nexters_summer',
         pics: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-        dateData: '<b>18-20.06.2021 г.</b>',
+        dateData: '<b>18-20.06.2024 г.</b>',
         membersData: '<b>Количество участников</b> – 550',
         spectators: '',
         details: `
@@ -104,7 +104,7 @@ export const state = () => ({
         title: 'Nexters Global',
         picsFolder: 'nexter_new_year',
         pics: [1,2,3,4,5,6,7],
-        dateData: '<b>30.12.2020 г.</b>',
+        dateData: '<b>30.12.2025 г.</b>',
         membersData: 'Онлайн-мероприятие',
         spectators: '',
         details: `<p><b>Поставленные задачи:</b></p>
@@ -130,7 +130,7 @@ export const state = () => ({
         title: 'NSP Будапешт',
         picsFolder: 'nsp_budapesht',
         pics: [1,2,3,4,5,6,7,8,9],
-        dateData: '<b>01-06.04.2019 г.</b>',
+        dateData: '<b>01-06.04.2024 г.</b>',
         membersData: '<b>Количество участников</b> – 220',
         spectators: '',
         details: `<p><b>Поставленные задачи:</b></p>
@@ -151,7 +151,7 @@ export const state = () => ({
         title: 'NSP Турция',
         picsFolder: 'nsp_turkey',
         pics: [1,2,3,4,5,6,7,8,9],
-        dateData: '12-17.04.2021 г.',
+        dateData: '12-17.04.2025 г.',
         membersData: '<b>Количество участников</b> – 130',
         spectators: '',
         details: `
@@ -174,7 +174,7 @@ export const state = () => ({
         title: 'ВТБ-Регистратор',
         picsFolder: 'vtb_kazan',
         pics: [1,2,3,4,5,6,7,8,9],
-        dateData: '28.07.2020 г.',
+        dateData: '28.07.2024 г.',
         membersData: '<b>Количество участников</b> – 80',
         spectators: '',
         details: `<p><b>Поставленные задачи:</b></p>
@@ -253,7 +253,7 @@ export const state = () => ({
         title: 'Открытая пленарная дискуссия ATOM SKILLS',
         picsFolder: 'atom_skills_discussion',
         pics: [1,2,3,4,5,6,7,8],
-        dateData: '<b>24.07.2020 г.</b>',
+        dateData: '<b>24.07.2024 г.</b>',
         membersData: '<b>На площадке</b> – 18 в кадре, 27 за кадром',
         spectators: '<b>Посмотрели онлайн</b> – 4000+',
         details: `
@@ -273,7 +273,7 @@ export const state = () => ({
         title: 'Второй Молодежный Слет дивизиона «Электроэнергетический»',
         picsFolder: 'elektroenergeticheskiy',
         pics: [1,2,3,4,5,6,7],
-        dateData: '16 - 17.07.2020 г.',
+        dateData: '16 - 17.07.2024 г.',
         membersData: 'На площадке – 18 в кадре, 27 за кадром',
         spectators: 'Посмотрели онлайн – 1400+ человек',
         details: `
@@ -297,7 +297,7 @@ export const state = () => ({
         title: 'Церемония открытия чемпионата ATOM SKILLS',
         picsFolder: 'atom_skills_open',
         pics: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
-        dateData: '24.07.2020 г.',
+        dateData: '24.07.2024 г.',
         membersData: 'На площадке – 26 в кадре, 32 за кадром',
         spectators: 'Посмотрели онлайн – 9000+',
         details: `
@@ -317,7 +317,7 @@ export const state = () => ({
         title: 'Деловая программа ATOM SKILLS',
         picsFolder: 'atoms_skills_business',
         pics: [1,2,3,4,5,6,7,8],
-        dateData: '19.08.2020 г.',
+        dateData: '19.08.2025 г.',
         membersData: 'Было в студии - 6 в кадре, 19 за кадром',
         spectators: 'Посмотрели онлайн - 1000+',
         details: `
@@ -340,7 +340,7 @@ export const state = () => ({
         title: 'Бизнес-завтрак «кухня» инноваций ATOM SKILLS',
         picsFolder: 'atom_skills_breakfast',
         pics: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
-        dateData: '28.07.2020 г.',
+        dateData: '28.07.2025 г.',
         membersData: 'На площадке – 14 в кадре, 38 за кадром',
         spectators: 'Посмотрели онлайн – 3500+',
         details: `
@@ -361,7 +361,7 @@ export const state = () => ({
     {
         id: 18,
         title: 'Мероприятие по развитию направления «Каракури»',
-        dateData: '18.08.2020 г',
+        dateData: '18.08.2025 г',
         picsFolder: 'karakuri',
         pics: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
         membersData: 'Было в студии - 7 в кадре, 22 за кадром',

@@ -218,27 +218,7 @@ export default {
 				hid: 'description',
 				name: 'description',
 				content: 'Участие Systemice Group в тендерах на организацию корпоративных мероприятий: оперативная подготовка сметы, документов и коммерческого предложения.'
-			},
-            {
-                hid: 'og:title',
-                name: 'og:title',
-                content: 'Systemice Group Системайс Групп',
-            },
-            {
-                hid: 'og:image',
-                property: 'og:image',
-                content: ``,
-            },
-            {
-                hid: 'og:description',
-                property: 'og:description',
-				content: 'Участие Systemice Group в тендерах на организацию корпоративных мероприятий: оперативная подготовка сметы, документов и коммерческого предложения.',
-            },
-            {
-                hid: 'og:url',
-                property: 'og:url',
-                content: ``,
-            }
+			}
 			]
 		}
 	},

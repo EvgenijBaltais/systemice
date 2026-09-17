@@ -3,15 +3,15 @@ const webpack = require('webpack')
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'systemice',
+    title: 'Systemice — организация корпоративных мероприятий',
     htmlAttrs: {
       lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-      { hid: 'description', name: 'keywords', content: '' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'keywords', name: 'keywords', content: 'организация корпоративных мероприятий, MICE, конференции, форумы, деловые события' },
+      { hid: 'description', name: 'description', content: 'Systemice организует корпоративные мероприятия и MICE-проекты полного цикла в России и за рубежом.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

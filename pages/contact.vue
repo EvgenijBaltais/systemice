@@ -118,27 +118,7 @@ export default {
 					hid: 'description',
 					name: 'description',
 					content: 'Контакты Systemice Group: офис в Москве, телефон, электронная почта и форма обратной связи по организации корпоративных мероприятий.'
-				},
-	            {
-	                hid: 'og:title',
-	                name: 'og:title',
-	                content: 'Systemice - корпоративные мероприятия',
-	            },
-	            {
-	                hid: 'og:image',
-	                property: 'og:image',
-	                content: ``,
-	            },
-	            {
-	                hid: 'og:description',
-	                property: 'og:description',
-				content: 'Контакты Systemice Group: офис в Москве, телефон, электронная почта и форма обратной связи по организации корпоративных мероприятий.',
-	            },
-	            {
-	                hid: 'og:url',
-	                property: 'og:url',
-	                content: `https://systemice.ru`,
-	            }
+				}
 			]
 		}
 	},

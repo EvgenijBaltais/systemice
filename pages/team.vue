@@ -126,7 +126,7 @@ import Glide from '@glidejs/glide'
 export default {
 	head() {
 		return {
-			title: 'Systemice - наша компания',
+			title: 'Команда Systemice — организация корпоративных мероприятий',
 			meta: [
 				{
 					hid: 'description',

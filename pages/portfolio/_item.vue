@@ -113,10 +113,12 @@ export default {
 	head() {
 		const portfolioItem = this.portfolioData[this.eventItem]
 		const eventDate = portfolioItem.dateData.replace(/<[^>]*>/g, '').trim().replace(/[.\s]+$/, '')
+		const hasDuplicateTitle = this.portfolioData.filter(item => item.title === portfolioItem.title).length > 1
+		const titleQualifier = hasDuplicateTitle && eventDate ? ` — ${eventDate}` : ''
 		const description = `Кейс Systemice «${portfolioItem.title}»: организация и проведение корпоративного мероприятия${eventDate ? `, ${eventDate}` : ''}. Фото и детали проекта.`
 
 		return {
-			title: portfolioItem.title + ' - Проекты Systemice Group',
+			title: `${portfolioItem.title}${titleQualifier} — проекты Systemice Group`,
 			script:[],
 			meta: [
 			{
@@ -128,27 +130,7 @@ export default {
 				hid: 'description',
 				name: 'description',
 				content: description
-			},
-            {
-                hid: 'og:title',
-                name: 'og:title',
-                content: 'Systemice Group Системайс Групп',
-            },
-            {
-                hid: 'og:image',
-                property: 'og:image',
-                content: ``,
-            },
-            {
-                hid: 'og:description',
-                property: 'og:description',
-				content: description,
-            },
-            {
-                hid: 'og:url',
-                property: 'og:url',
-                content: ``,
-            }
+			}
 			]
 		}
 	},

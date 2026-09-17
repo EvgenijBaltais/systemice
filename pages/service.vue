@@ -160,26 +160,6 @@ export default {
         hid: 'description',
         name: 'description',
         content: 'Услуги Systemice Group: организация онлайн-мероприятий и бизнес-игр, персональный аккаунт-менеджер и профессиональный аудит сметы.'
-      },
-      {
-          hid: 'og:title',
-          name: 'og:title',
-          content: 'Systemice Group Системайс Групп',
-      },
-      {
-          hid: 'og:image',
-          property: 'og:image',
-          content: ``,
-      },
-      {
-          hid: 'og:description',
-          property: 'og:description',
-          content: 'Услуги Systemice Group: организация онлайн-мероприятий и бизнес-игр, персональный аккаунт-менеджер и профессиональный аудит сметы.',
-      },
-      {
-          hid: 'og:url',
-          property: 'og:url',
-          content: ``,
       }
       ],
     };
