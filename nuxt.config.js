@@ -49,7 +49,9 @@ export default {
   ],
 
   generate: {
-    fallback:'404.html'
+    fallback:'404.html',
+    // Standalone sites are deployed separately, outside Nuxt pages.
+    exclude: [/^\/services(?:\/|$)/]
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules

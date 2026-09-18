@@ -562,7 +562,7 @@
                             12.3. Актуальная версия Политики в&nbsp;свободном доступе расположена
                             в&nbsp;сети Интернет по&nbsp;адресу <span id="owner-privacy-url-value"
                                 class="link mark owner-privacy-url-field"
-                                data-scroll-to="#owner-privacy-url-field">https://{{host}}/privacy</span>.
+                                data-scroll-to="#owner-privacy-url-field">https://{{host}}/privacy/</span>.
                         </div>
                         <div class="li">
                         12.4. Оператор имеет право отправлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь может отказаться от получения сообщений, направив Компании письмо на адрес электронной почты info@{{host}} с пометкой «Отказ от уведомлений».

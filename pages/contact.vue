@@ -78,7 +78,7 @@
 						<img src="@/assets/images/logo.png" class = "dop-logos-item" alt="Логотип Systemice Group">
 					</div>
 					<br>
-					<a href = "/privacy" class="white-link">Политика конфиденциальности</a>
+					<a href = "/privacy/" class="white-link">Политика конфиденциальности</a>
 				</div>
 			</div>
 			<div class="footer-mob">

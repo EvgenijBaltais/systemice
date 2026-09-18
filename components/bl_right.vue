@@ -5,26 +5,26 @@
 				<NuxtLink to = "/">О компании</NuxtLink>
 			</li>
 			<li class="menu-item">
-				<NuxtLink to = "/service">Услуги</NuxtLink>
+				<NuxtLink to = "/service/">Услуги</NuxtLink>
 			</li>
 			<li class="menu-item">
-				<NuxtLink to = "/tenders">Тендеры</NuxtLink>
+				<NuxtLink to = "/tenders/">Тендеры</NuxtLink>
 			</li>
 			<li class="menu-item">
-				<NuxtLink to = "/portfolio">Портфолио</NuxtLink>
+				<NuxtLink to = "/portfolio/">Портфолио</NuxtLink>
 			</li><!--
 			<li class="menu-item">
-				<NuxtLink to = "/team">Команда</NuxtLink>
+				<NuxtLink to = "/team/">Команда</NuxtLink>
 			</li>-->
 			<li class="menu-item">
-				<NuxtLink to = "/partner">Партнеры</NuxtLink>
+				<NuxtLink to = "/partner/">Партнеры</NuxtLink>
 			</li>
 			<!--
 			<li class="menu-item">
-				<NuxtLink to = "/news">Новости</NuxtLink>
+				<NuxtLink to = "/news/">Новости</NuxtLink>
 			</li>-->
 			<li class="menu-item">
-				<NuxtLink to = "/contact">Контакты</NuxtLink>
+				<NuxtLink to = "/contact/">Контакты</NuxtLink>
 			</li>
 		</ul>
 		<div class="bl-other">
@@ -37,7 +37,7 @@
 			<span>Другие наши работы</span>
 			<div class="other-event">
 				<div class="bl-small-event current" v-for = "(item, index) in portfolioData" :key="item.id">
-					<NuxtLink :to="'/portfolio/' + ++index" class = "other-event-link">
+					<NuxtLink :to="'/portfolio/' + (++index) + '/'" class = "other-event-link">
 						<img :src="require(`@/assets/images/portfolio/${item.picsFolder}/${item.pics[0]}.jpg`)" :alt="`Кейс Systemice: ${item.title}`" class = "">
 						<span>{{item.title}}</span>
 					</NuxtLink>

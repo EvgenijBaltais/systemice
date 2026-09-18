@@ -10,7 +10,7 @@ export default {
         const siteUrl = 'https://systemice.ru'
         const routePath = this.$route && this.$route.path ? this.$route.path : '/'
         const canonicalPath = routePath === '/' ? '/' : routePath.replace(/\/+$/, '')
-		const canonicalUrl = `${siteUrl}${canonicalPath}`
+		const canonicalUrl = `${siteUrl}${canonicalPath === '/' ? '/' : canonicalPath + '/'}`
 		const defaultImage = `${siteUrl}/images/systemice.jpg`
 		const logoPath = require('@/assets/images/logo.png')
 		const logoUrl = `${siteUrl}${logoPath}`
@@ -113,7 +113,7 @@ export default {
 					'@type': 'ListItem',
 					position: 2,
 					name: 'Портфолио',
-					item: `${siteUrl}/portfolio`
+					item: `${siteUrl}/portfolio/`
 				}] : []),
 				{
 					'@type': 'ListItem',

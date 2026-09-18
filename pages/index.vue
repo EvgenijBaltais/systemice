@@ -190,7 +190,7 @@
 						<span>Наша компания предоставляет огромный спектр услуг для корпоративных клиентов. Мы уже много лет организовываем мероприятия любых форматов, масштабов и любой сложности. 
 						Вы можете ознакомиться с основными направлениями нашей компании или оставить заявку и специалист Systemice Group поможет с реализацией поставленной задачей.</span>
 						<div class = "service-block-btns">
-							<NuxtLink to = "/service" class="button-box-main button-box-main-red">
+							<NuxtLink to = "/service/" class="button-box-main button-box-main-red">
 								<span class = "button-box-main-title">Перейти к остальным услугам</span>
 								<div class="spy-left-btn-main spy-btn-red"></div>
 								<div class="spy-top-btn-main spy-btn-red"></div>
@@ -236,7 +236,7 @@
 								Оперативно и качественно готовим коммерческие предложения
 							Работаем с небольшими компаниями и крупными корпорациями</p>
 						</div>
-						<NuxtLink to = "/tenders" class="button-box-main button-box-main-white">
+						<NuxtLink to = "/tenders/" class="button-box-main button-box-main-white">
 							<span class = "button-box-main-title">Перейти на страницу "Тендеры"</span>
 							<div class="spy-left-btn-main spy-btn-white"></div>
 							<div class="spy-top-btn-main spy-btn-white"></div>
@@ -253,7 +253,7 @@
 					<div class="line"></div>
 					<div class = "main-portfolio-s-block">
 						<span class = "main-portfolio-block-text">На странице "Портфолио" Вы найдете отчеты о проделанной работе. И убедитесь, что наша компания способна организовать мероприятия любой сложности!</span>
-						<NuxtLink to = "/portfolio" class="button-box-main button-box-main-red">
+						<NuxtLink to = "/portfolio/" class="button-box-main button-box-main-red">
 							<span class = "button-box-main-title">Перейти на страницу "Портфолио"</span>
 							<div class="spy-left-btn-main spy-btn-red"></div>
 							<div class="spy-top-btn-main spy-btn-red"></div>
@@ -266,7 +266,7 @@
 				<div v-for = "(item, index) in portfolioData.slice(0, 4)"
 				:key="item.id" :class="['sl-card', 'scrolling-portfolio-item', (index === 0 ? 'main-portfolio-big' : 'main-portfolio-small')]"
 				:style="{backgroundImage: `url(${require('@/assets/images/portfolio/' + item.picsFolder + '/1m.jpg')})`}">
-				<NuxtLink :to = "{path: `/portfolio/${++index}`}">
+				<NuxtLink :to = "{path: `/portfolio/${++index}/`}">
 					<div class="bg-hover">
 						<div class="event-info">
 							<span class="event-name">{{item.title}}</span>

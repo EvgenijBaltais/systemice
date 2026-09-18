@@ -2,7 +2,7 @@
 
 	<header>
 		<div class="header">
-			<NuxtLink class="btn-no-animate" to = "/event-progress">
+			<NuxtLink class="btn-no-animate" to = "/event-progress/">
 				<span>Обсудить проект</span>
 			</NuxtLink>
 			<a class="btn event-progress-stripe" href="">
@@ -77,17 +77,17 @@
 		</div>
 		<div class="menu-wrapper">
 
-			<NuxtLink class="btn-no-animate" to = "/event-progress"><span>Собрать мероприятие</span></NuxtLink>
+			<NuxtLink class="btn-no-animate" to = "/event-progress/"><span>Собрать мероприятие</span></NuxtLink>
 
 			<ul class="menu-list">
 				<li class="menu-item"><NuxtLink to = "/">О компании</NuxtLink></li>
-				<li class="menu-item"><NuxtLink to = "/service">Услуги</NuxtLink></li>
-				<li class="menu-item"><NuxtLink to = "/tenders">Тендеры</NuxtLink></li>
-				<li class="menu-item"><NuxtLink to = "/portfolio">Портфолио</NuxtLink></li>
-				<!--<li class="menu-item"><NuxtLink to = "/team">Команда</NuxtLink></li>-->
-				<li class="menu-item"><NuxtLink to = "/partner">Партнеры</NuxtLink></li>
-				<!--<li class="menu-item"><NuxtLink to = "/news">Новости</NuxtLink></li>-->
-				<li class="menu-item"><NuxtLink to = "/contact">Контакты</NuxtLink></li>
+				<li class="menu-item"><NuxtLink to = "/service/">Услуги</NuxtLink></li>
+				<li class="menu-item"><NuxtLink to = "/tenders/">Тендеры</NuxtLink></li>
+				<li class="menu-item"><NuxtLink to = "/portfolio/">Портфолио</NuxtLink></li>
+				<!--<li class="menu-item"><NuxtLink to = "/team/">Команда</NuxtLink></li>-->
+				<li class="menu-item"><NuxtLink to = "/partner/">Партнеры</NuxtLink></li>
+				<!--<li class="menu-item"><NuxtLink to = "/news/">Новости</NuxtLink></li>-->
+				<li class="menu-item"><NuxtLink to = "/contact/">Контакты</NuxtLink></li>
 			</ul>
 			<!--
 			<div class="bl-social">
