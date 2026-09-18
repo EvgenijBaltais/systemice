@@ -82,7 +82,7 @@
 									<p>отелей на<br> эксклюзивных<br> условиях</p>
 								</li>
 								<li class="info-data-item glide__slide">
-									<span> >1300</span>
+									<span> >1400</span>
 									<p>реализованных<br> проектов</p>
 								</li>
 								<li class="info-data-item glide__slide">
