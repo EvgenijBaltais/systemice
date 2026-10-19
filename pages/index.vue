@@ -9,7 +9,7 @@
 			</div>
 			<div class="bl-pagination">
 				<span class="active-page">01 </span>
-				<span class="bl-page"> / 08</span>
+				<span class="bl-page"> / 06</span>
 			</div>
 		</div>
 		<div class="main h-page">
@@ -453,6 +453,7 @@
 						<div class="spy-bottom-btn"></div>
 					</div>
 				</form>
+				<a href="/privacy/" class="white-link privacy-link" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
 			</div>
 			<div class="contact-map">
 				<div id="map-block"></div>
@@ -469,7 +470,7 @@
 		<div class="footer-mob">
 			<div class="bl-pagination">
 				<span class="active-page">01 </span>
-				<span class="bl-page"> / 08</span>
+				<span class="bl-page"> / 06</span>
 			</div>
 			<copyright/>
 		</div>
@@ -584,7 +585,7 @@ export default {
 			portfolioData: this.$store.state.portfolioData,
 			name: '',
 			phone: '',
-			agreeTerms: 'yes',
+			agreeTerms: 'no',
 			im: new Inputmask("+7 (999) 999-99-99"),
 			sendingForm: 0,
 			glide: {},

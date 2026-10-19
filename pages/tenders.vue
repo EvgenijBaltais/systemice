@@ -10,7 +10,7 @@
 			</div>
 			<div class="bl-pagination">
 				<span class="active-page">03 </span>
-				<span class="bl-page"> / 08</span>
+				<span class="bl-page"> / 06</span>
 			</div>
 		</div>
 		<div class="main tenders-main">
@@ -177,8 +177,12 @@
 								<div class="spy-top-textarea"></div>
 							</div>
 						</div>
+						<label class="checkbox-block tenders-consent">
+							<input type="checkbox" class="input-check" v-model="agreeTerms" @change="onConsentChange">
+							<span class="checkbox-style"></span>
+							<span class="i-agree" :style="{ color: consentError ? 'red' : null }">Я согласен на обработку персональных данных</span>
+						</label>
 						<div class="send-info-btns">
-							<div class="warning-info">* Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
 							<div class = "tenders-send-order">
 								<input class="tenders-send-input" type="submit" value="Отправить">
 								<div class="spy-left-btn"></div>
@@ -188,6 +192,7 @@
 							</div>
 						</div>
 					</form>
+					<a href="/privacy/" class="white-link tenders-privacy-link" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
 				</div>
 			</div>
 		</div>
@@ -229,6 +234,8 @@ export default {
 			name: '',
 			phone: '',
 			comment: '',
+			agreeTerms: false,
+			consentError: false,
 			im: new Inputmask("+7 (999) 999-99-99"),
 			sendingForm: 0
 		}
@@ -263,22 +270,21 @@ export default {
 	},
 	methods: {
 
+		onConsentChange(){
+			if (this.agreeTerms) this.consentError = false
+		},
+
 		checkForm(e){
 
-			let phoneField = document.querySelector('.tenders-input-phone')
+			let phoneField = e.target.querySelector('.tenders-input-phone')
+			const phoneComplete = phoneField.inputmask.isComplete()
+			this.consentError = !this.agreeTerms
 
-			if (this.name == '' || !phoneField.inputmask.isComplete()) {
-
-				if (this.name == '') {
-					document.querySelector('.tenders-input-name').classList.add('input-box-wrong')
-				}
-
-				if (!phoneField.inputmask.isComplete()) {
-					phoneField.classList.add('input-box-wrong')
-				}
-
-				return false
+			if (this.name == '') {
+				e.target.querySelector('.tenders-input-name').classList.add('input-box-wrong')
 			}
+			if (!phoneComplete) phoneField.classList.add('input-box-wrong')
+			if (this.name == '' || !phoneComplete || this.consentError) return false
 
 			this.sendForm(e.target)
 		},

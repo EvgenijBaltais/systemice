@@ -94,6 +94,12 @@
               </div>
             </div>
 
+            <label class="checkbox-block event-consent">
+              <input type="checkbox" class="input-check" v-model="agreeTerms" @change="onConsentChange">
+              <span class="checkbox-style"></span>
+              <span class="i-agree" :style="{ color: consentError ? 'red' : null }">Я согласен на обработку персональных данных</span>
+            </label>
+
             <div class="events-file-block">
               <div class="events-add-brief">
                 <input
@@ -121,6 +127,7 @@
           </div>
         </div>
       </form>
+      <a href="/privacy/" class="white-link event-privacy-link" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
     </div>
   </div>
 </template>
@@ -138,6 +145,8 @@ export default {
       email: "",
       company: "",
       comment: "",
+      agreeTerms: false,
+      consentError: false,
       formData: this.$store.state.eventForm,
       sendingForm: 0,
       im: new Inputmask("+7 (999) 999-99-99"),
@@ -145,14 +154,19 @@ export default {
   },
   components: {},
   methods: {
+    onConsentChange() {
+      if (this.agreeTerms) this.consentError = false
+    },
+
     checkForm(e) {
 
-      let phoneField = document.querySelector(".events-form-phone")
+      let phoneField = e.target.querySelector(".events-form-phone")
+      const phoneComplete = phoneField.inputmask.isComplete()
+      this.consentError = !this.agreeTerms
 
-      if (!phoneField.inputmask.isComplete()) {
-        phoneField.classList.add("input-box-wrong")
-        return false
-      }
+      if (!phoneComplete) phoneField.classList.add("input-box-wrong")
+      if (this.consentError || !phoneComplete) return false
+
       this.sendForm(e.target)
     },
 

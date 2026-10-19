@@ -9,7 +9,7 @@
 			</div>
 			<div class="bl-pagination">
 				<span class="active-page">08 </span>
-				<span class="bl-page"> / 08</span>
+				<span class="bl-page"> / 06</span>
 			</div>
 		</div>
 		<div class="main">
@@ -41,14 +41,14 @@
 							</div>
 						</div>
 						<label class="checkbox-block">
-			                <input type="checkbox" name="" class="input-check" v-model="agreeTerms" true-value="yes" false-value="no">
+			                <input type="checkbox" name="" class="input-check" v-model="agreeTerms" @change="onConsentChange">
 			                <span class="checkbox-style">
 			                	<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
 								<div class="spy-bottom"></div>
 			                </span>
-							<span class = "i-agree">Я согласен на обработку персональных данных</span>
+							<span class = "i-agree" :style="{ color: consentError ? 'red' : null }">Я согласен на обработку персональных данных</span>
 						</label>
 						<div class="button-box">
 							<input class="send-button" type="submit" value="Отправить">
@@ -78,13 +78,13 @@
 						<img src="@/assets/images/logo.png" class = "dop-logos-item" alt="Логотип Systemice Group">
 					</div>
 					<br>
-					<a href = "/privacy/" class="white-link">Политика конфиденциальности</a>
+					<a href = "/privacy/" class="white-link" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
 				</div>
 			</div>
 			<div class="footer-mob">
 				<div class="bl-pagination">
 					<span class="active-page">08 </span>
-					<span class="bl-page"> / 08</span>
+					<span class="bl-page"> / 06</span>
 				</div>
 				<copyright/>
 			</div>
@@ -126,7 +126,8 @@ export default {
 		return {
 			name: '',
 			phone: '',
-			agreeTerms: 'yes',
+			agreeTerms: false,
+			consentError: false,
 			im: new Inputmask("+7 (999) 999-99-99"),
 			sendingForm: 0
 		}
@@ -169,13 +170,6 @@ export default {
 	}
 
 
-	let label = document.getElementsByClassName('checkbox-block');
-	for (let i = 0; i < label.length; i++) {
-		label[i].addEventListener('click', function(){
-			label[i].querySelector('.i-agree').style = "color: white;"
-		})
-	}
-
 		/* Карты */
 
 		let myMap, myPlacemark,
@@ -207,15 +201,16 @@ export default {
 
 	methods: {
 
+		onConsentChange(){
+			if (this.agreeTerms) this.consentError = false
+		},
+
 		checkForm(e){
 
 				e.preventDefault()
 
-				if (this.agreeTerms == 'no' || !e.target.querySelector('.contact-phone').inputmask.isComplete()) {
-
-					if (this.agreeTerms == 'no') {
-						document.querySelector('.i-agree').style = "color: red;"
-					}
+				this.consentError = !this.agreeTerms
+				if (this.consentError || !e.target.querySelector('.contact-phone').inputmask.isComplete()) {
 					if (!e.target.querySelector('.contact-phone').inputmask.isComplete()) {
 						document.querySelector('.contact-phone').classList.add('input-box-wrong')
 					}

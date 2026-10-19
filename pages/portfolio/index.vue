@@ -9,7 +9,7 @@
 			</div>
 			<div class="bl-pagination">
 				<span class="active-page">04 </span>
-				<span class="bl-page"> / 08</span>
+				<span class="bl-page"> / 06</span>
 			</div>
 		</div>
 		<div class="main">
@@ -71,7 +71,7 @@
 			<div class="footer-mob">
 				<div class="bl-pagination">
 					<span class="active-page">04 </span>
-					<span class="bl-page"> / 08</span>
+					<span class="bl-page"> / 06</span>
 				</div>
 				<copyright/>
 			</div>

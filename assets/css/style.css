@@ -7893,6 +7893,11 @@ header {
     text-decoration: underline;
 }
 
+.main-page .privacy-link {
+    display: inline-block;
+    margin-top: 100px;
+}
+
 /* Достижения в первом экране главной страницы */
 .main-page .hero-achievements {
     order: 2;
@@ -8090,5 +8095,70 @@ header {
 
     .hero-budget-grid {
         margin-top: 22px;
+    }
+}
+
+.event-consent {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.event-details .events-file-block {
+    margin-top: 30px;
+}
+
+.event-privacy-link {
+    display: inline-block;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 630px) {
+    .main-page .privacy-link {
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .event-details .to-next-step-final {
+        order: -1;
+        margin: 0 0 30px;
+    }
+}
+
+.event-consent .checkbox-style,
+.tenders-consent .checkbox-style {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+}
+
+.event-consent .input-check:checked + .checkbox-style::before,
+.tenders-consent .input-check:checked + .checkbox-style::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tenders-consent {
+    display: block;
+    margin-top: 30px;
+}
+
+.tenders-main .send-info-btns {
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.tenders-privacy-link {
+    display: inline-block;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 480px) {
+    .tenders-main .tenders-send-order {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
