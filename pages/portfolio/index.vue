@@ -20,10 +20,10 @@
 					<h1 class = "videos-title">Видео с примерами нашей работы</h1>
 					<p class = "videos-info">Команда Systemice подготовила и осуществила съемки различных проектов 2021 году. Была проделана огромная работа, чтобы мероприятие состоялось в лучшем виде!</p>
 				</div>
-				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/12.jpg')})`}">
+				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/12-no-dates.png')})`}">
 					<iframe class="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://rutube.ru/play/embed/e92bdd079990a831c30e6220145c0f33/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				</div>
-				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/13.jpg')})`}">
+				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/13-no-date.png')})`}">
 					<iframe class="YoutubeVideo" width="100%" height="100%" style = "display: block;margin: 0 auto;" data-src="https://rutube.ru/play/embed/aefc4c2bb2294d23e635d9e213697ea8/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				</div>
 				<div class="videos-example" @click = "startVideo($event)" :style="{backgroundImage: `url(${require('../../assets/images/videos/2.jpg')})`}">
