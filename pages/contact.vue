@@ -8,7 +8,7 @@
 				<span class="company-name">КОНТАКТЫ</span>
 			</div>
 			<div class="bl-pagination">
-				<span class="active-page">08 </span>
+				<span class="active-page">06 </span>
 				<span class="bl-page"> / 06</span>
 			</div>
 		</div>
