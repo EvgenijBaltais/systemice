@@ -1,0 +1,113 @@
+.cookie-warning {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 1px -1px 4px 0 rgba(0, 0, 0, 0.24);
+    padding: 7px 35px;
+    box-sizing: border-box;
+    z-index: 999999;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.cookie-warning.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cookie-warning[hidden] {
+    display: none;
+}
+
+.cookie-warning .cookie-text {
+    color: rgb(149, 149, 149);
+    font-size: 13px;
+    line-height: 17px;
+    font-family: Roboto, Arial, sans-serif;
+    max-width: calc(100% - 235px);
+}
+
+.cookie-warning .cookie-text-link,
+.cookie-warning .cookie-text-link:hover,
+.cookie-warning .cookie-text-link:active,
+.cookie-warning .cookie-text-link:visited {
+    color: rgb(149, 149, 149);
+    text-decoration: underline;
+    font-size: 13px;
+    line-height: 17px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.cookie-warning .cookie-submit {
+    display: block;
+    width: 215px;
+    background: rgb(232, 232, 232);
+    color: rgb(108, 108, 108);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: Roboto, Arial, sans-serif;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1050px) {
+    .cookie-warning {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cookie-warning {
+        max-width: 100%;
+        flex-wrap: nowrap;
+        border-radius: 0;
+        padding: 5px 10px;
+    }
+
+    .cookie-warning .cookie-text {
+        width: calc(100% - 115px);
+        max-width: calc(100% - 115px);
+        padding-right: 10px;
+        font-size: 11px;
+        line-height: 12px;
+    }
+
+    .cookie-warning .cookie-text-link,
+    .cookie-warning .cookie-text-link:hover,
+    .cookie-warning .cookie-text-link:active,
+    .cookie-warning .cookie-text-link:visited {
+        font-size: 11px;
+        line-height: 12px;
+    }
+
+    .cookie-warning .cookie-submit {
+        margin: 5px auto 5px auto;
+        width: 115px;
+        font-size: 12px;
+        line-height: 12px;
+        border-radius: 0;
+        padding: 5px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cookie-warning {
+        transition: none;
+    }
+}

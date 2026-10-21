@@ -69,7 +69,7 @@
 									<div class="spy-right"></div>
 									<div class="spy-bottom"></div>
 								</span>
-								<span class = "i-agree">Я согласен на обработку персональных данных</span>
+								<span class = "i-agree">Я даю <a href="/agree-terms/" class="consent-document-link" target="_blank" rel="noopener noreferrer" @click.stop>согласие</a> на обработку персональных данных в соответствии с <a href="/privacy/" class="consent-document-link" target="_blank" rel="noopener noreferrer" @click.stop>Политикой</a>.</span>
 							</label>
 							<div class="button-box">
 								<input class="send-button" type="submit" value="Отправить">

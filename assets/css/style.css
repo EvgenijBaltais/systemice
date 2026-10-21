@@ -8162,3 +8162,26 @@ header {
         margin-bottom: 0;
     }
 }
+
+/* Policy links below the forms and on the contacts page */
+.main-page .privacy-link,
+.event-privacy-link,
+.tenders-privacy-link,
+.contact-policy-link {
+    display: block;
+}
+
+.cookie-policy-link {
+    display: block;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 630px) {
+    .main-page .cookie-policy-link {
+        text-align: center;
+    }
+}
+.i-agree .consent-document-link {
+    color: inherit;
+    text-decoration: underline;
+}

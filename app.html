@@ -2,12 +2,18 @@
 <html {{ HTML_ATTRS }}>
   <head {{ HEAD_ATTRS }}>
     {{ HEAD }}
+    <link rel="stylesheet" href="/css/cookie-warning.css">
   </head>
   <body {{ BODY_ATTRS }}>
     {{ APP }}
 
+    <div class="cookie-warning" hidden>
+      <span class="cookie-text">Для обеспечения корректной работы нашего сайта мы используем файлы cookie. Вы можете ознакомиться с нашей <a href="/cookies/" target="_blank" rel="noopener noreferrer" class="cookie-text-link">Политикой использования cookie</a>.</span>
+      <button class="cookie-submit" type="button">Согласен</button>
+    </div>
+    <script defer src="/js/cookie-warning.js"></script>
 
   <!-- #include virtual="/logs/globalstats.php"-->
 
-</body>
+  </body>
 </html>

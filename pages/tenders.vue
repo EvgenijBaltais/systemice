@@ -180,7 +180,7 @@
 						<label class="checkbox-block tenders-consent">
 							<input type="checkbox" class="input-check" v-model="agreeTerms" @change="onConsentChange">
 							<span class="checkbox-style"></span>
-							<span class="i-agree" :style="{ color: consentError ? 'red' : null }">Я согласен на обработку персональных данных</span>
+							<span class="i-agree" :style="{ color: consentError ? 'red' : null }">Я даю <a href="/agree-terms/" class="consent-document-link" target="_blank" rel="noopener noreferrer" @click.stop>согласие</a> на обработку персональных данных в соответствии с <a href="/privacy/" class="consent-document-link" target="_blank" rel="noopener noreferrer" @click.stop>Политикой</a>.</span>
 						</label>
 						<div class="send-info-btns">
 							<div class = "tenders-send-order">
@@ -192,7 +192,8 @@
 							</div>
 						</div>
 					</form>
-					<a href="/privacy/" class="white-link tenders-privacy-link" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
+					<a href="/privacy/" class="white-link tenders-privacy-link" target="_blank" rel="noopener noreferrer">Политика обработки персональных данных</a>
+					<a href="/cookies/" class="white-link cookie-policy-link" target="_blank" rel="noopener noreferrer">Политика обработки файлов cookie</a>
 				</div>
 			</div>
 		</div>

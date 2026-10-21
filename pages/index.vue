@@ -443,7 +443,7 @@
 							<div class="spy-right"></div>
 							<div class="spy-bottom"></div>
 						</span>
-						<span class = "i-agree">Я согласен на обработку персональных данных</span>
+						<span class = "i-agree">Я даю <a href="/agree-terms/" class="consent-document-link" target="_blank" rel="noopener noreferrer" @click.stop>согласие</a> на обработку персональных данных в соответствии с <a href="/privacy/" class="consent-document-link" target="_blank" rel="noopener noreferrer" @click.stop>Политикой</a>.</span>
 					</label>
 					<div class="button-box">
 						<input class="send-button" type="submit" value="Отправить">
@@ -453,7 +453,8 @@
 						<div class="spy-bottom-btn"></div>
 					</div>
 				</form>
-				<a href="/privacy/" class="white-link privacy-link" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
+				<a href="/privacy/" class="white-link privacy-link" target="_blank" rel="noopener noreferrer">Политика обработки персональных данных</a>
+				<a href="/cookies/" class="white-link cookie-policy-link" target="_blank" rel="noopener noreferrer">Политика обработки файлов cookie</a>
 			</div>
 			<div class="contact-map">
 				<div id="map-block"></div>
